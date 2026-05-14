@@ -1,0 +1,59 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
+import "./ProductGallery.css"
+
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+import { Fancybox } from "@fancyapps/ui";
+
+import { useEffect } from "react";
+
+export default function ProductGallery({ images }) {
+
+  useEffect(() => {
+    Fancybox.bind("[data-fancybox='gallery']", {});
+    
+    return () => {
+      Fancybox.destroy();
+    };
+  }, []);
+
+  return (
+    <div className="product-gallery">
+
+      <Swiper
+        modules={[Navigation]}
+        spaceBetween={12}
+        slidesPerView={2.2}
+        navigation
+        breakpoints={{
+          768: {
+            slidesPerView: 4,
+          },
+        }}
+      >
+        {images.map((img, index) => (
+          <SwiperSlide key={index}>
+
+            <a
+              href={img}
+              data-fancybox="gallery"
+            >
+              <img
+                src={img}
+                alt={`Produto ${index}`}
+                className="gallery-image"
+              />
+            </a>
+
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+    </div>
+  );
+}

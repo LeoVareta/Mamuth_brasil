@@ -1,0 +1,25 @@
+.max-w-7xl .swiper {
+  padding-left: 50px; /* Ajuste conforme o tamanho da seta */
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.max-w-7xl .swiper-button-next {
+  right: 0; /* Move a seta para a borda do padding */
+}
+
+.max-w-7xl .swiper-button-prev {
+  left: 0;
+}
+
+.max-w-7xl .swiper-pagination {
+  bottom: 0 !important; /* Fixa os pontos no final do espaço criado */
+}
+.swiper {
+  padding-bottom: 40px !important;
+}
+
+/* Ou, se quiser mover a posição exata das bolinhas */
+.swiper-pagination {
+  bottom: 0px !important; /* Ajuste este valor conforme necessário */
+}

@@ -1,0 +1,82 @@
+.coverflow-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mySwiper {
+  width: 100%;
+  padding: 30px 0;
+}
+
+/* Definir a largura do slide ajuda o 'stretch' negativo a funcionar melhor */
+.swiper-slide-custom {
+  width: 300px; /* Ajuste aqui se quiser o card maior ou menor */
+}
+
+.album-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.album-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease;
+}
+
+.reflection {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  bottom: -37%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1), transparent);
+  transform: scaleY(-1);
+  opacity: 0.3;
+  mask-image: linear-gradient(to bottom, transparent, black);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+  pointer-events: none;
+}
+
+.album-info {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.album-info h3 { font-size: 1.1rem; font-weight: 700; }
+.album-info p { font-size: 0.85rem; color: #ccc; }
+
+.swiper-button-next, .swiper-button-prev {
+  color: #FF6B0A !important;
+  transform: scale(0.6);
+}
+
+/* Sombra lateral discreta */
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 60%,     
+    rgba(0, 0, 0, 0.2) 100%  
+  ) !important;
+}
+.album-wrapper:hover .album-image {
+  transform: scale(1.15); /* Aumenta a imagem em 15% (1.15) */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5); /* Aumenta a sombra para dar mais destaque */
+}
+.swiper-slide-custom {
+  cursor: pointer;
+  pointer-events: auto !important; /* Força a ativação dos eventos de clique */
+}
+
+/* Evite que o 'album-info' ou a 'reflection' bloqueiem o clique se estiverem mal posicionados */
+.album-wrapper {
+  position: relative;
+  z-index: 10;
+}
