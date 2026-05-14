@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'; // 1. Importe o useRef
-import Swiper from "swiper";
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
 import 'swiper/css';
@@ -10,13 +10,13 @@ import 'swiper/css/pagination';
 import './CoverFlowStyles.css';
 
 const AppleCoverFlow = ({ slides }) => {
-  // 2. Crie a referência para controlar o Swiper
   const swiperRef = useRef(null);
+
+  const hasSlides = Array.isArray(slides);
 
   return (
     <div className="coverflow-container">
       <Swiper
-        // 3. Atribua a instância do Swiper à nossa referência
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
@@ -24,13 +24,13 @@ const AppleCoverFlow = ({ slides }) => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'} 
-        initialSlide={Math.floor(slides.length / 2)}
+        initialSlide={hasSlides ? Math.floor(slides.length / 2) : 0}
         coverflowEffect={{
           rotate: 35,    
           stretch: -20,  
           depth: 120,    
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false, // Remove as sombras automáticas do Swiper
         }}
         navigation={true}
         pagination={{ 
@@ -40,11 +40,10 @@ const AppleCoverFlow = ({ slides }) => {
         modules={[EffectCoverflow, Navigation, Pagination]}
         className="mySwiper"
       >
-        {slides.map((album, index) => ( // 4. Use o 'index' do map
+        {hasSlides && slides.map((album, index) => (
           <SwiperSlide 
-            key={album.id} 
+            key={album.id || index} 
             className="swiper-slide-custom"
-            // 5. Adicione o evento de clique manual
             onClick={() => {
               if (swiperRef.current) {
                 swiperRef.current.slideTo(index);
@@ -53,7 +52,6 @@ const AppleCoverFlow = ({ slides }) => {
           >
             <div className="album-wrapper">
               <img src={album.cover} alt={album.title} className="album-image" />
-              <div className="reflection" />
               <div className="album-info">
                 <h3>{album.title}</h3>
                 <p>{album.artist}</p>

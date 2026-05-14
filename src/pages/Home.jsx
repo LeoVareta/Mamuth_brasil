@@ -287,33 +287,44 @@ const Home = () => {
       </section>
       {/* Latin America Presence Section */}
 
-      <section className="relative bg-white bg-no-repeat bg-center" style={{ backgroundImage: `url(${bgMapa})`, backgroundSize: 'contain'}}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      {/* 1. Adicionamos 'relative' obrigatoriamente aqui */}
+    <section 
+      className="relative bg-white bg-no-repeat bg-center" 
+      style={{ 
+        backgroundImage: `url(${bgMapa})`, 
+        backgroundSize: 'contain'
+      }}
+    >
+      {/* CAMADA DE OPACIDADE: Ela fica por cima do fundo, mas atrás de tudo */}
+      <div className="absolute inset-0 bg-white/50 z-0" />
 
-          {/* TÍTULO CENTRALIZADO NO TOPO */}
+      {/* CONTEÚDO: O 'relative z-10' garante que nada aqui ganhe opacidade */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+
+        {/* TÍTULO CENTRALIZADO NO TOPO */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-5xl mx-auto mb-20"
+        >
+          <h2 className="text-2xl md:text-4xl font-bold text-[#FF5101]">
+            {t('home.titleMapa')}
+          </h2>
+        </motion.div>
+
+        {/* GRID CONTEÚDO */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+
+          {/* COLUNA ESQUERDA - FLAGS + SETORES */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.6 }}
-            className="text-center max-w-5xl mx-auto mb-20"
           >
-            <h2 className="text-2xl md:text-4xl font-bold text-[#FF5101]">
-              {t('home.titleMapa')}
-            </h2>
-          </motion.div>
-
-          {/* GRID CONTEÚDO */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-
-            {/* COLUNA ESQUERDA - FLAGS + SETORES */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.6 }}
-          >
-            {/* Flags - Mantive seu código original */}
+            {/* Flags */}
             <div className="flex flex-wrap gap-3 mb-10 justify-center md:justify-start">
               <img src={peru} alt="Peru" className="h-10 object-contain" />
               <img src={brasil} alt="Brasil" className="h-10 object-contain" />
@@ -337,7 +348,7 @@ const Home = () => {
               {t('home.descriptionMapa')}
             </h4>
 
-            {/* Início da UL com Efeito Sanfona */}
+            {/* Início da UL com Efeito Sanfona (RESTAURADA) */}
             <ul className="space-y-4 text-gray-800">
               {[
                 { title: t('home.sucroEnergetica'), text: t('home.textoSucro') },
@@ -361,7 +372,6 @@ const Home = () => {
                       </span>
                     </div>
                     
-                    {/* O sinal de + na cor do título */}
                     <motion.span 
                       className="text-2xl font-bold text-[#FF5101] ml-4"
                       animate={{ rotate: activeIndex === index ? 45 : 0 }}
@@ -390,18 +400,18 @@ const Home = () => {
             </ul>
           </motion.div>
 
-            {/* COLUNA DIREITA - MAPA */}
-            <div className="flex justify-center lg:justify-end">
-              <img
-                src={americaDoSul}
-                alt="Presença da Mamuth na América Latina"
-                className="w-[400px] md:w-[800px] lg:w-[1000px] object-contain"
-              />
-            </div>
-
+          {/* COLUNA DIREITA - MAPA AMÉRICA DO SUL */}
+          <div className="flex justify-center lg:justify-end">
+            <img
+              src={americaDoSul}
+              alt="Presença da Mamuth na América Latina"
+              className="w-[400px] md:w-[800px] lg:w-[1000px] object-contain"
+            />
           </div>
+
         </div>
-      </section>
+      </div>
+    </section>
       <section className="pb-20 pt-20" style={{ backgroundColor: 'var(--color-dark-blue)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
