@@ -8,7 +8,8 @@ import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
 import CTASection from "@/components/CTASection";
-
+import ProductSection from '@/components/ProductSection';
+import bgImg from '@/assets/images/bg-carrousel.png';
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
@@ -42,14 +43,10 @@ const Typhoon500Trifasico = () => {
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
-     <section 
-        className="relative py-0 w-full"
-        style={{ backgroundColor: 'var(--color-dark-blue)', zIndex: 1 }}
-      >
-        <div className="max-w-[1400px] mx-auto">
-          <AppleCoverFlow slides={slides} />
-        </div>
-      </section>
+     <ProductSection 
+        productSlides={slides} 
+        backgroundImage={bgImg} 
+      />
 
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}

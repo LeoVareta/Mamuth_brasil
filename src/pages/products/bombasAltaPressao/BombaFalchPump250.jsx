@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import VideoSection from "@/components/VideoSection";
-
+import ProductSection from '@/components/ProductSection';
+import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
 import BombaFalch250K from '@/assets/images/falch-pump-250.png';
 import seloFalch from "@/assets/images/logo_falch_certificado.png";
@@ -29,14 +30,10 @@ const BombaFalch250 = () => {
       </Helmet>
  
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
-      <section 
-        className="relative pt-10 pb-20 px-4 w-full" 
-        style={{ backgroundColor: 'var(--color-dark-blue)', zIndex: 1 }}
-      >
-       <div className="max-w-[1400px] mx-auto">
-          <AppleCoverFlow slides={slides} />
-        </div>
-      </section>
+      <ProductSection 
+        productSlides={slides} 
+        backgroundImage={bgImg} 
+      />
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
       <section className="py-20 px-4 bg-white">

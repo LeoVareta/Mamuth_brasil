@@ -6,15 +6,22 @@ import { useNavigate } from 'react-router-dom';
 import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
-
+import ImageGallery from "@/components/ImageGallery";
+import ProductSection from '@/components/ProductSection';
+import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
 import robo1 from "@/assets/images/robo-falch-lift-worker-250-beam-1.png";
 import robo2 from "@/assets/images/robo-falch-lift-worker-250-beam-2.png";
 import robo3 from "@/assets/images/robo-falch-lift-worker-250-beam-3.png";
 import robo4 from "@/assets/images/robo-falch-lift-worker-250-beam-4.png";
 import robo5 from "@/assets/images/robo-falch-lift-worker-250-beam-5.png";
+import aplicacao1 from "@/assets/images/robôliftworker250beam-aplicação1.jpg";
+import aplicacao2 from "@/assets/images/robôliftworker250beam-aplicação2.jpg";
+import aplicacao3 from "@/assets/images/robôliftworker250beam-aplicação3.jpg";
+import aplicacao4 from "@/assets/images/robôliftworker250beam-aplicação4.jpg";
+import aplicacao5 from "@/assets/images/robôliftworker250beam-aplicação5.jpg";
+import aplicacao6 from "@/assets/images/robôliftworker250beam-aplicação6.jpg";
 import seloFalch from "@/assets/images/logo_falch_certificado.png";
-import bgImg from "@/assets/images/bg-produtos.png";
 
 
 const RoboLift250 = () => {
@@ -26,7 +33,14 @@ const RoboLift250 = () => {
       { id: 3, title: 'Lift Worker 250 Beam', cover: robo3, color: '#FF5101' },
       { id: 4, title: 'Lift Worker 250 Beam', cover: robo4, color: '#FF5101' },
     ];
-
+  const minhasImg = () => {
+    aplicacao1,
+    aplicacao2,
+    aplicacao3,
+    aplicacao4,
+    aplicacao5,
+    aplicacao6
+  }
   // Garante que a página inicie no topo
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -39,14 +53,10 @@ const RoboLift250 = () => {
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
-      <section 
-        className="relative pt-10 pb-20 px-4 w-full" 
-        style={{ backgroundImage: `url(${bgImg})`, zIndex: 1 }}
-      >
-        <div className="max-w-[1400px] mx-auto">
-                  <AppleCoverFlow slides={slides} />
-                </div>
-      </section>
+      <ProductSection 
+        productSlides={slides} 
+        backgroundImage={bgImg} 
+      /> 
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
       <section className="py-20 px-4 bg-white">
@@ -149,6 +159,7 @@ const RoboLift250 = () => {
       </section>
       <div className='pt-14'>
         <VideoSection videoUrl="https://www.youtube.com/watch?v=yMmRPzDhgAU" />
+        <ImageGallery images={minhasImagens} />
         <CTASection />
       </div>
     </div>

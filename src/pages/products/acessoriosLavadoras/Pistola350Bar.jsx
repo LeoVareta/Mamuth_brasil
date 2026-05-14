@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
+import ProductSection from '@/components/ProductSection';
+import bgImg from '@/assets/images/bg-carrousel.png';
 
 // Import da imagem
 import pistola350bar from '@/assets/images/pistola-350bar.png';
@@ -27,14 +29,10 @@ const Pistola350bar = () => {
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
-      <section 
-        className="relative py-0 w-full" 
-        style={{ backgroundColor: 'var(--color-dark-blue)', zIndex: 1 }}
-      >
-        <div className="max-w-[1400px] mx-auto">
-          <AppleCoverFlow slides={slides} />
-        </div>
-      </section>
+      <ProductSection 
+        productSlides={slides} 
+        backgroundImage={bgImg} 
+      />
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
       <section className="py-20 px-4 bg-white">

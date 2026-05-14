@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhatsappButton from '@/components/WhatsappButton';
 import ScrollToTop from '@/components/ScrolltoTop';
 {/* Páginas padrões */}
 import Home from '@/pages/Home';
@@ -254,7 +255,8 @@ function App() {
             <Route path="/noticias/feira-fenasucro" element={<FeiraFenasucro />} />
             <Route path="/noticias/feira-navalshore" element={<FeiraNavalShore />} />
           </Routes>
-        </main> 
+        </main>
+        <WhatsappButton /> 
         <Footer />
         <Toaster />
       </div>
