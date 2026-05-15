@@ -12,6 +12,7 @@ import Air from '@/assets/images/airsystem-cp.png';
 
 const AirSystem = () => {
   const navigate = useNavigate();
+  const [aberto, setAberto] = useState(null);
   const slides = [
         { id: 1, title: 'Air System', cover: Air, color: '#FF5101' }
   ];
@@ -29,8 +30,8 @@ const AirSystem = () => {
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
       <ProductSection 
-        productSlides={slides} 
-        backgroundImage={bgImg} 
+        slides={slides} 
+        bgImg={bgImg} 
       />
             <section className="py-20 px-4 bg-white">
               <div className="max-w-4xl mx-auto text-center">
@@ -123,6 +124,40 @@ const AirSystem = () => {
                       </tr>
                     </tbody>
                   </table>
+                </div>
+              </div>
+              <div className="md:hidden space-y-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+                </div>
+                <div>
+                  <div className="space-y-4">
+                    {/* CARD 1 */}
+                    <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                      <button 
+                        onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                        className="w-full flex justify-between items-center p-5 bg-white"
+                      >
+                        <h3 className="font-bold text-lg text-[#0E0E68]">Capa de Mangueira </h3>
+                        <span className="text-2xl text-[#FF6B0A] font-light">
+                          {aberto === 't1' ? '−' : '+'}
+                        </span>
+                      </button>
+                      
+                      <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                        <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                          <p><strong>Modelo:</strong> Air System 200</p>
+                          <p><strong>Código:</strong> 1001.0080</p>
+                          <p><strong>Alimentação:</strong> 220V / 60HZ Monofásico </p>
+                          <p><strong>Capacidade:</strong> 204 Nm3/h	 </p>
+                          <p><strong>Fluxo de entrada mínimo:</strong> 60 pcm @ 5,0 bar (75 psi/)</p>
+                          <p><strong>Conexão:</strong> 1" NPT</p>
+                          <p><strong>Medidas:</strong> 825 x 805 x 760 mm </p>
+                          <p><strong>Peso:</strong> 45 Kg</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>

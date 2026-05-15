@@ -43,9 +43,9 @@ const Typhoon500Trifasico = () => {
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
-     <ProductSection 
-        productSlides={slides} 
-        backgroundImage={bgImg} 
+      <ProductSection 
+        slides={slides} 
+        bgImg={bgImg} 
       />
 
 

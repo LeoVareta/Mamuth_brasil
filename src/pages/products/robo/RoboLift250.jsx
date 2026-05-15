@@ -33,14 +33,6 @@ const RoboLift250 = () => {
       { id: 3, title: 'Lift Worker 250 Beam', cover: robo3, color: '#FF5101' },
       { id: 4, title: 'Lift Worker 250 Beam', cover: robo4, color: '#FF5101' },
     ];
-  const minhasImg = () => {
-    aplicacao1,
-    aplicacao2,
-    aplicacao3,
-    aplicacao4,
-    aplicacao5,
-    aplicacao6
-  }
   // Garante que a página inicie no topo
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,9 +46,9 @@ const RoboLift250 = () => {
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
       <ProductSection 
-        productSlides={slides} 
-        backgroundImage={bgImg} 
-      /> 
+        slides={slides} 
+        bgImg={bgImg} 
+      />
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
       <section className="py-20 px-4 bg-white">
@@ -78,7 +70,7 @@ const RoboLift250 = () => {
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
            Projetado para aplicações industriais, o sistema permite maior eficiência no jateamento, redução de ruído com capa de proteção do jato, melhor controle da distância entre o bico e a superfície e extração eficiente da água residual, contribuindo para uma secagem mais rápida e menor formação de oxidação superficial.
           </p>
-          {/* <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
+           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
            Com estrutura robusta, proteção IP65/IP55 e construção voltada para ambientes industriais, o equipamento foi projetado para operação contínua, oferecendo alta confiabilidade e durabilidade. Seu design compacto e funcional facilita a mobilidade e a aplicação em diferentes tipos de superfícies e ambientes de trabalho.
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
@@ -109,7 +101,7 @@ const RoboLift250 = () => {
 
 
             Equipamento projetado para aplicações industriais exigentes
-          </p> */}
+          </p> 
         </div>
       </section>
       <section className="py-1 px-4 bg-white">
@@ -156,10 +148,42 @@ const RoboLift250 = () => {
             </table>
           </div>
         </div>
+        <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+          </div>
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">Capa de Mangueira </h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>Pressão Máxima:</strong> 3000 bar/ 43500 psi</p>
+                    <p><strong>Vazão Máxima:</strong> 60 N / 60 kg</p>
+                    <p><strong>Alimentação Elétrica:</strong> 230 V/ 50 Hz/ 16 A / 5m</p>
+                    <p><strong>Operação:</strong> 24 horas por dia</p>
+                    <p><strong>Intervalo de Manutenção:</strong> 24 meses</p>
+                    <p><strong>Peso:</strong> 155 kg</p>
+                    <p><strong>Dimensões:</strong> 4178 x 1168 x 1758 mm </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <div className='pt-14'>
         <VideoSection videoUrl="https://www.youtube.com/watch?v=yMmRPzDhgAU" />
-        <ImageGallery images={minhasImagens} />
         <CTASection />
       </div>
     </div>

@@ -30,8 +30,8 @@ const CapaMangueira = () => {
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
       <ProductSection 
-        productSlides={slides} 
-        backgroundImage={bgImg} 
+        slides={slides} 
+        bgImg={bgImg} 
       />
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
@@ -54,7 +54,7 @@ const CapaMangueira = () => {
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-1 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
+        <div className="max-w-4xl hidden md:block mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
           
           <div className="flex flex-col items-center mb-10">
             <div 
@@ -116,7 +116,7 @@ const CapaMangueira = () => {
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Poliamida UAP 2800 </h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">Capa de Mangueira </h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>
@@ -124,44 +124,40 @@ const CapaMangueira = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 4/6</p>
-                    <p><strong>Diâmetro Interno:</strong> 4,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 12,0 mm </p>
-                    <p><strong>Pressão de Trabalho:</strong> 2800 bar / 40600 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 7000 bar / 101500 psi </p>
-                    <p><strong>Raio de Curvatura:</strong> 120 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,400 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 15,0 (kg/m)</p>
+                    <p><strong>Material:</strong> Aramida</p>
+                    <p><strong>Código:</strong> 1320.0132</p>
+                    <p><strong>Comprimento:</strong> 1,0 m </p>
+                    <p><strong>Aplicação:</strong> Proteção Hidrojato </p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 5/6</p>
-                    <p><strong>Diâmetro Interno:</strong> 5,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 13,0 mm </p>
-                    <p><strong>Pressão de Trabalho:</strong> 2500 bar/ 36230 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 6240 bar / 90580 psi </p>
-                    <p><strong>Raio de Curvatura:</strong> 175 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,400 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 18,0 (kg/m)</p>
+                    <p><strong>Material:</strong> Aramida</p>
+                    <p><strong>Código:</strong> 1320.0074</p>
+                    <p><strong>Comprimento:</strong> 2,0 m </p>
+                    <p><strong>Aplicação:</strong> Proteção Hidrojato </p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 5/8</p>
-                    <p><strong>Diâmetro Interno:</strong> 5,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 15,0 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 2800 bar / 40600 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 7000 bar / 101500 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 200 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,630 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 19,0 (kg/m)</p>
+                    <p><strong>Material:</strong> Aramida</p>
+                    <p><strong>Código:</strong> 1320.0020</p>
+                    <p><strong>Comprimento:</strong> 3,0 m </p>
+                    <p><strong>Aplicação:</strong> Proteção Hidrojato </p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 8/8</p>
-                    <p><strong>Diâmetro Interno:</strong> 8,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 17,3 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 2800 bar / 40600 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 7000 bar / 101500 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 200 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,830 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 24,0 (kg/m)</p>
+                    <p><strong>Material:</strong> PVC </p>
+                    <p><strong>Código:</strong> 1320.0131</p>
+                    <p><strong>Comprimento:</strong> 1,0 m </p>
+                    <p><strong>Aplicação:</strong> 2800 bar / 40600 psi </p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>Material:</strong>PVC</p>
+                    <p><strong>Código:</strong> 1320.0073</p>
+                    <p><strong>Comprimento:</strong> 2,0 m </p>
+                    <p><strong>Aplicação:</strong> 2800 bar / 40600 psi </p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>Material:</strong>PVC</p>
+                    <p><strong>Código:</strong> 1320.0043</p>
+                    <p><strong>Comprimento:</strong> 3,0 m </p>
+                    <p><strong>Aplicação:</strong> 2800 bar / 40600 psi </p>
                   </div>
                 </div>
               </div>

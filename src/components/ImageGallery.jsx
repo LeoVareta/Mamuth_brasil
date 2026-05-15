@@ -16,7 +16,6 @@ const ImageGallery = ({ images }) => {
     });
     return () => Fancybox.destroy();
   }, []);
-
   return (
     <div className="w-full">
       <Swiper

@@ -22,15 +22,10 @@ import AcessoriosLavadora from '@/pages/products/AcessoriosLavadora';
 import PaginaRobo from '@/pages/products/Robo';
 {/* Lavadoras */}
 import Typhoon500Trifasico from '@/pages/products/lavadoras/Typhoonjet500Trifasico';
-import Typhoon500Gasolina from '@/pages/products/lavadoras/Typhoonjet500Gasolina';
 import Typhoon350Trifasico from '@/pages/products/lavadoras/Typhoonjet350Trifasico';
 import Typhoon200Trifasico from '@/pages/products/lavadoras/Typhoonjet200Trifasico';
-import Typhoon200Gasolina from '@/pages/products/lavadoras/Typhoonjet200Gasolina';
 import Typhoon170Monofasico from '@/pages/products/lavadoras/Typhoonjet170Monofasico';
 import Typhoon50cvEletrica from '@/pages/products/lavadoras/Typhoonjet50cvEletrica';
-import Typhoon50cvDiesel from '@/pages/products/lavadoras/Typhoonjet50cvDiesel';
-import Typhoon350Gasolina from '@/pages/products/lavadoras/Typhoonjet350Gasolina';
-import Typhoon170Trifasico from '@/pages/products/lavadoras/Typhoonjet170Trifasico';
 import TyphoonHot from '@/pages/products/lavadoras/TyphoonHot';
 {/* Vestimentas */}
 import HydroShellUAP from '@/pages/products/vestimentas/HydroShellUap';
@@ -81,20 +76,6 @@ import BombasKamat from '@/pages/products/pecasBombasHidrojato/BombasKamat';
 import BombasNacionais from '@/pages/products/pecasBombasHidrojato/BombasNacionais';
 import BombasNlb from '@/pages/products/pecasBombasHidrojato/BombasNlb';
 import BombasWoma from '@/pages/products/pecasBombasHidrojato/BombasWoma';
-{/*Peças para bombas de Hidrojato   */}
-import ValvulaSuccaoUAP from './pages/products/pecasBombasHidrojato/Nacional/ValvulaSuccaoUAP';
-import ValvulaPressaoSAP from '@/pages/products/pecasBombasHidrojato/Nacional/ValvulaPressaoSAP'; 
-import ValvulaPressaoUAP from './pages/products/pecasBombasHidrojato/Nacional/ValvulaPressaoUAP';
-import SedeDuplaUAP from '@/pages/products/pecasBombasHidrojato/Nacional/SedeDuplaUAP'; 
-import SedeDupla from './pages/products/pecasBombasHidrojato/Nacional/SedeDupla';
-import PistaoMetalDuroUAP from '@/pages/products/pecasBombasHidrojato/Nacional/PistaoMetalDuroUAP';
-import PistaoMetalDuroSAP from '@/pages/products/pecasBombasHidrojato/Nacional/PistaoMetalDuroSAP';
-import KitVedacaoUAP from '@/pages/products/pecasBombasHidrojato/Nacional/KitVedacaoUAP';
-import KitVedacaoSAP from '@/pages/products/pecasBombasHidrojato/Nacional/KitVedacaoSAP';
-import IntermediariaUAP from '@/pages/products/pecasBombasHidrojato/Nacional/IntermediariaUAP';
-import IntermediariaSAP from '@/pages/products/pecasBombasHidrojato/Nacional/IntermediariaSAP';
-import CestoTampaoUAP from '@/pages/products/pecasBombasHidrojato/Nacional/CestoTampaoUAP';
-import CestoTampaoSAP from '@/pages/products/pecasBombasHidrojato/Nacional/CestoTampaoSAP';
 {/*Robos   */}
 import RoboWorker250 from '@/pages/products/robo/RoboLineWorker250';
 import RoboMagnetico from '@/pages/products/robo/RoboMagneticoClimb';
@@ -153,15 +134,10 @@ function App() {
             <Route path="/robo" element={<PaginaRobo />} />
             {/* Lavadoras */}
             <Route path="/lavadoras/typhoon-jet-500-trifasico" element={<Typhoon500Trifasico />} />
-            <Route path="/lavadoras/typhoon-jet-500-gasolina" element={<Typhoon500Gasolina />} />
             <Route path="/lavadoras/typhoon-jet-350-trifasico" element={<Typhoon350Trifasico />} />
             <Route path="/lavadoras/typhoon-jet-200-trifasico" element={<Typhoon200Trifasico />} />
-            <Route path="/lavadoras/typhoon-jet-200-gasolina" element={<Typhoon200Gasolina />} />
             <Route path="/lavadoras/typhoon-jet-170-monofasico" element={<Typhoon170Monofasico />} />
             <Route path="/lavadoras/typhoon-jet-50cv-eletrica" element={<Typhoon50cvEletrica />} />
-            <Route path="/lavadoras/typhoon-jet-50cv-diesel" element={<Typhoon50cvDiesel />} />
-            <Route path="/lavadoras/typhoon-jet-350-gasolina" element={<Typhoon350Gasolina/>}/>
-            <Route path="/lavadoras/typhoon-jet-170-trifasico" element={<Typhoon170Trifasico />} />
             <Route path="/lavadoras/typhoon-hot" element={<TyphoonHot />} />
             {/* Vestimentas */}
             <Route path="/vestimentas/hydro-shell-uap" element={<HydroShellUAP/>}/>
@@ -212,20 +188,6 @@ function App() {
             <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais" element={<BombasNacionais/>}/>
             <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nlb" element={<BombasNlb/>}/>
             <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-woma" element={<BombasWoma/>}/>
-            {/*Peças para bombas de Hidrojato   */}
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/valvula-de-succao-uap" element={<ValvulaSuccaoUAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/valvula-de-pressao-sap" element={<ValvulaPressaoSAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/valvula-de-pressao-uap" element={<ValvulaPressaoUAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/sede-dupla-uap" element={<SedeDuplaUAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/sede-dupla" element={<SedeDupla/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/pistao-de-metal-duro-uap" element={<PistaoMetalDuroUAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/pistao-de-metal-duro-sap" element={<PistaoMetalDuroSAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/kit-de-vedacao-uap" element={<KitVedacaoUAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/kit-de-vedacao-sap" element={<KitVedacaoSAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/intermediaria-uap" element={<IntermediariaUAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/intermediaria-sap" element={<IntermediariaSAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/cesto-tampao-uap" element={<CestoTampaoUAP/>}/>
-            <Route path="/pecas-para-bombas-de-hidrojatos/pecas-bombas-nacionais/cesto-tampao-sap" element={<CestoTampaoSAP/>}/>
             {/*Robos  */}
             <Route path="/robo/robo-line-worker-250" element={<RoboWorker250/>}/>
             <Route path="/robo/robo-magnetico-climb-rob" element={<RoboMagnetico/>}/>

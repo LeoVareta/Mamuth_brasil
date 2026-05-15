@@ -1,9 +1,9 @@
 import React from 'react';
-import imgLogo from "@/assets/icons/img-header.jpg";
+import imgLogo from "@/assets/icons/logo-mamuth-brasil.png";
 const Logo = ({ size = 'md', className = '' }) => {
   const sizeClasses = {
     sm: 'h-10',      // 40px
-    md: 'h-[60px]',  // 60px
+    md: 'h-[65px]',  // 65px
     lg: 'h-[100px]', // 100px
   };
 

@@ -13,7 +13,7 @@ import pistola660bar from '@/assets/images/acessorios-lavadora.png';
 const Pistola660bar = () => {
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Pistola 660 bar', artist: 'Trifásico', cover: pistola660bar, color: '#FF5101' }
+        { id: 1, title: 'Pistola 660 bar', cover: pistola660bar, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -29,8 +29,8 @@ const Pistola660bar = () => {
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
       <ProductSection 
-        productSlides={slides} 
-        backgroundImage={bgImg} 
+        slides={slides} 
+        bgImg={bgImg} 
       />
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
@@ -40,7 +40,7 @@ const Pistola660bar = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            pistola 660 Bar
+            Pistola 660 Bar
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">

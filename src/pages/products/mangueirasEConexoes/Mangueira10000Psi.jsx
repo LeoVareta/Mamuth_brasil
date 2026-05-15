@@ -31,8 +31,8 @@ const Mangueira10000PSI = () => {
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
       <ProductSection 
-        productSlides={slides} 
-        backgroundImage={bgImg} 
+        slides={slides} 
+        bgImg={bgImg} 
       />
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
       <section className="py-20 px-4 bg-white">

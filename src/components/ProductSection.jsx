@@ -1,7 +1,7 @@
 import React from 'react';
 import AppleCoverFlow from '@/components/AppleCoverFlow';
 
-const ProductShowcase = ({ slides, bgImg }) => { 
+const ProductSection = ({ slides, bgImg }) => { 
   return (
     <section 
       className="relative pt-10 pb-20 px-4 w-full" 
@@ -20,4 +20,4 @@ const ProductShowcase = ({ slides, bgImg }) => {
   );
 };
 
-export default ProductShowcase;
+export default ProductSection;

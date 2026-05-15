@@ -21,7 +21,7 @@ import bombaAltaPressao from "@/assets/images/falch-pump-500-cp-produtos.png";
 import pecasBomba from "@/assets/images/peca-bomba-flow-cp.png";
 import acessoriosHidro from "@/assets/images/pistola-rotativa-viper-40k-cp.png";
 import acessoriosLavadora from "@/assets/images/acessorios-lavadora.png";
-import robocp from "@/assets/images/robo-line-worker-250-cp-produto.png";
+import robo from "@/assets/images/robo-magnetico-climb-rob.png";
 
 const LinhasDeProdutos = () => {
   const { toast } = useToast();
@@ -88,7 +88,7 @@ const LinhasDeProdutos = () => {
       name: t('produtos.titleRobo'),
       path: '/robo',
       description: t('produtos.textRobo'),
-      image: robocp,
+      image: robo,
       specs: [
         t('produtos.desc1Robo'),
         t('produtos.desc2Robo'),
