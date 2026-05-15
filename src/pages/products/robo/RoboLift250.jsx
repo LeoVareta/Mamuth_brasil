@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -26,6 +26,7 @@ import seloFalch from "@/assets/images/logo_falch_certificado.png";
 
 const RoboLift250 = () => {
   const navigate = useNavigate();
+  const [aberto, setAberto] = useState(null);
   const slides = [
       { id: 1, title: 'Lift Worker 250 Beam', cover: robo1, color: '#FF5101' },
       { id: 2, title: 'Lift Worker 250 Beam', cover: robo2, color: '#FF5101' },

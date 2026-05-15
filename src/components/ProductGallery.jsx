@@ -32,7 +32,7 @@ export default function ProductGallery({ images }) {
         navigation
         breakpoints={{
           768: {
-            slidesPerView: 4,
+            slidesPerView: 6,
           },
         }}
       >

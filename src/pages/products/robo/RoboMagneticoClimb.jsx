@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -18,6 +18,7 @@ import robo4 from "@/assets/images/robo-magnetico-climb-rob-5.png";
 import seloFalch from "@/assets/images/logo_falch_certificado.png";
 
 const RoboMagnetico = () => {
+  const [aberto, setAberto] = useState(null);
   const navigate = useNavigate();
   const slides = [
           { id: 1, title: 'Robo Magnetico Climb Rob', cover: robo1, color: '#FF5101' },
@@ -137,14 +138,14 @@ const RoboMagnetico = () => {
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
                     <p><strong>Pressão Máxima:</strong> 500 a 3000 bar </p>
-                    <p><strong>Força de Fixação:</strong> 45 N mínima / 85 N Mínima</p>
-                    <p><strong>Alimentação Elétrica:</strong> 230 V/ 50 Hz/ 16 A</p>
-                    <p><strong>jet Cap:</strong> 997 N / 97 kg</p>
-                    <p><strong>Braço articulado:</strong> 24 meses</p>
-                    <p><strong>Grau de Proteção:</strong> IP 55</p>
-                    <p><strong>Manutenção / Vida útil:</strong> 120 kg</p>
-                    <p><strong>Peso com Transportador:</strong> 1510 x 577 x 1110 mm </p>
-                    <p><strong>Peso com Braço Articulado:</strong> 1510 x 577 x 1110 mm </p>
+                    <p><strong>Força de Fixação:</strong>600 kg</p>
+                    <p><strong>Alimentação Elétrica:</strong> 400 V/ 50/60 Hz/ 16 A</p>
+                    <p><strong>jet Cap:</strong> 360 mm</p>
+                    <p><strong>Braço articulado:</strong> 260 a 1200 mm</p>
+                    <p><strong>Grau de Proteção:</strong> IP 65 / 55</p>
+                    <p><strong>Manutenção / Vida útil:</strong> 24 meses /25 anos</p>
+                    <p><strong>Peso com Transportador:</strong> 70 kg </p>
+                    <p><strong>Peso com Braço Articulado:</strong> 94 kg </p>
                   </div>
                 </div>
               </div>

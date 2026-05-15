@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 
 import CTASection from "@/components/CTASection";
-
+import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
 import bicoTorpedo from '@/assets/images/bico-torpedo.png';
 
@@ -25,7 +25,11 @@ const BicoTorpedo = () => {
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
       <section 
         className="relative pt-10 pb-20 px-4 w-full" 
-        style={{ backgroundColor: 'var(--color-dark-blue)', zIndex: 1 }}
+        style={{ backgroundImage: `url(${bgImg})`, 
+        zIndex: 1,
+        backgroundPosition: 'center', // Centraliza horizontal e verticalmente
+        backgroundSize: 'cover',      // Faz a imagem cobrir todo o espaço
+        backgroundRepeat: 'no-repeat'  }}
       >
         <div className="max-w-7xl mx-auto text-center">
           <motion.div 

@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
-
+import ProductSection from '@/components/ProductSection';
+import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
 import bicoSharkJet from '@/assets/images/bico-shark-jet-22k-40k.png';
 import bicoSharkJet22k from '@/assets/images/bico-shark-jet.png';
@@ -31,14 +32,10 @@ const BicoShark22K = () => {
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
-      <section 
-        className="relative pt-10 pb-20 px-4 w-full" 
-        style={{ backgroundColor: 'var(--color-dark-blue)', zIndex: 1 }}
-      >
-        <div className="max-w-[1400px] mx-auto">
-          <AppleCoverFlow slides={slides} />
-        </div>
-      </section>
+      <ProductSection 
+        slides={slides} 
+        bgImg={bgImg} 
+      />
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
       <section className="py-20 px-4 bg-white">

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import bgImg from '@/assets/images/bg-carrousel.png';
 import CTASection from "@/components/CTASection";
 
 // Import da imagem
@@ -25,7 +25,11 @@ const BicoFixoFoguetinho = () => {
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
       <section 
         className="relative pt-10 pb-20 px-4 w-full" 
-        style={{ backgroundColor: 'var(--color-dark-blue)', zIndex: 1 }}
+        style={{ backgroundImage: `url(${bgImg})`, 
+        zIndex: 1,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'  }}
       >
         <div className="max-w-7xl mx-auto text-center">
           <motion.div 

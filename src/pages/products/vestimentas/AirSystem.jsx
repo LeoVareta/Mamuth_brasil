@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -8,14 +8,26 @@ import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
-import Air from '@/assets/images/airsystem-cp.png';
+import Air1 from '@/assets/images/airsystem-1.png';
+import Air2 from '@/assets/images/airsystem-2.png';
+import Air3 from '@/assets/images/airsystem-3.png';
+import Air4 from '@/assets/images/airsystem-4.png';
+import Air5 from '@/assets/images/airsystem-5.png';
+import Air6 from '@/assets/images/airsystem-6.png';
+import Air7 from '@/assets/images/airsystem-7.png';
 
 const AirSystem = () => {
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Air System', cover: Air, color: '#FF5101' }
-  ];
+    { id: 2, title: 'Air System', cover: Air2, color: '#FF5101' },
+    { id: 3, title: 'Air System', cover: Air3, color: '#FF5101' },
+    { id: 4, title: 'Air System', cover: Air4, color: '#FF5101' },
+    { id: 1, title: 'Air System', cover: Air1, color: '#FF5101' },
+    { id: 5, title: 'Air System', cover: Air5, color: '#FF5101' },
+    { id: 6, title: 'Air System', cover: Air6, color: '#FF5101' },
+    { id: 7, title: 'Air System', cover: Air7, color: '#FF5101' }
+];
 
   // Garante que a página inicie no topo
   useEffect(() => {
