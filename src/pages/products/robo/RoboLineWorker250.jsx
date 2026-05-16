@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
+import ProductGallery from "@/components/ProductGallery";
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
@@ -13,6 +14,14 @@ import robo1 from "@/assets/images/robo-line-worker-250-2.png";
 import robo2 from "@/assets/images/robo-line-worker-250-3.png";
 import robo3 from "@/assets/images/robo-line-worker-250-4.png";
 import robo4 from "@/assets/images/robo-line-worker-250-cp.png";
+import aplicacao1 from "@/assets/images/robolineworker250-aplicação1.jpg";
+import aplicacao2 from "@/assets/images/robolineworker250-aplicação2.jpg";
+import aplicacao3 from "@/assets/images/robolineworker250-aplicação3.jpg";
+import aplicacao4 from "@/assets/images/robolineworker250-aplicação4.jpg";
+import aplicacao5 from "@/assets/images/robolineworker250-aplicação5.jpg";
+import aplicacao6 from "@/assets/images/robolineworker250-aplicação6.jpg";
+import aplicacao7 from "@/assets/images/robolineworker250-aplicação7.jpg";
+import aplicacao8 from "@/assets/images/robolineworker250-aplicação8.jpg";
 import seloFalch from "@/assets/images/logo_falch_certificado.png";
 
 
@@ -25,6 +34,16 @@ const RoboWorker250 = () => {
       { id: 3, title: 'Robo Line Worker 250', cover: robo3, color: '#FF5101' },
       { id: 4, title: 'Robo Line Worker 250', cover: robo4, color: '#FF5101' },
     ];
+  const listaDeImagens = [
+    aplicacao1,
+    aplicacao2,
+    aplicacao3,
+    aplicacao4,
+    aplicacao5,
+    aplicacao6,
+    aplicacao7,
+    aplicacao8
+  ];  
 
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -180,8 +199,11 @@ const RoboWorker250 = () => {
       </section>
       <div className='pt-14'>
         <VideoSection videoUrl="https://www.youtube.com/watch?v=okxLtFhilbw" />
-        <CTASection />
       </div>
+      <div className="pt-14 pb-24">
+        <ProductGallery images={listaDeImagens} />
+      </div>
+        <CTASection />
     </div>
   );
 };

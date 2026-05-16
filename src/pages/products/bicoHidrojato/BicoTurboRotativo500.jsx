@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import ProductSection from '@/components/ProductSection';
 import CTASection from "@/components/CTASection";
 import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
@@ -10,6 +10,9 @@ import bicoTurboRotativo500 from '@/assets/images/bico-turbo-rotativo-600.jpg';
 
 const BicoRotativo500 = () => {
   const navigate = useNavigate();
+  const slides = [
+          { id: 1, title: 'Bico Turbo Rotativo 500',  cover: bicoTurboRotativo500, color: '#FF5101' },
+  ];
 
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -23,39 +26,10 @@ const BicoRotativo500 = () => {
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
-      <section 
-        className="relative pt-10 pb-20 px-4 w-full" 
-        style={{ backgroundImage: `url(${bgImg})`, 
-        zIndex: 1,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'  }}
-      >
-        <div className="max-w-7xl mx-auto text-center">
-          
-          <motion.h1 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-white text-4xl md:text-5xl font-bold mb-12 tracking-tight leading-loose" 
-            style={{ lineHeight: '1.4' }}
-          >
-         
-          </motion.h1>
-
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-            className="relative inline-block bg-white p-2 rounded-[30px] shadow-2xl"
-          >
-            <img 
-              src={bicoTurboRotativo500} 
-              alt="Typhoon Jet 500" 
-              className="mx-auto max-w-full h-auto md:max-h-[400px] rounded-[25px] block"
-            />
-          </motion.div>
-        </div>
-      </section>
+      <ProductSection 
+        slides={slides} 
+        bgImg={bgImg} 
+      />
 
       {/* SEÇÃO DE TEXTOS: BRANCA - SEUS TEXTOS ORIGINAIS AQUI */}
       <section className="py-20 px-4 bg-white">

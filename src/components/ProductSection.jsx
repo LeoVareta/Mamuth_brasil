@@ -14,6 +14,12 @@ const ProductSection = ({ slides, bgImg }) => {
       }}
     >
       <div className="max-w-[1400px] mx-auto">
+        <h2 
+          className="text-5xl md:text-6xl font-bold mb-10 text-left "
+          style={{ color: 'var(--color-dark-blue)' }}
+        >
+         Aplicações
+        </h2>   
         {slides && <AppleCoverFlow slides={slides} />}
       </div>
     </section>

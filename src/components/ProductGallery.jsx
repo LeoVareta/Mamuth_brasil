@@ -24,7 +24,12 @@ export default function ProductGallery({ images }) {
 
   return (
     <div className="product-gallery">
-
+      <h2 
+        className="text-5xl md:text-6xl font-bold mb-10 text-center "
+        style={{ color: 'var(--color-dark-blue)' }}
+      >
+      Aplicações
+      </h2>   
       <Swiper
         modules={[Navigation]}
         spaceBetween={12}

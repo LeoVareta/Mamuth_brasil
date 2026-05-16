@@ -7,6 +7,7 @@ import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
 import ImageGallery from "@/components/ImageGallery";
+import ProductGallery from "@/components/ProductGallery";
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
@@ -33,7 +34,16 @@ const RoboLift250 = () => {
       { id: 5, title: 'Lift Worker 250 Beam', cover: robo5, color: '#FF5101' },
       { id: 3, title: 'Lift Worker 250 Beam', cover: robo3, color: '#FF5101' },
       { id: 4, title: 'Lift Worker 250 Beam', cover: robo4, color: '#FF5101' },
-    ];
+  ];
+  const listaDeImagens = [
+    aplicacao1,
+    aplicacao2,
+    aplicacao3,
+    aplicacao4,
+    aplicacao5,
+    aplicacao6
+  ];  
+    
   // Garante que a página inicie no topo
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -185,8 +195,11 @@ const RoboLift250 = () => {
       </section>
       <div className='pt-14'>
         <VideoSection videoUrl="https://www.youtube.com/watch?v=yMmRPzDhgAU" />
-        <CTASection />
       </div>
+      <div className="pt-14 pb-24">
+        <ProductGallery images={listaDeImagens} />
+      </div>
+        <CTASection />
     </div>
   );
 };
