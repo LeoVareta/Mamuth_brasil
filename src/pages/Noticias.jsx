@@ -23,20 +23,9 @@ const Noticias = () => {
       title: t('noticias.titleNoticia1'),
       subtitle: 'E em 2026 não será diferente. A Mamuth Hydro espera por você na FENASUCRO.',
       excerpt: t("noticias.textoNoticia1"),
-      date: '15 de Dezembro, 2023',
       buttonText: t('noticias.btnNoticia1'),
       link: '/noticias/feira-fenasucro',
       image: imgFenasucro
-    },
-    {
-      id: '2',
-      title: t('noticias.titleNoticia1'),
-      subtitle: 'A Mamuth Hydro desembarca na Navalshore 2026.',
-      excerpt: t("noticias.textoNoticia1"),
-      date: '10 de Dezembro, 2023',
-      buttonText: t('noticias.btnNoticia1'),
-      link: '/noticias/feira-navalshore',
-      image: imgNavalshore
     }
   ];
 

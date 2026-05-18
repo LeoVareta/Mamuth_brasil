@@ -24,7 +24,7 @@ import ProductCarousel from "@/components/ProductCarousel";
 import mangueiraConexao from "@/assets/images/mangueiras-conexoes.jpg";
 import lavadoraAltaPressao from "@/assets/images/typhoonjet-50cv-eletrica.png";
 import vestimentaProtecao from "@/assets/images/macacao-hydro-shel-sap-3.png";
-import robo from "@/assets/images/robo-line-worker-250-cp.png";
+import robo from "@/assets/images/robo-magnetico-climb-rob.png";
 import bombaAltaPressao from "@/assets/images/falch-pump-500-cp.png";
 import bicoHidrojato from "@/assets/images/bico-rotativo-r-cp.png";
 import acessoriosHidro from "@/assets/images/pistola-rotativa-viper-40k-cp.png";

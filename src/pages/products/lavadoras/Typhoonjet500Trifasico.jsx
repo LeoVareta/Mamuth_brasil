@@ -106,7 +106,7 @@ const Typhoon500Trifasico = () => {
       </section>
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
-      <section className="py-1 px-4 bg-white">
+      <section className="pt-4 px-4 bg-white pb-16">
         {/* Mantive o max-w-4xl conforme solicitado */}
         <div className="max-w-4xl hidden md:block mx-auto text-center p-4 md:p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
           
@@ -279,9 +279,6 @@ const Typhoon500Trifasico = () => {
           </div>
         </div>
       </section>
-      <div>
-          <VideoSection videoUrl="https://www.youtube.com/watch?v=M9I8rx1XVyI" />
-      </div>
       {/* SEÇÃO FINAL: ATENÇÃO (CINZA ESCURO E LARANJA #FF6B0A) */}
      <div>
       <CTASection />
