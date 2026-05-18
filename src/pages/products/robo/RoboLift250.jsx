@@ -16,12 +16,12 @@ import robo2 from "@/assets/images/robo-falch-lift-worker-250-beam-2.png";
 import robo3 from "@/assets/images/robo-falch-lift-worker-250-beam-3.png";
 import robo4 from "@/assets/images/robo-falch-lift-worker-250-beam-4.png";
 import robo5 from "@/assets/images/robo-falch-lift-worker-250-beam-5.png";
-import aplicacao1 from "@/assets/images/robôliftworker250beam-aplicação1.jpg";
-import aplicacao2 from "@/assets/images/robôliftworker250beam-aplicação2.jpg";
-import aplicacao3 from "@/assets/images/robôliftworker250beam-aplicação3.jpg";
-import aplicacao4 from "@/assets/images/robôliftworker250beam-aplicação4.jpg";
-import aplicacao5 from "@/assets/images/robôliftworker250beam-aplicação5.jpg";
-import aplicacao6 from "@/assets/images/robôliftworker250beam-aplicação6.jpg";
+import aplicacao1 from "@/assets/images/robôliftworker250beam-aplicacao1.jpg";
+import aplicacao2 from "@/assets/images/robôliftworker250beam-aplicacao2.jpg";
+import aplicacao3 from "@/assets/images/robôliftworker250beam-aplicacao3.jpg";
+import aplicacao4 from "@/assets/images/robôliftworker250beam-aplicacao4.jpg";
+import aplicacao5 from "@/assets/images/robôliftworker250beam-aplicacao5.jpg";
+import aplicacao6 from "@/assets/images/robôliftworker250beam-aplicacao6.jpg";
 import seloFalch from "@/assets/images/logo_falch_certificado.png";
 
 
