@@ -1,39 +1,34 @@
 import React, { useState } from "react";
 import { Helmet } from 'react-helmet';
-import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { motion } from "framer-motion";
 import WhatsappButton from '@/components/WhatsappButton';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '@/components/SectionTitle';
-import NewsCard from '@/components/NewsCard';
 import CertificacoesSection from "@/components/CertificadoSection";
 import CTASection from "@/components/CTASection";
-import Hero from "@/components/Hero"
-import imgFenasucro from '@/assets/images/feira-fenasucro.jpg'
-import imgNavalshore from '@/assets/images/feira-navalshore.jpg'
-import certificacaoIso from "@/assets/images/certificacao-iso.jpg";
+import NoticiaCard from "@/components/NoticiaCard"; // Agora este arquivo existe!
+import imgFenasucro from '@/assets/images/feira-fenasucro.jpg';
 
 const Noticias = () => {
-  const [open, setOpen] = useState(false);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
-  const newsArticles = [
+  const listaDeNoticias = [
     {
-      id: '1',
-      title: t('noticias.titleNoticia1'),
-      subtitle: 'E em 2026 não será diferente. A Mamuth Hydro espera por você na FENASUCRO.',
-      excerpt: t("noticias.textoNoticia1"),
-      buttonText: t('noticias.btnNoticia1'),
-      link: '/noticias/feira-fenasucro',
-      image: imgFenasucro
+      id: 1,
+      imagem: imgFenasucro,
+      titulo: t('noticias.titleNoticia1'),
+      subtitulo: 'E em 2026 não será diferente. A Mamuthidro espera por você na FENASUCRO.',
+      resumo: t('noticias.textoNoticia1'),
+      linkSaibaMais: '/noticias/feira-fenasucro',
+      linkDownload: '/arquivos/catalogo-fecasucro.pdf'
     }
   ];
 
   return (
     <>
       <Helmet>
-        <title>Notícias - Mamuth | Novidades e Atualizações do Setor Industrial</title>
-        <meta name="description" content="Acompanhe as últimas notícias da Mamuth, novidades do setor industrial, lançamentos de produtos e atualizações sobre nossa empresa." />
+        <title>Notícias - Mamuthidro | Novidades e Atualizações do Setor Industrial</title>
+        <meta name="description" content="Acompanhe as últimas notícias da Mamuthidro, novidades do setor industrial, lançamentos de produtos e atualizações sobre nossa empresa." />
       </Helmet>
 
       {/* Hero Section */}
@@ -52,7 +47,7 @@ const Noticias = () => {
         </div>
       </section>
 
-      {/* News Grid Section */}
+      {/* News Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -60,25 +55,27 @@ const Noticias = () => {
             subtitle={t('noticias.subtitleCards')}
           />
           
-          {/* Alterado de grid para flex com justify-center */}
-          <div className="flex flex-wrap justify-center gap-8">
-            {newsArticles.map((article) => (
-              <div 
-                key={article.id} 
-                className="w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.333%-2rem)] max-w-[380px] md:max-w-none"
-              >
-                <NewsCard {...article} />
-              </div>
+          {/* Contêiner das fitas horizontais */}
+          <div className="flex flex-col w-full gap-6 mt-10">
+            {listaDeNoticias.map((noticia) => (
+              <NoticiaCard
+                key={noticia.id}
+                imagem={noticia.imagem}
+                titulo={noticia.titulo}
+                subtitulo={noticia.subtitulo}
+                resumo={noticia.resumo}
+                linkSaibaMais={noticia.linkSaibaMais}
+                linkDownload={noticia.linkDownload}
+              />
             ))}
           </div>
         </div>
       </section>
+
       <CTASection />
       <CertificacoesSection />
       <WhatsappButton />
-           </>
-
-              
+    </>
   );
 };
 
