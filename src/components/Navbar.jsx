@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Logo from '@/components/Logo';
+import LogoH from '@/components/LogoH';
 
 import Br from '@/assets/icons/icone-brasil.png'
 import En from '@/assets/icons/icone-estados-unidos.png'
@@ -51,7 +51,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-300">
-            <Logo size="md" />
+            <LogoH size="md" />
           </Link>
 
           {/* Desktop Navigation */}

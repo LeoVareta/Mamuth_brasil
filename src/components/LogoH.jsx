@@ -1,10 +1,10 @@
 import React from 'react';
-import imgLogo from "@/assets/icons/logo-mamuth-v.svg";
-const Logo = ({ size = 'md', className = '' }) => {
+import imgLogo from "@/assets/icons/logo-mamuth-h.svg";
+const LogoH = ({ size = 'md', className = '' }) => {
   const sizeClasses = {
-    sm: 'h-[50px]',      // 40px
-    md: 'h-[87px]',  // 65px
-    lg: 'h-[130px]', // 100px
+    sm: 'h-10',      // 40px
+    md: 'h-[65px]',  // 65px
+    lg: 'h-[100px]', // 100px
   };
 
   return (
@@ -16,4 +16,4 @@ const Logo = ({ size = 'md', className = '' }) => {
   );
 };
 
-export default Logo;
+export default LogoH;

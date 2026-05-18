@@ -296,7 +296,7 @@ const Home = () => {
       }}
     >
       {/* CAMADA DE OPACIDADE: Ela fica por cima do fundo, mas atrás de tudo */}
-      <div className="absolute inset-0 bg-white/50 z-0" />
+      <div className="absolute inset-0 bg-white/30 z-0" />
 
       {/* CONTEÚDO: O 'relative z-10' garante que nada aqui ganhe opacidade */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
