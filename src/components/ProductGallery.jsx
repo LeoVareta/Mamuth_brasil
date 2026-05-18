@@ -4,31 +4,32 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import "./ProductGallery.css"
+import "./ProductGallery.css";
 
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-
 import { Fancybox } from "@fancyapps/ui";
-
 import { useEffect } from "react";
 
-export default function ProductGallery({ images }) {
+// Adicionamos a prop 'galleryId' para diferenciar as galerias
+export default function ProductGallery({ images, title = "Aplicações", galleryId = "default-gallery" }) {
 
   useEffect(() => {
-    Fancybox.bind("[data-fancybox='gallery']", {});
+    // Vincula o Fancybox especificamente para o ID desta galeria
+    Fancybox.bind(`[data-fancybox="${galleryId}"]`, {});
     
     return () => {
-      Fancybox.destroy();
+      // É mais seguro fechar e limpar as instâncias ligadas a esse ID
+      Fancybox.close();
     };
-  }, []);
+  }, [galleryId]); // Executa novamente se o galleryId mudar
 
   return (
     <div className="product-gallery">
       <h2 
-        className="text-5xl md:text-6xl font-bold mb-10 text-center "
+        className="text-5xl md:text-6xl font-bold mb-10 text-center"
         style={{ color: 'var(--color-dark-blue)' }}
       >
-      Aplicações
+        {title} {/* Deixamos o título dinâmico também para reaproveitar o componente se quiser */}
       </h2>   
       <Swiper
         modules={[Navigation]}
@@ -43,22 +44,20 @@ export default function ProductGallery({ images }) {
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-
+            {/* O data-fancybox agora usa o ID único */}
             <a
               href={img}
-              data-fancybox="gallery"
+              data-fancybox={galleryId}
             >
               <img
                 src={img}
-                alt={`Produto ${index}`}
+                alt={`${title} ${index}`}
                 className="gallery-image"
               />
             </a>
-
           </SwiperSlide>
         ))}
       </Swiper>
-
     </div>
   );
 }

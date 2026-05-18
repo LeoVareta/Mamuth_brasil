@@ -438,6 +438,31 @@
       "subtitleDistorcedor": "The Swivel is a safety item that, when used with the hose, eliminates torsional stress on the terminal, thus avoiding premature breakage and subsequent accidents.",
       "titleCabecote": "NLB 3D Torrent Rotary Head",
       "subtitleCabecote": "The NLB 3D Torrent Head is an advanced tool specifically designed for efficient tank cleaning. This device not only drastically reduces cleaning time but also provides total operational safety by eliminating the need for an operator in confined spaces, which is essential for minimizing risks."
+    },
+    "hidrolavadoras":{
+      "title660bar": "660 bar Spray Gun",
+      "subtitlePistolas": "Spray guns and lances designed for high-pressure washers.",
+      "title350bar": "350 bar Spray Gun",
+      "title280bar": "280 bar Spray Gun",
+      "titleBicojato": "500 bar Sandblasting Nozzle",
+      "subtitleBicojato": "500 bar Sandblasting Nozzle",
+      "titleValvula550": "550 bar Pressure Regulating Valve",
+      "subtitleValvula550": "Pressure regulating valve (By-Pass) with safety function.",
+      "titleValvula350": "350 bar Pressure Regulating Valve",
+      "subtitleValvula350": "Pressure regulating valve (By-Pass) with safety function.",
+      "titleValvula200": "200 bar High-Flow Pressure Regulating Valve",
+      "subtitleValvula200": "Pressure regulating valve (By-Pass) with safety function. Suitable for high-flow pumps.",
+      "titleValvula660": "660 bar Safety Relief Valve",
+      "subtitleValvula660": "Safety valve that limits the maximum pressure of the high-pressure system. When the pressure limit is exceeded, the valve opens to release the excess pressure."
+    },
+    "pecasBombas": {
+      "titleFlow": "Pump Parts Flow",
+      "titleFalch": "Pump Parts Falch",
+      "titleNlb": "Pump Parts NLB",
+      "titleKamat": "Pump Parts Kamat",
+      "titleWoma": "Pump Parts Woma",
+      "titleNacionais": "Parts for Domestic Pumps",
+      "subtitlePecas": "MAMUTH offers a complete line of parts for High and Ultra-High Pressure Pumps, covering a wide range of brands and models available on the market. Our parts are of our own manufacture, which allows us to guarantee high standards of quality and durability."
     }
   },
   "btnCTA":{

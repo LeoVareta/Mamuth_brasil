@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 import ProductCard from '@/components/ProductCard'; // Certifique-se de que o caminho está correto
 import valvulaSuccaoUAP from '@/assets/images/valvula-succao-uap.png';
 import valvulaPressaoSAP from '@/assets/images/valvula-pressao-sap.png';
@@ -19,53 +20,52 @@ import imgNlb from '@/assets/images/cabecote-rotativo-3d-cp-produto.png'
 import path from 'node:path';
 
 const PaginaCategoria = () => {
-  // Dados simulados para o "Produto 1"
-  // Você pode repetir este objeto ou criar um array com variações
+  const { t } = useTranslation();
   const produtosDaCategoria = [
     {
-      name: 'Peças para bombas FLOW',
+      name: t('categorias.pecasBombas.titleFlow'),
       path: '/contato',
-      description: 'A MAMUTH oferece uma linha completa de peças para Bombas de Alta e Ultra-Alta Pressão, abrangendo diversas marcas e modelos disponíveis no mercado. Nossas peças são de fabricação própria, o que nos permite garantir altos padrões de qualidade e durabilidade.',
+      description: t('categorias.pecasBombas.subtitlePecas'),
       image: flow, 
       category: 'Categoria Principal',
       buttonText: 'Fale com um consultor'
     },
      {
-      name: 'Peças para bombas FALCH',
+      name: t('categorias.pecasBombas.titleFalch'),
       path: '/contato',
-      description: 'A MAMUTH oferece uma linha completa de peças para Bombas de Alta e Ultra-Alta Pressão, abrangendo diversas marcas e modelos disponíveis no mercado. Nossas peças são de fabricação própria, o que nos permite garantir altos padrões de qualidade e durabilidade.',
+      description: t('categorias.pecasBombas.subtitlePecas'),
       image: falch, 
       category: 'Categoria Principal',
       buttonText: 'Fale com um consultor'
     },
     {
-      name: 'Peças para bombas NLB',
+      name: t('categorias.pecasBombas.titleNlb'),
       path: '/contato',
-      description: 'A MAMUTH oferece uma linha completa de peças para Bombas de Alta e Ultra-Alta Pressão, abrangendo diversas marcas e modelos disponíveis no mercado. Nossas peças são de fabricação própria, o que nos permite garantir altos padrões de qualidade e durabilidade.',
+      description: t('categorias.pecasBombas.subtitlePecas'),
       image:  imgNlb, 
       category: 'Categoria Principal',
       buttonText: 'Fale com um consultor'
     },
     {
-      name: 'Peças para bombas KAMAT',
+      name: t('categorias.pecasBombas.titleKamat'),
       path: '/contato',
-      description: 'A MAMUTH oferece uma linha completa de peças para Bombas de Alta e Ultra-Alta Pressão, abrangendo diversas marcas e modelos disponíveis no mercado. Nossas peças são de fabricação própria, o que nos permite garantir altos padrões de qualidade e durabilidade.',
+      description: t('categorias.pecasBombas.subtitlePecas'),
       image: sedeDuplaUAP, 
       category: 'Categoria Principal',
       buttonText: 'Fale com um consultor'
     },
     {
-      name: 'Peças para bombas WOMA',
+      name: t('categorias.pecasBombas.titleWoma'),
       path: '/contato',
-      description: 'A MAMUTH oferece uma linha completa de peças para Bombas de Alta e Ultra-Alta Pressão, abrangendo diversas marcas e modelos disponíveis no mercado. Nossas peças são de fabricação própria, o que nos permite garantir altos padrões de qualidade e durabilidade.',
+      description: t('categorias.pecasBombas.subtitlePecas'),
       image: pistaoMetalSAP, 
       category: 'Categoria Principal',
       buttonText: 'Fale com um consultor'
     },
     {
-      name: 'Peças para bombas NACIONAIS',
+      name: t('categorias.pecasBombas.titleNacionais'),
       path: '/contato',
-      description: 'A MAMUTH oferece uma linha completa de peças para Bombas de Alta e Ultra-Alta Pressão, abrangendo diversas marcas e modelos disponíveis no mercado. Nossas peças são de fabricação própria, o que nos permite garantir altos padrões de qualidade e durabilidade.',
+      description: t('categorias.pecasBombas.subtitlePecas'),
       image: pistaoMetalUAP, 
       category: 'Categoria Principal',
       buttonText: 'Fale com um consultor'

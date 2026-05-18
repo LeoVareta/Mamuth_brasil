@@ -171,7 +171,7 @@ const RoboLift250 = () => {
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Capa de Mangueira </h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">Lift Worker 250 Beam </h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>

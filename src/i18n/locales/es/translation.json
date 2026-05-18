@@ -438,6 +438,31 @@
       "subtitleDistorcedor": "El Distorcedor (Swivel) es un elemento de seguridad que, cuando se utiliza junto a la manguera, elimina el esfuerzo por torsión del terminal, evitando así la rotura prematura y posteriores accidentes.",
       "titleCabecote": "Cabezal Rotativo 3D Torrent NLB",
       "subtitleCabecote": "El Cabezal 3D Torrent NLB es una herramienta avanzada diseñada específicamente para la limpieza eficiente de tanques. Este dispositivo no solo reduce drásticamente el tiempo de limpieza, sino que también proporciona total seguridad en la operación al eliminar la necesidad de un operador en espacios confinados, lo cual es esencial para minimizar riesgos."
+    },
+    "hidrolavadoras":{
+      "title660bar": "Pistola de 660 bar",
+      "subtitlePistolas": "Pistolas y lanzas indicadas para hidrolimpiadoras de alta presión.",
+      "title350bar": "Pistola de 350 bar",
+      "title280bar": "Pistola de 280 bar",
+      "titleBicojato": "Boquilla de Chorro Abrasivo de 500 bar",
+      "subtitleBicojato": "Boquilla de Chorro Abrasivo de 500 bar",
+      "titleValvula550": "Válvula Reguladora de 550 bar",
+      "subtitleValvula550": "Válvula reguladora de presión (By-Pass) con función de seguridad.",
+      "titleValvula350": "Válvula Reguladora de 350 bar",
+      "subtitleValvula350": "Válvula reguladora de presión (By-Pass) con función de seguridad.",
+      "titleValvula200": "Válvula Reguladora de 200 bar de Alto Caudal",
+      "subtitleValvula200": "Válvula reguladora de presión (By-Pass) con función de seguridad. Indicada para bombas de alto caudal.",
+      "titleValvula660": "Válvula de Seguridad de 660 bar",
+      "subtitleValvula660": "Válvula de seguridad que limita la presión máxima del sistema de alta presión. Cuando se excede la presión, la válvula se abre liberando el exceso de presión."
+    },
+    "pecasBombas": {
+      "titleFlow": "Piezas para Bombas FLOW",
+      "titleFalch": "Piezas para Bombas Falch",
+      "titleNlb": "Piezas para Bombas NLB",
+      "titleKamat": "Piezas para Bombas KAMAT",
+      "titleWoma": "Piezas para Bombas WOMA",
+      "titleNacionais": "Piezas para Bombas Nacionales",
+      "subtitlePecas": "MAMUTH ofrece una línea completa de repuestos para Bombas de Alta y Ultraalta Presión, que abarca diversas marcas y modelos disponibles en el mercado. Nuestras piezas são de fabricación propia, lo que nos permite garantizar altos estándares de calidad y durabilidad."
     }
 
   },
