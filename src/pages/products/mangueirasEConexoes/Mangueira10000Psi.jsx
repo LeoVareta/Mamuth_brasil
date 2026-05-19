@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -12,6 +12,7 @@ import mangueira10kPsi from '@/assets/images/mangueira-10000psi.png';
 import seloParker from "@/assets/images/selo-certificado-parker.png";
 
 const Mangueira10000PSI = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
@@ -41,16 +42,16 @@ const Mangueira10000PSI = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left flex items-center gap-4"
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Mangueira 10.000 PSI
+            {t('mangueiras.10000psi.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           APLICAÇÃO: Recomendadas para sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento;
+           {t('mangueiras.10000psi.texto1')}
           </p>
            <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           CONSTRUÇÃO: Tubo interno fabricado em borracha sintética resistente a água envolta por espirais trançadas de fio de aço, coberta com uma camada de borracha sintética resistente ao ozônio, intempéries e calor;
+           {t('mangueiras.10000psi.texto2')}
           </p>
            <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           TEMPERATURA DE TRABALHO: Indicadas para operações em temperatura entre - 40°C até +100°C. Temperatura máxima de trabalho intermitente: +121°C
+           {t('mangueiras.10000psi.texto3')}
           </p>
         </div>
       </section>
@@ -67,7 +68,7 @@ const Mangueira10000PSI = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.10000psi.textoCard')}
             </h2>
           </div>
 

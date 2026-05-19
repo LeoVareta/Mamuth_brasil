@@ -458,7 +458,7 @@
     },
     "pecasBombas": {
       "titleFlow": "Peças para bombas FLOW",
-      "titleFalch": "Peças para bombas FLOW",
+      "titleFalch": "Peças para bombas Falch",
       "titleNlb": "Peças para bombas NLB",
       "titleKamat": "Peças para bombas KAMAT",
       "titleWoma": "Peças para bombas WOMA",
@@ -469,6 +469,38 @@
   "btnCTA":{
     "detalhes": "Ver Detalhes",
     "orçamento": "Solicitar Orçamento"
+  },
+  "mangueiras":{
+    "poliamida2800":{
+      "title": "Poliamida UAP 2800",
+      "texto1": "Todas as mangueiras Mamuth são testadas em bancada de teste hidrostático de 6.900 bar (100.050 psi) e emitido Certificado de Teste Hidrostático.",
+      "texto2": "APLICAÇÃO Utilizadas em sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento. São também conhecidas popularmente como “rabichos” ou “lanças flexíveis”;",
+      "texto3": "CONSTRUÇÃO Tubo interno fabricado em Poliamida rígido envolto por camadas de espirais trançadas de fios de aço e cobertura de Poliamida;",
+      "texto4": "TEMPERATURA DE TRABALHO Indicadas para operações em temperatura entre - 10°C até +70°C;",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "poliamida1500":{
+      "title": "Poliamida SAP 1500",
+      "texto1": "Todas as mangueiras Mamuth são testadas em bancada de teste hidrostático de 6.900 bar (100.050 psi) e emitido Certificado de Teste Hidrostático.",
+      "texto2": "APLICAÇÃO Utilizadas em sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento. São também conhecidas popularmente como “rabichos” ou “lanças flexíveis”;",
+      "texto3": "CONSTRUÇÃO Tubo interno fabricado em Poliamida rígido envolto por camadas de espirais trançadas de fios de aço e cobertura de Poliamida;",
+      "texto4": "TEMPERATURA DE TRABALHO Indicadas para operações em temperatura entre - 10°C até +70°C;",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "waterblast":{
+      "title": "Mangueira Waterblast",
+      "texto1": "APLICAÇÃO: Recomendadas para sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento;",
+      "texto2": "CONSTRUÇÃO: Tubo interno fabricado em borracha sintética resistente a água envolta por espirais trançadas de fio de aço, coberta com uma camada de borracha sintética resistente ao ozônio, intempéries e calor;",
+      "texto3": "TEMPERATURA DE TRABALHO: Indicadas para operações em temperatura entre - 10°C até +70°C. Temperatura máxima de trabalho intermitente: +93°C",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "10000psi":{
+      "title": "Mangueira 10.000 PSI",
+      "texto1": "APLICAÇÃO: Recomendadas para sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento;",
+      "texto2": "CONSTRUÇÃO: Tubo interno fabricado em borracha sintética resistente a água envolta por espirais trançadas de fio de aço, coberta com uma camada de borracha sintética resistente ao ozônio, intempéries e calor;",
+      "texto3": "TEMPERATURA DE TRABALHO: Indicadas para operações em temperatura entre - 40°C até +100°C. Temperatura máxima de trabalho intermitente: +121°C",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    }
   }
 
   

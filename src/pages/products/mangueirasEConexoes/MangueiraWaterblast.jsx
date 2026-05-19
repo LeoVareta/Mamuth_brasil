@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -13,6 +13,7 @@ import mangueiraWaterblast2 from '@/assets/images/mangueira-waterblast-1.png';
 import seloParker from "@/assets/images/selo-certificado-parker.png";
 
 const MangueiraWaterblast = () => {
+  const { t } = useTranslation(); 
   const [aberto, setAberto] = useState(null);
   const navigate = useNavigate();
   const slides = [
@@ -44,16 +45,16 @@ const MangueiraWaterblast = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left flex items-center gap-4"
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Mangueira Waterblast
+            {t('mangueiras.waterblast.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           APLICAÇÃO: Recomendadas para sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento;
+           {t('mangueiras.waterblast.texto1')}
           </p>
            <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           CONSTRUÇÃO: Tubo interno fabricado em borracha sintética resistente a água envolta por espirais trançadas de fio de aço, coberta com uma camada de borracha sintética resistente ao ozônio, intempéries e calor;
+           {t('mangueiras.waterblast.texto2')}
           </p>
            <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           TEMPERATURA DE TRABALHO: Indicadas para operações em temperatura entre - 10°C até +70°C. Temperatura máxima de trabalho intermitente: +93°C
+           {t('mangueiras.waterblast.texto3')}
           </p>
         </div>
       </section>
@@ -70,7 +71,7 @@ const MangueiraWaterblast = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.waterblast.textoCard')}
             </h2>
           </div>
 

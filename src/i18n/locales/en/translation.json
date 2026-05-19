@@ -468,6 +468,38 @@
   "btnCTA":{
     "detalhes": "View Details",
     "orçamento": "Request a Quote"
+  },
+  "mangueiras":{
+    "poliamida2800":{
+      "title": "Polyamide UAP 2800",
+      "texto1": "All Mamuth hoses are tested in a hydrostatic test bench at 6.900 bar (100.050 psi) and a Hydrostatic Test Certificate is issued.",
+      "texto2": "APPLICATION Used in cleaning, unblocking, residue removal and surface preparation systems with the use of Hydrojetting. They are also commonly known as “rabichos” or “flexible lances”;",
+      "texto3": "CONSTRUCTION Internally made of rigid polyamide, wrapped by layers of braided steel wires and covered with polyamide;",
+      "texto4": "OPERATING TEMPERATURE Suitable for operations in temperatures between - 10°C and +70°C;",
+      "textoCard": "See more technical information about this product:"
+    },
+    "poliamida1500":{
+      "title": "Polyamide SAP 1500",
+      "texto1": "All Mamuth hoses are tested in a hydrostatic test bench at 6.900 bar (100.050 psi) and a Hydrostatic Test Certificate is issued.",
+      "texto2": "APPLICATION Used in cleaning, unblocking, residue removal and surface preparation systems with the use of Hydrojetting. They are also commonly known as “rabichos” or “flexible lances”;",
+      "texto3": "CONSTRUCTION Internally made of rigid polyamide, wrapped by layers of braided steel wires and covered with polyamide;",
+      "texto4": "OPERATING TEMPERATURE Suitable for operations in temperatures between - 10°C and +70°C;",
+      "textoCard": "See more technical information about this product:"
+    },
+    "waterblast":{
+      "title": "Waterblast Hose",
+      "texto1": "APPLICATION: Recommended for cleaning, unclogging, waste removal, and surface preparation systems utilizing High-Pressure Water Jetting (Hydroblasting);",
+      "texto2": "CONSTRUCTION: Inner tube manufactured from water-resistant synthetic rubber, wrapped with spiral-wound steel wire reinforcements, and covered with a layer of synthetic rubber resistant to ozone, weather, and heat;",
+      "texto3": "WORKING TEMPERATURE: Suitable for operations within a temperature range from -10°C to +70°C. Maximum intermittent working temperature: +93°C.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "10000psi":{
+      "title": "10,000 PSI Hose",
+      "texto1": "APPLICATION: Recommended for cleaning, unclogging, waste removal, and surface preparation systems utilizing High-Pressure Water Jetting (Hydroblasting);",
+      "texto2": "CONSTRUCTION: Inner tube manufactured from water-resistant synthetic rubber, wrapped with spiral-wound steel wire reinforcements, and covered with a layer of synthetic rubber resistant to ozone, weather, and heat;",
+      "texto3": "WORKING TEMPERATURE: Suitable for operations within a temperature range from -40°C to +100°C. Maximum intermittent working temperature: +121°C.",
+      "textoCard": "See more technical information about this product:"
+    }
   }
 
 

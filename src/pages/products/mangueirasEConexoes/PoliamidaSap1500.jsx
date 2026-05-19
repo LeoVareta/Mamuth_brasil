@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -12,6 +12,7 @@ import poliamidaSap1500 from '@/assets/images/poliamida-sap-ate1500.png';
 import seloParker from "@/assets/images/selo-certificado-parker.png";
 
 const PoliamidaSAP1500 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
@@ -42,7 +43,7 @@ const PoliamidaSAP1500 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left flex items-center gap-4"
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Poliamida SAP 1500
+            {t('mangueiras.poliamida1500.title')}
             <img 
               src={seloParker}
               alt="Selo de Qualidade" 
@@ -51,19 +52,16 @@ const PoliamidaSAP1500 = () => {
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed font-bold mb-10 text-left">
-            Todas as mangueiras Mamuth são testadas em bancada de teste hidrostático de 6.900 
-            bar (100.050 psi) e emitido Certificado de Teste Hidrostático.
+            {t('mangueiras.poliamida1500.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            APLICAÇÃO Utilizadas em sistemas de limpeza, desobstrução, remoção de resíduos e preparação 
-            de superfícies com o uso de Hidrojateamento. São também conhecidas popularmente como “rabichos” ou “lanças flexíveis”;
+            {t('mangueiras.poliamida1500.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            CONSTRUÇÃO Tubo interno fabricado em Poliamida rígido envolto por camadas 
-            de espirais trançadas de fios de aço e cobertura de Poliamida;
+            {t('mangueiras.poliamida1500.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           TEMPERATURA DE TRABALHO Indicadas para operações em temperatura entre - 10°C até +70°C;
+            {t('mangueiras.poliamida1500.texto4')}
           </p>
           
          
@@ -82,7 +80,7 @@ const PoliamidaSAP1500 = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.poliamida1500.textoCard')}
             </h2>
           </div>
 

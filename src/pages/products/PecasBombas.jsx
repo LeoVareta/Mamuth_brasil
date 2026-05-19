@@ -92,7 +92,7 @@ const PaginaCategoria = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl md:text-6xl font-bold mb-6 text-white tracking-tight"
             >
-              Peças para Bombas de Hidrojato
+              {t('produtos.titlePecas')}
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0 }}
@@ -100,7 +100,7 @@ const PaginaCategoria = () => {
               transition={{ delay: 0.2 }}
               className="text-lg text-gray-300 max-w-2xl mx-auto"
             >
-              Soluções robustas e tecnologia de ponta para sua operação industrial.
+              {t('categorias.lavadoras.subtitle')}
             </motion.p>
           </div>
 
