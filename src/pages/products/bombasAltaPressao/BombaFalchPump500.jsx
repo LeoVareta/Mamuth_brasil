@@ -159,7 +159,7 @@ const BombaFalch500 = () => {
               Configurações de operação
             </h2>
             <h3 className="text-gray-800 mb-16 text-2xl md:text-2xl font-bold">
-              Velocidade e Desempenho (1800 rpm)
+              Velocidade e Desempenho (1500 rpm)
             </h3>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
