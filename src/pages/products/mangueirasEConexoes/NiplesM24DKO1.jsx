@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,10 +11,11 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import niplesM24DKO from '@/assets/images/niples-m24dko-1.png';
 
 const PoliamidaSAP1500 = () => {
+  const { t } = useTranslation(); 
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Niples M24DKO-1',  cover: niplesM24DKO, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.NiplesM24.title'),  cover: niplesM24DKO, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -41,14 +42,10 @@ const PoliamidaSAP1500 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Niples M24DKO-1
+            {t('mangueiras.NiplesM24.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Conexões, Uniões, Adaptadores e Engates, são itens necessários para unir, acoplar e adaptar mangueiras e 
-           acessórios. A MAMUTH possui uma linha completa destes itens para atender todas as necessidades. 
-           Também atendemos solicitações e fabricamos itens sob medida e encomenda. 
-           Nosso portfólio de divide em duas linhas, a limitada até 1500 BAR e a que pode ser 
-           utilizada em pressões de até 2800 Bar todos esses itens são fabricados em aço inoxidável de alta performance.
+           {t('mangueiras.NiplesM24.texto1')}
           </p>
           
          
@@ -67,7 +64,7 @@ const PoliamidaSAP1500 = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.NiplesM24.textoCard')}
             </h2>
           </div>
 

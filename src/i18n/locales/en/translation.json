@@ -499,9 +499,78 @@
       "texto2": "CONSTRUCTION: Inner tube manufactured from water-resistant synthetic rubber, wrapped with spiral-wound steel wire reinforcements, and covered with a layer of synthetic rubber resistant to ozone, weather, and heat;",
       "texto3": "WORKING TEMPERATURE: Suitable for operations within a temperature range from -40°C to +100°C. Maximum intermittent working temperature: +121°C.",
       "textoCard": "See more technical information about this product:"
+    },
+    "NiplesM24":{
+      "title": "M24DKO-1 Nipples",
+      "texto1": "Fittings, Unions, Adapters, and Couplings are essential items for joining, coupling, and adapting hoses and accessories. MAMUTH offers a complete line of these items to meet all requirements. We also accommodate custom requests and manufacture made-to-order items. Our portfolio is divided into two lines: a range limited up to 1,500 BAR, and a range that can be used at pressures up to 2,800 BAR—all of these items are manufactured from high-performance stainless steel.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "NiplesAdaptador":{
+      "title": "HP Adapter Nipples",
+      "texto1": "Fittings, Unions, Adapters, and Couplings are essential items for joining, coupling, and adapting hoses and accessories. MAMUTH offers a complete line of these items to meet all requirements. We also accommodate custom requests and manufacture made-to-order items. Our portfolio is divided into two lines: a range limited up to 1,500 BAR, and a range that can be used at pressures up to 2,800 BAR—all of these items are manufactured from high-performance stainless steel.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "luvasUniao":{
+      "title": "Union Sleeves",
+      "texto1": "Fittings designed for pumps, hoses, and hydroblasting accessories with operating pressures up to 1,500 bar (22,000 psi).",
+      "textoCard": "See more technical information about this product:"
+    },
+    "LuvasEmenda":{
+      "title": "UHP Splicing Sleeves",
+      "texto1": "Fittings designed for pumps, hoses, lances, and hydroblasting accessories with operating pressures up to 3,200 bar (46,400 psi).",
+      "textoCard": "See more technical information about this product:"
+    },
+    "Engates":{
+      "title": "Quick Couplings",
+      "texto1": "The ER12 and ER20 Quick Coupling models are designed to join hoses in a practical and secure manner. These couplings feature a threaded nut that screws together to engage the male and female ends, eliminating the need for a wrench to torque the connection—hand-tightening is sufficient.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "DistribuidoresUAP":{
+      "title": "UHP Y, T, and 90° Elbow Manifolds",
+      "texto1": "Manifolds are used to split the water flow and multiply the number of hoses to be used in Ultra-High Pressure applications.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "DistribuidoresSAP":{
+      "title": "HP Flow Manifolds",
+      "texto1": "Manifolds are used to split the water flow and multiply the number of hoses to be utilized, allowing multiple operations to occur simultaneously. With these devices, it is possible to optimize the use of water resources, directing the water to different application points in an efficient and controlled manner. Furthermore, the manifolds ensure a uniform flow distribution, which is essential for maintaining proper pressure across all outlets, resulting in higher productivity and precision in operations.",
+      "textoCard": "See more technical information about this product:"
+    }
+  },
+  "lavadoras":{
+    "50cv":{
+      "title": "Typhoon-Jet 50 HP",
+      "texto1": "Typhoon-Jet hydroblasting units are ideal for highly specific, fast-paced jobs. Equipped with a water-cooled Diesel engine, they deliver reliable power and efficiency in demanding environments. The integrated digital panel facilitates startup and allows monitoring of water and oil temperatures, battery charge, engine RPM, and other critical metrics, ensuring precise tracking during operation. Furthermore, its practical design allows for easy delivery and positioning across different locations.",
+      "trifasico": "Three-Phase",
+      "combustao": "INTERNAL COMBUSTION",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "500bar":{
+      "title": "Typhoon-Jet 500: The Complete Solution for Heavy-Duty Cleaning",
+      "texto1": "The Typhoon-Jet 500 is a high-pressure equipment engineered to deliver exceptional performance in heavy-duty cleaning across industrial, agricultural, and commercial environments. This equipment guarantees superior results in any cleaning challenge.",
+      "texto2": "Its robust and heavy-duty structure is built to withstand the most demanding requirements, ensuring durability and reliability even under the most extreme conditions. The Typhoon-Jet 500 provides stability and easy maneuverability during use, making it ideal for a variety of heavy-duty cleaning applications.",
+      "texto3": "Furthermore, the Typhoon-Jet 500 is easy to operate and maintain, providing a efficient cleaning experience without complications. With it, you can remove heavy dirt, grease, oil, and other residues quickly and effectively, saving time and effort.",
+      "texto4": "Ideal for gas stations, medium and large car washes, industries, construction companies, transportation firms, bus and tourism companies, commerce, condominiums, agricultural cleaning services, among others.",
+      "texto5": "Included Items:",
+      "texto6": "1 3/8\" high-pressure hose of 20 meters",
+      "texto7": "1 high-pressure gun Typhoon",
+      "texto8": "1 high-pressure fan nozzles Typhoon",
+      "texto9": "1 pressure regulator",
+      "texto10": "1 cart",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "350bar":{
+      "title": "Typhoon-Jet 350: The Complete Solution for Heavy-Duty Cleaning",
+      "texto1": "The Typhoon-Jet 350 is a high-pressure equipment engineered to deliver exceptional performance in heavy-duty cleaning across industrial, agricultural, and commercial environments. This equipment guarantees superior results in any cleaning challenge.",
+      "texto2": "Its robust and heavy-duty structure is built to withstand the most demanding requirements, ensuring durability and reliability even under the most extreme conditions. The Typhoon-Jet 350 provides stability and easy maneuverability during use, making it ideal for a variety of heavy-duty cleaning applications.",
+      "texto3": "Furthermore, the Typhoon-Jet 350 is easy to operate and maintain, providing a efficient cleaning experience without complications. With it, you can remove heavy dirt, grease, oil, and other residues quickly and effectively, saving time and effort.",
+      "texto4": "Ideal for gas stations, medium and large car washes, industries, construction companies, transportation firms, bus and tourism companies, commerce, condominiums, agricultural cleaning services, among others.",
+      "texto5": "Included Items:",
+      "texto6": "1 3/8\" high-pressure hose of 20 meters",
+      "texto7": "1 high-pressure gun Typhoon",
+      "texto8": "1 high-pressure fan nozzles Typhoon",
+      "texto9": "1 pressure regulator",
+      "texto10": "1 cart",
+      "textoCard": "See more technical information about this product:" 
     }
   }
-
-
-
 }

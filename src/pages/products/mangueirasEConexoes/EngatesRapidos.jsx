@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,10 +11,11 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import engatesRapidos from '@/assets/images/engates-rapidos.png';
 
 const EngatesRapidos = () => {
+  const { t } = useTranslation(); 
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Engates Rápidos',  cover: engatesRapidos, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.Engates.title'),  cover: engatesRapidos, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -41,11 +42,10 @@ const EngatesRapidos = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Engates Rápidos
+            {t('mangueiras.Engates.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Os Engates Rápido modelos ER12 e ER20 são indicados para unir mangueiras de forma prática e segura. 
-           Estes engates possuem uma porca roscada que rosqueiam e engatam os lados macho e fêmea não havendo a necessidade da utilização de uma chave para torquear, somente o aperto manual.
+           {t('mangueiras.Engates.texto1')}
           </p>
         </div>
       </section>
@@ -62,7 +62,7 @@ const EngatesRapidos = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.Engates.textoCard')}
             </h2>
           </div>
 

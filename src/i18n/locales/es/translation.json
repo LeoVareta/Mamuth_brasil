@@ -500,6 +500,78 @@
       "texto2": "CONSTRUCCIÓN: Tubo interno fabricado en caucho sintético resistente al agua, envuelto por espirales de alambre de acero y cubierto con una capa de caucho sintético resistente al ozono, a la intemperie y al calor;",
       "texto3": "TEMPERATURA DE TRABAJO: Indicadas para operaciones con temperaturas entre -40°C hasta +100°C. Temperatura máxima de trabajo intermitente: +121°C.",
       "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "NiplesM24":{
+      "title": "Nipples M24DKO-1",
+      "texto1": "Conexiones, Uniones, Adaptadores y Acoples son elementos necesarios para unir, acoplar y adaptar mangueras y accesorios. MAMUTH cuenta con una línea completa de estos artículos para satisfacer todas las necesidades. También atendemos solicitudes y fabricamos piezas a medida y bajo pedido. Nuestro portafolio se divide en dos líneas: la limitada hasta 1.500 BAR y la que se puede utilizar en presiones de hasta 2.800 BAR—todos estos artículos están fabricados en acero inoxidable de alto rendimiento.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "NiplesAdaptador":{
+      "title": "Nipples Adaptadores HP",
+      "texto1": "Conexiones, Uniones, Adaptadores y Acoples son elementos necesarios para unir, acoplar y adaptar mangueras y accesorios. MAMUTH cuenta con una línea completa de estos artículos para satisfacer todas las necesidades. También atendemos solicitudes y fabricamos piezas a medida y bajo pedido. Nuestro portafolio se divide en dos líneas: la limitada hasta 1.500 BAR y la que se puede utilizar en presiones de hasta 2.800 BAR—todos estos artículos están fabricados en acero inoxidable de alto rendimiento.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "luvasUniao":{
+      "title": "Manguitos de Unión",
+      "texto1": "Conexiones indicadas para bombas, mangueras y accesorios de hidrojet con presiones de hasta 1.500 bar (22,000 psi).",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "LuvasEmenda":{
+      "title": "Manguitos de Empalme UAP",
+      "texto1": "Conexiones indicadas para bombas, mangueras, varillas y accesorios de hidrojet con presiones de hasta 3.200 bar (46.400 psi).",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "Engates":{
+      "title": "Acoples Rápidos",
+      "texto1": "Los modelos de Acople Rápido ER12 y ER20 están indicados para unir mangueras de forma práctica y segura. Estos acoples cuentan con una tuerca roscada que enrosca y acopla los lados macho y hembra, por lo que no es necesario utilizar una llave para dar torque, siendo suficiente el apriete manual.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "DistribuidoresUAP":{
+      "title": "Distribuidores UAP en Y, T y Codo de 90°",
+      "texto1": "Los distribuidores se utilizan para dividir el flujo de agua y multiplicar el número de mangueras a utilizar en Ultraalta Presión.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "DistribuidoresSAP":{
+      "title": "Distribuidores de Flujo AP",
+      "texto1": "Los distribuidores se utilizan para dividir el flujo de agua y multiplicar el número de mangueras a utilizar, permitiendo que múltiples operaciones ocurran simultáneamente. Con estos dispositivos, es posible optimizar el uso de los recursos hídricos, direccionando el agua hacia diferentes puntos de aplicación de forma eficiente y controlada. Además, los distribuidores garantizan una distribución uniforme del flujo, lo cual es esencial para mantener la presión adecuada en todas las salidas, resultando en una mayor productividad y precisión en las operaciones.",
+      "textoCard": ""
+    }
+  },
+  "lavadoras":{
+    "50cv":{
+      "title": "Typhoon-Jet 50 cv",
+      "texto1": "Las hidrojet (hidrolimpiadoras) Typhoon-Jet son ideales para trabajos específicos y rápidos. Equipadas con un motor diésel refrigerado por agua, ofrecen una potencia confiable y eficiencia en entornos exigentes. El panel digital integrado facilita el arranque y permite la lectura de los instrumentos de temperatura del agua, aceite, carga de la batería, revoluciones del motor (RPM), entre otros, garantizando un monitoreo preciso durante la operación. Además, su diseño práctico permite una fácil entrega y posicionamiento en diferentes lugares.",
+      "trifasico": "Motor trifásico",
+      "combustao": "COMBUSTIÓN INTERNA",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "500bar":{
+      "title": "Typhoon-Jet 500: La Solución Completa para la Limpieza Pesada",
+      "texto1": "El Typhoon-Jet 500 es un equipo de alta presión diseñado para ofrecer un rendimiento excepcional en limpiezas muy pesadas en entornos industriales, agrícolas y comerciales. Este equipo garantiza resultados superiores ante cualquier desafío de limpieza.",
+      "texto2": "Su estructura robusta y resistente está construida para soportar las demandas más exigentes, garantizando durabilidad y confiabilidad incluso en las situaciones más extremas. El Typhoon-Jet 500 ofrece estabilidad y facilidad de maniobra durante su uso, lo que lo hace ideal para una variedad de aplicaciones que requieren una limpieza pesada.",
+      "texto3": "Además, el Typhoon-Jet 500 es fácil de operar y mantener, proporcionando una experiencia de limpieza eficiente y sin complicaciones. Con él, puedes eliminar suciedad pesada, grasa, aceite y otros residuos de forma rápida y efectiva, ahorrando tiempo y esfuerzo.",
+      "texto4": "Ideal para estaciones de servicio, lavadoras de autos medianas y grandes, industrias, empresas constructoras, compañías de transporte, empresas de autobuses y turismo, comercios, condominios, servicios de limpieza agrícola, entre otros.",
+      "texto5": "Artículos Incluidos:",
+      "texto6": "1 manguera de alta presión 3/8\" de 20 metros",
+      "texto7": "1 pistola de alta presión Typhoon",
+      "texto8": "1 boquilla de ventilador de alta presión Typhoon",
+      "texto9": "1 regulador de presión",
+      "texto10": "1 carrito",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "350bar":{
+      "title": "Typhoon-Jet 350: La Solución Completa para la Limpieza Pesada",
+      "texto1": "El Typhoon-Jet 350 es un equipo de alta presión diseñado para ofrecer un rendimiento excepcional en limpiezas pesadas en entornos industriales, agrícolas y comerciales. Este equipo garantiza resultados superiores ante cualquier desafío de limpieza.",
+      "texto2": "Su estructura robusta y resistente está construida para soportar las demandas más exigentes, garantizando durabilidad y confiabilidad incluso en las situaciones más extremas. El Typhoon-Jet 350 ofrece estabilidad y facilidad de maniobra durante su uso, lo que lo hace ideal para una variedad de aplicaciones que requieren una limpieza pesada.",
+      "texto3": "Además, el Typhoon-Jet 350 es fácil de operar y mantener, proporcionando una experiencia de limpieza eficiente y sin complicaciones. Con él, puedes eliminar suciedad pesada, grasa, aceite y otros residuos de forma rápida y efectiva, ahorrando tiempo y esfuerzo.",
+      "texto4": "Ideal para estaciones de servicio, lavadoras de autos medianas y grandes, industrias, empresas constructoras, compañías de transporte, empresas de autobuses y turismo, comercios, condominios, servicios de limpieza agrícola, entre otros.",
+      "texto5": "Artículos Incluidos:",
+      "texto6": "1 manguera de alta presión 3/8\" de 20 metros",
+      "texto7": "1 pistola de alta presión Typhoon",
+      "texto8": "1 boquilla de ventilador de alta presión Typhoon",
+      "texto9": "1 regulador de presión",
+      "texto10": "1 carrito",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     }
   }
 } 

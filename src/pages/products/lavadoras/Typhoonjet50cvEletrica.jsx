@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import VideoSection from "@/components/VideoSection";
@@ -19,15 +19,16 @@ import iconCombustao from "@/assets/images/icon-combustao.svg";
 import iconTrifasico from "@/assets/images/icon-trifasico.svg";
 
 const Typhoon50cvEletrica = () => {
+  const { t } = useTranslation(); 
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-      { id: 1, title: 'Typhoon Jet 50 CV', artist: 'Elétrica', cover: typhoonJet50cv, color: '#FF5101' },
-      { id: 2, title: 'Typhoon Jet 50 CV', artist: 'Elétrica', cover: typhoonJet50cv2, color: '#FF5101' },
-      { id: 3, title: 'Typhoon Jet 50 CV', artist: 'Elétrica', cover: typhoonJet50cv3, color: '#FF5101' },
-      { id: 4, title: 'Typhoon Jet 50 CV', artist: 'Combustão', cover:typhoonJet50cvDiesel, color: '#FF5101' },
-      { id: 5, title: 'Typhoon Jet 50 CV', artist: 'Combustão', cover:typhoonJet50cvDiesel2, color: '#FF5101' }
+      { id: 1, title: t('lavadoras.50cv.title'), artist: 'Elétrica', cover: typhoonJet50cv, color: '#FF5101' },
+      { id: 2, title: t('lavadoras.50cv.title'), artist: 'Elétrica', cover: typhoonJet50cv2, color: '#FF5101' },
+      { id: 3, title: t('lavadoras.50cv.title'), artist: 'Elétrica', cover: typhoonJet50cv3, color: '#FF5101' },
+      { id: 4, title: t('lavadoras.50cv.title'), artist: 'Combustão', cover:typhoonJet50cvDiesel, color: '#FF5101' },
+      { id: 5, title: t('lavadoras.50cv.title'), artist: 'Combustão', cover:typhoonJet50cvDiesel2, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -53,15 +54,11 @@ const Typhoon50cvEletrica = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Typhoon-Jet 50cv
+            {t('lavadoras.50cv.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            As hidrojateadoras Typhoon-Jet são ideais para trabalhos que são exclusivos e rápidos. 
-            Equipadas com um motor Diesel refrigerado à água, elas oferecem potência confiável e eficiência em ambientes
-            exigentes. O painel digital integrado facilita a partida e permite a leitura dos instrumentos de temperatura
-            da água, óleo, carga da bateria, rotações do motor, entre outros, garantindo um monitoramento preciso durante 
-            a operação. Além disso, seu design prático permite fácil entrega e posicionamento em diferentes locais.
+            {t('lavadoras.50cv.texto1')}
           </p>
           
         </div>
@@ -79,7 +76,7 @@ const Typhoon50cvEletrica = () => {
             >i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('lavadoras.50cv.textoCard')}
             </h2>
           </div>
         <div className="w-full my-12 ">

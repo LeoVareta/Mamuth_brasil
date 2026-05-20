@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
 import CTASection from "@/components/CTASection";
@@ -15,12 +15,13 @@ import iconCombustao from "@/assets/images/icon-combustao.svg"
 import iconTrifasico from "@/assets/images/icon-trifasico.svg"
 
 const Typhoon350trifasico = () => {
+  const { t } = useTranslation(); 
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-    { id: 1, title: 'Typhoon Jet 350', artist: 'Trifásico', cover: typhoonjet350Trifasico, color: '#FF5101' },
-    { id: 2, title: 'Typhoon Jet 350', artist: 'Combustão', cover: typhoonjet350Combustao, color: '#FF5101' }
+    { id: 1, title: t('lavadoras.350bar.title'), artist: 'Trifásico', cover: typhoonjet350Trifasico, color: '#FF5101' },
+    { id: 2, title: t('lavadoras.350bar.title'), artist: 'Combustão', cover: typhoonjet350Combustao, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -46,50 +47,42 @@ const Typhoon350trifasico = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Typhoon-Jet 350: A Solução Completa para Limpeza Pesada
+            {t('lavadoras.350bar.title')}
           </h2>  
           <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
-           O Typhoon-Jet 350 é um equipamento de alta pressão projetado para oferecer desempenho excepcional 
-           em limpezas pesadas em ambientes industriais, agrícolas e comerciais. Este equipamento garante resultados superiores em qualquer desafio de limpeza.
+            {t('lavadoras.350bar.texto1')}
           </p>
           <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
-          Sua estrutura robusta e resistente é construída para suportar as demandas mais exigentes, garantindo durabilidade e 
-          confiabilidade.O Typhoon-Jet 350 oferece
-           estabilidade e facilidade de manobra durante o uso, tornando-o ideal para uma variedade de aplicações.
+            {t('lavadoras.350bar.texto2')}
           </p>
           <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
-            Além disso, o Typhoon-Jet 350 é fácil de operar e manter, proporcionando uma experiência
-             de limpeza eficiente e sem complicações. Com ele, você pode remover sujeira
-              pesada, graxa, óleo e outros resíduos de forma rápida e eficaz, economizando tempo e esforço.
+            {t('lavadoras.350bar.texto3')}
           </p>
           <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
-            Ideal para postos de gasolina, médios e grandes lava-rápidos, indústrias, construtoras, 
-            transportadoras, empresas de ônibus e turismo, comércios, condomínios, limpadoras agropecuárias, entre outros.
-
-
+            {t('lavadoras.350bar.texto4')}
           </p>
           <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
-            Itens Inclusos: <br/>
+           {t('lavadoras.350bar.texto5')}
+          </p>
+          <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
+            {t('lavadoras.350bar.texto6')}<br/>
 
 
 
-            1 mangueira 3/8 de 20 metros de alta pressão <br/><br/>
+            {t('lavadoras.350bar.texto7')} <br/><br/>
 
 
 
-            1 pistola de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.350bar.texto8')} <br/><br/>
 
 
 
-            1 bico leque de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.350bar.texto9')} <br/><br/>
 
 
 
-            1 regulador de pressão <br/><br/>
 
-
-
-            1 carrinho 
+            {t('lavadoras.350bar.texto10')}
           </p>
         </div>
       </section>
@@ -117,7 +110,7 @@ const Typhoon350trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Trifásico</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.350bar.trifasico')}</span>
             </div>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
@@ -156,7 +149,7 @@ const Typhoon350trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Combustão</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.350bar.combustao')}</span>
             </div>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>

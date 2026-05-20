@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -12,9 +12,10 @@ import distribuidoresUap from '@/assets/images/distribuidores-uap-em-y.png';
 
 const DistribuidoresUAP = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); 
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Distribuidores UAP em Y, T e cotovelo em 90°',  cover: distribuidoresUap, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.DistribuidoresUap.title'),  cover: distribuidoresUap, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -40,10 +41,10 @@ const DistribuidoresUAP = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Distribuidores UAP em Y, T e cotovelo 90°
+            {t('mangueiras.DistribuidoresUap.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Distribuidores são usados para dividir o fluxo de água e multiplicar ou número de mangueiras a serem utilizadas em Ultra Alta Pressão.
+            {t('mangueiras.DistribuidoresUap.texto1')}
           </p>
         </div>
       </section>
@@ -60,7 +61,7 @@ const DistribuidoresUAP = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.DistribuidoresUap.textoCard')}
             </h2>
           </div>
 

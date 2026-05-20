@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -12,9 +12,10 @@ import distribuidorFluxo from '@/assets/images/distribuidores-fluxo-sap.png'
 
 const DistribuidoresFluxoSAP = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); 
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Distribuidor de Fluxo SAP',  cover: distribuidorFluxo, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.DistribuidoresSAP.title'),  cover: distribuidorFluxo, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -41,14 +42,10 @@ const DistribuidoresFluxoSAP = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Distribuidores de Fluxo SAP
+            {t('mangueiras.DistribuidoresSAP.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Distribuidores são utilizados para dividir o fluxo de água e multiplicar o número de mangueiras a serem utilizadas, 
-           permitindo que múltiplas operações ocorram simultaneamente. Com esses dispositivos, é possível otimizar o uso 
-           de recursos hídricos, direcionando a água para diferentes pontos de aplicação de forma eficiente e controlada. 
-           Além disso, os distribuidores garantem uma distribuição uniforme do fluxo, essencial para a manutenção da pressão 
-           adequada em todas as saídas, o que resulta em maior produtividade e detalhes nas operações.
+           {t('mangueiras.DistribuidoresSAP.texto1')}
           </p>
         </div>
       </section>
@@ -65,7 +62,7 @@ const DistribuidoresFluxoSAP = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.DistribuidoresSAP.textoCard')}
             </h2>
           </div>
 

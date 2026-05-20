@@ -17,8 +17,8 @@ const PoliamidaSAP1500 = () => {
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Poliamida UAP', cover: poliamidaUap28002, color: '#FF5101' },
-        { id: 2, title: 'Poliamida UAP', cover: poliamidaUap2800, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.poliamida2800.title'), cover: poliamidaUap28002, color: '#FF5101' },
+        { id: 2, title: t('mangueiras.poliamida2800.title'), cover: poliamidaUap2800, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo

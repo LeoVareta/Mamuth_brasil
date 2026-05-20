@@ -17,8 +17,8 @@ const MangueiraWaterblast = () => {
   const [aberto, setAberto] = useState(null);
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Mangueira Waterblast',  cover: mangueiraWaterblast2, color: '#FF5101' },
-        { id: 2, title: 'Mangueira Waterblast',  cover: mangueiraWaterblast, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.waterblast.title'),  cover: mangueiraWaterblast2, color: '#FF5101' },
+        { id: 2, title: t('mangueiras.waterblast.title'),  cover: mangueiraWaterblast, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo

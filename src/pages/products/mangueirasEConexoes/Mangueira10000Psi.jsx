@@ -16,7 +16,7 @@ const Mangueira10000PSI = () => {
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Mangueira até 10.000 psi',  cover: mangueira10kPsi, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.10000psi.title'),  cover: mangueira10kPsi, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo

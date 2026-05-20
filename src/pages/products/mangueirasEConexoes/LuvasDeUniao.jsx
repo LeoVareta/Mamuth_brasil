@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -12,9 +12,10 @@ import luvasUniao from '@/assets/images/luvas-de-uniao.png';
 
 const LuvasDeUniao = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); 
    const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Luvas de União',  cover: luvasUniao, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.luvasUniao.title'),  cover: luvasUniao, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -41,10 +42,10 @@ const LuvasDeUniao = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Luvas de União
+            {t('mangueiras.luvasUniao.title')}
           </h2>
-          <p className="text-lg tex-gray-600 leading-relaxed mb-10 text-left">
-           Conexões indicadas para bombas, mangueiras e acessórios de hidrojateamento com pressão de até 1.500 bar (22.000 psi)
+          <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
+            {t('mangueiras.luvasUniao.texto1')}
           </p>
         </div>
       </section>
@@ -61,7 +62,7 @@ const LuvasDeUniao = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('mangueiras.luvasUniao.textoCard')}
             </h2>
           </div>
 
