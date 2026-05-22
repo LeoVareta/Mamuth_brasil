@@ -28,7 +28,7 @@ const PaginaCategoria = () => {
       description: t('categorias.pecasBombas.subtitlePecas'),
       image: flow, 
       category: 'Categoria Principal',
-      buttonText: 'Fale com um consultor'
+      buttonText: t('categorias.pecasBombas.titleBtn')
     },
      {
       name: t('categorias.pecasBombas.titleFalch'),
@@ -36,7 +36,7 @@ const PaginaCategoria = () => {
       description: t('categorias.pecasBombas.subtitlePecas'),
       image: falch, 
       category: 'Categoria Principal',
-      buttonText: 'Fale com um consultor'
+      buttonText: t('categorias.pecasBombas.titleBtn')
     },
     {
       name: t('categorias.pecasBombas.titleNlb'),
@@ -44,7 +44,7 @@ const PaginaCategoria = () => {
       description: t('categorias.pecasBombas.subtitlePecas'),
       image:  imgNlb, 
       category: 'Categoria Principal',
-      buttonText: 'Fale com um consultor'
+      buttonText: t('categorias.pecasBombas.titleBtn')
     },
     {
       name: t('categorias.pecasBombas.titleKamat'),
@@ -52,7 +52,7 @@ const PaginaCategoria = () => {
       description: t('categorias.pecasBombas.subtitlePecas'),
       image: sedeDuplaUAP, 
       category: 'Categoria Principal',
-      buttonText: 'Fale com um consultor'
+      buttonText: t('categorias.pecasBombas.titleBtn')
     },
     {
       name: t('categorias.pecasBombas.titleWoma'),
@@ -60,7 +60,7 @@ const PaginaCategoria = () => {
       description: t('categorias.pecasBombas.subtitlePecas'),
       image: pistaoMetalSAP, 
       category: 'Categoria Principal',
-      buttonText: 'Fale com um consultor'
+      buttonText: t('categorias.pecasBombas.titleBtn')
     },
     {
       name: t('categorias.pecasBombas.titleNacionais'),
@@ -68,7 +68,7 @@ const PaginaCategoria = () => {
       description: t('categorias.pecasBombas.subtitlePecas'),
       image: pistaoMetalUAP, 
       category: 'Categoria Principal',
-      buttonText: 'Fale com um consultor'
+      buttonText: t('categorias.pecasBombas.titleBtn')
     }
   ];
 

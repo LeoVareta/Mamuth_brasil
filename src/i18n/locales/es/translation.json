@@ -462,7 +462,8 @@
       "titleKamat": "Piezas para Bombas KAMAT",
       "titleWoma": "Piezas para Bombas WOMA",
       "titleNacionais": "Piezas para Bombas Nacionales",
-      "subtitlePecas": "MAMUTH ofrece una línea completa de repuestos para Bombas de Alta y Ultraalta Presión, que abarca diversas marcas y modelos disponibles en el mercado. Nuestras piezas são de fabricación propia, lo que nos permite garantizar altos estándares de calidad y durabilidad."
+      "subtitlePecas": "MAMUTH ofrece una línea completa de repuestos para Bombas de Alta y Ultraalta Presión, que abarca diversas marcas y modelos disponibles en el mercado. Nuestras piezas são de fabricación propia, lo que nos permite garantizar altos estándares de calidad y durabilidad.",
+      "titleBtn": "Hable con un consultor"
     }
 
   },
@@ -571,6 +572,40 @@
       "texto8": "1 boquilla de ventilador de alta presión Typhoon",
       "texto9": "1 regulador de presión",
       "texto10": "1 carrito",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "200bar":{
+      "title": "Typhoon-Jet 200 BAR (2.900 PSI)",
+      "texto1": "El Typhoon-Jet 200 es un equipo de alta presión diseñado para ofrecer un rendimiento excepcional en limpiezas pesadas en entornos industriales, agrícolas y comerciales. Este equipo garantiza resultados superiores ante cualquier desafío de limpieza.",
+      "texto2": "Su estructura robusta y resistente está construida para soportar las demandas más exigentes, garantizando durabilidad y confiabilidad incluso en las situaciones más extremas. El Typhoon-Jet 200 ofrece estabilidad y facilidad de maniobra durante su uso, lo que lo hace ideal para una variedad de aplicaciones que requieren una limpieza pesada.",
+      "texto3": "Además, el Typhoon-Jet 200 es fácil de operar y mantener, proporcionando una experiencia de limpieza eficiente y sin complicaciones. Con él, puedes eliminar suciedad pesada, grasa, aceite y otros residuos de forma rápida y efectiva, ahorrando tiempo y esfuerzo.",
+      "texto4": "Ideal para estaciones de servicio, lavadoras de autos medianas y grandes, industrias, empresas constructoras, compañías de transporte, empresas de autobuses y turismo, comercios, condominios, servicios de limpieza agrícola, entre otros.",
+      "texto5": "Artículos Incluidos:",
+      "texto6": "1 manguera de alta presión 3/8\" de 20 metros",
+      "texto7": "1 pistola de alta presión Typhoon",
+      "texto8": "1 boquilla de ventilador de alta presión Typhoon",
+      "texto9": "1 regulador de presión",
+      "texto10": "1 carrito",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "170bar":{
+      "title": "Typhoon-Jet 170 BAR (2.500 PSI)",
+      "texto1": "El Typhoon-Jet 170 es un equipo de alta presión diseñado para ofrecer un rendimiento excepcional en limpiezas moderadas en entornos industriales, agrícolas y comerciales. Este equipo garantiza resultados superiores ante cualquier desafío de limpieza.",
+      "texto2": "Su estructura robusta y resistente está construida para soportar las demandas más exigentes, garantizando durabilidad y confiabilidad incluso en las situaciones más extremas. El Typhoon-Jet 170 ofrece estabilidad y facilidad de maniobra durante su uso, lo que lo hace ideal para una variedad de aplicaciones que requieren una limpieza moderada.",
+      "texto3": "Además, el Typhoon-Jet 170 es fácil de operar y mantener, proporcionando una experiencia de limpieza eficiente y sin complicaciones. Con él, puedes eliminar suciedad moderada, grasa, aceite y otros residuos de forma rápida y efectiva, ahorrando tiempo y esfuerzo.",
+      "texto4": "Ideal para estaciones de servicio, lavadoras de autos medianas y grandes, industrias, empresas constructoras, compañías de transporte, empresas de autobuses y turismo, comercios, condominios, servicios de limpieza agrícola, entre otros.",
+      "texto5": "Artículos Incluidos:",
+      "texto6": "1 manguera de alta presión 3/8\" de 20 metros",
+      "texto7": "1 pistola de alta presión Typhoon",
+      "texto8": "1 boquilla de ventilador de alta presión Typhoon",
+      "texto9": "1 regulador de presión",
+      "texto10": "1 carrito",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "hot":{
+      "title": "Typhoon-Jet Hot",
+      "texto1": "La Typhoon-Jet Hot es una hidrolimpiadora industrial de alta presión con agua caliente, desarrollada para entregar un alto rendimiento, eficiencia y confiabilidad operacional en aplicaciones de limpieza pesada. Con una temperatura de trabajo de hasta 100 °C, el equipo potencia la eliminación de residuos grasos, grasas, incrustaciones y suciedades difíciles, uniendo la fuerza de la alta presión a la eficiencia del agua caliente.",
+      "texto2": "Su construcción robusta, aliada a la bomba tríplex industrial, garantiza una mayor durabilidad, estabilidad de operación y un excelente rendimiento en uso continuo. Disponible en versiones a gasolina y eléctrica, la Typhoon-Jet Hot ofrece versatilidad operacional, manteniendo una presión de hasta 280 bar (4.000 PSI) y un caudal de 15 L/min, con un conjunto diseñado para proporcionar productividad, resistencia y facilidad en el día a día.",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     }
   }

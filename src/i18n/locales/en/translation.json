@@ -462,7 +462,8 @@
       "titleKamat": "Pump Parts Kamat",
       "titleWoma": "Pump Parts Woma",
       "titleNacionais": "Parts for Domestic Pumps",
-      "subtitlePecas": "MAMUTH offers a complete line of parts for High and Ultra-High Pressure Pumps, covering a wide range of brands and models available on the market. Our parts are of our own manufacture, which allows us to guarantee high standards of quality and durability."
+      "subtitlePecas": "MAMUTH offers a complete line of parts for High and Ultra-High Pressure Pumps, covering a wide range of brands and models available on the market. Our parts are of our own manufacture, which allows us to guarantee high standards of quality and durability.",
+      "titleBtn": "Talk to a consultant"
     }
   },
   "btnCTA":{
@@ -570,6 +571,40 @@
       "texto8": "1 high-pressure fan nozzles Typhoon",
       "texto9": "1 pressure regulator",
       "texto10": "1 cart",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "200bar":{
+      "title": "Typhoon-Jet 200 BAR (2,900 PSI)",
+      "texto1": "The Typhoon-Jet 200 is a high-pressure equipment engineered to deliver exceptional performance in heavy-duty cleaning across industrial, agricultural, and commercial environments. This equipment guarantees superior results in any cleaning challenge.",
+      "texto2": "Its robust and heavy-duty structure is built to withstand the most demanding requirements, ensuring durability and reliability. The Typhoon-Jet 200 provides stability and easy maneuverability during use, making it ideal for a variety of applications.",
+      "texto3": "Furthermore, the Typhoon-Jet 200 is easy to operate and maintain, delivering an efficient and hassle-free cleaning experience. With it, you can remove heavy dirt, grease, oil, and other residues quickly and effectively, saving time and effort.",
+      "texto4": "Ideal for gas stations, medium and large car washes, industries, construction companies, transportation firms, bus and tourism companies, commerce, condominiums, agricultural cleaning services, among others.",
+      "texto5": "Included Items:",
+      "texto6": "1 3/8\" high-pressure hose of 20 meters",
+      "texto7": "1 high-pressure gun Typhoon",
+      "texto8": "1 high-pressure fan nozzles Typhoon",
+      "texto9": "1 pressure regulator",
+      "texto10": "1 cart",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "170bar":{
+      "title": "Typhoon-Jet 170: The Complete Solution for Moderate Cleaning",
+      "texto1": "The Typhoon-Jet 170 is a high-pressure equipment engineered to deliver exceptional performance in moderate-duty cleaning across industrial, agricultural, and commercial environments. This equipment guarantees superior results in any cleaning challenge.",
+      "texto2": "Its robust and heavy-duty structure is built to withstand the most demanding requirements, ensuring durability and reliability. The Typhoon-Jet 170 provides stability and easy maneuverability during use, making it ideal for a variety of applications.",
+      "texto3": "Furthermore, the Typhoon-Jet 170 is easy to operate and maintain, delivering an efficient and hassle-free cleaning experience. With it, you can remove moderate dirt, grease, oil, and other residues quickly and effectively, saving time and effort.",
+      "texto4": "Ideal for gas stations, medium and large car washes, industries, construction companies, transportation firms, bus and tourism companies, commerce, condominiums, agricultural cleaning services, among others.",
+      "texto5": "Included Items:",
+      "texto6": "1 3/8\" high-pressure hose of 20 meters",
+      "texto7": "1 high-pressure gun Typhoon",
+      "texto8": "1 high-pressure fan nozzles Typhoon",
+      "texto9": "1 pressure regulator",
+      "texto10": "1 cart",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "hot":{
+      "title": "Typhoon-Jet Hot",
+      "texto1": "The Typhoon-Jet Hot is a industrial hot water high-pressure washer, engineered to deliver high performance, efficiency, and operational reliability in heavy-duty cleaning applications. With an operating temperature of up to 100 °C, the equipment maximizes the removal of oily residues, grease, encrustations, and stubborn dirt by combining the power of high pressure with the efficiency of hot water.",
+      "texto2": "Its robust construction, paired with an industrial triplex pump, ensures greater durability, operational stability, and excellent performance in continuous use. Available in gasoline and electric versions, the Typhoon-Jet Hot offers operational versatility, maintaining pressures up to 280 bar (4,000 PSI) and a flow rate of 15 L/min, featuring an assembly designed to provide productivity, resistance, and daily convenience.",
       "textoCard": "See more technical information about this product:" 
     }
   }
