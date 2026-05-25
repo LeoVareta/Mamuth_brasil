@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -15,11 +15,12 @@ import iconTrifasico from "@/assets/images/icon-trifasico.svg";
 
 const TyphoonHot = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); 
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-      { id: 1, title: 'Typhoon Jet 50 CV', artist: 'Elétrica', cover: typhoonHotEletrica, color: '#FF5101' },
-      { id: 2, title: 'Typhoon Jet 50 CV', artist: 'Combustão', cover: typhoonHotCombustao, color: '#FF5101' },
+      { id: 1, title: t('lavadoras.hot.title'), artist: 'Elétrica', cover: typhoonHotEletrica, color: '#FF5101' },
+      { id: 2, title: t('lavadoras.hot.title'), artist: 'Combustão', cover: typhoonHotCombustao, color: '#FF5101' },
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -45,22 +46,15 @@ const TyphoonHot = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Typhoon-Jet Hot
+            {t('lavadoras.hot.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            A Typhoon-Jet Hot é uma hidrolavadora industrial de alta pressão com água aquecida, desenvolvida para
-            entregar alto desempenho, eficiência e confiabilidade operacional em aplicações de limpeza pesada. 
-            Com temperatura de trabalho de até 100 °C, o equipamento potencializa a remoção de resíduos oleosos, 
-            graxas, incrustações e sujeiras de difícil remoção, unindo a força da alta pressão à eficiência da água quente.
+            {t('lavadoras.hot.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Sua construção robusta, aliada à bomba triplex industrial, garante maior durabilidade, estabilidade de operação 
-            e excelente performance no uso contínuo. Disponível nas versões gasolina e elétrica, a Typhoon-Jet Hot 
-            oferece versatilidade operacional, mantendo pressão de até 280 bar (4.000 PSI) e vazão de 15 L/min, com 
-            um conjunto projetado para proporcionar produtividade, resistência e facilidade no dia a dia.
-          </p>
-          
+            {t('lavadoras.hot.texto2')}
+          </p>  
         </div>
       </section>
 
@@ -76,7 +70,7 @@ const TyphoonHot = () => {
             >i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('lavadoras.hot.textoCard')}
             </h2>
           </div>
 

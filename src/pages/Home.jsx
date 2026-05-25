@@ -42,6 +42,7 @@ import paraguai from "@/assets/images/bandeira-do-paraguai.png";
 import peru from "@/assets/images/bandeira-do-peru.png";
 import americaDoSul from "@/assets/images/mapa_atuacao_mamuth_sem_fundo.png";
 import bgMapa from "@/assets/images/bg-mapa.png";
+import videobg from "@/assets/images/video-bghome.mp4";
 import path from 'node:path';
 
 const Home = () => {
@@ -257,7 +258,7 @@ const Home = () => {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="https://lightblue-fish-634065.hostingersite.com/wp-content/uploads/2025/12/Video-Mamuth-curto-banner.mp4" type="video/mp4" />
+            <source src={videobg} />
             Seu navegador não suporta a tag de vídeo.
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>

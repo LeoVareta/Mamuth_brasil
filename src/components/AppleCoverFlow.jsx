@@ -14,16 +14,35 @@ import './CoverFlowStyles.css';
 
 const AppleCoverFlow = ({ slides }) => {
   const swiperRef = useRef(null);
+  const hasSlides = Array.isArray(slides);
 
   useEffect(() => {
-    Fancybox.bind("[data-fancybox='gallery']", {});
-    
     return () => {
       Fancybox.destroy();
     };
   }, []);
 
-  const hasSlides = Array.isArray(slides);
+  // 1. Mudamos a função para receber a instância do Swiper em vez do evento do React
+  const handleSwiperClick = (swiper) => {
+    // swiper.clickedIndex nos dá exatamente o número do slide que foi clicado
+    const clickedIndex = swiper.clickedIndex;
+
+    // Se o usuário clicou no espaço em branco (fora do slide), o index será undefined, então ignoramos
+    if (typeof clickedIndex === 'undefined' || clickedIndex === null) return;
+    if (!hasSlides || !slides[clickedIndex]) return;
+
+    // Criamos a galeria
+    const galleryItems = slides.map(slide => ({
+      src: slide.cover,
+      type: "image",
+      caption: `${slide.title} - ${slide.artist}`
+    }));
+
+    // Abrimos o Fancybox no index capturado pelo Swiper
+    Fancybox.show(galleryItems, {
+      startIndex: clickedIndex,
+    });
+  };
 
   return (
     <div className="coverflow-container">
@@ -31,6 +50,8 @@ const AppleCoverFlow = ({ slides }) => {
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
+        // 2. O SEGREDO ESTÁ AQUI: Passamos a função para o onClick nativo do Swiper
+        onClick={handleSwiperClick}
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
@@ -55,33 +76,20 @@ const AppleCoverFlow = ({ slides }) => {
           <SwiperSlide 
             key={album.id || index} 
             className="swiper-slide-custom"
-            onClick={(e) => {
-              if (swiperRef.current) {
-                const isActive = e.currentTarget.classList.contains('swiper-slide-active');
-                
-                if (!isActive) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  swiperRef.current.slideTo(index);
-                }
-              }
-            }}
+            // 3. Removemos o onClick do React daqui, o Swiper já está cuidando disso!
           >
             <div className="album-wrapper">
-              
-              {/* Agora o data-caption passa apenas o título do álbum/produto */}
-              <a 
-                href={album.cover} 
-                data-fancybox="gallery" 
-                data-caption={album.title}
-                style={{ display: 'block', width: '100%', height: '100%' }}
+              <div 
+                className="album-link"
+                // Adicionado cursor pointer para manter o feedback visual do mouse
+                style={{ display: 'block', width: '100%', height: '100%', cursor: 'pointer' }}
               >
                 <img 
                   src={album.cover} 
                   alt={album.title} 
                   className="album-image" 
                 />
-              </a>
+              </div>
               
               <div className="album-info">
                 <h3>{album.title}</h3>
