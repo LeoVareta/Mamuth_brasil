@@ -98,41 +98,40 @@ const RoboMagnetico = () => {
               style={{ backgroundColor: '#FF6B0A' }}
               > i
             </div>
-          <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-            {t('robo.magnetico.textoCard')}
-          </h2>
+            <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
+              {t('robo.magnetico.textoCard')}
+            </h2>
           </div>
 
-          {/* Removemos o overflow-x-auto e a largura mínima da tabela */}
-          {/* Primeira Div: Espaço grande no topo e menor embaixo */}
           <div className="w-full my-12">
-            <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
+            {/* ADICIONADO: table-fixed para forçar a distribuição correta e ocupar toda a largura */}
+            <table className="w-full table-fixed border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão de trabalho</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Força de fixação</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Alimentação elétrica</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Jet cap</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Braço articulado</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Grau de proteção</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Manutenção/ vida útil</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso do transportador</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso com jet cap</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso com braço articulado</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Pressão de trabalho</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Força de fixação</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Alimentação elétrica</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Jet cap</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Braço articulado</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Grau de proteção</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Manutenção/ vida útil</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Peso do transportador</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Peso com jet cap</th>
+                  <th className="py-4 px-2 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Peso com braço articulado</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">500 a 3000 bar</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">600 Kg</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">400 V/ 50/60 Hz/ 16 A</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">360 mm</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">260 a 1200 mm</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">IP 65 / 55</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">24 meses /25 anos</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">70 kg</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">106 kg</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">94 kg</td>
+                  <td className="py-6 px-2 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-sm text-center italic break-words">500 a 3000 bar</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">600 Kg</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">400 V/ 50/60 Hz/ 16 A</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">360 mm</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">260 a 1200 mm</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">IP 65 / 55</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">24 meses /25 anos</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">70 kg</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">106 kg</td>
+                  <td className="py-6 px-2 text-[10px] sm:text-xs md:text-sm text-center break-words">94 kg</td>
                 </tr>
               </tbody>
             </table>

@@ -24,21 +24,19 @@ const AppleCoverFlow = ({ slides }) => {
 
   // 1. Mudamos a função para receber a instância do Swiper em vez do evento do React
   const handleSwiperClick = (swiper) => {
-    // swiper.clickedIndex nos dá exatamente o número do slide que foi clicado
     const clickedIndex = swiper.clickedIndex;
 
-    // Se o usuário clicou no espaço em branco (fora do slide), o index será undefined, então ignoramos
     if (typeof clickedIndex === 'undefined' || clickedIndex === null) return;
     if (!hasSlides || !slides[clickedIndex]) return;
 
-    // Criamos a galeria
+    // Criamos a galeria tratando o campo artist caso ele seja undefined/null
     const galleryItems = slides.map(slide => ({
       src: slide.cover,
       type: "image",
-      caption: `${slide.title} - ${slide.artist}`
+      // SEGUNDO CORRIGIDO: Se houver artista, mostra "Titulo - Artista", senão mostra apenas o "Titulo"
+      caption: slide.artist ? `${slide.title} - ${slide.artist}` : slide.title
     }));
 
-    // Abrimos o Fancybox no index capturado pelo Swiper
     Fancybox.show(galleryItems, {
       startIndex: clickedIndex,
     });

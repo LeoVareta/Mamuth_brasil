@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -109,6 +110,18 @@ import FeiraNavalShore from '@/pages/noticias/feira-navalshore';
 import { Toaster } from '@/components/ui/toaster';
 
 function App() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/cb60296b-9ffe-485a-8749-51c5bd5b1041-loader.js';
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <BrowserRouter>
     <ScrollToTop/>

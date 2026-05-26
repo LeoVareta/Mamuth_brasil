@@ -1,6 +1,7 @@
 {
   "home": {
-    "title": "Calidad de Peso, Fortaleza Garantizada.",
+    "title1": "Calidad de Peso, ",
+    "title2": "Fortaleza Garantizada.",
     "subtitle": "Con años de experiencia, somos especialistas en el suministro de mangueras robustas de alta presión, ideales para aplicaciones en la industria pesada. Nuestros productos garantizan seguridad y eficiencia en diversos sectores, como el naval y el siderúrgico.",
     "cta": "Hablar con un Especialista",
     "titleMapa": "Con presencia en toda América Latina, Mamuth combina experiencia, excelencia y conocimiento técnico para entregar soluciones robustas, seguras y de alto rendimiento para operaciones industriales de alta complejidad.",
@@ -535,7 +536,7 @@
     "DistribuidoresSAP":{
       "title": "Distribuidores de Flujo AP",
       "texto1": "Los distribuidores se utilizan para dividir el flujo de agua y multiplicar el número de mangueras a utilizar, permitiendo que múltiples operaciones ocurran simultáneamente. Con estos dispositivos, es posible optimizar el uso de los recursos hídricos, direccionando el agua hacia diferentes puntos de aplicación de forma eficiente y controlada. Además, los distribuidores garantizan una distribución uniforme del flujo, lo cual es esencial para mantener la presión adecuada en todas las salidas, resultando en una mayor productividad y precisión en las operaciones.",
-      "textoCard": ""
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
     }
   },
   "lavadoras":{
@@ -543,7 +544,7 @@
       "title": "Typhoon-Jet 50 cv",
       "texto1": "Las hidrojet (hidrolimpiadoras) Typhoon-Jet son ideales para trabajos específicos y rápidos. Equipadas con un motor diésel refrigerado por agua, ofrecen una potencia confiable y eficiencia en entornos exigentes. El panel digital integrado facilita el arranque y permite la lectura de los instrumentos de temperatura del agua, aceite, carga de la batería, revoluciones del motor (RPM), entre otros, garantizando un monitoreo preciso durante la operación. Además, su diseño práctico permite una fácil entrega y posicionamiento en diferentes lugares.",
       "trifasico": "Motor trifásico",
-      "combustao": "COMBUSTIÓN INTERNA",
+      "combustao": "Combustión Interna",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     },
     "500bar":{

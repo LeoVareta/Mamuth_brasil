@@ -273,7 +273,7 @@ const Home = () => {
           >
 
             <h1 className="text-5xl md:text-7xl !leading-normal font-bold mb-6">
-              {t('home.title')}
+              {t('home.title1')} <br/> {t('home.title2')}
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               {t('home.subtitle')}

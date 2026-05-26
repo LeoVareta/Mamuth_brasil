@@ -1,6 +1,7 @@
 {
   "home": {
-    "title": "Qualidade de Peso, Garantia de força",
+    "title1": "Qualidade de Peso, ",
+    "title2": "Garantia de força",
     "subtitle": "Com anos de experiência, somos especialistas em fornecer mangueiras robustas de alta pressão, ideais para aplicações na indústria pesada. Nossos produtos garantem segurança e eficiência em diversos setores, como naval e siderúrgico.",
     "cta": "Fale com um Consultor",
     "titleMapa": "Com presença em toda a América Latina, a Mamuth combina experiência, excelência e conhecimento técnico para entregar soluções robustas, seguras e de alta performance para operações industriais de alta complexidade.",
@@ -692,6 +693,14 @@
       "texto1": "O Climb Rob 250 é um robô magnético desenvolvido para hidrojateamento de alta e ultra-alta pressão em superfícies metálicas verticais, horizontais e inclinadas. Sua fixação magnética garante estabilidade durante a operação, permitindo maior segurança, produtividade e precisão na limpeza, remoção de revestimentos e preparação de superfícies.",
       "texto2": "Projetado para aplicações industriais exigentes, o equipamento reduz a necessidade de trabalho manual em altura, melhora a ergonomia da operação e permite controle remoto do processo, proporcionando maior segurança ao operador e melhor desempenho em comparação à pistola manual.",
       "textoCard": "Veja mais informações técnicas sobre este produto:" 
+    }
+  },
+  "bombas":{
+    "falch125":{
+      "title": "",
+      "texto1": "",
+      "texto2": "",
+      "texto3": ""
     }
   }
 

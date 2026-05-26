@@ -1,6 +1,7 @@
 {
   "home": {
-    "title": "Heavyweight Quality, Guaranteed Strength.",
+    "title1": "Heavyweight Quality, ",
+    "title2": "Guaranteed Strength.",
     "subtitle": "With years of experience, we specialize in providing robust high-pressure hoses, ideal for heavy industry applications. Our products guarantee safety and efficiency across various sectors, such as naval and steel industries.",
     "cta": "Talk to a Specialist",
     "titleMapa":"With a presence throughout Latin America, Mamuth combines experience, excellence, and technical expertise to deliver robust, safe, and high-performance solutions for highly complex industrial operations.",
@@ -542,7 +543,7 @@
       "title": "Typhoon-Jet 50 HP",
       "texto1": "Typhoon-Jet hydroblasting units are ideal for highly specific, fast-paced jobs. Equipped with a water-cooled Diesel engine, they deliver reliable power and efficiency in demanding environments. The integrated digital panel facilitates startup and allows monitoring of water and oil temperatures, battery charge, engine RPM, and other critical metrics, ensuring precise tracking during operation. Furthermore, its practical design allows for easy delivery and positioning across different locations.",
       "trifasico": "Three-Phase",
-      "combustao": "INTERNAL COMBUSTION",
+      "combustao": "Internal Combustion",
       "textoCard": "See more technical information about this product:" 
     },
     "500bar":{

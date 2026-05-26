@@ -29,8 +29,8 @@ const Typhoon500Trifasico = () => {
   const [index, setIndex] = useState(0);
 
   const slides = [
-    { id: 1, title: t('lavadoras.500bar.title'), artist: 'Trifásico', cover: typhoon500Trifasico, color: '#FF5101' },
-    { id: 2, title: t('lavadoras.500bar.title'), artist: 'Combustão', cover: typhoon500Combustao, color: '#FF5101' },
+    { id: 1, title: 'Typhoon Jet 500', artist: t('lavadoras.50cv.trifasico'), cover: typhoon500Trifasico, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 500', artist: t('lavadoras.50cv.combustao'), cover: typhoon500Combustao, color: '#FF5101' },
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -121,7 +121,7 @@ const Typhoon500Trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Trifásico</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.trifasico')}</span>
             </div>
           <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
             <thead>
@@ -161,7 +161,7 @@ const Typhoon500Trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Combustão</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.combustao')}</span>
             </div>
           <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
             <thead>

@@ -103,7 +103,7 @@ const AirSystem = () => {
                     > i
                   </div>
                 <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-                  {t('vestimentas.air.texto12')}
+                  {t('vestimentas.air.textoCard')}
                 </h2>
                 </div>
 

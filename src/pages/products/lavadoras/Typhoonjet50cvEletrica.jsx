@@ -24,11 +24,11 @@ const Typhoon50cvEletrica = () => {
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-      { id: 1, title: t('lavadoras.50cv.title'), artist: 'Elétrica', cover: typhoonJet50cv, color: '#FF5101' },
-      { id: 2, title: t('lavadoras.50cv.title'), artist: 'Elétrica', cover: typhoonJet50cv2, color: '#FF5101' },
-      { id: 3, title: t('lavadoras.50cv.title'), artist: 'Elétrica', cover: typhoonJet50cv3, color: '#FF5101' },
-      { id: 4, title: t('lavadoras.50cv.title'), artist: 'Combustão', cover:typhoonJet50cvDiesel, color: '#FF5101' },
-      { id: 5, title: t('lavadoras.50cv.title'), artist: 'Combustão', cover:typhoonJet50cvDiesel2, color: '#FF5101' }
+      { id: 1, title: t('lavadoras.50cv.title'), artist: t('lavadoras.50cv.trifasico'), cover: typhoonJet50cv, color: '#FF5101' },
+      { id: 2, title: t('lavadoras.50cv.title'), artist: t('lavadoras.50cv.trifasico'), cover: typhoonJet50cv2, color: '#FF5101' },
+      { id: 3, title: t('lavadoras.50cv.title'), artist: t('lavadoras.50cv.trifasico'), cover: typhoonJet50cv3, color: '#FF5101' },
+      { id: 4, title: t('lavadoras.50cv.title'), artist: t('lavadoras.50cv.combustao'), cover:typhoonJet50cvDiesel, color: '#FF5101' },
+      { id: 5, title: t('lavadoras.50cv.title'), artist: t('lavadoras.50cv.combustao'), cover:typhoonJet50cvDiesel2, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -86,7 +86,7 @@ const Typhoon50cvEletrica = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Trifásico</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.trifasico')}</span>
             </div>
           <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
             <thead>
@@ -128,7 +128,7 @@ const Typhoon50cvEletrica = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Combustão</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.combustao')}</span>
             </div>
           <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
             <thead>

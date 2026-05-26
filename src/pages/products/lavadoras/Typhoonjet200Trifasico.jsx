@@ -115,7 +115,7 @@ const Typhoon200Trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Trifásico</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.trifasico')}</span>
             </div>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
@@ -153,7 +153,7 @@ const Typhoon200Trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">Combustão</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.combustao')}</span>
             </div>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
