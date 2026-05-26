@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -15,10 +15,11 @@ import iconTrifasico from "@/assets/images/icon-trifasico.svg"
 
 const Typhoon200Trifasico = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); 
   const [aberto, setAberto] = useState(null);
   const slides = [
-      { id: 1, title: 'Typhoon Jet 200', artist: 'Trifásico', cover: typhoonJet200T, color: '#FF5101' },
-      { id: 2, title: 'Typhoon Jet 200', artist: 'Combustão', cover: typhoonJet200, color: '#FF5101' },
+      { id: 1, title: 'Typhoon Jet 200', artist: t('lavadoras.50cv.trifasico'), cover: typhoonJet200T, color: '#FF5101' },
+      { id: 2, title: 'Typhoon Jet 200', artist: t('lavadoras.50cv.combustao'), cover: typhoonJet200, color: '#FF5101' },
     ];
     const openContact = () => {
     console.log("Abrindo orçamento...");
@@ -48,50 +49,45 @@ const Typhoon200Trifasico = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Typhoon-Jet 200 BAR (2900 PSI)
+            {t('lavadoras.200bar.title')}
           </h2>
           
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Typhoon-Jet 200 é um equipamento de alta pressão projetado para oferecer desempenho excepcional
-            em limpezas pesadas em ambientes industriais, agrícolas e comerciais. Este equipamento garante resultados superiores em qualquer desafio de limpeza.
+            {t('lavadoras.200bar.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Sua estrutura robusta e resistente é construída para suportar as demandas mais exigentes,
-            garantindo durabilidade e confiabilidade. O Typhoon-Jet 200 oferece estabilidade e facilidade de manobra durante o uso, tornando-o ideal para uma variedade de aplicações.
+            {t('lavadoras.200bar.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Além disso, o Typhoon-Jet 200 é fácil de operar e manter, proporcionando uma experiência de 
-            limpeza eficiente e sem complicações. Com ele, você pode remover sujeira pesada, graxa, óleo e 
-            outros resíduos de forma rápida e eficaz, economizando tempo e esforço.
+            {t('lavadoras.200bar.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Ideal para postos de gasolina, médios e grandes lava-rápidos, indústrias, construtoras, 
-            transportadoras, empresas de ônibus e turismo, comércios, condomínios, limpadoras agropecuárias, entre outros.
+            {t('lavadoras.200bar.texto4')}
 
 
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Itens Inclusos: <br/><br/>
+            {t('lavadoras.200bar.texto5')} <br/><br/>
 
 
 
-            1 mangueira 3/8 de 20 metros de alta pressão <br/><br/>
+            {t('lavadoras.200bar.texto6')} <br/><br/>
 
 
 
-            1 pistola de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.200bar.texto7')} <br/><br/>
 
 
 
-            1 bico leque de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.200bar.texto8')} <br/><br/>
 
 
 
-            1 regulador de pressão <br/><br/>
+            {t('lavadoras.200bar.texto9')} <br/><br/>
 
 
 
-            1 carrinho 
+            {t('lavadoras.200bar.texto10')}
           </p>
         </div>
       </section>

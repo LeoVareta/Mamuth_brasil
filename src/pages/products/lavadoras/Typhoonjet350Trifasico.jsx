@@ -20,8 +20,8 @@ const Typhoon350trifasico = () => {
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-    { id: 1, title: t('lavadoras.350bar.title'), artist: 'Trifásico', cover: typhoonjet350Trifasico, color: '#FF5101' },
-    { id: 2, title: t('lavadoras.350bar.title'), artist: 'Combustão', cover: typhoonjet350Combustao, color: '#FF5101' }
+    { id: 1, title: 'Typhoon Jet 350', artist: 'Trifásico', cover: typhoonjet350Trifasico, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 350', artist: 'Combustão', cover: typhoonjet350Combustao, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {

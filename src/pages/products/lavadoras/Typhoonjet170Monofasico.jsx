@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -14,13 +14,14 @@ import typhoonJet170Monofasico3 from '@/assets/images/Typhoon-Jet-170cv-eletrica
 import iconTrifasico from "@/assets/images/icon-trifasico.svg"
 
 const Typhoon170Monofasico = () => {
+  const { t } = useTranslation(); 
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-    { id: 2, title: 'Typhoon Jet 170', artist: 'Monofásico/Trifásico', cover: typhoonJet170Monofasico2, color: '#FF5101' },
-    { id: 2, title: 'Typhoon Jet 170', artist: 'Monofásico/Trifásico', cover: typhoonJet170Monofasico, color: '#FF5101' },
-    { id: 2, title: 'Typhoon Jet 170', artist: 'Monofásico/Trifásico', cover: typhoonJet170Monofasico3, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 170', artist: t('lavadoras.170bar.monotri'), cover: typhoonJet170Monofasico2, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 170', artist: t('lavadoras.170bar.monotri'), cover: typhoonJet170Monofasico, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 170', artist: t('lavadoras.170bar.monotri'), cover: typhoonJet170Monofasico3, color: '#FF5101' },
   ];
 
   // Garante que a página inicie no topo
@@ -47,44 +48,44 @@ const Typhoon170Monofasico = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Typhoon-Jet 170: A Solução Completa para Limpeza Moderada
+            {t('lavadoras.170bar.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-          O Typhoon-Jet 170 é um equipamento de alta pressão projetado para oferecer desempenho excepcional em limpezas moderadas em ambientes industriais, agrícolas e comerciais. Este equipamento garante resultados eficazes em desafios de limpeza de intensidade moderada.
+            {t('lavadoras.170bar.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-          Ideal para fácil transporte e uso em diferentes ambientes. o Typhoon-Jet 170 oferece praticidade e eficiência durante o uso, tornando-o ideal para uma variedade de aplicações.
+            {t('lavadoras.170bar.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Além disso, o Typhoon-Jet 170 é fácil de operar e manter, proporcionando uma experiência de limpeza eficiente e sem complicações. Com ele, você pode remover sujeira leve a moderada de forma rápida e eficaz, economizando tempo e esforço.
+           {t('lavadoras.170bar.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Ideal para pequenos estabelecimentos comerciais, oficinas, condomínios, e outras áreas que necessitem de limpezas moderadas.
+            {t('lavadoras.170bar.texto4')}
 
 
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Itens Inclusos: <br/><br/>
+            {t('lavadoras.170bar.texto5')} <br/><br/>
 
 
 
-            1 mangueira 3/8 de 20 metros de alta pressão <br/><br/>
+            {t('lavadoras.170bar.texto6')} <br/><br/>
 
 
 
-            1 pistola de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.170bar.texto7')} <br/><br/>
 
 
 
-            1 bico leque de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.170bar.texto8')} <br/><br/>
 
 
 
-            1 regulador de pressão <br/><br/>
+            {t('lavadoras.170bar.texto9')} <br/><br/>
 
 
 
-            1 carrinho 
+            {t('lavadoras.170bar.texto10')} 
           </p>
         </div>
       </section>
@@ -101,7 +102,7 @@ const Typhoon170Monofasico = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('lavadoras.170bar.textoCard')}
             </h2>
           </div>
 

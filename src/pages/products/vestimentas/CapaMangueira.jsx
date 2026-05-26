@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -12,9 +12,10 @@ import capaMangueira from '@/assets/images/capa-protetora-mangueira.png';
 
 const CapaMangueira = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Capa de Mangueira', cover: capaMangueira, color: '#FF5101' }
+        { id: 1, title: t('vestimentas.capa.title'), cover: capaMangueira, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -25,7 +26,7 @@ const CapaMangueira = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Capa de Mangueira- Mamuth</title>
+        <title>{t('vestimentas.capa.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -41,12 +42,11 @@ const CapaMangueira = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Capa de Mangueira 
+            {t('vestimentas.capa.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Capa protetora indicada para mangueiras que trabalham com pressões de até 2800 Bar, proteção 
-            em caso de ruptura acidental formando um escudo e impedindo que a água em alta pressão atinja o operador.
+            {t('vestimentas.capa.texto1')}
           </p>
         
         </div>
@@ -64,7 +64,7 @@ const CapaMangueira = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('vestimentas.capa.textoCard')}
             </h2>
           </div>
 

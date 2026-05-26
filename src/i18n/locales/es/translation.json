@@ -600,12 +600,97 @@
       "texto8": "1 boquilla de ventilador de alta presión Typhoon",
       "texto9": "1 regulador de presión",
       "texto10": "1 carrito",
+      "trifasico": "Trifásico",
+      "monofasico": "Monofásico",
+      "monotri": "Monofásico/Trifásico",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     },
     "hot":{
       "title": "Typhoon-Jet Hot",
       "texto1": "La Typhoon-Jet Hot es una hidrolimpiadora industrial de alta presión con agua caliente, desarrollada para entregar un alto rendimiento, eficiencia y confiabilidad operacional en aplicaciones de limpieza pesada. Con una temperatura de trabajo de hasta 100 °C, el equipo potencia la eliminación de residuos grasos, grasas, incrustaciones y suciedades difíciles, uniendo la fuerza de la alta presión a la eficiencia del agua caliente.",
       "texto2": "Su construcción robusta, aliada a la bomba tríplex industrial, garantiza una mayor durabilidad, estabilidad de operación y un excelente rendimiento en uso continuo. Disponible en versiones a gasolina y eléctrica, la Typhoon-Jet Hot ofrece versatilidad operacional, manteniendo una presión de hasta 280 bar (4.000 PSI) y un caudal de 15 L/min, con un conjunto diseñado para proporcionar productividad, resistencia y facilidad en el día a día.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    }
+  },
+  "vestimentas":{
+    "sap":{
+      "title": "Overol de Protección Hydro-Shell AP",
+      "texto1": "Overol de protección indicado para trabajadores del sector sucroalcoholero y/o operaciones con bombas de hidrojet modelo AP (Alta Presión). Confeccionado en doble capa de tejido trenzado sintético de alta tenacidad impermeabilizado externamente con PVC, cuenta con costuras impermeabilizadas. El cierre frontal se realiza a través de dos cremalleras cubiertas por una solapa protectora, y la capucha fija se puede ajustar mediante un cordón con regulador y puntera. Los puños y los bajos de las piernas se ajustan con velcro. Posee una solapa protectora para el cuello, con cierre posterior de velcro. Para mayor comodidad, incluye tirantes de sujeción interna con ajuste de altura mediante cierre rápido, lo que ayuda a soportar el peso del traje.",
+      "texto2": "Vestimenta compuesta por:",
+      "texto3": "Chaqueta Hydro-Shell UAP",
+      "texto4": "Pantalón Hydro-Shell UAP",
+      "texto5": "Guantes de Protección",
+      "texto6": "Botas de Protección UAP",
+      "texto7": "Gafas de Seguridad + Protector Facial",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "uap":{
+      "title": "Vestimenta de Protección Hydro-Shell UAP",
+      "texto1": "Vestimenta de protección indicada para trabajadores del sector Naval, Oil & Gas (Petróleo y Gas), Petroquímico y/o operaciones con bombas de hidrojet modelo UAP (Ultraalta Presión). Confeccionada en triple capa de tejido trenzado sintético de alta tenacidad impermeabilizado externamente con PVC, cuenta con costuras impermeabilizadas. El cierre frontal se realiza a través de argollas metálicas de encaje rápido cubiertas por una solapa protectora, y la capucha fija se puede ajustar mediante un cordón con regulador y puntera. Los puños y los bajos de las piernas se ajustan con velcro. Posee una solapa protectora para el cuello, con cierre posterior de velcro. Para mayor comodidad, incluye tirantes de sujeción interna con ajuste de altura mediante cierre rápido, lo que ayuda a soportar el peso del traje.",
+      "texto2": "Vestimenta compuesta por:",
+      "texto3": "Chaqueta Hydro-Shell UAP",
+      "texto4": "Pantalón Hydro-Shell UAP",
+      "texto5": "Guantes de Protección",
+      "texto6": "Botas de Protección UAP",
+      "texto7": "Gafas de Seguridad + Protector Facial",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "capa":{
+      "title": "Funda Protectora para Mangueras",
+      "texto1": "Funda protectora indicada para mangueras que trabajan con presiones de hasta 2800 Bar. Ofrece protección en caso de ruptura accidental, formando un escudo que impide que el agua a alta presión alcance al operador.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "air":{
+      "title": "Air System 200",
+      "texto1": "Sistema de Refrigeración de Aire para Operadores de Hidrojet",
+      "texto2": "El Air System 200 de Mamuth fue desarrollado para proporcionar un mayor confort térmico y seguridad a los trabajadores que actúan en operaciones de limpieza industrial e hidrojet, especialmente en entornos de alta temperatura o espacios confinados.",
+      "texto3": "El equipo suministra aire refrigerado y purificado al interior del traje de protección, contribuyendo a la reducción de la fatiga térmica, la mejora del rendimiento operativo y el aumento de la productividad durante actividades prolongadas.",
+      "texto4": "Con control de temperatura regulable, el sistema permite reducir la temperatura interna del traje hasta los 18 °C, ofreciendo una condición de trabajo más cómoda y eficiente. El ajuste de temperatura puede variar de -5 °C a +20 °C, permitiendo la adaptación según las necesidades de la operación y las condiciones del entorno.",
+      "texto5": "Características Principales:",
+      "texto6": "Capacidad para atender hasta 03 operadores simultaneamente en operaciones de hidrojet;",
+      "texto7": "Sistema integrado de purificación de aire, proporcionando una mayor calidad en el suministro al operador;",
+      "texto8": "03 mangueras de PU de 10 mm, con 12 metros de longitud, cobertura protectora y aislamiento térmico;",
+      "texto9": "Chasis sobre ruedas, facilitando el transporte y la movilidad del equipo en el campo;",
+      "texto10": "La solución ideal para operaciones industriales que exigen seguridad, confort térmico y alto rendimiento operativo.",
+      "texto11": "Mamuth Air System 200: más confort, seguridad y productividad para operaciones de hidrojet en entornos severos.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    }
+  },
+   "robo":{
+    "line":{
+      "title": "Robo Line Worker 250",
+      "texto1": "El Robo Line Worker 250, desarrollado por la empresa alemana Falch, es un robot de hidrojet de alto rendimiento diseñado para la limpieza y preparación de pisos y superficies con ultraalta presión. Desarrollado para operaciones industriales exigentes, el equipo combina robustez, precisión y tecnología avanzada para eliminar incrustaciones severas, residuos industriales, revestimientos, depósitos minerales y otros contaminantes de alta adherencia.",
+      "texto2": "Capaz de operar con presiones de hasta 3.000 bar (4.351 PSI), el Line Worker 250 proporciona un nivel de limpieza extremadamente eficiente, garantizando un alto rendimiento incluso en las aplicaciones más desafiantes. Su sistema de operación permite un mayor control del proceso, estabilidad durante el trabajo y una reducción de la exposición del operador, haciendo que las operaciones sean más seguras y productivas.",
+      "texto3": "Con una estructura robusta, protección IP65/IP55 y una construcción orientada a entornos industriales, el equipo fue diseñado para una operación continua, ofreciendo alta confiabilidad y durabilidad. Su diseño compacto y funcional facilita la movilidad y la aplicación en diferentes tipos de superficies y entornos de trabajo.",
+      "texto4": "Equipado con un sistema eléctrico de 400 V / 50 Hz y desarrollado para uso intensivo, el Robo Line Worker 250 mantiene una elevada eficiencia operativa, al mismo tiempo que garantiza precisión y consistencia en los resultados de limpieza técnica.",
+      "texto5": "Este robot representa una solución avanzada para operaciones de hidrojeteado automatizado, proporcionando mejoras significativas en seguridad, productividad y calidad del proceso de limpieza industrial.",
+      "texto6": "Presión de trabajo de hasta 3.000 bar (4.351 PSI)",
+      "texto7": "Tecnología alemana Falch, referencia mundial en hidrojet",
+      "texto8": "Alta eficiencia en la eliminación de incrustaciones y contaminantes severos",
+      "texto9": "Estructura robusta con protección IP65 / IP55",
+      "texto10": "Operación estable con mayor seguridad para el operador",
+      "texto11": "Equipo diseñado para aplicaciones industriales exigentes",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "lift":{
+      "title": "Lift Worker 250 Beam",
+      "texto1": "El Lift Worker 250 Beam es un equipo desarrollado para operaciones profesionales de hidrojet a alta y ultraalta presión, que ofrece una elevada productividad, seguridad operativa y un control preciso durante la eliminación de revestimientos, incrustaciones y preparación de superficies.",
+      "texto2": "Diseñado para aplicaciones industriales, el sistema permite una mayor eficiencia en el jeteado, reducción de ruido mediante una cubierta de protección del chorro, un mejor control de la distancia entre la boquilla y la superficie, y una extracción eficiente del agua residual, lo que contribuye a un secado más rápido y a una menor formación de oxidación superficial.",
+      "texto3": "Con una estructura robusta, protección IP65/IP55 y una construcción orientada a entornos industriales, el equipo fue diseñado para una operación continua, ofreciendo alta confiabilidad y durabilidad. Su diseño compacto y funcional facilita la movilidad y la aplicación en diferentes tipos de superficies y entornos de trabajo.",
+      "texto4": "Equipado con un sistema eléctrico de 400 V / 50 Hz y desarrollado para uso intensivo, el Robo Line Worker 250 mantiene una elevada eficiencia operativa, al mismo tiempo que garantiza precisión y consistencia en los resultados de limpieza técnica.",
+      "texto5": "Este robot representa una solución avanzada para operaciones de hidrojeteado automatizado, proporcionando mejoras significativas en seguridad, productividad y calidad del proceso de limpieza industrial.",
+      "texto6": "Presión de trabajo de hasta 3.000 bar (4.351 PSI)",
+      "texto7": "Tecnología alemana Falch, referencia mundial en hidrojet",
+      "texto8": "Alta eficiencia en la eliminación de incrustaciones y contaminantes severos",
+      "texto9": "Estructura robusta con protección IP65 / IP55",
+      "texto10": "Operación estable con mayor seguridad para el operador",
+      "texto11": "Equipo diseñado para aplicaciones industriales exigentes",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "magnetico":{
+      "title": "Robot Magnético Climb Rob",
+      "texto1": "El Climb Rob 250 es un robot magnético desarrollado para hidrojeteado de alta y ultraalta presión en superficies metálicas verticales, horizontales e inclinadas. Su fijación magnética garantiza estabilidad durante la operación, permitiendo una mayor seguridad, productividad y precisión en la limpieza, eliminación de revestimientos y preparación de superficies.",
+      "texto2": "Diseñado para aplicaciones industriales exigentes, el equipo reduce la necesidad de trabajo manual en altura, mejora la ergonomía de la operación y permite el control remoto del proceso, proporcionando una mayor seguridad al operador y un mejor rendimiento en comparación con la pistola manual.",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     }
   }

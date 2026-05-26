@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
@@ -28,13 +28,14 @@ import seloFalch from "@/assets/images/logo_falch_certificado.png";
 
 const RoboMagnetico = () => {
   const [aberto, setAberto] = useState(null);
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-          { id: 1, title: 'Robo Magnetico Climb Rob', cover: robo1, color: '#FF5101' },
-          { id: 2, title: 'Robo Magnetico Climb Rob', cover: robo2, color: '#FF5101' },
-          { id: 3, title: 'Robo Magnetico Climb Rob', cover: robo3, color: '#FF5101' },
-          { id: 4, title: 'Robo Magnetico Climb Rob', cover: robo4, color: '#FF5101' },
-          { id: 5, title: 'Robo Magnetico Climb Rob', cover: robo, color: '#FF5101' }
+          { id: 1, title: t('robo.magnetico.title'), cover: robo1, color: '#FF5101' },
+          { id: 2, title: t('robo.magnetico.title'), cover: robo2, color: '#FF5101' },
+          { id: 3, title: t('robo.magnetico.title'), cover: robo3, color: '#FF5101' },
+          { id: 4, title: t('robo.magnetico.title'), cover: robo4, color: '#FF5101' },
+          { id: 5, title: t('robo.magnetico.title'), cover: robo, color: '#FF5101' }
   ];
    const listaDeImagens = [
     aplicacao1,
@@ -56,7 +57,7 @@ const RoboMagnetico = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Robo Magnetico Climb Rob - Mamuth</title>
+        <title>{t('robo.magnetico.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -72,7 +73,7 @@ const RoboMagnetico = () => {
               className="text-5xl md:text-6xl font-bold mb-10 text-left flex items-center gap-4"
               style={{ color: 'var(--color-dark-blue)' }}
             >
-              Robo Magnetico Climb Rob
+              {t('robo.magnetico.title')}
               <img 
                 src={seloFalch}
                 alt="Selo de Qualidade" 
@@ -80,10 +81,10 @@ const RoboMagnetico = () => {
               />
             </h2>  
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Climb Rob 250 é um robô magnético desenvolvido para hidrojateamento de alta e ultra-alta pressão em superfícies metálicas verticais, horizontais e inclinadas. Sua fixação magnética garante estabilidade durante a operação, permitindo maior segurança, produtividade e precisão na limpeza, remoção de revestimentos e preparação de superfícies.
+            {t('robo.magnetico.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Projetado para aplicações industriais exigentes, o equipamento reduz a necessidade de trabalho manual em altura, melhora a ergonomia da operação e permite controle remoto do processo, proporcionando maior segurança ao operador e melhor desempenho em comparação à pistola manual.
+            {t('robo.magnetico.texto2')}
           </p>
         </div>
       </section>
@@ -98,7 +99,7 @@ const RoboMagnetico = () => {
               > i
             </div>
           <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-            Veja mais informações técnicas sobre este produto:
+            {t('robo.magnetico.textoCard')}
           </h2>
           </div>
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -16,12 +16,13 @@ import hydroShellSAP4 from '@/assets/images/macacao-hydro-shel-sap-3.png';
 
 const HydroShellSAP = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Macacão Hydro-Shell SAP', cover: hydroShellSAP, color: '#FF5101' },
-        { id: 2, title: 'Macacão Hydro-Shell SAP', cover: hydroShellSAP2, color: '#FF5101' },
-        { id: 3, title: 'Macacão Hydro-Shell SAP', cover: hydroShellSAP3, color: '#FF5101' },
-        { id: 4, title: 'Macacão Hydro-Shell SAP', cover: hydroShellSAP4, color: '#FF5101' }
+        { id: 1, title: t('vestimentas.sap.title'), cover: hydroShellSAP, color: '#FF5101' },
+        { id: 2, title: t('vestimentas.sap.title'), cover: hydroShellSAP2, color: '#FF5101' },
+        { id: 3, title: t('vestimentas.sap.title'), cover: hydroShellSAP3, color: '#FF5101' },
+        { id: 4, title: t('vestimentas.sap.title'), cover: hydroShellSAP4, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -48,41 +49,35 @@ const HydroShellSAP = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Macacão Hydro-Shell SAP
+            {t('vestimentas.sap.title')}
           </h2>
 
           <p className="text-lg leading-relaxed mb-10 text-left">
-         Macacão de proteção indicado para trabalhadores do setor sucroalcooleiro e/ou operações com bombas de 
-         hidrojateamento modelo SAP. Confeccionado em dupla camada de tecido tramado sintético de 
-         alta tenacidade impermeabilizado externamente com PVC, possui costuras impermeabilizadas. O fechamento 
-         frontal é através de dois zíperes cobertos por lapela, o capuz fixo pode ser ajustado por cadarço com 
-         regulador e ponteira. Punhos e barras das pernas são ajustados por velcro. Possui lapela protetora do 
-         pescoço, com fechamento posterior com velcro. Para maior conforto, existe tirantes de sustentação 
-         interna com ajustes de altura por fecho rápido, isso ajuda a sustentar do peso do traje.
+            {t('vestimentas.sap.texto1')}
           </p>
           
           <p className="text-lg leading-relaxed mb-10 text-left">
-            Vestimenta composta por <br/> <br/>
+            {t('vestimentas.sap.texto2')} <br/> <br/>
 
 
 
-            Jaqueta Hydro-Shell UAP; <br/> <br/>
+            {t('vestimentas.sap.texto3')} <br/> <br/>
 
 
 
-            Calça Hydro-Shell UAP; <br/> <br/>
+            {t('vestimentas.sap.texto4')} <br/> <br/>
 
 
 
-            Luvas de Proteção; <br/> <br/>
+            {t('vestimentas.sap.texto5')} <br/> <br/>
 
 
 
-            Botas de Proteção UAP; <br/> <br/>
+            {t('vestimentas.sap.texto6')} <br/> <br/>
 
 
 
-            Óculos + Protetor Facial.
+            {t('vestimentas.sap.texto7')}.
           </p>
         </div>
       </section>
@@ -99,7 +94,7 @@ const HydroShellSAP = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('vestimentas.sap.textoCard')}
             </h2>
           </div>
 

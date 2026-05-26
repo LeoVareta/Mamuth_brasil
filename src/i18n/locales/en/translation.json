@@ -599,12 +599,97 @@
       "texto8": "1 high-pressure fan nozzles Typhoon",
       "texto9": "1 pressure regulator",
       "texto10": "1 cart",
+      "trifasico": "Three-phase",
+      "monofasico": "Single-phase",
+      "monotri": "Single-phase / Three-phase",
       "textoCard": "See more technical information about this product:" 
     },
     "hot":{
       "title": "Typhoon-Jet Hot",
       "texto1": "The Typhoon-Jet Hot is a industrial hot water high-pressure washer, engineered to deliver high performance, efficiency, and operational reliability in heavy-duty cleaning applications. With an operating temperature of up to 100 °C, the equipment maximizes the removal of oily residues, grease, encrustations, and stubborn dirt by combining the power of high pressure with the efficiency of hot water.",
       "texto2": "Its robust construction, paired with an industrial triplex pump, ensures greater durability, operational stability, and excellent performance in continuous use. Available in gasoline and electric versions, the Typhoon-Jet Hot offers operational versatility, maintaining pressures up to 280 bar (4,000 PSI) and a flow rate of 15 L/min, featuring an assembly designed to provide productivity, resistance, and daily convenience.",
+      "textoCard": "See more technical information about this product:" 
+    }
+  },
+  "vestimentas":{
+    "sap":{
+      "title": "Hydro-Shell HP Protective Suit",
+      "texto1": "Protective suit designed for workers in the sugar-alcohol sector and/or operations with HP (High Pressure) hydroblasting pumps. Manufactured with a double layer of high-tenacity woven synthetic fabric, externally waterproofed with PVC, it features waterproofed seams. The front closure is achieved through two zippers covered by a storm flap, and the fixed hood can be adjusted by a drawstring with a cord lock and aglet. Cuff and leg hems are adjustable via Velcro. It includes a protective neck flap with a rear Velcro closure. For enhanced comfort, it features internal support straps with quick-release height adjustments, helping to support the weight of the suit.",
+      "texto2": "Garment composed of:",
+      "texto3": "Hydro-Shell UHP Jacket",
+      "texto4": "Hydro-Shell UHP Trousers / Pants",
+      "texto5": "Protective Gloves",
+      "texto6": "UHP Protective Boots",
+      "texto7": "Safety Goggles + Face Shield",
+      "textoCard": "See more technical information about this product:"
+    },
+    "uap":{
+      "title": "Hydro-Shell UHP Protective Suit",
+      "texto1": "Protective suit designed for workers in the Marine, Oil & Gas, and Petrochemical sectors, and/or operations with UHP (Ultra-High Pressure) hydroblasting pumps. Manufactured with a triple layer of high-tenacity woven synthetic fabric, externally waterproofed with PVC, it features waterproofed seams. The front closure is achieved through quick-connect metallic rings covered by a storm flap, and the fixed hood can be adjusted by a drawstring with a cord lock and aglet. Cuff and leg hems are adjustable via Velcro. It includes a protective neck flap with a rear Velcro closure. For enhanced comfort, it features internal support straps with quick-release height adjustments, helping to support the weight of the suit.",
+      "texto2": "Garment composed of:",
+      "texto3": "Hydro-Shell UHP Jacket",
+      "texto4": "Hydro-Shell UHP Trousers / Pants",
+      "texto5": "Protective Gloves",
+      "texto6": "UHP Protective Boots",
+      "texto7": "Safety Goggles + Face Shield",
+      "textoCard": "See more technical information about this product:"
+    },
+    "capa":{
+      "title": "Hose Safety Sleeve",
+      "texto1": "Protective sleeve designed for hoses operating at pressures up to 2800 Bar. It provides protection in the event of an accidental rupture by forming a shield that prevents high-pressure water from striking the operator.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "air":{
+      "title": "Air System 200",
+      "texto1": "Air Cooling System for Hydroblasting Operators",
+      "texto2": "The Mamuth Air System 200 was developed to provide greater thermal comfort and safety for workers engaged in industrial cleaning and hydroblasting operations, especially in high-temperature environments or confined spaces.",
+      "texto3": "The equipment supplies cooled and purified air to the interior of the protective suit, contributing to the reduction of thermal fatigue, improvement of operational performance, and increased productivity during prolonged activities.",
+      "texto4": "With an adjustable temperature control, the system can reduce the suit's internal temperature down to 18 °C, offering a more comfortable and efficient working condition. The temperature adjustment can vary from -5 °C to +20 °C, allowing adaptation according to the specific operational needs and environmental conditions.",
+      "texto5": "Key Features:",
+      "texto6": "Capacity to supply up to 03 operators simultaneously in hydroblasting operations;",
+      "texto7": "Integrated air purification system, ensuring higher quality in the air supplied to the operator;",
+      "texto8": "03 PU hoses (10 mm) with a length of 12 meters, featuring a protective jacket and thermal insulation;",
+      "texto9": "Wheeled chassis, facilitating equipment transport and maneuvering in the field;",
+      "texto10": "The ideal solution for industrial operations that require safety, thermal comfort, and high operational performance.",
+      "texto11": "Mamuth Air System 200: more comfort, safety, and productivity for hydroblasting operations in harsh environments.",
+      "textoCard": "See more technical information about this product:" 
+    }
+  },
+   "robo":{
+    "line":{
+      "title": "Robot Line Worker 250",
+      "texto1": "The Robo Line Worker 250, developed by the German company Falch, is a high-performance hydroblasting robot designed for floor and surface cleaning and preparation using ultra-high pressure. Engineered for demanding industrial operations, this equipment combines robustness, precision, and advanced technology to remove severe encrustations, industrial residues, coatings, mineral deposits, and other highly adherent contaminants.",
+      "texto2": "Capable of operating at pressures up to 3,000 bar (4,351 PSI), the Line Worker 250 delivers an extremely efficient level of cleaning, ensuring high performance even in the most challenging applications. Its operating system allows for greater process control, stability during work, and reduced operator exposure, making operations safer and more productive.",
+      "texto3": "Featuring a robust structure, IP65/IP55 protection, and a build tailored for industrial environments, the equipment is designed for continuous operation, offering high reliability and durability. Its compact and functional design facilitates mobility and application across different types of surfaces and work environments.",
+      "texto4": "Equipped with a 400 V / 50 Hz electrical system and developed for intensive use, the Robo Line Worker 250 maintains high operational efficiency while ensuring precision and consistency in technical cleaning results.",
+      "texto5": "This robot represents an advanced solution for automated hydroblasting operations, providing significant gains in safety, productivity, and quality within the industrial cleaning process.",
+      "texto6": "Operating pressure up to 3,000 bar (4,351 PSI)",
+      "texto7": "German Falch technology, a global benchmark in hydroblasting",
+      "texto8": "High efficiency in removing severe encrustations and contaminants",
+      "texto9": "Robust structure with IP65 / IP55 protection",
+      "texto10": "Stable operation with enhanced safety for the operator",
+      "texto11": "Equipment designed for demanding industrial applications",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "lift":{
+      "title": "Lift Worker 250 Beam",
+      "texto1": "The Lift Worker 250 Beam is an equipment developed for professional high and ultra-high pressure hydroblasting operations, offering high productivity, operational safety, and precise control during coating removal, encrustation removal, and surface preparation.",
+      "texto2": "Engineered for industrial applications, the system allows for greater blasting efficiency, noise reduction via a spray protection cover, better control of the distance between the nozzle and the surface, and efficient wastewater extraction, contributing to faster drying and reduced surface oxidation (flash rust) formation.",
+      "texto3": "Featuring a robust structure, IP65/IP55 protection, and a build tailored for industrial environments, the equipment is designed for continuous operation, offering high reliability and durability. Its compact and functional design facilitates mobility and application across different types of surfaces and work environments.",
+      "texto4": "Equipped with a 400 V / 50 Hz electrical system and developed for intensive use, the Robo Line Worker 250 maintains high operational efficiency while ensuring precision and consistency in technical cleaning results.",
+      "texto5": "This robot represents an advanced solution for automated hydroblasting operations, providing significant gains in safety, productivity, and quality within the industrial cleaning process.",
+      "texto6": "Operating pressure up to 3,000 bar (4,351 PSI",
+      "texto7": "German Falch technology, a global benchmark in hydroblasting",
+      "texto8": "High efficiency in removing severe encrustations and contaminants",
+      "texto9": "Robust structure with IP65 / IP55 protection",
+      "texto10": "Stable operation with enhanced safety for the operator",
+      "texto11": "Equipment designed for demanding industrial applications",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "magnetico":{
+      "title": "Magnetic Robot Climb Rob",
+      "texto1": "The Climb Rob 250 is a magnetic robot developed for high and ultra-high pressure hydroblasting on vertical, horizontal, and inclined metallic surfaces. Its magnetic attachment ensures stability during operation, allowing for greater safety, productivity, and precision in cleaning, coating removal, and surface preparation.",
+      "texto2": "Engineered for demanding industrial applications, the equipment reduces the need for manual work at heights, improves operational ergonomics, and enables remote control of the process, providing enhanced safety for the operator and superior performance compared to manual spray guns.",
       "textoCard": "See more technical information about this product:" 
     }
   }

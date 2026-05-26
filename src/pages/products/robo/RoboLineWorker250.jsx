@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
@@ -27,12 +27,13 @@ import seloFalch from "@/assets/images/logo_falch_certificado.png";
 
 const RoboWorker250 = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-      { id: 1, title: 'Robo Line Worker 250', cover: robo1, color: '#FF5101' },
-      { id: 2, title: 'Robo Line Worker 250', cover: robo2, color: '#FF5101' },
-      { id: 3, title: 'Robo Line Worker 250', cover: robo3, color: '#FF5101' },
-      { id: 4, title: 'Robo Line Worker 250', cover: robo4, color: '#FF5101' },
+      { id: 1, title: t('robo.line.title'), cover: robo1, color: '#FF5101' },
+      { id: 2, title: t('robo.line.title'), cover: robo2, color: '#FF5101' },
+      { id: 3, title: t('robo.line.title'), cover: robo3, color: '#FF5101' },
+      { id: 4, title: t('robo.line.title'), cover: robo4, color: '#FF5101' },
     ];
   const listaDeImagens = [
     aplicacao1,
@@ -69,7 +70,7 @@ const RoboWorker250 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left flex items-center gap-4"
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Robo Line Worker 250
+            {t('robo.line.title')}
             <img 
               src={seloFalch}
               alt="Selo de Qualidade" 
@@ -77,42 +78,42 @@ const RoboWorker250 = () => {
             />
           </h2>  
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Robo Line Worker 250, desenvolvido pela alemã Falch, é um robô de hidrojato de alta performance projetado para limpeza e preparação de pisos e superfícies com ultra alta pressão. Desenvolvido para operações industriais exigentes, o equipamento combina robustez, precisão e tecnologia avançada para remover incrustações severas, resíduos industriais, revestimentos, depósitos minerais e outros contaminantes de alta aderência.
+            {t('robo.line.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Capaz de operar com pressões de até 3.000 bar (4351 PSI), o Line Worker 250 proporciona um nível de limpeza extremamente eficiente, garantindo alto desempenho mesmo nas aplicações mais desafiadoras. Seu sistema de operação permite maior controle do processo, estabilidade durante o trabalho e redução da exposição do operador, tornando as operações mais seguras e produtivas.
+           {t('robo.line.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Com estrutura robusta, proteção IP65/IP55 e construção voltada para ambientes industriais, o equipamento foi projetado para operação contínua, oferecendo alta confiabilidade e durabilidade. Seu design compacto e funcional facilita a mobilidade e a aplicação em diferentes tipos de superfícies e ambientes de trabalho.
+           {t('robo.line.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Equipado com sistema elétrico 400 V / 50 Hz e desenvolvido para uso intensivo, o Robo Line Worker 250 mantém elevada eficiência operacional ao mesmo tempo em que garante precisão e consistência nos resultados de limpeza técnica.
+            {t('robo.line.texto4')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Esse robô representa uma solução avançada para operações de hidrojateamento automatizado, proporcionando ganhos significativos em segurança, produtividade e qualidade do processo de limpeza industrial.
+            {t('robo.line.texto5')}
           </p>
           <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
-            Pressão de trabalho de até 3.000 bar (4351 PSI) <br/>
+            {t('robo.line.texto6')} <br/> <br/>
 
 
 
-            Tecnologia alemã Falch, referência mundial em hidrojato <br/><br/>
+            {t('robo.line.texto7')} <br/><br/>
 
 
 
-            Alta eficiência na remoção de incrustações e contaminantes severos <br/><br/>
+            {t('robo.line.texto8')} <br/><br/>
 
 
 
-            Estrutura robusta com proteção IP65 / IP55 <br/><br/>
+            {t('robo.line.texto9')} <br/><br/>
 
 
 
-            Operação estável com maior segurança para o operador <br/><br/>
+            {t('robo.line.texto10')} <br/><br/>
 
 
 
-            Equipamento projetado para aplicações industriais exigentes
+            {t('robo.line.texto11')}
           </p>
         </div>
       </section>

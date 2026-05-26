@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -12,9 +12,10 @@ import hydroShellUAP from '@/assets/images/vestimenta-hydro-shell-uap-2.png';
 
 const Typhoon170Monofasico = () => {
   const [aberto, setAberto] = useState(null);
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Vestimenta Hydro-Shell UAP', cover: hydroShellUAP, color: '#FF5101' }
+        { id: 1, title: t('vestimentas.uap.title'), cover: hydroShellUAP, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -41,41 +42,35 @@ const Typhoon170Monofasico = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Vestimenta Hydro-Shell UAP
+            {t('vestimentas.uap.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Vestimenta de proteção indicado para trabalhadores do setor Naval, Oil & Gás, Petroquímico e/ou operações
-            com bombas de hidrojateamento modelo UAP. Confeccionado em tripla camada de tecido tramado sintético de alta 
-            tenacidade impermeabilizado externamente com PVC, possui costuras impermeabilizadas. O fechamento frontal 
-            é através de argolas metálicas de encaixe rápido cobertos por lapela, o capuz fixo pode ser ajustado por 
-            cadarço com regulador e ponteira. Punhos e barras das pernas são ajustados por velcro. Possui lapela protetora 
-            do pescoço, com fechamento posterior com velcro. Para maior conforto, existe tirantes de sustentação interna com 
-            ajustes de altura por fecho rápido, isso ajuda a sustentar do peso do traje.
+            {t('vestimentas.uap.texto1')}
           </p>
           
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Vestimenta composta por <br/> <br/>
+            {t('vestimentas.uap.texto2')} <br/> <br/>
 
 
 
-            Jaqueta Hydro-Shell UAP; <br/> <br/>
+            {t('vestimentas.uap.texto3')}; <br/> <br/>
 
 
 
-            Calça Hydro-Shell UAP; <br/> <br/>
+            {t('vestimentas.uap.texto4')}; <br/> <br/>
 
 
 
-            Luvas de Proteção; <br/> <br/>
+            {t('vestimentas.uap.texto5')} <br/> <br/>
 
 
 
-            Botas de Proteção UAP; <br/> <br/>
+            {t('vestimentas.uap.texto6')}; <br/> <br/>
 
 
 
-            Óculos + Protetor Facial.
+            {t('vestimentas.uap.texto7')}.
           </p>
         </div>
       </section>
@@ -92,7 +87,7 @@ const Typhoon170Monofasico = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('vestimentas.uap.textoCard')}
             </h2>
           </div>
 

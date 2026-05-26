@@ -19,8 +19,8 @@ const TyphoonHot = () => {
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-      { id: 1, title: t('lavadoras.hot.title'), artist: 'Elétrica', cover: typhoonHotEletrica, color: '#FF5101' },
-      { id: 2, title: t('lavadoras.hot.title'), artist: 'Combustão', cover: typhoonHotCombustao, color: '#FF5101' },
+      { id: 1, title: t('lavadoras.hot.title'), artist: t('lavadoras.50cv.trifasico'), cover: typhoonHotEletrica, color: '#FF5101' },
+      { id: 2, title: t('lavadoras.hot.title'), artist: t('lavadoras.50cv.combustao'), cover: typhoonHotCombustao, color: '#FF5101' },
   ];
   // Garante que a página inicie no topo
   useEffect(() => {

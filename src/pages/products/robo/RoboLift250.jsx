@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
@@ -27,13 +27,14 @@ import seloFalch from "@/assets/images/logo_falch_certificado.png";
 
 const RoboLift250 = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-      { id: 1, title: 'Lift Worker 250 Beam', cover: robo1, color: '#FF5101' },
-      { id: 2, title: 'Lift Worker 250 Beam', cover: robo2, color: '#FF5101' },
-      { id: 5, title: 'Lift Worker 250 Beam', cover: robo5, color: '#FF5101' },
-      { id: 3, title: 'Lift Worker 250 Beam', cover: robo3, color: '#FF5101' },
-      { id: 4, title: 'Lift Worker 250 Beam', cover: robo4, color: '#FF5101' },
+      { id: 1, title: t('robo.lift.title'), cover: robo1, color: '#FF5101' },
+      { id: 2, title: t('robo.lift.title'), cover: robo2, color: '#FF5101' },
+      { id: 5, title: t('robo.lift.title'), cover: robo5, color: '#FF5101' },
+      { id: 3, title: t('robo.lift.title'), cover: robo3, color: '#FF5101' },
+      { id: 4, title: t('robo.lift.title'), cover: robo4, color: '#FF5101' },
   ];
   const listaDeImagens = [
     aplicacao1,
@@ -52,7 +53,7 @@ const RoboLift250 = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Lift Worker 250 Beam - Mamuth</title>
+        <title>{t('robo.lift.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -68,7 +69,7 @@ const RoboLift250 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left flex items-center gap-4"
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Lift Worker 250 Beam
+            {t('robo.lift.title')}
             <img 
               src={seloFalch}
               alt="Selo de Qualidade" 
@@ -76,42 +77,42 @@ const RoboLift250 = () => {
             />
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Lift Worker 250 Beam é um equipamento desenvolvido para operações profissionais de hidrojato em alta e ultra-alta pressão, oferecendo elevada produtividade, segurança operacional e controle preciso durante a remoção de revestimentos, incrustações e preparação de superfícies.
+            {t('robo.lift.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Projetado para aplicações industriais, o sistema permite maior eficiência no jateamento, redução de ruído com capa de proteção do jato, melhor controle da distância entre o bico e a superfície e extração eficiente da água residual, contribuindo para uma secagem mais rápida e menor formação de oxidação superficial.
-          </p>
-           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Com estrutura robusta, proteção IP65/IP55 e construção voltada para ambientes industriais, o equipamento foi projetado para operação contínua, oferecendo alta confiabilidade e durabilidade. Seu design compacto e funcional facilita a mobilidade e a aplicação em diferentes tipos de superfícies e ambientes de trabalho.
+            {t('robo.lift.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Equipado com sistema elétrico 400 V / 50 Hz e desenvolvido para uso intensivo, o Robo Line Worker 250 mantém elevada eficiência operacional ao mesmo tempo em que garante precisão e consistência nos resultados de limpeza técnica.
+            {t('robo.lift.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Esse robô representa uma solução avançada para operações de hidrojateamento automatizado, proporcionando ganhos significativos em segurança, produtividade e qualidade do processo de limpeza industrial.
+            {t('robo.lift.texto4')}
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
+            {t('robo.lift.texto5')}
           </p>
           <p className="text-lg max-w-3xl text-gray-600 leading-relaxed mb-10 text-left">
-            Pressão de trabalho de até 3.000 bar (4351 PSI) <br/>
+            {t('robo.lift.texto6')} <br/> <br/>
 
 
 
-            Tecnologia alemã Falch, referência mundial em hidrojato <br/><br/>
+            {t('robo.lift.texto7')} <br/><br/>
 
 
 
-            Alta eficiência na remoção de incrustações e contaminantes severos <br/><br/>
+           {t('robo.lift.texto8')} <br/><br/>
 
 
 
-            Estrutura robusta com proteção IP65 / IP55 <br/><br/>
+           {t('robo.lift.texto9')} <br/><br/>
 
 
 
-            Operação estável com maior segurança para o operador <br/><br/>
+            {t('robo.lift.texto10')} <br/><br/>
 
 
 
-            Equipamento projetado para aplicações industriais exigentes
+            {t('robo.lift.texto11')}
           </p> 
         </div>
       </section>
@@ -126,7 +127,7 @@ const RoboLift250 = () => {
               > i
             </div>
           <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-            Veja mais informações técnicas sobre este produto:
+            {t('robo.lift.textoCard')}
           </h2>
           </div>
 

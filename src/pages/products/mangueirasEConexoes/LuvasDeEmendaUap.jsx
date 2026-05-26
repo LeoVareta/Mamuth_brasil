@@ -15,7 +15,7 @@ const LuvasDeEmendaUAP = () => {
   const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: t('mangueiras.luvasEmenda.title'),  cover: luvasEmendaUap, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.LuvasEmenda.title'),  cover: luvasEmendaUap, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -41,10 +41,10 @@ const LuvasDeEmendaUAP = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            {t('mangueiras.luvasEmenda.title')}
+            {t('mangueiras.LuvasEmenda.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            {t('mangueiras.luvasEmenda.texto1')}
+            {t('mangueiras.LuvasEmenda.texto1')}
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ const LuvasDeEmendaUAP = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              {t('mangueiras.luvasEmenda.textoCard')}
+              {t('mangueiras.LuvasEmenda.textoCard')}
             </h2>
           </div>
 
