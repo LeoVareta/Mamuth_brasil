@@ -2,7 +2,7 @@
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,11 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import bombaMTI200 from '@/assets/images/bombas-altapressao.png';
 
 const BombaMTI200 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Bomba MTI-200',  cover: bombaMTI200, color: '#FF5101' },
-        { id: 2, title: 'Bomba MTI-200',  cover: bombaMTI200, color: '#FF5101' },
-        { id: 3, title: 'Bomba MTI-200',  cover: bombaMTI200, color: '#FF5101' }
+        { id: 1, title: t('bombas.200.title'), cover: bombaMTI200, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -26,7 +25,7 @@ const BombaMTI200 = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bomba MTI-200 - Mamuth</title>
+        <title>{t('bombas.200.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -42,10 +41,10 @@ const BombaMTI200 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bomba MTI-200
+            {t('bombas.200.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 200 bar e vazão de 45L/min.
+            {t('bombas.200.texto1')}
           </p>
 
         </div>
@@ -63,7 +62,7 @@ const BombaMTI200 = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bombas.200.textoCard')}
             </h2>
           </div>
 

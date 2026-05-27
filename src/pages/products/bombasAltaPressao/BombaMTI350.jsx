@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import bombaMTI350 from '@/assets/images/bombas-altapressao.png';
 
 const BombaMTI350 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Bomba MTI-350',  cover: bombaMTI350, color: '#FF5101' }
+        { id: 1, title: t('bombas.350.title'),  cover: bombaMTI350, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const BombaMTI350 = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bomba MTI-350 - Mamuth</title>
+        <title>{t('bombas.350.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,10 +41,10 @@ const BombaMTI350 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bomba MTI-350
+            {t('bombas.350.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Bomba Tríplex para hidrolavadoras ou testes hidrostáticos com pressão de 350 bar e vazão de 19L/min.
+            {t('bombas.350.texto1')}
           </p>
 
         </div>
@@ -61,7 +62,7 @@ const BombaMTI350 = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bombas.350.textoCard')}
             </h2>
           </div>
 

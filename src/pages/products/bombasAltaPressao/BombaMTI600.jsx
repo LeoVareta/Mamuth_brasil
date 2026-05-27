@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import bombaMTI600 from '@/assets/images/bomba-mti600.png';
 
 const BombaMTI600 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Bomba MTI-600',  cover: bombaMTI600, color: '#FF5101' }
+        { id: 1, title: t('bombas.600.title'),  cover: bombaMTI600, color: '#FF5101' }
   ];
 
 
@@ -25,7 +26,7 @@ const BombaMTI600 = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bomba MTI-600 - Mamuth</title>
+        <title>{t('bombas.600.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -41,10 +42,10 @@ const BombaMTI600 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bomba MTI-600
+            {t('bombas.600.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 600 bar e vazão de até 35L/min.
+            {t('bombas.600.texto1')}
           </p>
         </div>
       </section>
@@ -61,7 +62,7 @@ const BombaMTI600 = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bombas.600.textoCard')}
             </h2>
           </div>
 

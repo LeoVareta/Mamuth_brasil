@@ -697,10 +697,142 @@
   },
   "bombas":{
     "falch125":{
-      "title": "",
-      "texto1": "",
-      "texto2": "",
-      "texto3": ""
+      "title": "Falch PUMP 125KW",
+      "texto1": "A Falch FA 125 é uma bomba de pistão de alta performance desenvolvida para aplicações industriais que exigem potência, confiabilidade e eficiência operacional. Com potência de até 125 kW e capacidade de operar em pressões de até 3.000 bar, o equipamento entrega alto desempenho mesmo nas condições mais exigentes.",
+      "texto2": "Projetada com a engenharia alemã da Falch, a FA 125 é indicada para operações como limpeza industrial pesada, hidrodemolição, setor naval, óleo e gás, mineração e demais aplicações que demandam alta pressão com estabilidade e durabilidade.",
+      "texto3": "Seu projeto combina robustez mecânica com tecnologias que reduzem o tempo de parada e aumentam a eficiência energética, proporcionando menor custo operacional ao longo do tempo.",
+      "subtitle1": "Diferenciais do Equipamento",
+      "texto4": "Manutenção Rápida (Quick Check Technology)",
+      "texto5": "O sistema Quick Check foi desenvolvido para garantir intervenções rápidas e simples diretamente no local de operação, reduzindo significativamente o tempo de parada do equipamento.",
+      "texto6": "Troca de válvulas em aproximadamente 10 minutos",
+      "texto7": "Troca de pistão (plunger) e vedação em cerca de 30 minutos",
+      "texto8": "Não requer ferramentas especiais",
+      "texto9": "Esse sistema permite maior disponibilidade da máquina e mais produtividade em campo.",
+      "subtitle2": "Eficiência Energética (Green Power Technology)",
+      "texto10": "A tecnologia Green Power proporciona alto desempenho com menor consumo de energia, graças ao sistema de vedação otimizado e à eficiência mecânica do conjunto.",
+      "texto11": "Eficiência entre 91% e 94%",
+      "texto12": "Operação entre 1.000 e 3.000 bar",
+      "texto13": "Não requer ferramentas especiais",
+      "textoCard": "Veja mais informações técnicas sobre este produto:",
+      "subtitleCard1": "Eficiência por Pressão",
+      "subtitleCard2": "Configurações de operação",
+      "subtitleCard3": "Velocidade e Desempenho (1800 rpm)",
+      "subtitleCard4": "Dados Técnicos"
+    },
+    "falch250":{
+      "title": "Falch PUMP 250KW",
+      "texto1": "A Falch FA 250 é uma bomba de pistão de alta performance desenvolvida para aplicações industriais que exigem potência, confiabilidade e eficiência operacional. Com potência de até 250 kW e capacidade de operar em pressões de até 3.000 bar, o equipamento entrega alto desempenho mesmo nas condições mais exigentes.",
+      "texto2": "Projetada com a engenharia alemã da Falch, a FA 250 é indicada para operações como limpeza industrial pesada, hidrodemolição, setor naval, óleo e gás, mineração e demais aplicações que demandam alta pressão com estabilidade e durabilidade.",
+      "texto3": "Seu projeto combina robustez mecânica com tecnologias que reduzem o tempo de parada e aumentam a eficiência energética, proporcionando menor custo operacional ao longo do tempo.",
+      "subtitle1": "Diferenciais do Equipamento",
+      "texto4": "Manutenção Rápida (Quick Check Technology)",
+      "texto5": "O sistema Quick Check foi desenvolvido para garantir intervenções rápidas e simples diretamente no local de operação, reduzindo significativamente o tempo de parada do equipamento.",
+      "texto6": "Troca de válvulas em aproximadamente 10 minutos",
+      "texto7": "Troca de pistão (plunger) e vedação em cerca de 30 minutos",
+      "texto8": "Não requer ferramentas especiais",
+      "texto9": "Esse sistema permite maior disponibilidade da máquina e mais produtividade em campo.",
+      "subtitle2": "Eficiência Energética (Green Power Technology)",
+      "texto10": "A tecnologia Green Power proporciona alto desempenho com menor consumo de energia, graças ao sistema de vedação otimizado e à eficiência mecânica do conjunto.",
+      "texto11": "Eficiência entre 91% e 94%",
+      "texto12": "Operação entre 1.000 e 3.000 bar",
+      "texto13": "Não requer ferramentas especiais",
+      "textoCard": "Veja mais informações técnicas sobre este produto:",
+      "subtitleCard1": "Eficiência por Pressão",
+      "subtitleCard2": "Configurações de operação",
+      "subtitleCard3": "Velocidade e Desempenho (1800 rpm)",
+      "subtitleCard4": "Dados Técnicos"
+    },
+    "falch500":{
+      "title": "Falch PUMP 500KW",
+      "texto1": "A Falch FA 500 é uma bomba de pistão de alta performance desenvolvida para aplicações industriais que exigem potência, confiabilidade e eficiência operacional. Com potência de até 500 kW e capacidade de operar em pressões de até 3.000 bar, o equipamento entrega alto desempenho mesmo nas condições mais exigentes.",
+      "texto2": "Projetada com a engenharia alemã da Falch, a FA 500 é indicada para operações como limpeza industrial pesada, hidrodemolição, setor naval, óleo e gás, mineração e demais aplicações que demandam alta pressão com estabilidade e durabilidade.",
+      "texto3": "Seu projeto combina robustez mecânica com tecnologias que reduzem o tempo de parada e aumentam a eficiência energética, proporcionando menor custo operacional ao longo do tempo.",
+      "subtitle1": "Diferenciais do Equipamento",
+      "texto4": "Manutenção Rápida (Quick Check Technology)",
+      "texto5": "O sistema Quick Check foi desenvolvido para garantir intervenções rápidas e simples diretamente no local de operação, reduzindo significativamente o tempo de parada do equipamento.",
+      "texto6": "Troca de válvulas em aproximadamente 10 minutos",
+      "texto7": "Troca de pistão (plunger) e vedação em cerca de 30 minutos",
+      "texto8": "Não requer ferramentas especiais",
+      "texto9": "Esse sistema permite maior disponibilidade da máquina e mais produtividade em campo.",
+      "subtitle2": "Eficiência Energética (Green Power Technology)",
+      "texto10": "A tecnologia Green Power proporciona alto desempenho com menor consumo de energia, graças ao sistema de vedação otimizado e à eficiência mecânica do conjunto.",
+      "texto11": "Eficiência entre 91% e 94%",
+      "texto12": "Operação entre 1.000 e 3.000 bar",
+      "texto13": "Não requer ferramentas especiais",
+      "textoCard": "Veja mais informações técnicas sobre este produto:",
+      "subtitleCard1": "Eficiência por Pressão",
+      "subtitleCard2": "Configurações de operação",
+      "subtitleCard3": "Velocidade e Desempenho (1500 rpm)",
+      "subtitleCard4": "Dados Técnicos"
+    },
+    "600":{
+      "title": "Bomba MTI-600",
+      "texto1": "Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 600 bar e vazão de até 35L/min.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "500":{
+      "title": "Bomba MTI-500",
+      "texto1": "Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 500 bar e vazão de até 20L/min.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "350":{
+      "title": "Bomba MTI-350",
+      "texto1": "Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 350 bar e vazão de até 19L/min.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "250":{
+      "title": "Bomba MTI-250",
+      "texto1": "Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 250 bar e vazão de até 17L/min.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "200":{
+      "title": "Bomba MTI-200",
+      "texto1": "Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 200 bar e vazão de até 40L/min.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "50ff":{
+      "title": "Bomba MTI-50FF",
+      "texto1": "Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 160 bar e vazão de até 150L/min.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    }
+  },
+  "bicos":{
+    "rotativoR":{
+      "title": "Bico Rotativo R",
+      "texto1": "O bico rotativo modelo “R’’ foi especificamente desenvolvido para limpeza e remoção de incrustações nas paredes internas de tubulações de trocadores de calor, evaporadores e linhas de tubos em geral. Esses bicos estão disponíveis em diversos diâmetros e com insertos de variados orifícios dimensionados de acordo com a vazão.",
+      "texto2": "Pressão Máxima de Trabalho 1.000 bar / 14.500 psi",
+      "texto3": "F/B: Furo na Bucha",
+      "texto4": "Todos os bicos (com exceção do modelo R10) tem a opção de rosca no padrão NPT.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "safiram10":{
+      "title": "Turbo Rotary Nozzle 600",
+      "texto1": "Nozzles designed for hydroblasting equipment up to 600 bar. They can be used for surface blasting, pipe cleaning, or abrasive water blasting.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "portasafira":{
+      "title": "Porta Bico Safira",
+      "texto1": "O suporte para fixação de Bico de Safira 3/8” é um componente essencial em operações de limpeza, jateamento ou corte utilizando pistolas de Ultra Alta Pressão. Este suporte foi projetado para garantir uma fixação segura e estável do bico, proporcionando precisão e eficiência durante o uso.",
+      "texto2": "Recomendado para aplicações que envolvem pressões de até 2.800 bar (40.600 psi), o suporte é ideal para trabalhos que exigem alta performance e confiabilidade, assegurando a durabilidade e a integridade do equipamento mesmo sob condições extremas.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "portareto":{
+      "title": "Porta Bico Reto e Leque",
+      "texto1":"O suporte para Bico Reto Forma 4 e Bico Leque Forma 19 é principalmente utilizado nas operações de limpeza, jateamento ou corte com pistolas de alta pressão. São recomendados para aplicações com até 1.500 bar / 21.750 psi.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "bicotorpedo":{
+
+    },
+    "shrakjet":{
+      "title":"Bico Shark-Jet 22K e 40K",
+      "texto1":"O Shark-Jet 22K e 40K é uma ferramenta rotativa auto-propulsora indicada para jateamento, limpeza e preparação de superfícies planas ou irregulares. Disponível em duas configurações, a primeira trabalha com pressões de até 1.500 bar (22.000 psi) e vazão de até 40L/min, a segunda opção é configurada para trabalhar com pressões de até 2.800 bar (40.000 psi) e vazão de até 30 L/min, esta ferramenta é utilizada junto a pistola de hidrojato. Seus componentes internos tem o sistema de lubrificação e refrigeração por óleo, além de um freio hidráulico para limitar as rotações. Esta ferramenta utiliza 4 Bicos de Safira 7/16-20 UNF na configuração 2.800 bar, e 2 Bicos Attack 1/4 NPT na configuração 1.500 bar , todos com ângulos deslocados, isso proporciona um giro controlado e um desempenho de limpeza mais elevado em uma maior área superficial de ataque.",
+      "textoCard":"Veja mais informações técnicas sobre este produto:"
+    },
+    "rotativo600":{
+      "title": "Bico Turbo Rotativo 600",
+      "texto1": "Bicos indicados para hidrojateadoras até 600 bar, podem ser utilizados para jateamento de superfícies tubulações ou jateamento com abrasivo.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
     }
   }
 

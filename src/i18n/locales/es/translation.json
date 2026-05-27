@@ -694,5 +694,145 @@
       "texto2": "Diseñado para aplicaciones industriales exigentes, el equipo reduce la necesidad de trabajo manual en altura, mejora la ergonomía de la operación y permite el control remoto del proceso, proporcionando una mayor seguridad al operador y un mejor rendimiento en comparación con la pistola manual.",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     }
+  },
+  "bombas":{
+    "falch125":{
+      "title": "Falch PUMP 125KW",
+      "texto1": "La Falch FA 125 es una bomba de pistón de alto rendimiento desarrollada para aplicaciones industriales que exigen potencia, confiabilidad y eficiencia operativa. Con una potencia de hasta 125 kW y capacidad de operar a presiones de hasta 3.000 bar, el equipo entrega un alto desempeño incluso en las condiciones más exigentes.",
+      "texto2": "Diseñada con la ingeniería alemana de Falch, la FA 125 está indicada para operaciones como limpieza industrial pesada, hidrodemolición, sector naval, petróleo y gas, minería y demás aplicaciones que demandan alta presión com estabilidad y durabilidad.",
+      "texto3": "Su diseño combina robustez mecánica con tecnologías que reducen el tiempo de inactividad y aumentan la eficiencia energética, proporcionando un menor costo operativo a lo largo del tiempo.",
+      "subtitle1": "Diferenciales del Equipo",
+      "texto4": "Mantenimiento Rápido (Quick Check Technology)",
+      "texto5": "El sistema Quick Check fue desarrollado para garantizar intervenciones rápidas y sencillas directamente en el lugar de operación, reduciendo significativamente el tiempo de inactividad del equipo.",
+      "texto6": "Cambio de válvulas en aproximadamente 10 minutos.",
+      "texto7": "Cambio de pistón (plunger) y sello en cerca de 30 minutos.",
+      "texto8": "No requiere herramientas especiales.",
+      "texto9": "Este sistema permite una mayor disponibilidad de la máquina y más productividad en el campo.",
+      "subtitle2": "Eficiencia Energética (Green Power Technology)",
+      "texto10": "La tecnología Green Power proporciona un alto rendimiento con un menor consumo de energía, gracias al sistema de sellado optimizado y a la eficiencia mecánica del conjunto.",
+      "texto11": "Eficiencia entre el 91% y el 94%",
+      "texto12": "Operación entre 1.000 y 3.000 bar",
+      "texto13": "No requiere herramientas especiales",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:",
+      "subtitleCard1": "Eficiencia por Presión",
+      "subtitleCard2": "Configuraciones de Operación",
+      "subtitleCard3": "Velocidad y Rendimiento (1.800 rpm)",
+      "subtitleCard4": "Especificaciones Técnicas"
+    },
+    "falch250":{
+      "title": "Falch PUMP 250KW",
+      "texto1": "La Falch FA 250 es una bomba de pistón de alto rendimiento desarrollada para aplicaciones industriales que exigen potencia, confiabilidad y eficiencia operativa. Con una potencia de hasta 250 kW y capacidad de operar a presiones de hasta 3.000 bar, el equipo entrega un alto desempeño incluso en las condiciones más exigentes.",
+      "texto2": "Diseñada con la ingeniería alemana de Falch, la FA 250 está indicada para operaciones como limpieza industrial pesada, hidrodemolición, sector naval, petróleo y gas, minería y demás aplicaciones que demandan alta presión com estabilidad y durabilidad.",
+      "texto3": "Su diseño combina robustez mecánica con tecnologías que reducen el tiempo de inactividad y aumentan la eficiencia energética, proporcionando un menor costo operativo a lo largo del tiempo.",
+      "subtitle1": "Diferenciales del Equipo",
+      "texto4": "Mantenimiento Rápido (Quick Check Technology)",
+      "texto5": "El sistema Quick Check fue desarrollado para garantizar intervenciones rápidas y sencillas directamente en el lugar de operación, reduciendo significativamente el tiempo de inactividad del equipo.",
+      "texto6": "Cambio de válvulas en aproximadamente 10 minutos.",
+      "texto7": "Cambio de pistón (plunger) y sello en cerca de 30 minutos.",
+      "texto8": "No requiere herramientas especiales.",
+      "texto9": "Este sistema permite una mayor disponibilidad de la máquina y más productividad en el campo.",
+      "subtitle2": "Eficiencia Energética (Green Power Technology)",
+      "texto10": "La tecnología Green Power proporciona un alto rendimiento con un menor consumo de energía, gracias al sistema de sellado optimizado y a la eficiencia mecánica del conjunto.",
+      "texto11": "Eficiencia entre el 91% y el 94%",
+      "texto12": "Operación entre 1.000 y 3.000 bar",
+      "texto13": "No requiere herramientas especiales",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:",
+      "subtitleCard1": "Eficiencia por Presión",
+      "subtitleCard2": "Configuraciones de Operación",
+      "subtitleCard3": "Velocidad y Rendimiento (1.800 rpm)",
+      "subtitleCard4": "Especificaciones Técnicas"
+    },
+    "falch500":{
+      "title": "Falch PUMP 500KW",
+      "texto1": "La Falch FA 500 es una bomba de pistón de alto rendimiento desarrollada para aplicaciones industriales que exigen potencia, confiabilidad y eficiencia operativa. Con una potencia de hasta 500 kW y capacidad de operar a presiones de hasta 3.000 bar, el equipo entrega un alto desempeño incluso en las condiciones más exigentes.",
+      "texto2": "Diseñada con la ingeniería alemana de Falch, la FA 500 está indicada para operaciones como limpieza industrial pesada, hidrodemolición, sector naval, petróleo y gas, minería y demás aplicaciones que demandan alta presión com estabilidad y durabilidad.",
+      "texto3": "Su diseño combina robustez mecánica con tecnologías que reducen el tiempo de inactividad y aumentan la eficiencia energética, proporcionando un menor costo operativo a lo largo del tiempo.",
+      "subtitle1": "Diferenciales del Equipo",
+      "texto4": "Mantenimiento Rápido (Quick Check Technology)",
+      "texto5": "El sistema Quick Check fue desarrollado para garantizar intervenciones rápidas y sencillas directamente en el lugar de operación, reduciendo significativamente el tiempo de inactividad del equipo.",
+      "texto6": "Cambio de válvulas en aproximadamente 10 minutos.",
+      "texto7": "Cambio de pistón (plunger) y sello en cerca de 30 minutos.",
+      "texto8": "No requiere herramientas especiales.",
+      "texto9": "Este sistema permite una mayor disponibilidad de la máquina y más productividad en el campo.",
+      "subtitle2": "Eficiencia Energética (Green Power Technology)",
+      "texto10": "La tecnología Green Power proporciona un alto rendimiento con un menor consumo de energía, gracias al sistema de sellado optimizado y a la eficiencia mecánica del conjunto.",
+      "texto11": "Eficiencia entre el 91% y el 94%",
+      "texto12": "Operación entre 1.000 y 3.000 bar",
+      "texto13": "No requiere herramientas especiales",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:",
+      "subtitleCard1": "Eficiencia por Presión",
+      "subtitleCard2": "Configuraciones de Operación",
+      "subtitleCard3": "Velocidad y Rendimiento (1.500 rpm)",
+      "subtitleCard4": "Especificaciones Técnicas"
+    },
+     "600":{
+      "title": "Bomba MTI-600",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 600 bar y un caudal de hasta 35 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "500":{
+      "title": "Bomba MTI-500",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 500 bar y un caudal de hasta 20 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "350":{
+      "title": "Bomba MTI-350",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 350 bar y un caudal de hasta 19 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "250":{
+      "title": "Bomba MTI-250",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 250 bar y un caudal de hasta 17 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "200":{
+      "title": "Bomba MTI-200",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 200 bar y un caudal de hasta 40 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "50ff":{
+      "title": "Bomba MTI-50FF",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 160 bar y un caudal de hasta 150 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    }
+  },
+   "bicos":{
+    "rotativoR":{
+      "title": "Boquilla Rotativa R",
+      "texto1": "La boquilla rotativa modelo “R” fue específicamente desarrollada para la limpieza y eliminación de incrustaciones en las paredes internas de tuberías de intercambiadores de calor, evaporadores y líneas de tubos en general. Estas boquillas están disponibles en diversos diámetros y con insertos de variados orificios dimensionados según el caudal.",
+      "texto2": "Presión Máxima de Trabajo: 1.000 bar / 14.500 psi",
+      "texto3": "F/B: Orificio en el Buje",
+      "texto4": "Todas las boquillas (con excepción del modelo R10) tienen la opción de rosca en el estándar NPT.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "safiram10":{
+      "title": "Boquilla Turbo Rotativa 600",
+      "texto1": "Boquillas indicadas para equipos de hidrojet de hasta 600 bar. Pueden ser utilizadas para el jeteado de superficies, limpieza de tuberías o jeteado con abrasivo.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "portasafira":{
+      "title": "Portaboquilla de Zafiro",
+      "texto1": "El soporte de fijación para Boquilla de Zafiro de 3/8” es un componente esencial en operaciones de limpieza, jeteado o corte utilizando pistolas de Ultraalta Presión. Este soporte fue diseñado para garantizar una fijación segura y estable de la boquilla, proporcionando precisión y eficiencia durante su uso.",
+      "texto2": "Recomendado para aplicaciones que involucran presiones de hasta 2.800 bar (40.600 psi), el soporte es ideal para trabajos que exigen un alto rendimiento y confiabilidad, asegurando la durabilidad y la integridad del equipo incluso bajo condiciones extremas.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "portareto":{
+      "title": "Portaboquilla Recta y de Abanico",
+      "texto1":"El soporte para Boquilla Recta Forma 4 y Boquilla de Abanico Forma 19 se utiliza principalmente en operaciones de limpieza, jeteado o corte con pistolas de alta presión. Son recomendados para aplicaciones de hasta 1.500 bar / 21.750 psi.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "bicotorpedo":{
+
+    },
+    "shrakjet":{
+      "title":"Boquilla Shark-Jet 22K y 40K",
+      "texto1":"La Shark-Jet 22K y 40K es una herramienta rotativa autopropulsada indicada para el jeteado, limpieza y preparación de superficies planas o irregulares. Disponible en dos configuraciones: la primera trabaja con presiones de hasta 1.500 bar (22.000 psi) y un caudal de hasta 40 L/min; la segunda opción está configurada para trabajar con presiones de hasta 2.800 bar (40.000 psi) y un caudal de hasta 30 L/min. Esta herramienta se utiliza junto con la pistola de hidrojet. Sus componentes internos cuentan con un sistema de lubricación y refrigeración por aceite, además de un freno hidráulico para limitar las revoluciones. Esta herramienta utiliza 4 Boquillas de Zafiro (7/16-20 UNF) en la configuración de 2.800 bar, y 2 Boquillas Attack (1/4 NPT) en la configuración de 1.500 bar, todas con ángulos desplazados, lo que proporciona un giro controlado y un mayor rendimiento de limpieza en una mayor área superficial de ataque.",
+      "textoCard":"Veja mais informações técnicas sobre este produto:"
+    },
+    "rotativo600":{
+      "title": "Boquilla Turbo Rotativa 600",
+      "texto1": "Boquillas indicadas para equipos de hidrojet de hasta 600 bar. Pueden ser utilizadas para el jeteado de superficies, limpieza de tuberías o jeteado con abrasivo.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    }
   }
 } 

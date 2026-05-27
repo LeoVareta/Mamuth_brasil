@@ -693,5 +693,145 @@
       "texto2": "Engineered for demanding industrial applications, the equipment reduces the need for manual work at heights, improves operational ergonomics, and enables remote control of the process, providing enhanced safety for the operator and superior performance compared to manual spray guns.",
       "textoCard": "See more technical information about this product:" 
     }
+  },
+  "bombas":{
+    "falch125":{
+      "title": "Falch PUMP 125KW",
+      "texto1": "The Falch FA 125 is a high-performance piston pump engineered for industrial applications that require power, reliability, and operational efficiency. Delivering up to 125 kW of power and capable of operating at pressures up to 3,000 bar, this equipment provides top-tier performance even under the most demanding conditions.",
+      "texto2": "Designed with German Falch engineering, the FA 125 is recommended for operations such as heavy-duty industrial cleaning, hydrodemolition, the marine sector, oil and gas, mining, and other applications that demand high pressure combined with stability and durability.",
+      "texto3": "Its design blends mechanical robustness with technologies that reduce downtime and increase energy efficiency, providing lower operating costs over time.",
+      "subtitle1": "Key Advantages",
+      "texto4": "Fast Maintenance (Quick Check Technology)",
+      "texto5": "The Quick Check system was developed to ensure fast and simple interventions directly at the job site, significantly reducing equipment downtime.",
+      "texto6": "Valve replacement in approximately 10 minutes.",
+      "texto7": "Plunger and seal replacement in about 30 minutes.",
+      "texto8": "Requires no special tools.",
+      "texto9": "This system allows for greater machine availability and higher productivity in the field.",
+      "subtitle2": "Energy Efficiency (Green Power Technology)",
+      "texto10": "Green Power technology delivers high performance with lower energy consumption, thanks to an optimized sealing system and the mechanical efficiency of the assembly.",
+      "texto11": "Efficiency between 91% and 94%.",
+      "texto12": "Operation between 1,000 and 3,000 bar.",
+      "texto13": "Requires no special tools.",
+      "textoCard": "See more technical information about this product:",
+      "subtitleCard1": "Efficiency by Pressure",
+      "subtitleCard2": "Operating Configurations",
+      "subtitleCard3": "Speed and Performance: 1,800 rpm",
+      "subtitleCard4": "Technical Data"
+    },
+    "falch250":{
+      "title": "Falch PUMP 250KW",
+      "texto1": "The Falch FA 250 is a high-performance piston pump engineered for industrial applications that require power, reliability, and operational efficiency. Delivering up to 250 kW of power and capable of operating at pressures up to 3,000 bar, this equipment provides top-tier performance even under the most demanding conditions.",
+      "texto2": "Designed with German Falch engineering, the FA 250 is recommended for operations such as heavy-duty industrial cleaning, hydrodemolition, the marine sector, oil and gas, mining, and other applications that demand high pressure combined with stability and durability.",
+      "texto3": "Its design blends mechanical robustness with technologies that reduce downtime and increase energy efficiency, providing lower operating costs over time.",
+      "subtitle1": "Key Advantages",
+      "texto4": "Fast Maintenance (Quick Check Technology)",
+      "texto5": "The Quick Check system was developed to ensure fast and simple interventions directly at the job site, significantly reducing equipment downtime.",
+      "texto6": "Valve replacement in approximately 10 minutes.",
+      "texto7": "Plunger and seal replacement in about 30 minutes.",
+      "texto8": "Requires no special tools.",
+      "texto9": "This system allows for greater machine availability and higher productivity in the field.",
+      "subtitle2": "Energy Efficiency (Green Power Technology)",
+      "texto10": "Green Power technology delivers high performance with lower energy consumption, thanks to an optimized sealing system and the mechanical efficiency of the assembly.",
+      "texto11": "Efficiency between 91% and 94%.",
+      "texto12": "Operation between 1,000 and 3,000 bar.",
+      "texto13": "Requires no special tools.",
+      "textoCard": "See more technical information about this product:",
+      "subtitleCard1": "Efficiency by Pressure",
+      "subtitleCard2": "Operating Configurations",
+      "subtitleCard3": "Speed and Performance: 1,800 rpm",
+      "subtitleCard4": "Technical Data"
+    },
+    "falch500":{
+      "title": "Falch PUMP 500KW",
+      "texto1": "The Falch FA 500 is a high-performance piston pump engineered for industrial applications that require power, reliability, and operational efficiency. Delivering up to 500 kW of power and capable of operating at pressures up to 3,000 bar, this equipment provides top-tier performance even under the most demanding conditions.",
+      "texto2": "Designed with German Falch engineering, the FA 500 is recommended for operations such as heavy-duty industrial cleaning, hydrodemolition, the marine sector, oil and gas, mining, and other applications that demand high pressure combined with stability and durability.",
+      "texto3": "Its design blends mechanical robustness with technologies that reduce downtime and increase energy efficiency, providing lower operating costs over time.",
+      "subtitle1": "Key Advantages",
+      "texto4": "Fast Maintenance (Quick Check Technology)",
+      "texto5": "The Quick Check system was developed to ensure fast and simple interventions directly at the job site, significantly reducing equipment downtime.",
+      "texto6": "Valve replacement in approximately 10 minutes.",
+      "texto7": "Plunger and seal replacement in about 30 minutes.",
+      "texto8": "Requires no special tools.",
+      "texto9": "This system allows for greater machine availability and higher productivity in the field.",
+      "subtitle2": "Energy Efficiency (Green Power Technology)",
+      "texto10": "Green Power technology delivers high performance with lower energy consumption, thanks to an optimized sealing system and the mechanical efficiency of the assembly.",
+      "texto11": "Efficiency between 91% and 94%.",
+      "texto12": "Operation between 1,000 and 3,000 bar.",
+      "texto13": "Requires no special tools.",
+      "textoCard": "See more technical information about this product:",
+      "subtitleCard1": "Efficiency by Pressure",
+      "subtitleCard2": "Operating Configurations",
+      "subtitleCard3": "Speed and Performance: 1,500 rpm",
+      "subtitleCard4": "Technical Data"
+    },
+    "600":{
+      "title": "MTI-600 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 600 bar and a flow rate of up to 35 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "500":{
+      "title": "MTI-500 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 500 bar and a flow rate of up to 20 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "350":{
+      "title": "MTI-350 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 350 bar and a flow rate of up to 19 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "250":{
+      "title": "MTI-250 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 250 bar and a flow rate of up to 17 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "200":{
+      "title": "MTI-200 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 200 bar and a flow rate of up to 40 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "50ff":{
+      "title": "MTI-50FF Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 160 bar and a flow rate of up to 150 L/min.",
+      "textoCard": "See more technical information about this product:"
+    }
+  },
+   "bicos":{
+    "rotativoR":{
+      "title": "Rotary Nozzle R",
+      "texto1": "The R model rotary nozzle was specifically developed for cleaning and removing encrustations from the internal walls of heat exchanger tubes, evaporators, and pipe lines in general. These nozzles are available in several diameters and with inserts of varied orifices, sized according to the flow rate.",
+      "texto2": "Maximum Working Pressure: 1,000 bar / 14,500 psi",
+      "texto3": "F/B: Bushing Orifice",
+      "texto4": "All nozzles (with the exception of the R10 model) have the option of NPT standard thread.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "rotativo600":{
+      "title": "Rotating Nozzle 600 Bar",
+      "texto1": "Rotating nozzles are designed to provide a powerful and efficient",
+      "textoCard": "See more technical information about this product:"
+    },
+    "portasafira":{
+      "title": "Sapphire Nozzle Holder",
+      "texto1": "The 3/8” Sapphire Nozzle Holder is an essential component in cleaning, blasting, or cutting operations using Ultra-High Pressure (UHP) spray guns. This holder is designed to ensure a secure and stable attachment of the nozzle, providing precision and efficiency during use.",
+      "texto2": "Recommended for applications involving pressures up to 2,800 bar (40,600 psi), the holder is ideal for jobs that require high performance and reliability, ensuring equipment durability and integrity even under extreme conditions.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "portareto":{
+      "title": "Straight and Fan Nozzle Holder",
+      "texto1":"The holder for the Form 4 Straight Nozzle and Form 19 Fan Nozzle is primarily used in cleaning, blasting, or cutting operations with high-pressure spray guns. They are recommended for applications up to 1,500 bar / 21,750 psi.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "bicotorpedo":{
+
+    },
+    "shrakjet":{
+      "title":"Shark-Jet 22K and 40K Nozzle",
+      "texto1":"The Shark-Jet 22K and 40K is a self-propelled rotary tool designed for blasting, cleaning, and surface preparation of flat or irregular surfaces. Available in two configurations: the first option operates at pressures up to 1,500 bar (22,000 psi) with a flow rate up to 40 L/min; the second option is configured to operate at pressures up to 2,800 bar (40,000 psi) with a flow rate up to 30 L/min. This tool is used in conjunction with a hydroblasting spray gun. Its internal components feature an oil lubrication and cooling system, as well as a hydraulic brake to limit rotation speed. This tool utilizes 4 Sapphire Nozzles (7/16-20 UNF) in the 2,800 bar configuration, and 2 Attack Nozzles (1/4 NPT) in the 1,500 bar configuration, all with offset angles, which provides a controlled rotation and a higher cleaning performance over a larger surface attack area.",
+      "textoCard":"Veja mais informações técnicas sobre este produto:"
+    },
+    "safiram10":{
+      "title": "Rotating Nozzle 600 Bar",
+      "texto1": "Rotating nozzles are designed to provide a powerful and efficient",
+      "textoCard": "See more technical information about this product:"
+    }
   }
 }
