@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import CTASection from "@/components/CTASection";
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import ProductSection from '@/components/ProductSection';
@@ -14,10 +14,11 @@ import bicoSharkJet40k from '@/assets/images/bico-shark-jet-40k.png'
 
 const BicoShark22K = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const slides = [
-          { id: 1, title: 'Bico Shark-Jet 22K',  cover: bicoSharkJet22k, color: '#FF5101' },
-          { id: 2, title: 'Bico Shark-Jet',  cover: bicoSharkJet, color: '#FF5101' },
-          { id: 3, title: 'Bico Shark-Jet 40K',  cover: bicoSharkJet40k, color: '#FF5101' }
+          { id: 1, title: t('bicos.shrakjet.title22'),  cover: bicoSharkJet22k, color: '#FF5101' },
+          { id: 2, title: t('bicos.shrakjet.title'),  cover: bicoSharkJet, color: '#FF5101' },
+          { id: 3, title: t('bicos.shrakjet.title40'),  cover: bicoSharkJet40k, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -28,7 +29,7 @@ const BicoShark22K = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bico Shark-Jet 22K e 40K - Mamuth</title>
+        <title>{t('bicos.shrakjet.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -44,18 +45,10 @@ const BicoShark22K = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bico Shark-Jet 22K e 40K
+            {t('bicos.shrakjet.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Shark-Jet 22K e 40K é uma ferramenta rotativa auto-propulsora indicada para jateamento, limpeza 
-            e preparação de superfícies planas ou irregulares. Disponível em duas configurações, a primeira trabalha 
-            com pressões de até 1.500 bar (22.000 psi) e vazão de até 40L/min, a segunda opção é configurada 
-            para trabalhar com pressões de até 2.800 bar (40.000 psi) e vazão de até 30 L/min, esta 
-            ferramenta é utilizada junto a pistola de hidrojato. Seus componentes internos tem o sistema de 
-            lubrificação e refrigeração por óleo, além de um freio hidráulico para limitar as rotações. 
-            Esta ferramenta utiliza 4 Bicos de Safira 7/16-20 UNF na configuração 2.800 bar, e 2 Bicos Attack 
-            1/4 NPT na configuração 1.500 bar , todos com ângulos deslocados, isso proporciona um giro controlado 
-            e um desempenho de limpeza mais elevado em uma maior área superficial de ataque.
+            {t('bicos.shrakjet.texto1')}
           </p>
         </div>
       </section>
@@ -72,7 +65,7 @@ const BicoShark22K = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bicos.shrakjet.textoCard')}
             </h2>
           </div>
 

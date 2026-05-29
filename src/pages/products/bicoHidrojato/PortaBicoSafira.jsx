@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ProductSection from '@/components/ProductSection';
 import CTASection from "@/components/CTASection";
 import bgImg from '@/assets/images/bg-carrousel.png';
@@ -9,9 +10,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import portaBicoSafira from '@/assets/images/porta-bico-safira.png';
 
 const PortaBicoSafira = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-          { id: 1, title: 'Porta Bico Safira',  cover: portaBicoSafira, color: '#FF5101' }
+          { id: 1, title: t('bicos.portasafira.title'),  cover: portaBicoSafira, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -22,7 +24,7 @@ const PortaBicoSafira = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Porta Bico Safira - Mamuth</title>
+        <title>{t('bicos.portasafira.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -38,16 +40,13 @@ const PortaBicoSafira = () => {
             className="text-5xl md:text-6xl font-bold mb-10 md:text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Porta Bico Safira
+            {t('bicos.portasafira.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           O suporte para fixação de Bico de Safira 3/8” é um componente essencial em operações de limpeza, 
-           jateamento ou corte utilizando pistolas de Ultra Alta Pressão. Este suporte foi projetado para 
-           garantir uma fixação segura e estável do bico, proporcionando precisão e eficiência durante o uso.
+           {t('bicos.portasafira.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-          Recomendado para aplicações que envolvem pressões de até 2.800 bar (40.600 psi), o suporte é ideal para 
-          trabalhos que exigem alta performance e confiabilidade, assegurando a durabilidade e a integridade do equipamento mesmo sob condições extremas.
+          {t('bicos.portasafira.texto2')}
           </p>
         </div>
       </section>
@@ -64,7 +63,7 @@ const PortaBicoSafira = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bicos.portasafira.textoCard')}
             </h2>
           </div>
 

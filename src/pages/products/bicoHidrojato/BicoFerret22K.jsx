@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ProductSection from '@/components/ProductSection';
 import CTASection from "@/components/CTASection";
 import bgImg from '@/assets/images/bg-carrousel.png';
@@ -9,9 +10,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import bicoFerret22k from '@/assets/images/bico-ferret-22k.png';
 
 const BicoFerret22K = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-          { id: 1, title: 'Bico Ferret 22K',  cover: bicoFerret22k, color: '#FF5101' },
+          { id: 1, title: t('bicos.ferret22.title'),  cover: bicoFerret22k, color: '#FF5101' },
   ];
 
   // Garante que a página inicie no topo
@@ -22,7 +24,7 @@ const BicoFerret22K = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bico Ferret 22K - Mamuth</title>
+        <title>{t('bicos.ferret22.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -38,20 +40,14 @@ const BicoFerret22K = () => {
             className="text-5xl md:text-6xl font-bold mb-10 md:text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bico Ferret 22K
+            {t('bicos.ferret22.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O bico fixo tipo “ Foguetinho” é indicado para limpeza e desobstrução das paredes internas 
-            de tubulações de trocadores de calor, evaporadores e linhas de tubos em geral. 
-            Esses bicos estão disponíveis em diversos diâmetros variados e orifícios dimensionados 
-            de acordo com a vazão, este modelo conta com 8 furos, sendo 2 frontais de ataque e 6 traseiros furos de limpeza e propulsão.
+            {t('bicos.ferret22.texto1')} 
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Pressão Máxima de Trabalho 1.000 bar
+           {t('bicos.ferret22.texto2')}
 
-          </p>
-          <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Max. Working Pressure 14.500 psi
           </p>
         </div>
       </section>
@@ -68,7 +64,7 @@ const BicoFerret22K = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bicos.ferret22.textoCard')}
             </h2>
           </div>
 

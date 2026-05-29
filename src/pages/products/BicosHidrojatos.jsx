@@ -103,6 +103,7 @@ const PaginaCategoria = () => {
     },
     {
       name: t('categorias.bicos.titleAttack'),
+      path: '/bicos-hidrojatos/bico-attack-1-4',
       description: t('categorias.bicos.subtitleAttack'),
       image: bicoAttack14, 
       category: 'Categoria Principal'

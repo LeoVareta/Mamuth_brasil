@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import bgImg from '@/assets/images/bg-carrousel.png';
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -9,9 +10,10 @@ import ProductSection from '@/components/ProductSection';
 import bicoRetoLeque from '@/assets/images/bico-reto-e-leque.png';
 
 const BicoRetoLeque = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-          { id: 1, title: 'Bico Reto e Leque',  cover: bicoRetoLeque, color: '#FF5101' },
+          { id: 1, title: t('bicos.bicoreto.title'),  cover: bicoRetoLeque, color: '#FF5101' },
   ];
 
   // Garante que a página inicie no topo
@@ -22,7 +24,7 @@ const BicoRetoLeque = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bico Reto e Leque - Mamuth</title>
+        <title>{t('bicos.bicoreto.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -38,14 +40,10 @@ const BicoRetoLeque = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bico Reto e Leque
+            {t('bicos.bicoreto.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-          Os bicos ou insertos são utilizados em acessórios aplicados no processo de hidrojateamento 
-          como por exemplo: Pistolas, Ferramentas Rotativas, Barras Spray, Bicos Rotativos entre outros. 
-          As configurações devem ser observadas a cada aplicação, especificações e limitações de 
-          pressão e vazão de cada equipamento ou processo. Podem ser aplicados a processos de 
-          corte, limpeza, decapagem, desobstrução e preparação de superfícies.
+         {t('bicos.bicoreto.texto1')}
           </p>
         </div>
       </section>

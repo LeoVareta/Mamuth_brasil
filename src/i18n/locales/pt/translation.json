@@ -806,8 +806,8 @@
       "textoCard": "Veja mais informações técnicas sobre este produto:"
     },
     "safiram10":{
-      "title": "Turbo Rotary Nozzle 600",
-      "texto1": "Nozzles designed for hydroblasting equipment up to 600 bar. They can be used for surface blasting, pipe cleaning, or abrasive water blasting.",
+      "title": "Bico Safira M10",
+      "texto1": "Os bicos ou insertos são utilizados em acessórios aplicados no processo de hidrojateamento como por exemplo: Pistolas, Ferramentas Rotativas, Barras Spray, Bicos Rotativos entre outros. As configurações devem ser observadas a cada aplicação, especificações e limitações de pressão e vazão de cada equipamento ou processo. Podem ser aplicados a processos de corte, limpeza, decapagem, desobstrução e preparação de superfícies.",
       "textoCard": "Veja mais informações técnicas sobre este produto:"
     },
     "portasafira":{
@@ -821,20 +821,127 @@
       "texto1":"O suporte para Bico Reto Forma 4 e Bico Leque Forma 19 é principalmente utilizado nas operações de limpeza, jateamento ou corte com pistolas de alta pressão. São recomendados para aplicações com até 1.500 bar / 21.750 psi.",
       "textoCard": "Veja mais informações técnicas sobre este produto:"
     },
+    "rotativo600":{
+      "title": "Bico Turbo Rotativo 600",
+      "texto1": "Bicos indicados para hidrojateadoras até 600 bar, podem ser utilizados para jateamento de superfícies tubulações ou jateamento com abrasivo.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
     "bicotorpedo":{
 
     },
     "shrakjet":{
       "title":"Bico Shark-Jet 22K e 40K",
+      "title22":"Shark-Jet 22K",
+      "title40":"Shark-Jet 40K",
       "texto1":"O Shark-Jet 22K e 40K é uma ferramenta rotativa auto-propulsora indicada para jateamento, limpeza e preparação de superfícies planas ou irregulares. Disponível em duas configurações, a primeira trabalha com pressões de até 1.500 bar (22.000 psi) e vazão de até 40L/min, a segunda opção é configurada para trabalhar com pressões de até 2.800 bar (40.000 psi) e vazão de até 30 L/min, esta ferramenta é utilizada junto a pistola de hidrojato. Seus componentes internos tem o sistema de lubrificação e refrigeração por óleo, além de um freio hidráulico para limitar as rotações. Esta ferramenta utiliza 4 Bicos de Safira 7/16-20 UNF na configuração 2.800 bar, e 2 Bicos Attack 1/4 NPT na configuração 1.500 bar , todos com ângulos deslocados, isso proporciona um giro controlado e um desempenho de limpeza mais elevado em uma maior área superficial de ataque.",
       "textoCard":"Veja mais informações técnicas sobre este produto:"
     },
-    "rotativo600":{
-      "title": "Bico Turbo Rotativo 600",
-      "texto1": "Bicos indicados para hidrojateadoras até 600 bar, podem ser utilizados para jateamento de superfícies tubulações ou jateamento com abrasivo.",
+    "rotativotitan":{
+      "title":"Bico Rotativo Titan",
+      "texto1":"O Bico Titan é um bico rotativo auto-propulsor desenvolvido para limpeza e desobstrução de tubulações em geral com pressões entre 1.000 bar e 2.800 bar. As cabeças do bico rotativo são fabricadas em diferentes configurações de orifícios. A cabeça Polisher conta quatro orifícios radiais, a Unplugger conta com cinco orifícios já a Universal contam com sete orifícios para Corte, Limpeza e Polimento simultaneamente. O bico é fabricado em aço inoxidável de alta performance, isso proporciona uma longa vida útil e reduz o custo operacional. O Bico Titan está disponível em diversos tamanhos e configurações, os insertos ou cabeças estão disponíveis nos modelos Polisher, Unplugger e o modelo Universal.",
+      "textoCard":"Veja mais informações técnicas sobre este produto:"
+    },
+    "bicoreto":{
+      "title":"Bico Reto e Leque",
+      "texto1":"Os bicos ou insertos são utilizados em acessórios aplicados no processo de hidrojateamento como por exemplo: Pistolas, Ferramentas Rotativas, Barras Spray, Bicos Rotativos entre outros. As configurações devem ser observadas a cada aplicação, especificações e limitações de pressão e vazão de cada equipamento ou processo. Podem ser aplicados a processos de corte, limpeza, decapagem, desobstrução e preparação de superfícies.",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "foguetinho":{
+      "title": "Bico Fixo Foguetinho",
+      "texto1": "O bico fixo tipo “ Foguetinho” é indicado para limpeza e desobstrução das paredes internas de tubulações de trocadores de calor, evaporadores e linhas de tubos em geral. Esses bicos estão disponíveis em diversos diâmetros variados e orifícios dimensionados de acordo com a vazão, este modelo conta com 8 furos, sendo 2 frontais de ataque e 6 traseiros furos de limpeza e propulsão.",
+      "texto2": "Pressão Máxima de Trabalho 1.000 bar / 14.500 psi",
+      "textoCard": "Veja mais informações técnicas sobre este produto:"
+    },
+    "ferret22":{  
+      "title": "Bico Ferret 22K",
+      "texto1": "O Bico Auto-Propulsor Ferret 22K é indicado para operações com pressões de até 1600 bar e Vazão de 80 L/min. Com essa ferramenta é possível trabalhar com desobstrução e limpeza de tubulações entre 2 e 6 especialmente em tubulações que possuam curvas de 90°.",
+      "texto2": "Pressão Máxima de Trabalho: 1.600 bar / 23.206 psi",
       "textoCard": "Veja mais informações técnicas sobre este produto:"
     }
-  }
-
+  }, 
+  "acessorioshidro":{
+      "viper40k":{
+        "title": "Pistola Rotativa Viper 40k",
+        "texto1": "Sistema de acionamento por isolamento do circuito pneumático: O sistema é projetado para isolar o circuito pneumático, garantindo que a pressão de água e a rotação da lança sejam acionadas somente quando ambos os gatilhos são pressionados simultaneamente, proporcionando um controle preciso e seguro.",
+        "texto2": "Maior segurança ao operador: O fluxo de água e a rotação da lança só são ativados quando os dois gatilhos são pressionados ao mesmo tempo, minimizando o risco de acionamentos acidentais e aumentando significativamente a segurança durante a operação.",
+        "texto3": "Fácil manutenção: O sistema foi projetado para permitir uma manutenção rápida e eficiente, reduzindo o tempo de inatividade e garantindo que o equipamento permaneça em operação com mínima interrupção.",
+        "texto4": "Pressão máxima de trabalho: 2.800 bar: Capaz de suportar e operar sob altíssimas pressões, ideal para aplicações industriais que requerem força e desempenho excepcionais.",
+        "texto5": "Compatível com o Power Box MAMUTH 40K: Deve ser utilizado em conjunto com o Power Box MAMUTH 40K, assegurando uma integração perfeita e um desempenho otimizado nas operações de alta pressão.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "pneumatica2g":{
+        "title": "Pistola Pneumática 2G MTPT",
+        "texto1": "Dois punhos fabricados em plástico de alta resistência: Proporcionam maior robustez e durabilidade, garantindo que o equipamento suporte condições de trabalho exigentes sem comprometer a integridade estrutural.",
+        "texto2": "Sistema de acionamento por 2 válvulas pneumáticas: Oferece controle preciso e confiável do fluxo, permitindo uma operação segura e eficiente em ambientes industriais.",
+        "texto3": "Maior segurança ao operador: O fluxo de operação é acionado somente quando ambos os gatilhos são pressionados simultaneamente, minimizando o risco de acidentes e aumentando a segurança do operador.",
+        "texto4": "Fácil manutenção: Projeto otimizado para simplificar processos de manutenção, reduzindo o tempo de inatividade e os custos operacionais ao longo da vida útil do equipamento.",
+        "texto5": "Cor laranja padrão WJTA: Facilita a identificação visual do equipamento, atendendo aos padrões de segurança internacionais da WJTA e assegurando conformidade em ambientes de trabalho.",
+        "texto6": "Pressão máxima de trabalho até 2.800 bar: Adequado para operações que exigem altíssima pressão, oferecendo desempenho excepcional em tarefas críticas.",
+        "texto7": "Compatível com o Power Box MAMUTH 40K: Deve ser utilizado em conjunto com o Power Box MAMUTH 40K para garantir desempenho e segurança máximos em aplicações de alta pressão.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "fluxofechado":{
+        "title": "Pistola Fluxo Fechado MTFF",
+        "texto1": "Punho fabricado em plástico de alta resistência: Desenvolvido para suportar condições extremas, proporcionando durabilidade e longa vida útil ao equipamento.",
+        "texto2": "Sistema de fluxo fechado com acionamento por válvula mecânica: Garante maior controle e precisão durante a operação, reduzindo o risco de vazamentos e aumentando a segurança.",
+        "texto3": "Maior conforto na operação: Ergonomicamente projetado para reduzir a fadiga do operador, permitindo uso prolongado sem comprometer o desempenho.",
+        "texto4": "Cor verde padrão WJTA: Identificação visual rápida e conforme os padrões internacionais de segurança da WJTA.",
+        "texto5": "Pressão máxima de trabalho até 1.200 bar: Ideal para aplicações que exigem alta pressão, garantindo eficiência e eficácia em operações exigentes.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "fluxoaberto":{
+        "title": "Pistola Fluxo Aberto MTFA",
+        "texto1": "Sistema de fluxo aberto: Permite o funcionamento contínuo e eficiente, adequado para diversas aplicações industriais.",
+        "texto2": "Acionamento por válvula ON/OFF: Facilita o controle preciso do sistema, oferecendo praticidade no uso e segurança nas operações.",
+        "texto3": "Fácil manutenção: Projetado para simplificar processos de manutenção, garantindo menos tempo de inatividade e maior durabilidade do equipamento.",
+        "texto4": "Pressão máxima de trabalho: 1.400 bar: Alta capacidade de pressão, ideal para trabalhos que exigem desempenho elevado e confiabilidade.",
+        "texto5": "Pressão máxima de trabalho até 1.200 bar: Ideal para aplicações que exigem alta pressão, garantindo eficiência e eficácia em operações exigentes.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "tubeclean":{
+        "title": "Tubeclean Mamuth",
+        "texto1": "Ferramenta projetada para auxiliar o operador na limpeza eficiente de evaporadores e diversas tubulações, especialmente em posições verticais. Ideal para remover resíduos e obstruções, garantindo a manutenção adequada e o funcionamento contínuo dos sistemas. Proporciona maior segurança e precisão durante o processo de limpeza, reduzindo o esforço físico e o tempo necessário para a execução da tarefa.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      }, 
+      "powerbox":{
+        "title": "Power Box MAMUTH 2.800",
+        "texto1": "O Power Box MAMUTH 2800 Bar é um acessório que deve ser utilizado em conjunto com a pistola MTP 2.800 Bar Gatilho Duplo ou com a Pistola Rotativa Viper 40K, o acionamento ocorre quando os dois gatilhos da pistola são pressionados simultaneamente, o fluxo de água é liberado pelo redirecionamento feito pela válvula de descarga, quando os gatilhos são aliviados a válvula fecha e o fluxo é direcionado para o amortecedor de impacto, escoando a água em baixa pressão.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      } ,
+      "pedalaberto":{
+        "title": "Pedal de Fluxo Aberto MTPA",
+        "texto1": "O Pedal de Fluxo Aberto MTPA 1.400 Bar é indicado para trabalhos quando o operador de hidrojato precisa utilizar as duas mãos, ideais para executar limpeza em trocadores de calor ou tubulações em geral, esse acessório traz maior segurança e conforto visto que o operador possui total controle na liberação do fluxo de água nos pés. O sistema de fluxo aberto simplifica a sua utilização e traz maior segurança ao sistema de alta pressão e ao operador.",
+        "texto2": "Um amortecedor interno reduz o impacto de acionamento do fluxo;",
+        "texto3": "Uma válvula tipo cartucho pode ser facilmente substituído em campo;",
+        "texto4": "Maximiza a segurança na operação de hidrojato pois o operador tem total controle no acionamento do fluxo de água em alta pressão",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "malhaseguranca":{
+        "title": "Malha de Segurança",
+        "texto1": "Dispositivo de segurança utilizado em uniões de mangueiras e tubos com o objetivo de evitar o movimento brusco ou chicoteamento em caso de rompimento das conexões.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "lancatubo":{
+        "title": "Lança e Tubo Inox",
+        "texto1": "Conhecidas como Varetas ou Lanças, essas são utilizadas como condutoras de fluxo, ou como prolongadores para bicos e mangueiras. Podem ser fabricadas em qualquer comprimento.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "lacoseguranca":{
+        "title": "Laço de Segurança",
+        "texto1": "Dispositivo de segurança utilizado em uniões de mangueiras e tubos com o objetivo de evitar o movimento brusco ou chicoteamento em caso de rompimento das conexões.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "distorcedor":{
+        "title": "Distorcedor de Mangueira UAP MT2800",
+        "texto1": "O Distorcedor é um item de segurança que quando utilizado junto a mangueira elimina o esforço por torção do terminal, evitando assim a quebra prematura e posteriores acidentes.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "cabecote":{
+        "title": "Cabeçote Rotativo 3D Torrent NLB",
+        "texto1": "O Cabeçote 3D Torrent NLB é uma ferramenta avançada projetada especificamente para a limpeza eficiente de tanques. Este dispositivo não apenas reduz drasticamente o tempo de limpeza, mas também proporciona total segurança na operação, eliminando a necessidade de um operador em espaços confinados, o que é essencial para minimizar riscos.",
+        "texto2": "O Torrent opera com movimentos precisos nos eixos vertical e horizontal, além de um giro completo de 360°, garantindo uma limpeza abrangente em todas as direções, alcançando até as áreas mais difíceis. Com este acessório, é possível reduzir em até 80% o tempo de limpeza, aumentando a produtividade e eficiência no processo. Ideal para aplicações industriais que exigem alta performance e segurança.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      }
   
+  }
 }

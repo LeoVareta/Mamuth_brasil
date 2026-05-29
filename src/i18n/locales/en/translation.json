@@ -804,7 +804,7 @@
       "texto4": "All nozzles (with the exception of the R10 model) have the option of NPT standard thread.",
       "textoCard": "See more technical information about this product:"
     },
-    "rotativo600":{
+    "safiram10":{
       "title": "Rotating Nozzle 600 Bar",
       "texto1": "Rotating nozzles are designed to provide a powerful and efficient",
       "textoCard": "See more technical information about this product:"
@@ -820,18 +820,128 @@
       "texto1":"The holder for the Form 4 Straight Nozzle and Form 19 Fan Nozzle is primarily used in cleaning, blasting, or cutting operations with high-pressure spray guns. They are recommended for applications up to 1,500 bar / 21,750 psi.",
       "textoCard": "See more technical information about this product:"
     },
+    "rotativo600":{
+      "title": "Rotating Nozzle 600 Bar",
+      "texto1": "Rotating nozzles are designed to provide a powerful and efficient",
+      "textoCard": "See more technical information about this product:"
+    },
     "bicotorpedo":{
 
     },
     "shrakjet":{
       "title":"Shark-Jet 22K and 40K Nozzle",
+      "title22":"Shark-Jet 22K Nozzle",
+      "title40":"Shark-Jet 40K Nozzle",
       "texto1":"The Shark-Jet 22K and 40K is a self-propelled rotary tool designed for blasting, cleaning, and surface preparation of flat or irregular surfaces. Available in two configurations: the first option operates at pressures up to 1,500 bar (22,000 psi) with a flow rate up to 40 L/min; the second option is configured to operate at pressures up to 2,800 bar (40,000 psi) with a flow rate up to 30 L/min. This tool is used in conjunction with a hydroblasting spray gun. Its internal components feature an oil lubrication and cooling system, as well as a hydraulic brake to limit rotation speed. This tool utilizes 4 Sapphire Nozzles (7/16-20 UNF) in the 2,800 bar configuration, and 2 Attack Nozzles (1/4 NPT) in the 1,500 bar configuration, all with offset angles, which provides a controlled rotation and a higher cleaning performance over a larger surface attack area.",
-      "textoCard":"Veja mais informações técnicas sobre este produto:"
+      "textoCard":"See more technical information about this product:"
     },
-    "safiram10":{
-      "title": "Rotating Nozzle 600 Bar",
-      "texto1": "Rotating nozzles are designed to provide a powerful and efficient",
+    "rotativotitan":{
+      "title":"Titan Rotary Nozzle",
+      "texto1":"The Titan Nozzle is a self-propelled rotary nozzle developed for general pipe cleaning and unblocking, operating at pressures between 1,000 bar and 2,800 bar. The rotary nozzle heads are manufactured in different orifice configurations. The Polisher head features four radial orifices, the Unplugger features five orifices, while the Universal features seven orifices for simultaneous cutting, cleaning, and polishing. The nozzle is manufactured from high-performance stainless steel, which provides a long service life and reduces operating costs. The Titan Nozzle is available in various sizes and configurations, with inserts or heads available in the Polisher, Unplugger, and Universal models.",
+      "textoCard":"See more technical information about this product:"
+    },
+    "bicoreto":{
+      "title":"Straight and Fan Nozzles",
+      "texto1":"Nozzles or inserts are used in accessories applied within the hydroblasting process, such as: Spray Guns, Rotary Tools, Spray Bars, Rotary Nozzles, among others. The configurations must be reviewed for each application, taking into account the specifications and limitations of pressure and flow rate for each piece of equipment or process. They can be applied to cutting, cleaning, stripping, unblocking, and surface preparation processes.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "foguetinho":{
+      "title": "Fixed Rocket Nozzle",
+      "texto1": "The fixed Rocket type nozzle is designed for cleaning and unblocking the internal walls of heat exchanger tubes, evaporators, and pipe lines in general. These nozzles are available in several different diameters and with orifices sized according to the flow rate. This model features 8 orifices, with 2 forward-facing attack jets and 6 rear-facing cleaning and propulsion jets.",
+      "texto2": "Maximum Working Pressure: 1,000 bar / 14,500 psi",
+      "textoCard": "See more technical information about this product:"
+    },
+    "ferret22":{
+      "title": "Ferret 22K Nozzle",
+      "texto1": "The Ferret 22K self-propelled nozzle is designed for operations with pressures up to 1,600 bar and a flow rate of 80 L/min. This tool enables the unblocking and cleaning of 2” to 6” pipes, performing exceptionally well in pipelines that feature 90° bends.",
+      "texto2": "Maximum Working Pressure: 1,600 bar / 23,206 psi",
       "textoCard": "See more technical information about this product:"
     }
+  },
+  "acessorioshidro":{
+      "viper40k":{
+        "title": "Viper 40k Rotary Spray Gun",
+        "texto1": "Pneumatic Circuit Isolation Actuation System: The system is designed to isolate the pneumatic circuit, ensuring that water pressure and lance rotation are only activated when both triggers are pressed simultaneously, providing precise and secure control.",
+        "texto2": "Enhanced Operator Safety: Water flow and lance rotation are only activated when both triggers are pressed at the same time, minimizing the risk of accidental activation and significantly increasing safety during operation.",
+        "texto3": "Easy Maintenance: The system is engineered to allow fast and efficient maintenance, reducing downtime and ensuring the equipment remains operational with minimal interruption.",
+        "texto4": "Maximum Working Pressure (2,800 bar): Capable of withstanding and operating under ultra-high pressures, making it ideal for industrial applications that require exceptional force and performance.",
+        "texto5": "Compatible with the MAMUTH 40K Power Box: Must be used in conjunction with the MAMUTH 40K Power Box, ensuring perfect integration and optimized performance in high-pressure operations.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pneumatica2g":{
+        "title": "MTPT 2G Pneumatic Spray Gun",
+        "texto1": "Two Handles Manufactured from High-Resistance Plastic: Provide greater robustness and durability, ensuring the equipment withstands demanding working conditions without compromising its structural integrity.",
+        "texto2": "Two Pneumatic Valve Actuation System: Offers precise and reliable flow control, enabling safe and efficient operation in industrial environments.",
+        "texto3": "Enhanced Operator Safety: The operational flow is only activated when both triggers are pressed simultaneously, minimizing the risk of accidents and increasing operator safety.",
+        "texto4": "Easy Maintenance: Optimized design to simplify maintenance processes, reducing downtime and operational costs throughout the equipment's service life.",
+        "texto5": "WJTA Standard Orange Color: Facilitates visual identification of the equipment, meeting WJTA international safety standards and ensuring compliance in work environments.",
+        "texto6": "Maximum Working Pressure up to 2,800 bar: Suitable for operations requiring ultra-high pressure, delivering exceptional performance in critical tasks.",
+        "texto7": "Compatible with the MAMUTH 40K Power Box: Must be used in conjunction with the MAMUTH 40K Power Box to ensure maximum performance and safety in high-pressure applications.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "fluxofechado":{
+        "title": "MTFF Closed-Flow Spray Gun",
+        "texto1": "Handle Manufactured from High-Resistance Plastic: Developed to withstand extreme conditions, providing durability and a long service life for the equipment.",
+        "texto2": "Closed-Flow System Actuated by a Mechanical Valve: Ensures greater control and precision during operation, reducing the risk of leaks and increasing safety.",
+        "texto3": "Greater Operational Comfort: Ergonomically designed to reduce operator fatigue, allowing prolonged use without compromising performance.",
+        "texto4": "WJTA Standard Green Color: Quick visual identification in compliance with WJTA international safety standards.",
+        "texto5": "Maximum Working Pressure up to 1,200 bar: Ideal for applications requiring high pressure, ensuring efficiency and effectiveness in demanding operations.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "fluxoaberto":{
+        "title": "MTFA Dump Spray Gun",
+        "texto1": "Open-Flow System: Allows for continuous and efficient operation, suitable for various industrial applications.",
+        "texto2": "ON/OFF Valve Actuation: Facilitates precise control of the system, offering convenience in use and safety during operations.",
+        "texto3": "Easy Maintenance: Designed to simplify maintenance processes, ensuring less downtime and greater equipment durability.",
+        "texto4": "Maximum Working Pressure (1,400 bar): High pressure capacity, ideal for jobs that require high performance and reliability.",
+        "texto5": "Maximum Working Pressure up to 1,200 bar: Ideal for applications requiring high pressure, ensuring efficiency and effectiveness in demanding operations.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "tubeclean":{
+        "title": "Tubeclean Mamuth",
+        "texto1": "A tool engineered to assist operators in the efficient cleaning of evaporators and various pipelines, particularly in vertical positions. Ideal for removing residues and obstructions, ensuring proper maintenance and continuous system operation. It provides greater safety and precision during the cleaning process, reducing physical effort and the time required to complete the task.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "powerbox":{
+        "title": "Power Box MAMUTH 2,800",
+        "texto1": "The Power Box MAMUTH 2,800 Bar is an accessory that must be used in conjunction with the MTP 2,800 Bar Dual Trigger Spray Gun or the Viper 40K Rotary Spray Gun. Actuation occurs when both gun triggers are pressed simultaneously, releasing the water flow through redirection by the dump valve. When the triggers are released, the valve closes and the flow is directed to the surge suppressor, draining the water at low pressure.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pedalaberto":{
+        "title": "MTPA 1,400 Bar Open-Flow Foot Pedal",
+        "texto1": "The MTPA 1,400 Bar Open-Flow Foot Pedal is designed for tasks where the hydroblasting operator needs to use both hands, making it ideal for cleaning heat exchangers or pipelines in general. This accessory provides greater safety and comfort, as the operator has total control over releasing the water flow with their foot. The open-flow system simplifies its utilization and brings enhanced safety to both the high-pressure system and the operator.",
+        "texto2": "Internal Surge Suppressor: An internal damper reduces the flow activation impact.",
+        "texto3": "Cartridge-Type Valve: Can be easily replaced in the field.",
+        "texto4": "Maximum Operational Safety: Maximizes safety in hydroblasting operations since the operator has complete control over activating the high-pressure water flow.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "malhaseguranca":{
+        "title": "Hose Safety Whipcheck",
+        "texto1": "A safety device used at hose and pipe connections designed to prevent sudden movement or whipping in the event of a connection failure.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "lancatubo":{
+        "title": "Stainless Steel Lance and Tube",
+        "texto1": "Known as rods or lances, these are used as flow conductors or as extensions for nozzles and hoses. They can be manufactured in any custom length.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "lacoseguranca":{
+        "title": "Hose Safety Cable Loop",
+        "texto1": "A safety device used at hose and pipe connections designed to prevent sudden movement or whipping in the event of a connection failure.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "distorcedor":{
+        "title": "MT2800 UHP Hose Swivel Joint",
+        "texto1": "The Swivel Joint is a safety component that, when used with the hose, eliminates torsional stress on the fitting, thereby preventing premature failure and subsequent accidents.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "cabecote":{
+        "title": "NLB Torrent 3D Rotary Tank Cleaning Head",
+        "texto1": "The NLB Torrent 3D Head is an advanced tool specifically designed for efficient tank cleaning. This device not only drastically reduces cleaning time but also provides total operational safety by eliminating the need for an operator inside confined spaces, which is essential to minimize risks.",
+        "texto2": "The Torrent operates with precise movements along the vertical and horizontal axes, featuring a full 360° rotation to ensure comprehensive cleaning in all directions, reaching even the most difficult areas. With this accessory, cleaning time can be reduced by up to 80%, increasing productivity and efficiency in the process. It is ideal for industrial applications that require high performance and safety.",
+        "textoCard": "See more technical information about this product:"
+      }
+  
+     
   }
 }

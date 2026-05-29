@@ -826,13 +826,123 @@
     },
     "shrakjet":{
       "title":"Boquilla Shark-Jet 22K y 40K",
+      "title22":"Boquilla Shark-Jet 22K",
+      "title40":"Boquilla Shark-Jet 40K",
       "texto1":"La Shark-Jet 22K y 40K es una herramienta rotativa autopropulsada indicada para el jeteado, limpieza y preparación de superficies planas o irregulares. Disponible en dos configuraciones: la primera trabaja con presiones de hasta 1.500 bar (22.000 psi) y un caudal de hasta 40 L/min; la segunda opción está configurada para trabajar con presiones de hasta 2.800 bar (40.000 psi) y un caudal de hasta 30 L/min. Esta herramienta se utiliza junto con la pistola de hidrojet. Sus componentes internos cuentan con un sistema de lubricación y refrigeración por aceite, además de un freno hidráulico para limitar las revoluciones. Esta herramienta utiliza 4 Boquillas de Zafiro (7/16-20 UNF) en la configuración de 2.800 bar, y 2 Boquillas Attack (1/4 NPT) en la configuración de 1.500 bar, todas con ángulos desplazados, lo que proporciona un giro controlado y un mayor rendimiento de limpieza en una mayor área superficial de ataque.",
-      "textoCard":"Veja mais informações técnicas sobre este produto:"
+      "textoCard":"Consulte más especificaciones técnicas de este producto:"
     },
     "rotativo600":{
       "title": "Boquilla Turbo Rotativa 600",
       "texto1": "Boquillas indicadas para equipos de hidrojet de hasta 600 bar. Pueden ser utilizadas para el jeteado de superficies, limpieza de tuberías o jeteado con abrasivo.",
       "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "rotativotitan":{
+      "title":"Boquilla Rotativa Titan",
+      "texto1":"La Boquilla Titan es una boquilla rotativa autopropulsada desarrollada para la limpieza y desobstrucción de tuberías en general, con presiones entre 1.000 bar y 2.800 bar. Las cabezas de la boquilla rotativa se fabrican en diferentes configuraciones de orificios. La cabeza Polisher cuenta con cuatro orificios radiales, la Unplugger cuenta con cinco orificios, mientras que la Universal cuenta con siete orificios para corte, limpieza y pulido de forma simultánea. La boquilla está fabricada en acero inoxidable de alto rendimiento, lo que proporciona una larga vida útil y reduce el costo operativo. La Boquilla Titan está disponible en diversos tamaños y configuraciones, y los insertos o cabezas están disponibles en los modelos Polisher, Unplugger y el modelo Universal.",
+      "textoCard":"Consulte más especificaciones técnicas de este producto:"
+    },
+    "bicoreto":{
+      "title":"Boquillas Rectas y de Abanico",
+      "texto1":"Las boquillas o insertos se utilizan en accesorios aplicados en el proceso de hidrojeteado, como por ejemplo: Pistolas, Herramientas Rotativas, Barras de Jeteado (Spray Bars), Boquillas Rotativas, entre otros. Las configuraciones deben ser observadas para cada aplicación, considerando las especificaciones y limitaciones de presión y caudal de cada equipo o proceso. Pueden aplicarse a procesos de corte, limpieza, decapado, desobstrucción y preparación de superficies.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "foguetinho":{
+      "title": "Boquilla Fija Tipo Cohete",
+      "texto1": "La boquilla fija tipo “Cohete” está indicada para la limpieza y desobstrucción de las paredes internas de tuberías de intercambiadores de calor, evaporadores y líneas de tubos en general. Estas boquillas están disponibles en diversos diámetros variados y con orificios dimensionados según el caudal. Este modelo cuenta con 8 orificios, siendo 2 frontales de ataque y 6 traseros de limpieza y propulsión.",
+      "texto2": "Presión Máxima de Trabajo: 1.000 bar / 14.500 psi",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "ferret22":{
+      "title": "Boquilla Ferret 22K",
+      "texto1": "La boquilla autopropulsada Ferret 22K está indicada para operaciones con presiones de hasta 1.600 bar y un caudal de 80 L/min. Con esta herramienta es posible trabajar en la desobstrucción y limpieza de tuberías de entre 2” y 6”, especialmente en tuberías que cuenten con codos de 90°.",
+      "texto2": "Presión Máxima de Trabajo: 1.600 bar / 23.206 psi",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
     }
+  }, 
+  "acessorioshidro":{
+      "viper40k":{
+        "title": "Pistola Rotativa Viper 40k",
+        "texto1": "Sistema de Accionamiento por Aislamiento del Circuito Neumático: El sistema está diseñado para aislar el circuito neumático, garantizando que la presión del agua y la rotación de la lanza se activen únicamente cuando ambos gatillos se presionan de forma simultánea, proporcionando un control preciso y seguro.",
+        "texto2": "Mayor Seguridad para el Operador: El flujo de agua y la rotación de la lanza solo se activan cuando los dos gatillos se presionan al mismo tiempo, minimizando el riesgo de accionamientos accidentales y aumentando significativamente la seguridad durante la operación.",
+        "texto3": "Fácil Mantenimiento: El sistema fue diseñado para permitir un mantenimiento rápido y eficiente, reduciendo el tiempo de inactividad y garantizando que el equipo permanezca en operación con la mínima interrupción.",
+        "texto4": "Presión Máxima de Trabajo (2.800 bar): Capaz de soportar y operar bajo altísimas presiones, ideal para aplicaciones industriales que requieren fuerza y rendimiento excepcionales.",
+        "texto5": "Compatible con el Power Box MAMUTH 40K: Debe ser utilizado en conjunto con el Power Box MAMUTH 40K, asegurando una integración perfecta y un rendimiento optimizado en las operaciones de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pneumatica2g":{
+        "title": "Pistola Neumática 2G MTPT",
+        "texto1": "Dos Empuñaduras Fabricadas en Plástico de Alta Resistencia: Proporcionan mayor robustez y durabilidad, garantizando que el equipo soporte condiciones de trabajo exigentes sin comprometer su integridad estructural.",
+        "texto2": "Sistema de Accionamiento por 2 Válvulas Neumáticas: Ofrece un control preciso y confiable del flujo, permitiendo una operación segura y eficiente en entornos industriales.",
+        "texto3": "Mayor Seguridad para el Operador: El flujo de operación se activa únicamente cuando ambos gatillos se presionan de forma simultánea, minimizando el riesgo de accidentes y aumentando la seguridad del operador.",
+        "texto4": "Fácil Mantenimiento: Diseño optimizado para simplificar los procesos de mantenimiento, reduciendo el tiempo de inactividad y los costos operativos a lo largo de la vida útil del equip",
+        "texto5": "Color Naranja Estándar WJTA: Facilita la identificación visual del equipo, cumpliendo con los estándares de seguridad internacionales de la WJTA y asegurando la conformidad en los entornos de trabajo.",
+        "texto6": "Presión Máxima de Trabajo de hasta 2.800 bar: Adecuado para operaciones que exigen altísima presión, ofreciendo un rendimiento excepcional en tareas críticas.",
+        "texto7": "Compatible con el Power Box MAMUTH 40K: Debe ser utilizado en conjunto con el Power Box MAMUTH 40K para garantizar el máximo rendimiento y seguridad en aplicaciones de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "fluxofechado":{
+        "title": "Pistola de Flujo Cerrado MTFF",
+        "texto1": "Empuñadura Fabricada en Plástico de Alta Resistencia: Desarrollada para soportar condiciones extremas, proporcionando durabilidad y una larga vida útil al equipo.",
+        "texto2": "Sistema de Flujo Cerrado con Accionamiento por Válvula Mecánica: Garantiza un mayor control y precisión durante la operación, reduciendo el riesgo de fugas y aumentando la seguridad.",
+        "texto3": "Mayor Confort en la Operación: Diseñada ergonómicamente para reducir la fatiga del operador, permitiendo un uso prolongado sin comprometer el rendimiento.",
+        "texto4": "Color Verde Estándar WJTA: Identificación visual rápida y conforme a los estándares de seguridad internacionales de la WJTA.",
+        "texto5": "Presión Máxima de Trabajo de hasta 1.200 bar: Ideal para aplicaciones que exigen alta presión, garantizando eficiencia y eficacia en operaciones exigentes.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "fluxoaberto":{
+        "title": "Pistola de Flujo Abierto MTFA",
+        "texto1": "Sistema de Flujo Abierto: Permite un funcionamiento continuo y eficiente, adecuado para diversas aplicaciones industriales.",
+        "texto2": "Accionamiento por Válvula ON/OFF: Facilita un control preciso del sistema, ofreciendo practicidad en el uso y seguridad en las operaciones.",
+        "texto3": "Fácil Mantenimiento: Diseñado para simplificar los procesos de mantenimiento, garantizando un menor tiempo de inactividad y una mayor durabilidad del equipo.",
+        "texto4": "Presión Máxima de Trabajo (1.400 bar): Alta capacidad de presión, ideal para trabajos que exigen un alto rendimiento y confiabilidad.",
+        "texto5": "Presión Máxima de Trabajo de hasta 1.200 bar: Ideal para aplicaciones que exigen alta presión, garantizando eficiencia y eficacia en operaciones exigentes.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "tubeclean":{
+        "title": "Tubeclean Mamuth",
+        "texto1": "Herramienta diseñada para asistir al operador en la limpieza eficiente de evaporadores y diversas tuberías, especialmente en posiciones verticales. Ideal para eliminar residuos y obstrucciones, garantizando el mantenimiento adecuado y el funcionamiento continuo de los sistemas. Proporciona mayor seguridad y precisión durante el proceso de limpieza, reduciendo el esfuerzo físico y el tiempo necesario para la ejecución de la tarea.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "powerbox":{
+        "title": "Power Box MAMUTH 2.800",
+        "texto1": "El Power Box MAMUTH 2.800 Bar es un accesorio que debe ser utilizado en conjunto con la pistola MTP 2.800 Bar de Doble Gatillo o con la Pistola Rotativa Viper 40K. El accionamiento ocurre cuando ambos gatillos de la pistola se presionan de forma simultánea, liberando el flujo de agua mediante el redireccionamiento realizado por la válvula de descarga. Cuando se sueltan los gatillos, la válvula se cierra y el flujo se dirige hacia el amortiguador de impacto, drenando el agua a baja presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pedalaberto":{
+        "title": "Pedal de Flujo Abierto MTPA 1.400 Bar",
+        "texto1": "El Pedal de Flujo Abierto MTPA 1.400 Bar está indicado para trabajos en los que el operador de hidrojet necesita utilizar ambas manos, siendo ideal para realizar la limpieza en intercambiadores de calor o tuberías en general. Este accesorio brinda mayor seguridad y confort, ya que el operador posee un control total en la liberación del flujo de agua con los pies. El sistema de flujo abierto simplifica su utilización y aporta mayor seguridad al sistema de alta presión y al operador.",
+        "texto2": "Amortiguador Interno: Un amortiguador interno reduce el impacto de activación del flujo.",
+        "texto3": "Válvula Tipo Cartucho: Puede ser reemplazada fácilmente en el campo.",
+        "texto4": "Máxima Seguridad en la Operación: Maximiza la seguridad en la operación de hidrojet, ya que el operador tiene el control total en el accionamiento del flujo de agua a alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },  
+      "malhaseguranca":{
+        "title": "Malla de Seguridad",
+        "texto1": "Dispositivo de seguridad utilizado en uniones de mangueras y tubos con el objetivo de evitar el movimiento brusco o latigazo (chicoteo) en caso de rotura de las conexiones.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "lancatubo":{
+        "title": "Lanza y Tubo de Acero Inoxidable",
+        "texto1": "Conocidas como varillas o lanzas, estas se utilizan como conductoras de flujo o como prolongadores para boquillas y mangueras. Pueden fabricarse en cualquier longitud.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "lacoseguranca":{
+        "title": "Lazo de Seguridad",
+        "texto1": "Dispositivo de seguridad utilizado en uniones de mangueras y tubos con el objetivo de evitar el movimiento brusco o latigazo (chicoteo) en caso de rotura de las conexiones.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "distorcedor":{
+        "title": "Junta Giratoria Destorcedora UAP MT2800",
+        "texto1": "La Junta Giratoria es un elemento de seguridad que, al utilizarse junto con la manguera, elimina el esfuerzo por torsión del terminal, evitando así la rotura prematura y posteriores accidentes.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "cabecote":{
+        "title": "Cabezal Rotativo 3D Torrent NLB",
+        "texto1": "El Cabezal 3D Torrent NLB es una herramienta avanzada diseñada específicamente para la limpieza eficiente de tanques. Este dispositivo no solo reduce drásticamente el tiempo de limpieza, sino que también brinda total seguridad en la operación, eliminando la necesidad de un operador en espacios confinados, lo cual es esencial para minimizar riesgos.",
+        "texto2": "El Torrent opera con movimientos precisos en los ejes vertical y horizontal, además de un giro completo de 360°, garantizando una limpieza integral en todas las direcciones y alcanzando incluso las áreas más difíciles. Con este accesorio, es posible reducir en hasta un 80% el tiempo de limpieza, aumentando la productividad y la eficiencia en el proceso. Ideal para aplicaciones industriales que exigen alto rendimiento y seguridad.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      }
+  
+  
   }
 } 

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import pistolaRotativaViper40k from '@/assets/images/pistola-rotativa-viper-40k.png';
 
 const PistolaRotativaViper40K = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-      { id: 1, title: 'Pistola Rotativa Viper 40k',  cover: pistolaRotativaViper40k, color: '#FF5101' },
+      { id: 1, title: t('acessorioshidro.viper40k.title'),  cover: pistolaRotativaViper40k, color: '#FF5101' },
     ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const PistolaRotativaViper40K = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Pistola Rotativa Viper 40k - Mamuth</title>
+        <title>{t('acessorioshidro.viper40k.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,37 +41,23 @@ const PistolaRotativaViper40K = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Pistola Rotativa Viper 40k
+            {t('acessorioshidro.viper40k.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Sistema de acionamento por isolamento do circuito pneumático:
-           O sistema é projetado para isolar o circuito pneumático, garantindo que a pressão de 
-           água e a rotação da lança sejam acionadas somente quando ambos os gatilhos são 
-           pressionados simultaneamente, proporcionando um controle preciso e seguro.      
+           {t('acessorioshidro.viper40k.texto1')}     
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Maior segurança ao operador:
-           O fluxo de água e a rotação da lança só são ativados quando os dois gatilhos são 
-           pressionados ao mesmo tempo, minimizando o risco de acionamentos acidentais e 
-           aumentando significativamente a segurança durante a operação.
-   
+           {t('acessorioshidro.viper40k.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Fácil manutenção:
-           O sistema foi projetado para permitir uma manutenção rápida e eficiente, reduzindo o 
-           tempo de inatividade e garantindo que o equipamento permaneça em operação com 
-           mínima interrupção.
-
+           {t('acessorioshidro.viper40k.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Pressão máxima de trabalho: 2.800 bar:
-           Capaz de suportar e operar sob altíssimas pressões, ideal para aplicações industriais que requerem força e desempenho excepcionais.    
+            {t('acessorioshidro.viper40k.texto4')}    
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Compatível com o Power Box MAMUTH 40K:
-           Deve ser utilizado em conjunto com o Power Box MAMUTH 40K, assegurando uma 
-           integração perfeita e um desempenho otimizado nas operações de alta pressão.  
+           {t('acessorioshidro.viper40k.texto5')}
           </p>
         
         </div>
@@ -88,7 +75,7 @@ const PistolaRotativaViper40K = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioshidro.viper40k.textoCard')}
             </h2>
           </div>
 

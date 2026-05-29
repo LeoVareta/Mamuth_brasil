@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import tubecleanMamuth from '@/assets/images/tubeclean-mamuth.jpeg';
 
 const TubeClean = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-      { id: 1, title: 'Tubeclean Mamuth',  cover: tubecleanMamuth, color: '#FF5101' }
+      { id: 1, title: t('acessorioshidro.tubeclean.title'),  cover: tubecleanMamuth, color: '#FF5101' }
     ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const TubeClean = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Tubeclean Mamuth - Mamuth</title>
+        <title>{t('acessorioshidro.tubeclean.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,15 +41,11 @@ const TubeClean = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Tubeclean Mamuth
+            {t('acessorioshidro.tubeclean.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-1 text-left">
-            Ferramenta projetada para auxiliar o operador na limpeza eficiente de evaporadores e 
-            diversas tubulações, especialmente em posições verticais. Ideal para remover resíduos 
-            e obstruções, garantindo a manutenção adequada e o funcionamento contínuo dos
-            sistemas. Proporciona maior segurança e precisão durante o processo de limpeza, 
-            reduzindo o esforço físico e o tempo necessário para a execução da tarefa.
+            {t('acessorioshidro.tubeclean.texto1')}
           </p>
         
         </div>
@@ -66,7 +63,7 @@ const TubeClean = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioshidro.tubeclean.textoCard')}
             </h2>
           </div>
 

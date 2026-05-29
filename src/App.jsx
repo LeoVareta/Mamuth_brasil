@@ -60,6 +60,7 @@ import BicoRetoLeque from '@/pages/products/bicoHidrojato/BicoRetoLeque';
 import BicoFixoFoguetinho from '@/pages/products/bicoHidrojato/BicoFixoFoguetinho';
 import BicoFerret22K from '@/pages/products/bicoHidrojato/BicoFerret22K';
 import BicoTorpedo from '@/pages/products/bicoHidrojato/BicoTorpedo';
+import BicoAttack from '@/pages/products/bicoHidrojato/BicoAttack1-4';
 {/* Bombas de alta pressão*/}
 import BombaMTI600 from '@/pages/products/bombasAltaPressao/BombaMti600';
 import BombaMTI50FF from '@/pages/products/bombasAltaPressao/BombaMTI50FF';
@@ -184,6 +185,7 @@ function App() {
             <Route path="/bicos-hidrojatos/bico-fixo-foguetinho" element={<BicoFixoFoguetinho/>}/>
             <Route path="/bicos-hidrojatos/bico-ferret-22k" element={<BicoFerret22K/>}/>
             <Route path="/bicos-hidrojatos/bico-torpedo" element={<BicoTorpedo/>}/>
+            <Route path="/bicos-hidrojatos/bico-attack-1-4" element={<BicoAttack/>}/>
             {/* Bombas de alta pressão*/}
             <Route path="/bombas-de-alta-pressao/bomba-mti-600" element={<BombaMTI600/>}/>
             <Route path="/bombas-de-alta-pressao/bomba-mti-50ff" element={<BombaMTI50FF/>}/>

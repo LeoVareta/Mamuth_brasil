@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ProductSection from '@/components/ProductSection';
 import CTASection from "@/components/CTASection";
 import bgImg from '@/assets/images/bg-carrousel.png';
@@ -11,8 +12,9 @@ import bicoRotativoR from '@/assets/images/bico-rotativo-r.png';
 
 const BicoRotativoR = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const slides = [
-          { id: 1, title: 'Bico Rotativo R',  cover: bicoRotativoR, color: '#FF5101' }
+          { id: 1, title: t('bicos.rotativoR.title'),  cover: bicoRotativoR, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -23,7 +25,7 @@ const BicoRotativoR = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bico Rotativo R - Mamuth</title>
+        <title>{t('bicos.rotativoR.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -39,16 +41,15 @@ const BicoRotativoR = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bico Rotativo R
+            {t('bicos.rotativoR.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O bico rotativo modelo “R’’ foi especificamente desenvolvido para limpeza e remoção de incrustações nas paredes internas de tubulações de trocadores de calor, evaporadores e linhas de tubos em geral. Esses bicos estão disponíveis em diversos diâmetros e com insertos de variados orifícios dimensionados de acordo com a vazão.
+            {t('bicos.rotativoR.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Pressão Máxima de Trabalho 1.000 bar <br />
-            Max. Working Pressure 14.500 psi <br />
-            F/B: Furo na Bucha <br />
-            Todos os bicos (com exceção do modelo R10) tem a opção de rosca no padrão NPT.
+            {t('bicos.rotativoR.texto2')} <br />
+            {t('bicos.rotativoR.texto3')} <br />
+            {t('bicos.rotativoR.texto4')}
           </p>
         </div>
       </section>
@@ -65,7 +66,7 @@ const BicoRotativoR = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bicos.rotativoR.textoCard')}
             </h2>
           </div>
 

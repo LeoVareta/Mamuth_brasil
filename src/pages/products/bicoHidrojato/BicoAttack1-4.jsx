@@ -2,18 +2,16 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import ProductSection from '@/components/ProductSection';
 import CTASection from "@/components/CTASection";
 import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
-import bicoSafiraM10 from '@/assets/images/bico-safira-m10.png';
+import bicoTorpedo from '@/assets/images/bico-torpedo.png';
 
-const BicoSafiraM10 = () => {
+const BicoAttack = () => {
   const navigate = useNavigate();
-  const { t } = useTranslation();
   const slides = [
-          { id: 1, title: t('bicos.safiram10.title'),  cover: bicoSafiraM10, color: '#FF5101' }
+          { id: 1, title: 'Bico Attack 1/4',  cover: bicoTorpedo, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -24,7 +22,7 @@ const BicoSafiraM10 = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>{t('bicos.safiram10.title')} - Mamuth</title>
+        <title>Bico Attack 1/4 - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,10 +38,10 @@ const BicoSafiraM10 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            {t('bicos.safiram10.title')}
+            Bico Attack 1/4
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           {t('bicos.safiram10.texto1')}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
       </section>
@@ -54,4 +52,4 @@ const BicoSafiraM10 = () => {
   );
 };
 
-export default BicoSafiraM10;
+export default BicoAttack;
