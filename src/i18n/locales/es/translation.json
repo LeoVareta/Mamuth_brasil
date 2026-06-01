@@ -940,9 +940,48 @@
         "title": "Cabezal Rotativo 3D Torrent NLB",
         "texto1": "El Cabezal 3D Torrent NLB es una herramienta avanzada diseñada específicamente para la limpieza eficiente de tanques. Este dispositivo no solo reduce drásticamente el tiempo de limpieza, sino que también brinda total seguridad en la operación, eliminando la necesidad de un operador en espacios confinados, lo cual es esencial para minimizar riesgos.",
         "texto2": "El Torrent opera con movimientos precisos en los ejes vertical y horizontal, además de un giro completo de 360°, garantizando una limpieza integral en todas las direcciones y alcanzando incluso las áreas más difíciles. Con este accesorio, es posible reducir en hasta un 80% el tiempo de limpieza, aumentando la productividad y la eficiencia en el proceso. Ideal para aplicaciones industriales que exigen alto rendimiento y seguridad.",
-        "textoCard": "Veja mais informações técnicas sobre este produto:"
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
       }
-  
-  
+  },
+  "acessorioslavadoras":{
+      "pistola660":{
+        "title": "Pistola de Alta Presión de 660 Bares",
+        "texto1": "Gatillos y lanzas indicadas para hidrolavadoras de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pistola350":{
+        "title": "Pistola de Alta Presión de 350 Bares",
+        "texto1": "Gatillos y lanzas indicadas para hidrolavadoras de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pistola280":{
+        "title": "Pistola de Alta Presión de 280 Bares",
+        "texto1": "Gatillos y lanzas indicadas para hidrolavadoras de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "bicojato": {
+        "title": "Boquilla de Chorro Abrasivo de 500 Bares",
+        "texto1": "Boquilla de chorro abrasivo de alto rendimiento diseñada para operaciones de hidroarenado a presiones de hasta 500 bar. Ideal para la preparación de superficies pesadas, decapado de pintura, eliminación de óxido y descontaminación de hormigón."
+      },
+      "valvulareguladora550":{
+        "title": "Válvula Reguladora de Presión de 550 Bares",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 550 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "valvulareguladora350":{
+        "title": "Válvula Reguladora de Presión de 350 Bares",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 350 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "valvulareguladora200":{
+        "title": "Válvula Reguladora de Presión de 200 Bares de Alto Caudal",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 200 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "valvulareguladora600":{
+        "title": "Válvula Reguladora de Presión de 600 Bares de Alto Caudal",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 600 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      }
   }
 } 

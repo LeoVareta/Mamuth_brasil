@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import valvulaReguladora200bar from '@/assets/images/valvula-reguladora-200bar.png';
 
 const ValvulaReguladora200AltaVazao = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Válvula Reguladora 200 bar Alta Vazão', cover: valvulaReguladora200bar, color: '#FF5101' }
+        { id: 1, title: t('acessorioslavadoras.valvulareguladora200.title'), cover: valvulaReguladora200bar, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const ValvulaReguladora200AltaVazao = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Válvula Reguladora 200 bar Alta Vazão - Mamuth</title>
+        <title>{t('acessorioslavadoras.valvulareguladora200.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,11 +41,11 @@ const ValvulaReguladora200AltaVazao = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Válvula Reguladora 200 bar Alta Vazão
+            {t('acessorioslavadoras.valvulareguladora200.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Válvula Reguladora de Pressão (By-Pass) com função de segurança. Indicada para bombas de alta vazão.
+            {t('acessorioslavadoras.valvulareguladora200.texto1')}
           </p>
         </div>
       </section>
@@ -61,7 +62,7 @@ const ValvulaReguladora200AltaVazao = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioslavadoras.valvulareguladora200.textoCard')}
             </h2>
           </div>
 

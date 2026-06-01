@@ -942,6 +942,46 @@
         "texto2": "O Torrent opera com movimentos precisos nos eixos vertical e horizontal, além de um giro completo de 360°, garantindo uma limpeza abrangente em todas as direções, alcançando até as áreas mais difíceis. Com este acessório, é possível reduzir em até 80% o tempo de limpeza, aumentando a produtividade e eficiência no processo. Ideal para aplicações industriais que exigem alta performance e segurança.",
         "textoCard": "Veja mais informações técnicas sobre este produto:"
       }
-  
+  },
+  "acessorioslavadoras":{
+      "pistola660":{
+        "title": "Pistola 660 Bar",
+        "texto1": "Gatilhos e lanças indicadas para hidrolavadoras de alta pressão",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "pistola350":{
+        "title": "Pistola 350 Bar",
+        "texto1": "Gatilhos e lanças indicadas para hidrolavadoras de alta pressão",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "pistola280":{
+        "title": "Pistola 280 Bar",
+        "texto1": "Gatilhos e lanças indicadas para hidrolavadoras de alta pressão",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "bicojato": {
+        "title": "Bico Jato Abrasivo 500bar",
+        "texto1": "Bico de jato abrasivo de alto rendimento projetado para operações de hidrojateamento úmido a pressões de até 500 bar. Ideal para a preparação de superfícies pesadas, decapagem de pintura, remoção de ferrugem e descontaminação de concreto."
+      },
+      "valvulareguladora550":{
+        "title": "Válvula Reguladora 550 bar",
+        "texto1": "Válvula reguladora de pressão e descarregadora (unloader) de alta precisão, projetada para manter a pressão estável do sistema e desviar o fluxo excedente em sistemas de lavagem e hidrojateamento de alta pressão que operam a até 550 bar.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "valvulareguladora350":{
+        "title": "Válvula Reguladora 350 bar",
+        "texto1": "Válvula reguladora de pressão e descarregadora (unloader) de alta precisão, projetada para manter a pressão estável do sistema e desviar o fluxo excedente em sistemas de lavagem e hidrojateamento de alta pressão que operam a até 350 bar.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "valvulareguladora200":{
+        "title": "Válvula Reguladora 200 bar Alta Vazão",
+        "texto1": "Válvula reguladora de pressão e descarregadora (unloader) de alta precisão, projetada para manter a pressão estável do sistema e desviar o fluxo excedente em sistemas de lavagem e hidrojateamento de alta pressão que operam a até 200 bar.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      },
+      "valvulareguladora600":{
+        "title": "Válvula Reguladora 600 bar Alta Vazão",
+        "texto1": "Válvula reguladora de pressão e descarregadora (unloader) de alta precisão, projetada para manter a pressão estável do sistema e desviar o fluxo excedente em sistemas de lavagem e hidrojateamento de alta pressão que operam a até 600 bar.",
+        "textoCard": "Veja mais informações técnicas sobre este produto:"
+      }
   }
 }

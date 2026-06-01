@@ -2,19 +2,20 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
 
 // Import da imagem
-import valvulaReguladora200bar from '@/assets/images/valvula-reguladora-200bar.png';
+import bicoJatoAbrasivo from '@/assets/images/bico-jato-abrasivo-500bar.png';
 
 const BicoJatoAbrasivo = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Bico Jato Abrasivo 500bar', artist: 'Trifásico', cover: valvulaReguladora200bar, color: '#FF5101' }
+        { id: 1, title: t('acessorioslavadoras.bicojato.title'), cover: bicoJatoAbrasivo, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -24,7 +25,7 @@ const BicoJatoAbrasivo = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bico Jato Abrasivo 500bar - Mamuth</title>
+        <title>{t('acessorioslavadoras.bicojato.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,11 +41,11 @@ const BicoJatoAbrasivo = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bico Jato Abrasivo 500bar
+            {t('acessorioslavadoras.bicojato.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Bico Jato Abrasivo 500bar
+            {t('acessorioslavadoras.bicojato.texto1')}
           </p>
         </div>
       </section>

@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
-
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 
@@ -12,9 +12,10 @@ import CTASection from "@/components/CTASection";
 import pistola280bar from '@/assets/images/pistola-280bar.png';
 
 const Pistola280bar = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Pistola 280 Bar', artist: 'Trifásico', cover: pistola280bar, color: '#FF5101' }
+        { id: 1, title: t('acessorioslavadoras.pistola280.title'), artist: 'Trifásico', cover: pistola280bar, color: '#FF5101' }
   ];
   
 
@@ -26,7 +27,7 @@ const Pistola280bar = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Pistola 280 bar - Mamuth</title>
+        <title>{t('acessorioslavadoras.pistola280.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -42,11 +43,11 @@ const Pistola280bar = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Pistola 280 Bar
+            {t('acessorioslavadoras.pistola280.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Gatilhos e lanças indicadas para hidrolavadoras de alta pressão
+            {t('acessorioslavadoras.pistola280.texto1')}
           </p>
         </div>
       </section>
@@ -63,7 +64,7 @@ const Pistola280bar = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioslavadoras.pistola280.textoCard')}
             </h2>
           </div>
 
@@ -83,7 +84,7 @@ const Pistola280bar = () => {
               </thead>
               <tbody>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-2 border-r border-gray-200 font-bold text-xs md:text-xl">Pistola 280 Bar</td>
+                  <td className="py-6 px-2 border-r border-gray-200 font-bold text-xs md:text-xl">{t('acessorioslavadoras.pistola280.title')}</td>
                   <td className="py-6 px-2 border-r border-gray-200 text-xs md:text-xl">280</td>
                   <td className="py-6 px-2 border-r border-gray-200 text-xs md:text-xl">42</td>
                   <td className="py-6 px-2 border-r border-gray-200 text-xs md:text-xl">M22x1,5</td>

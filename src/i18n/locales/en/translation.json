@@ -941,7 +941,46 @@
         "texto2": "The Torrent operates with precise movements along the vertical and horizontal axes, featuring a full 360° rotation to ensure comprehensive cleaning in all directions, reaching even the most difficult areas. With this accessory, cleaning time can be reduced by up to 80%, increasing productivity and efficiency in the process. It is ideal for industrial applications that require high performance and safety.",
         "textoCard": "See more technical information about this product:"
       }
-  
-     
+  },
+  "acessorioslavadoras":{
+      "pistola660":{
+        "title": "660-Bar High-Pressure Spray Gun",
+        "texto1": "Triggers and lances suitable for high-pressure washers.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pistola350":{
+        "title": "350-Bar High-Pressure Spray Gun",
+        "texto1": "Triggers and lances suitable for high-pressure washers.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pistola280":{
+        "title": "280-Bar High-Pressure Spray Gun",
+        "texto1": "Triggers and lances suitable for high-pressure washers.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "bicojato": {
+        "title": "500-Bar Abrasive Waterjet Nozzle",
+        "texto1": "High-performance abrasive blasting nozzle designed for water-sandblasting operations at pressures up to 500 bar. Ideal for heavy-duty surface preparation, paint stripping, rust removal, and concrete decontamination."
+      },
+      "valvulareguladora550":{
+        "title": "550-Bar Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 550 bar.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "valvulareguladora350":{
+        "title": "350-Bar Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 350 bar.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "valvulareguladora200":{
+        "title": "200-Bar High-Flow Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 200 bar.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "valvulareguladora600":{
+        "title": "600-Bar High-Flow Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 600 bar.",
+        "textoCard": "See more technical information about this product:"
+      }
   }
 }
