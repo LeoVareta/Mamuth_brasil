@@ -983,5 +983,33 @@
         "texto1": "Válvula reguladora de pressão e descarregadora (unloader) de alta precisão, projetada para manter a pressão estável do sistema e desviar o fluxo excedente em sistemas de lavagem e hidrojateamento de alta pressão que operam a até 600 bar.",
         "textoCard": "Veja mais informações técnicas sobre este produto:"
       }
-  }
+  },
+  "tabela":{
+      "modelo": "Modelo",
+      "di": "DI (mm)",
+      "de": "DE (mm)",
+      "trabalho": "Trab. (bar)",
+      "trabalho2": "Trab. (psi)",
+      "rupt": "Rupt. (bar)",
+      "rupt2": "Rupt. (psi)",
+      "raio": "Raio",
+      "peso": "kg/m",
+      "term": "Ø Term.",
+      "int": "Ø Int. (mm)",
+      "ext": "Ø Ext. (mm)",
+      "ptrab": "P. Trab (bar)",
+      "ptrab2": "P. Trab (psi)", 
+      "prupt": "P. Rupt (bar)",
+      "prupt2": "P. Rupt (psi)",
+      "raiocurv": "Raio Curv.", 
+      "pesokg" : "Peso (kg/m)",
+      "pruptbarpsi": "P. Rupt (bar/psi)",
+      "ptrabbarpsi": "P. Trab (bar/psi)",
+      "roscaa":"Rosca A",
+      "roscab":"Rosca B",
+      "aplicacao":"Aplicação",
+      "codigo":"Código",
+      "pressao":"Pressão (bar)",
+      "varetasbicos": "Varetas, Bicos, etc."
+    }
 }

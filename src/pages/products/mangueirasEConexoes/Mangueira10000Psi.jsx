@@ -76,13 +76,13 @@ const Mangueira10000PSI = () => {
             <table className="w-full border-collapse table-fixed bg-white">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[7%] uppercase">Mod.</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">Ø Int. (mm)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">Ø Ext. (mm)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">P. Trab. (bar/psi)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">P. Rupt. (bar/psi)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">Raio Curv.</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">Peso (kg/m)</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[7%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">{t('tabela.int')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">{t('tabela.ext')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">{t('tabela.ptrabbarpsi')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">{t('tabela.pruptbarpsi')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">{t('tabela.raio')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">{t('tabela.pesokg')}</th>
                   <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">Ø Term. (mm)</th>
                 </tr>
               </thead>
@@ -127,13 +127,13 @@ const Mangueira10000PSI = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Diâmetro Interno (mm):</strong> 6,0</p>
-                    <p><strong>Diâmetro Externo (mm):</strong> 14,7</p>
-                    <p><strong>Pressão de Trabalho (bar/psi):</strong> 700/10000 </p>
-                    <p><strong>Pressão de Ruptura (bar/psi):</strong> 1450/21000 </p>
-                    <p><strong>Raio de Curvatura (mm.r)</strong>100</p>
-                    <p><strong>Peso por metro (kg/m)</strong>0,370</p>
-                    <p><strong>Diâmetro no terminal (mm)</strong>18,0</p>
+                    <p><strong>{t('tabela.int')}:</strong> 6,0</p>
+                    <p><strong>{t('tabela.ext')}:</strong> 14,7</p>
+                    <p><strong>{t('tabela.ptrabbarpsi')}:</strong> 700/10000 </p>
+                    <p><strong>{t('tabela.pruptbarpsi')}:</strong> 1450/21000 </p>
+                    <p><strong>{t('tabela.raio')}</strong>100</p>
+                    <p><strong>{t('tabela.pesokg')}</strong>0,370</p>
+                    <p><strong>{t('tabela.term')}</strong>18,0</p>
                     
                   </div>
                 </div>
@@ -151,13 +151,13 @@ const Mangueira10000PSI = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't2' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Diâmetro Interno (mm):</strong> 10,0</p>
-                    <p><strong>Diâmetro Externo (mm):</strong> 16,8</p>
-                    <p><strong>Pressão de Trabalho (bar/psi):</strong> 700/10000 </p>
-                    <p><strong>Pressão de Ruptura (bar/psi):</strong> 1450/21000 </p>
-                    <p><strong>Raio de Curvatura (mm.r)</strong>100</p>
-                    <p><strong>Peso por metro (kg/m)</strong>0,395</p>
-                    <p><strong>Diâmetro no terminal (mm)</strong>22,5</p>
+                    <p><strong>{t('tabela.int')}:</strong> 10,0</p>
+                    <p><strong>{t('tabela.ext')}:</strong> 16,8</p>
+                    <p><strong>{t('tabela.ptrabbarpsi')}:</strong> 700/10000 </p>
+                    <p><strong>{t('tabela.pruptbarpsi')}:</strong> 1450/21000 </p>
+                    <p><strong>{t('tabela.raio')}</strong>100</p>
+                    <p><strong>{t('tabela.pesokg')}</strong>0,395</p>
+                    <p><strong>{t('tabela.term')}</strong>22,5</p>
                     
                   </div>
                 </div>

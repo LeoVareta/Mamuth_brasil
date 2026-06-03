@@ -73,12 +73,12 @@ const PoliamidaSAP1500 = () => {
               <thead>
                 <tr className="text-white text-[10px] md:text-xs uppercase" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-3 px-1 border-r border-orange-400 font-bold">#</th>
-                  <th className="py-3 px-2 border-r border-orange-400 font-bold">Modelo</th>
-                  <th className="py-3 px-2 border-r border-orange-400 font-bold">Código</th>
-                  <th className="py-3 px-1 border-r border-orange-400 font-bold text-center">Pressão (bar)</th>
-                  <th className="py-3 px-2 border-r border-orange-400 font-bold">Rosca A</th>
-                  <th className="py-3 px-2 border-r border-orange-400 font-bold">Rosca B</th>
-                  <th className="py-3 px-2 font-bold">Aplicação</th>
+                  <th className="py-3 px-2 border-r border-orange-400 font-bold">{t('tabela.modelo')}</th>
+                  <th className="py-3 px-2 border-r border-orange-400 font-bold">{t('tabela.codigo')}</th>
+                  <th className="py-3 px-1 border-r border-orange-400 font-bold text-center">{t('tabela.pressao')}</th>
+                  <th className="py-3 px-2 border-r border-orange-400 font-bold">{t('tabela.roscaa')}</th>
+                  <th className="py-3 px-2 border-r border-orange-400 font-bold">{t('tabela.roscab')}</th>
+                  <th className="py-3 px-2 font-bold">{t('tabela.aplicacao')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -118,7 +118,7 @@ const PoliamidaSAP1500 = () => {
                     <td className="py-2 px-2 border-r border-gray-200 font-bold text-orange-600 bg-orange-50/30 text-[8px] sm:text-[11px] leading-tight">
                       {niple.rb}
                     </td>
-                    <td className="py-2 px-2 italic text-gray-500 text-[8px] sm:text-[10px]">Varetas, Bicos, etc.</td>
+                    <td className="py-2 px-2 italic text-gray-500 text-[8px] sm:text-[10px]">{t('tabela.varetasbicos')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -146,177 +146,177 @@ const PoliamidaSAP1500 = () => {
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   {/* ITEM 1 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong># 1</strong></p><p><strong>Código:</strong> 3006.0174</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M7 (M)</p><p><strong>Rosca B:</strong> M7 (M)</p>
+                    <p><strong># 1</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0174</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M7 (M)</p><p><strong>{t('tabela.roscab')}:</strong> M7 (M)</p>
                   </div>
 
                   {/* ITEM 2 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 2</strong></p><p><strong>Código:</strong> 3006.0208</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M7 (M)</p><p><strong>Rosca B:</strong> 1/8 BSP (M)</p>
+                    <p><strong># 2</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0208</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M7 (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/8 BSP (M)</p>
                   </div>
 
                   {/* ITEM 3 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 3</strong></p><p><strong>Código:</strong> 3006.0201</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/8 BSP (M)</p><p><strong>Rosca B:</strong> 1/8 BSP (M)</p>
+                    <p><strong># 3</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0201</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/8 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/8 BSP (M)</p>
                   </div>
 
                   {/* ITEM 4 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 4</strong></p><p><strong>Código:</strong> 3006.0150</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/8 (M)</p><p><strong>Rosca B:</strong> 1/8 (M)</p>
+                    <p><strong># 4</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0150</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/8 (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/8 (M)</p>
                   </div>
 
                   {/* ITEM 5 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 5</strong></p><p><strong>Código:</strong> 3006.0145</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/4 BSP (M)</p><p><strong>Rosca B:</strong> 1/4 BSP (M)</p>
+                    <p><strong># 5</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0145</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/4 BSP (M)</p>
                   </div>
 
                   {/* ITEM 6 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 6</strong></p><p><strong>Código:</strong> 3006.0421</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/4 BSP (M)</p><p><strong>Rosca B:</strong> 1/2 BSP (M)</p>
+                    <p><strong># 6</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0421</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/2 BSP (M)</p>
                   </div>
 
                   {/* ITEM 7 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 7</strong></p><p><strong>Código:</strong> 3006.0096</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/4 BSP (M)</p><p><strong>Rosca B:</strong> 1/2 BSP (M)</p>
+                    <p><strong># 7</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0096</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/2 BSP (M)</p>
                   </div>
 
                   {/* ITEM 8 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 8</strong></p><p><strong>Código:</strong> 3006.0531</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/4 BSP (M)</p><p><strong>Rosca B:</strong> M22 PL (M)</p>
+                    <p><strong># 8</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0531</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> M22 PL (M)</p>
                   </div>
 
                   {/* ITEM 9 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 9</strong></p><p><strong>Código:</strong> 3006.0321</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/4 BSP (M)</p><p><strong>Rosca B:</strong> M22 BOL (M)</p>
+                    <p><strong># 9</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0321</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> M22 BOL (M)</p>
                   </div>
 
                   {/* ITEM 10 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 10</strong></p><p><strong>Código:</strong> 3006.0251</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/4 BSP (M)</p><p><strong>Rosca B:</strong> M24 DKO (M)</p>
+                    <p><strong># 10</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0251</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> M24 DKO (M)</p>
                   </div>
 
                   {/* ITEM 11 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 11</strong></p><p><strong>Código:</strong> 3006.0552</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/2 NPT (M)</p><p><strong>Rosca B:</strong> 1/2 NPT (M)</p>
+                    <p><strong># 11</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0552</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/2 NPT (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/2 NPT (M)</p>
                   </div>
 
                   {/* ITEM 12 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 12</strong></p><p><strong>Código:</strong> 3006.0273</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/2 BSP (M)</p><p><strong>Rosca B:</strong> 1/2 BSP (M)</p>
+                    <p><strong># 12</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0273</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/2 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/2 BSP (M)</p>
                   </div>
 
                   {/* ITEM 13 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 13</strong></p><p><strong>Código:</strong> 3006.0152</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/2 BSP (M)</p><p><strong>Rosca B:</strong> 1/2 NPT (M)</p>
+                    <p><strong># 13</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0152</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/2 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> 1/2 NPT (M)</p>
                   </div>
 
                   {/* ITEM 14 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 14</strong></p><p><strong>Código:</strong> 3006.0056</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/2 BSP (M)</p><p><strong>Rosca B:</strong> M22 PL (M)</p>
+                    <p><strong># 14</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0056</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/2 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> M22 PL (M)</p>
                   </div>
 
                   {/* ITEM 15 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 15</strong></p><p><strong>Código:</strong> 3006.0046</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> 1/2 BSP (M)</p><p><strong>Rosca B:</strong> M24 PL (M)</p>
+                    <p><strong># 15</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0046</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/2 BSP (M)</p><p><strong>{t('tabela.roscab')}:</strong> M24 PL (M)</p>
                   </div>
 
                   {/* ITEM 16 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 16</strong></p><p><strong>Código:</strong> 3006.0015</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M22 PL (M)</p><p><strong>Rosca B:</strong> M22 PL (M)</p>
+                    <p><strong># 16</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0015</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M22 PL (M)</p><p><strong>{t('tabela.roscab')}:</strong> M22 PL (M)</p>
                   </div>
 
                   {/* ITEM 17 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 17</strong></p><p><strong>Código:</strong> 3006.0067</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M22 PL (M)</p><p><strong>Rosca B:</strong> M24 DKO (M)</p>
+                    <p><strong># 17</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0067</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M22 PL (M)</p><p><strong>{t('tabela.roscab')}:</strong> M24 DKO (M)</p>
                   </div>
 
                   {/* ITEM 18 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 18</strong></p><p><strong>Código:</strong> 3006.0016</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M22 PL (M)</p><p><strong>Rosca B:</strong> M30 PL (M)</p>
+                    <p><strong># 18</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0016</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M22 PL (M)</p><p><strong>{t('tabela.roscab')}:</strong> M30 PL (M)</p>
                   </div>
 
                   {/* ITEM 19 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 19</strong></p><p><strong>Código:</strong> 3006.0017</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M24 DKO (M)</p><p><strong>Rosca B:</strong> M24 DKO (M)</p>
+                    <p><strong># 19</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0017</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M24 DKO (M)</p><p><strong>{t('tabela.roscab')}:</strong> M24 DKO (M)</p>
                   </div>
 
                   {/* ITEM 20 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 20</strong></p><p><strong>Código:</strong> 3006.0168</p>
-                    <p><strong>Pressão:</strong> 1.500 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M24 DKO (M)</p><p><strong>Rosca B:</strong> M30 PL (M)</p>
+                    <p><strong># 20</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0168</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.500 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M24 DKO (M)</p><p><strong>{t('tabela.roscab')}:</strong> M30 PL (M)</p>
                   </div>
 
                   {/* ITEM 21 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 21</strong></p><p><strong>Código:</strong> 3006.0098</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M24 DKO (M)</p><p><strong>Rosca B:</strong> M35 PL (M)</p>
+                    <p><strong># 21</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0098</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M24 DKO (M)</p><p><strong>{t('tabela.roscab')}:</strong> M35 PL (M)</p>
                   </div>
 
                   {/* ITEM 22 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 22</strong></p><p><strong>Código:</strong> 3006.0193</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M30 PL (M)</p><p><strong>Rosca B:</strong> M30 PL (M)</p>
+                    <p><strong># 22</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0193</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M30 PL (M)</p><p><strong>{t('tabela.roscab')}:</strong> M30 PL (M)</p>
                   </div>
 
                   {/* ITEM 23 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 23</strong></p><p><strong>Código:</strong> 3006.0091</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M35 PL (M)</p><p><strong>Rosca B:</strong> M35 PL (M)</p>
+                    <p><strong># 23</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0091</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M35 PL (M)</p><p><strong>{t('tabela.roscab')}:</strong> M35 PL (M)</p>
                   </div>
 
                   {/* ITEM 24 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 24</strong></p><p><strong>Código:</strong> 3006.0024</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M30 PL (M)</p><p><strong>Rosca B:</strong> M36 DKO (M)</p>
+                    <p><strong># 24</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0024</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M30 PL (M)</p><p><strong>{t('tabela.roscab')}:</strong> M36 DKO (M)</p>
                   </div>
 
                   {/* ITEM 25 */}
                   <div className="grid grid-cols-2 gap-2 text-sm border-t mt-4 pt-4">
-                    <p><strong># 25</strong></p><p><strong>Código:</strong> 3006.0032</p>
-                    <p><strong>Pressão:</strong> 1.000 bar</p><p><strong>Aplicação:</strong> Varetas, Bicos...</p>
-                    <p><strong>Rosca A:</strong> M36 DKO (M)</p><p><strong>Rosca B:</strong> M36 DKO (M)</p>
+                    <p><strong># 25</strong></p><p><strong>{t('tabela.codigo')}:</strong> 3006.0032</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar</p><p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.varetasbicos')}</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M36 DKO (M)</p><p><strong>{t('tabela.roscab')}:</strong> M36 DKO (M)</p>
                   </div>
                 </div>
               </div>

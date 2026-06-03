@@ -233,7 +233,7 @@ function App() {
             <Route path="/noticias/feira-navalshore" element={<FeiraNavalShore />} />
           </Routes>
         </main>
-        <WhatsappButton /> 
+        {/* <WhatsappButton />  */}
         <Footer />
         <Toaster />
       </div>

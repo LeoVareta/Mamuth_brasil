@@ -210,7 +210,6 @@ const LinhasDeProdutos = () => {
       </section>
       <CTASection />
       <CertificacoesSection />
-      <WhatsappButton />
     </>
   );
 };

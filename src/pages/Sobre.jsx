@@ -458,7 +458,6 @@ const Sobre = () => {
     </section>
     <CTASection />      
     <CertificacoesSection />
-    <WhatsappButton />
     </>
   );
 };

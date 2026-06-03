@@ -983,5 +983,33 @@
         "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 600 bar.",
         "textoCard": "Consulte más especificaciones técnicas de este producto:"
       }
+  },
+  "tabela":{
+      "modelo": "Modelo",
+      "di": "D.I. (mm)",
+      "de": "D.E. (mm)",
+      "trabalho": "P. Trab. (bar)",
+      "trabalho2": "P. Trab. (psi)",
+      "rupt": "P. Rupt. (bar)",
+      "rupt2": "P. Rupt. (psi)",
+      "raio": "Radio(mm)",
+      "peso": "kg/m",
+      "term": "Ø Conector",
+      "int": "Ø D.I. (mm)",
+      "ext": "Ø D.E. (mm)",
+      "ptrab": "P. Trab (bar)",
+      "ptrab2": "P. Trab (psi)", 
+      "prupt": "P. Rupt (bar)",
+      "prupt2": "P. Rupt (psi)",
+      "raiocurv": "Raio Curv.", 
+      "pesokg" : "Peso (kg/m)",
+      "pruptbarpsi": "P. Rupt (bar/psi)",
+      "ptrabbarpsi": "P. Trab (bar/psi)",
+      "roscaa":"Rosca A",
+      "roscab":"Rosca B",
+      "aplicacao":"Aplicación",
+      "codigo":"Código",
+      "pressao": "Presión (bar)",
+      "varetasbicos": "Lanzas, Boquillas, etc."
   }
 } 

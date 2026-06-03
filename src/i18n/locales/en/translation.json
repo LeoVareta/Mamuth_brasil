@@ -982,5 +982,33 @@
         "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 600 bar.",
         "textoCard": "See more technical information about this product:"
       }
+  },
+  "tabela":{
+      "modelo": "Model",
+      "di": "I.D. (mm)",
+      "de": "O.D. (mm)",
+      "trabalho": "W.P. (bar)",
+      "trabalho2": "W.P. (psi)",
+      "rupt": "B.P. (bar)",
+      "rupt2": "B.P. (psi)",
+      "raio": "Min. Bend Radius (mm)",
+      "peso": "kg/m",
+      "term": "Fitting Ø",
+      "int": "Ø I.D. (mm)",
+      "ext": "Ø O.D. (mm)",
+      "ptrab": "W.P. (bar)",
+      "ptrab2": "W.P. (psi)", 
+      "prupt": "B.P. (bar)",
+      "prupt2": "B.P. (psi)",
+      "raiocurv": "Min. Bend Radius (mm)", 
+      "pesokg" : "Weight (kg/m)",
+      "pruptbarpsi": "B.P. (bar/psi)",
+      "ptrabbarpsi": "W.P. (bar/psi)",
+      "roscaa":"Thread A",
+      "roscab":"Thread B",
+      "aplicacao":"Application",
+      "codigo":"Part Number",
+      "pressao": "Pressure (bar)",
+      "varetasbicos": "Lances, Nozzles, etc."
   }
 }

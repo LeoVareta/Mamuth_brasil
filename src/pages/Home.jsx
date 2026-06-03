@@ -499,7 +499,6 @@ const Home = () => {
       </section>
        <CTASection />
       <CertificacoesSection />
-      <WhatsappButton />
     <>
 
     </>
