@@ -38,7 +38,7 @@ const Typhoon50cvEletrica = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Typhoon Jet 50cv Elétrica - Mamuth</title>
+        <title>{t('lavadoras.50cv.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -91,12 +91,12 @@ const Typhoon50cvEletrica = () => {
           <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
             <thead>
               <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Modelo</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão (bar)</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Vazão (L/min)</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Potência (cv)</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso (kg)</th>
-                <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Dimensões</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.modelo')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.vazao')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.potencia')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.peso1')}</th>
+                <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.dimensoes')}</th>
               </tr>
             </thead>
             <tbody>
@@ -133,12 +133,12 @@ const Typhoon50cvEletrica = () => {
           <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
             <thead>
               <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Modelo</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão (bar)</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Vazão (L/min)</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Potência (cv)</th>
-                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso (kg)</th>
-                <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Dimensões</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.modelo')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.vazao')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.potencia')}</th>
+                <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.peso1')}</th>
+                <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.dimensoes')}</th>
               </tr>
             </thead>
             <tbody>
@@ -166,7 +166,7 @@ const Typhoon50cvEletrica = () => {
         </div>
        <div className="md:hidden space-y-10">
         <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+            <h2 className="text-2xl text-center font-bold text-[#000]">{t('lavadoras.50cv.textoCard')}</h2>
           </div>
   {/* ===== GRUPO 1: Trifásico ===== */}
         <div>
@@ -190,11 +190,11 @@ const Typhoon50cvEletrica = () => {
               
               <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                 <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                  <p><strong>Pressão:</strong> 600 bar</p>
-                  <p><strong>Vazão:</strong> 35 L/min</p>
-                  <p><strong>Potência:</strong> 50 cv</p>
-                  <p><strong>Peso:</strong> 550 kg</p>
-                  <p className="col-span-2"><strong>Dimensões:</strong> 1400x1000x1000</p>
+                  <p><strong>{t('tabela.pressao')}:</strong> 600 bar</p>
+                  <p><strong>{t('tabela.vazao')}:</strong> 35 L/min</p>
+                  <p><strong>{t('tabela.potencia')}:</strong> 50 cv</p>
+                  <p><strong>{t('tabela.peso1')}:</strong> 550 kg</p>
+                  <p className="col-span-2"><strong>{t('tabela.dimensoes')}:</strong> 1400x1000x1000</p>
                 </div>
               </div>
             </div>
@@ -213,11 +213,11 @@ const Typhoon50cvEletrica = () => {
               
               <div className={`transition-all duration-300 ease-in-out ${aberto === 't2' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                 <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                  <p><strong>Pressão:</strong> 1000 bar</p>
-                  <p><strong>Vazão:</strong> 19 L/min</p>
-                  <p><strong>Potência:</strong> 50 cv</p>
-                  <p><strong>Peso:</strong> 960 kg</p>
-                  <p className="col-span-2"><strong>Dimensões:</strong> 1400x1000x1000</p>
+                  <p><strong>{t('tabela.pressao')}:</strong> 1000 bar</p>
+                  <p><strong>{t('tabela.vazao')}:</strong> 19 L/min</p>
+                  <p><strong>{t('tabela.potencia')}:</strong> 50 cv</p>
+                  <p><strong>{t('tabela.peso1')}:</strong> 960 kg</p>
+                  <p className="col-span-2"><strong>{t('tabela.dimensoes')}:</strong> 1400x1000x1000</p>
                 </div>
               </div>
             </div>
@@ -246,11 +246,11 @@ const Typhoon50cvEletrica = () => {
               
               <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                 <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                  <p><strong>Pressão:</strong> 600 bar</p>
-                  <p><strong>Vazão:</strong> 35 L/min</p>
-                  <p><strong>Potência:</strong> 50 cv</p>
-                  <p><strong>Peso:</strong> 550 kg</p>
-                  <p className="col-span-2"><strong>Dimensões:</strong> 1400x1000x1000</p>
+                  <p><strong>{t('tabela.pressao')}:</strong> 600 bar</p>
+                  <p><strong>{t('tabela.vazao')}:</strong> 35 L/min</p>
+                  <p><strong>{t('tabela.potencia')}:</strong> 50 cv</p>
+                  <p><strong>{t('tabela.peso1')}:</strong> 550 kg</p>
+                  <p className="col-span-2"><strong>{t('tabela.dimensoes')}:</strong> 1400x1000x1000</p>
                 </div>
               </div>
             </div>
@@ -269,11 +269,11 @@ const Typhoon50cvEletrica = () => {
               
               <div className={`transition-all duration-300 ease-in-out ${aberto === 't2' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                 <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                  <p><strong>Pressão:</strong> 1000 bar</p>
-                  <p><strong>Vazão:</strong> 19 L/min</p>
-                  <p><strong>Potência:</strong> 50 cv</p>
-                  <p><strong>Peso:</strong> 960 kg</p>
-                  <p className="col-span-2"><strong>Dimensões:</strong> 1400x1000x1000</p>
+                  <p><strong>{t('tabela.pressao')}:</strong> 1000 bar</p>
+                  <p><strong>{t('tabela.vazao')}:</strong> 19 L/min</p>
+                  <p><strong>{t('tabela.potencia')}:</strong> 50 cv</p>
+                  <p><strong>{t('tabela.peso1')}:</strong> 960 kg</p>
+                  <p className="col-span-2"><strong>{t('tabela.dimensoes')}:</strong> 1400x1000x1000</p>
                 </div>
               </div>
             </div>

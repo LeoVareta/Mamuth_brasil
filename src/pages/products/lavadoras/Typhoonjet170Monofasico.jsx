@@ -158,15 +158,15 @@ const Typhoon170Monofasico = () => {
               <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
                 <thead>
                   <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Modelo</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão (bar)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão (PSI)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Vazão (L/min)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Vazão (L/h)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Potência (cv)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso (kg)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Tensão</th>
-                    <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Dimensões</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.modelo')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao2')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.vazao')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.vazao2')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.potencia')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.peso1')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.tensao')}</th>
+                    <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.dimensoes')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -178,7 +178,7 @@ const Typhoon170Monofasico = () => {
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">720</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">5</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">40</td>
-                    <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">Monofásico</td>
+                    <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">{t('tabela.monofasico')}</td>
                     <td className="py-6 px-1 text-[10px] sm:text-xs md:text-base font-semibold text-center">950x640x540</td>
                   </tr>
                 </tbody>
@@ -187,13 +187,13 @@ const Typhoon170Monofasico = () => {
             </div>
             <div className="block md:hidden space-y-10">
               <div className="flex items-center gap-3 mb-4">
-                  <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+                  <h2 className="text-2xl text-center font-bold text-[#000]">{t('lavadoras.50cv.textoCard')}</h2>
                 </div>
         {/* ===== GRUPO 1: Trifásico ===== */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <img src={iconTrifasico} alt="Trifásico" className="w-10 h-10" />
-                  <h2 className="text-xl font-bold text-[#0E0E68]">Trifásico</h2>
+                  <h2 className="text-xl font-bold text-[#0E0E68]">{t('tabela.trifasico')}</h2>
                 </div>
       
                 <div className="space-y-4">
@@ -211,14 +211,14 @@ const Typhoon170Monofasico = () => {
                     
                     <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                       <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                          <p><strong>Pressão(bar):</strong> 170 </p>
-                          <p><strong>Pressão(PSI):</strong> 2465 </p>
-                          <p><strong>Vazão(L/min):</strong> 12 </p>
-                          <p><strong>Vazão(L/h)</strong> 720 </p>
-                          <p><strong>Potência(cv):</strong> 5 </p>
-                          <p><strong>Peso:</strong> 40 kg </p>
-                          <p><strong>Tipo de Tensão</strong> Trifásico</p>
-                          <p><strong>Dimensões(mm):</strong>950x640x540</p>
+                          <p><strong>{t('tabela.pressao')}:</strong> 170 </p>
+                          <p><strong>{t('tabela.pressao')} (PSI):</strong> 2465 </p>
+                          <p><strong>{t('tabela.vazao')}:</strong> 12 </p>
+                          <p><strong>{t('tabela.vazao2')}:</strong> 720 </p>
+                          <p><strong>{t('tabela.potencia')}:</strong> 5 </p>
+                          <p><strong>{t('tabela.peso1')}:</strong> 40 kg </p>
+                          <p><strong>{t('tabela.tensao')}:</strong> {t('tabela.trifasico')}</p>
+                          <p><strong>{t('tabela.dimensoes')}:</strong>950x640x540</p>
                       </div>
                     </div>
                   </div>
@@ -227,7 +227,7 @@ const Typhoon170Monofasico = () => {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <img src={iconTrifasico} alt="Trifásico" className="w-10 h-10" />
-                  <h2 className="text-xl font-bold text-[#0E0E68]">Monofásico</h2>
+                  <h2 className="text-xl font-bold text-[#0E0E68]">{t('tabela.monofasico')}</h2>
                 </div>
       
                 <div className="space-y-4">
@@ -245,14 +245,14 @@ const Typhoon170Monofasico = () => {
                     
                     <div className={`transition-all duration-300 ease-in-out ${aberto === 't2' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                       <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                          <p><strong>Pressão(bar):</strong> 170</p>
-                          <p><strong>Pressão(PSI):</strong> 2465 </p>
-                          <p><strong>Vazão(L/min):</strong> 12</p>
-                          <p><strong>Vazão(L/h)</strong> 720 </p>
-                          <p><strong>Potência(cv):</strong> 5 </p>
-                          <p><strong>Peso:</strong> 40 kg</p>
-                          <p><strong>Tipo de Tensão</strong> Monofásico</p>
-                          <p><strong>Dimensões(mm):</strong>950x640x540</p>
+                          <p><strong>{t('tabela.pressao')}:</strong> 170</p>
+                          <p><strong>{t('tabela.pressao')} (PSI):</strong> 2465 </p>
+                          <p><strong>{t('tabela.vazao')}:</strong> 12</p>
+                          <p><strong>{t('tabela.vazao2')}:</strong> 720 </p>
+                          <p><strong>{t('tabela.potencia')}:</strong> 5 </p>
+                          <p><strong>{t('tabela.peso1')}:</strong> 40 kg</p>
+                          <p><strong>{t('tabela.tensao')}:</strong> {t('tabela.monofasico')}</p>
+                          <p><strong>{t('tabela.dimensoes')}:</strong>950x640x540</p>
                       </div>
                     </div>
                   </div>

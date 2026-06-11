@@ -108,7 +108,7 @@ const Mangueira10000PSI = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
             </div>
     {/* ===== GRUPO 1:===== */}
           <div>
