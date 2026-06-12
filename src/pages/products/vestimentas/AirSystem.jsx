@@ -113,21 +113,21 @@ const AirSystem = () => {
                   <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
                     <thead>
                       <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Modelo</th>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Código</th>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Alimentação</th>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Capacidade</th>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Fluxo de Entrada Mínimo</th>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Conexão</th>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Medidas</th>
-                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.modelo')}</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.codigo')}</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.alimentacao')}</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.capacidade')}</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.fluxoentrada')}</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.conexao')}</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.medidas')}</th>
+                      <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.peso1')}</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="bg-white text-gray-800 border-b border-gray-200">
                       <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Air System 200</td>
                       <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">1001.0080</td>
-                      <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">220V / 60HZ <br/> Monofásico</td>
+                      <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">220V / 60HZ <br/> {t('tabela.monofasico')}</td>
                       <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">204 Nm3/h</td>
                       <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">60 pcm @ 5,0 bar (75 psi/)</td>
                       <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">1" NPT</td>
@@ -140,7 +140,7 @@ const AirSystem = () => {
               </div>
               <div className="md:hidden space-y-10">
                 <div className="flex items-center gap-3 mb-4">
-                  <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+                  <h2 className="text-2xl text-center font-bold text-[#000]">{t('vestimentas.air.textoCard')}</h2>
                 </div>
                 <div>
                   <div className="space-y-4">
@@ -150,7 +150,7 @@ const AirSystem = () => {
                         onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                         className="w-full flex justify-between items-center p-5 bg-white"
                       >
-                        <h3 className="font-bold text-lg text-[#0E0E68]">Capa de Mangueira </h3>
+                        <h3 className="font-bold text-lg text-[#0E0E68]">{t('vestimentas.air.title')} </h3>
                         <span className="text-2xl text-[#FF6B0A] font-light">
                           {aberto === 't1' ? '−' : '+'}
                         </span>
@@ -158,14 +158,14 @@ const AirSystem = () => {
                       
                       <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                         <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                          <p><strong>Modelo:</strong> Air System 200</p>
-                          <p><strong>Código:</strong> 1001.0080</p>
-                          <p><strong>Alimentação:</strong> 220V / 60HZ Monofásico </p>
-                          <p><strong>Capacidade:</strong> 204 Nm3/h	 </p>
-                          <p><strong>Fluxo de entrada mínimo:</strong> 60 pcm @ 5,0 bar (75 psi/)</p>
-                          <p><strong>Conexão:</strong> 1" NPT</p>
-                          <p><strong>Medidas:</strong> 825 x 805 x 760 mm </p>
-                          <p><strong>Peso:</strong> 45 Kg</p>
+                          <p><strong>{t('tabela.modelo')}:</strong> Air System 200</p>
+                          <p><strong>{t('tabela.codigo')}:</strong> 1001.0080</p>
+                          <p><strong>{t('tabela.alimentacao')}:</strong> 220V / 60HZ {t('tabela.monofasico')}</p>
+                          <p><strong>{t('tabela.capacidade')}:</strong> 204 Nm3/h	 </p>
+                          <p><strong>{t('tabela.fluxoentrada')}:</strong> 60 pcm @ 5,0 bar (75 psi/)</p>
+                          <p><strong>{t('tabela.conexao')}:</strong> 1" NPT</p>
+                          <p><strong>{t('tabela.medidas')}:</strong> 825 x 805 x 760 mm </p>
+                          <p><strong>{t('tabela.peso1')}:</strong> 45 Kg</p>
                         </div>
                       </div>
                     </div>

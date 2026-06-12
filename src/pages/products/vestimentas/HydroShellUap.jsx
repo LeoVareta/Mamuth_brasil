@@ -96,17 +96,17 @@ const Typhoon170Monofasico = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[6%] uppercase">#</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[18%] uppercase">Código</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[25%] uppercase">Modelo</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">Pressão</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">Tam.</th>
-                  <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[24%] uppercase">Construção</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[18%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[25%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">{t('tabela.pressao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">{t('tabela.tamanho')}</th>
+                  <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[24%] uppercase">{t('tabela.contrucao')}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { id: 1, cod: "1320.0432", mod: "Jaqueta Hydro-Shell UAP", pres: "2.800 bar", tam: "P a EXG", const: "Sintético + PVC" },
-                  { id: 2, cod: "1320.0433", mod: "Calça Hydro-Shell UAP", pres: "2.800 bar", tam: "P a EXG", const: "Sintético + PVC" },
+                  { id: 1, cod: "1320.0432", mod: "Jaqueta Hydro-Shell UAP", pres: "2.800 bar", tam: "P a EXG"},
+                  { id: 2, cod: "1320.0433", mod: "Calça Hydro-Shell UAP", pres: "2.800 bar", tam: "P a EXG"},
                 ].map((item) => (
                   <tr key={item.id} className="text-gray-800 border-b border-gray-200 hover:bg-orange-50 transition-colors">
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center font-bold">{item.id}</td>
@@ -116,7 +116,7 @@ const Typhoon170Monofasico = () => {
                       {item.pres}
                     </td>
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center">{item.tam}</td>
-                    <td className="py-6 px-1 text-[10px] md:text-sm text-center italic text-gray-500">{item.const}</td>
+                    <td className="py-6 px-1 text-[10px] md:text-sm text-center italic text-gray-500">{t('tabela.sinteticopvc')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -125,7 +125,7 @@ const Typhoon170Monofasico = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('vestimentas.uap.textoCard')}</h2>
             </div>
     {/* ===== GRUPO 1: Trifásico ===== */}
           <div>
@@ -144,18 +144,18 @@ const Typhoon170Monofasico = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-autoopacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Código:</strong> 1320.0432</p>
-                    <p><strong>Modelo:</strong> Hydro-Shell UAP</p>
-                    <p><strong>Pressão:</strong> 2.800 bar </p>
-                    <p><strong>Tamanho:</strong> P/M/G </p>
-                    <p><strong>Construção:</strong> Sintético + PVC</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 1320.0432</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Hydro-Shell UAP</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar </p>
+                    <p><strong>{t('tabela.tamanho')}:</strong> P/M/G </p>
+                    <p><strong>{t('tabela.contrucao')}:</strong> {t('tabela.sinteticopvc')}</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Código:</strong> 1320.0433</p>
-                    <p><strong>Modelo:</strong> Hydro-Shell UAP</p>
-                    <p><strong>Pressão:</strong> 2.800 bar </p>
-                    <p><strong>Tamanho:</strong> GG/EXG </p>
-                    <p><strong>Construção:</strong> Sintético + PVC</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 1320.0433</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Hydro-Shell UAP</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar </p>
+                    <p><strong>{t('tabela.tamanho')}:</strong> GG/EXG </p>
+                    <p><strong>{t('tabela.contrucao')}:</strong> {t('tabela.sinteticopvc')}</p>
                   </div>
                   </div>
               </div>

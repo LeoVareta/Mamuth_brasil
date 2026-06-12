@@ -73,17 +73,17 @@ const CapaMangueira = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[8%] uppercase">#</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[20%] uppercase">Material</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[22%] uppercase">Código</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[20%] uppercase">Compr.</th>
-                  <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[30%] uppercase">Aplicação</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[20%] uppercase">{t('tabela.material')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[22%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[20%] uppercase">{t('tabela.comprimento')}</th>
+                  <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[30%] uppercase">{t('tabela.aplicacao')}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { id: 1, mat: "Aramida", cod: "1320.0132", comp: "1,0 m" },
-                  { id: 2, mat: "Aramida", cod: "1320.0074", comp: "2,0 m" },
-                  { id: 3, mat: "Aramida", cod: "1320.0020", comp: "3,0 m" },
+                  { id: 1, mat: t('tabela.aramida'), cod: "1320.0132", comp: "1,0 m" },
+                  { id: 2, mat: t('tabela.aramida'), cod: "1320.0074", comp: "2,0 m" },
+                  { id: 3, mat: t('tabela.aramida'), cod: "1320.0020", comp: "3,0 m" },
                   { id: 4, mat: "PVC", cod: "1320.0131", comp: "1,0 m" },
                   { id: 5, mat: "PVC", cod: "1320.0073", comp: "2,0 m" },
                   { id: 6, mat: "PVC", cod: "1320.0043", comp: "3,0 m" },
@@ -96,7 +96,7 @@ const CapaMangueira = () => {
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center font-mono">{item.cod}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center font-medium bg-gray-50/50">{item.comp}</td>
                     <td className="py-6 px-1 text-[10px] md:text-sm text-center italic text-gray-500 leading-tight">
-                      Proteção Hidrojato
+                      {t('tabela.protecaohidro')}
                     </td>
                   </tr>
                 ))}

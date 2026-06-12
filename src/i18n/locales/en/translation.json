@@ -1039,6 +1039,27 @@
       "monofasico": "Single-Phase",
       "potencia2": "Power",
       "temperatura": "Temperature",
-      "rotacao": "RPM"
+      "rotacao": "RPM",
+      "tamanho": "Size",
+      "contrucao": "Construction",
+      "sinteticopvc": "Synthetic + PVC",
+      "Material": "Materials",
+      "comprimento": "Length",
+      "aramida": "Aramid",
+      "protecaohidro": "Waterjet Protection",
+      "alimentacao": "Power Supply",
+      "capacidade": "Capacity",
+      "fluxoentrada": "Minimum Inlet Flow",
+      "conexao": "Connection",
+      "medidas": "Dimensions",
+      "pressaomaxima": "Max. Pressure",
+      "forcatracao": "Tensile Force",
+      "forcamaxima": "Max. Force",
+      "alimentacaoeletrica": "Power Supply",
+      "grauprotecao": "Protection Rating",
+      "intervalomanutencao": "Maintenance Interval",
+      "meses": "Months",
+      "vazaomaxima": "Max. Flow Rate",
+      "operacao": "Operation"
   }
 }

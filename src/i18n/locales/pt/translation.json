@@ -1041,6 +1041,27 @@
       "monofasicio": "Monofásico",
       "potencia2": "Potência",
       "temperatura": "Temperatura",
-      "rotacao": "Rotação"
+      "rotacao": "Rotação",
+      "tamanho": "Tamanho",
+      "contrucao": "Construção",
+      "sinteticopvc": "Sintético + PVC",
+      "Material": "Material",
+      "comprimento": "Comprimento",
+      "aramida": "Aramida",
+      "protecaohidro": "Proteção Hidrojato",
+      "alimentacao": "Alimentação",
+      "capacidade": "Capacidade",
+      "fluxoentrada": "Fluxo de Entrada Mínimo",
+      "conexao": "Conexão",
+      "medidas": "Medidas",
+      "pressaomaxima": "Pressão Máxima",
+      "forcatracao": "Força de Tração",
+      "forcamaxima": "Força Máxima",
+      "alimentacaoeletrica": "Alimentação Elétrica",
+      "grauprotecao": "Grau de Proteção",
+      "intervalomanutencao": "Intervalo de Manutenção",
+      "meses": "Meses",
+      "vazaomaxima": "Vazão Máxima",
+      "operacao": "Operação"
     }
 }

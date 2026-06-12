@@ -103,17 +103,17 @@ const HydroShellSAP = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[6%] uppercase">#</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[18%] uppercase">Código</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[20%] uppercase">Modelo</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[16%] uppercase">Pressão</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">Tam.</th>
-                  <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[25%] uppercase">Construção</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[18%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[20%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[16%] uppercase">{t('tabela.pressao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">{t('tabela.tamanho')}</th>
+                  <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[25%] uppercase">{t('tabela.contrucao')}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { id: 1, cod: "1320.0430", mod: "Hydro-Shell SAP", pres: "1.000 bar", tam: "P/M/G", const: "Sintético + PVC" },
-                  { id: 2, cod: "1320.0431", mod: "Hydro-Shell SAP", pres: "1.000 bar", tam: "GG/EXG", const: "Sintético + PVC" },
+                  { id: 1, cod: "1320.0430", mod: "Hydro-Shell SAP", pres: "1.000 bar", tam: "P/M/G" },
+                  { id: 2, cod: "1320.0431", mod: "Hydro-Shell SAP", pres: "1.000 bar", tam: "GG/EXG"},
                 ].map((item) => (
                   <tr key={item.id} className="text-gray-800 border-b border-gray-200 hover:bg-orange-50 transition-colors">
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center font-bold">{item.id}</td>
@@ -121,7 +121,7 @@ const HydroShellSAP = () => {
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center font-semibold">{item.mod}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-sm text-center font-bold text-orange-600 bg-orange-50/20">{item.pres}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center">{item.tam}</td>
-                    <td className="py-6 px-1 text-[10px] md:text-sm text-center italic text-gray-500">{item.const}</td>
+                    <td className="py-6 px-1 text-[10px] md:text-sm text-center italic text-gray-500">{t('tabela.sinteticopvc')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -149,20 +149,20 @@ const HydroShellSAP = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 1320.0430</p>
-                    <p><strong>Modelo:</strong> Hydro-Shell SAP</p>
-                    <p><strong>Pressão:</strong> 1.000 bar </p>
-                    <p><strong>Tamanho:</strong> P/M/G </p>
-                    <p><strong>Construção:</strong> Sintético + PVC</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 1320.0430</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Hydro-Shell SAP</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar </p>
+                    <p><strong>{t('tabela.tamanho')}:</strong> P/M/G </p>
+                    <p><strong>{t('tabela.contrucao')}:</strong>{t('tabela.sinteticopvc')}</p>
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 1320.0431</p>
-                    <p><strong>Modelo:</strong> Hydro-Shell SAP</p>
-                    <p><strong>Pressão:</strong> 1.000 bar </p>
-                    <p><strong>Tamanho:</strong> GG/EXG </p>
-                    <p><strong>Construção:</strong> Sintético + PVC</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 1320.0431</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Hydro-Shell SAP</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1.000 bar </p>
+                    <p><strong>{t('tabela.tamanho')}:</strong> GG/EXG </p>
+                    <p><strong>{t('tabela.contrucao')}:</strong>{t('tabela.sinteticopvc')}</p>
                   </div>
                 </div>
               </div>
