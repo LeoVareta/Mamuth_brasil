@@ -20,8 +20,8 @@ const Typhoon350trifasico = () => {
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-    { id: 1, title: t('lavadoras.350bar.title'), artist: 'Trifásico', cover: typhoonjet350Trifasico, color: '#FF5101' },
-    { id: 2, title: t('lavadoras.350bar.title'), artist: 'Combustão', cover: typhoonjet350Combustao, color: '#FF5101' }
+    { id: 1, title: 'Typhoon Jet 350', artist: t('lavadoras.50cv.trifasico'), cover: typhoonjet350Trifasico, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 350', artist: t('lavadoras.50cv.combustao'), cover: typhoonjet350Combustao, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -110,21 +110,21 @@ const Typhoon350trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">{t('lavadoras.350bar.trifasico')}</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.trifasico')}</span>
             </div>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   {/* Reduzi o padding lateral (px-1) e a fonte para garantir o encaixe */}
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Modelo</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Pressão (bar)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Pressão (PSI)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Vazão (L/min)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Vazão (L/h)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Potência (cv)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Peso (kg)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Tipo de Tensão</th>
-                  <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm text-center">Dimensões(mm)</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.pressao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.pressao2')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.vazao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.vazao2')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.potencia')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.peso1')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.tensao')}</th>
+                  <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.dimensoes')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -136,7 +136,7 @@ const Typhoon350trifasico = () => {
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">1020</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">15</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">280</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">Trifásico</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">{t('tabela.trifasico')}</td>
                   <td className="py-6 px-1 text-[10px] sm:text-xs md:text-base font-semibold text-center">1200x800x900</td>
                 </tr>
               </tbody>
@@ -149,21 +149,21 @@ const Typhoon350trifasico = () => {
                 alt="Ícone Técnico" 
                 className="w-12 h-12 object-contain" 
               />
-              <span className="text-gray-700 text-lg">{t('lavadoras.350bar.combustao')}</span>
+              <span className="text-gray-700 text-lg">{t('lavadoras.50cv.combustao')}</span>
             </div>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   {/* Reduzi o padding lateral (px-1) e a fonte para garantir o encaixe */}
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Modelo</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Pressão (bar)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Pressão (PSI)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Vazão (L/min)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Vazão (L/h)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Potência (cv)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Peso (kg)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">Tipo de Tensão</th>
-                  <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm text-center">Dimensões(mm)</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.pressao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.pressao2')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.vazao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.vazao2')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.potencia')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.peso1')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.tensao')}</th>
+                  <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm text-center">{t('tabela.dimensoes')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -175,7 +175,7 @@ const Typhoon350trifasico = () => {
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">1020</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">15</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">280</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">Gasolina</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">{t('tabela.gasolina')}</td>
                   <td className="py-6 px-1 text-[10px] sm:text-xs md:text-base font-semibold text-center">1200x800x900</td>
                 </tr>
               </tbody>
@@ -184,13 +184,13 @@ const Typhoon350trifasico = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('lavadoras.50cv.textoCard')}</h2>
             </div>
     {/* ===== GRUPO 1: Trifásico ===== */}
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={iconTrifasico} alt="Trifásico" className="w-10 h-10" />
-              <h2 className="text-xl font-bold text-[#0E0E68]">Trifásico</h2>
+              <h2 className="text-xl font-bold text-[#0E0E68]">{t('tabela.trifasico')}</h2>
             </div>
   
             <div className="space-y-4">
@@ -208,14 +208,14 @@ const Typhoon350trifasico = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Pressão(bar):</strong> 350</p>
-                    <p><strong>Pressão(PSI):</strong> 5076</p>
-                    <p><strong>Vazão(L/min):</strong> 17 </p>
-                    <p><strong>Vazão(L/h)</strong> 1020 </p>
-                    <p><strong>Potência(cv)</strong> 15</p>
-                    <p><strong>Peso:</strong> 280 kg</p>
-                    <p><strong>Tipo de Tensão:</strong>Trifásico</p>
-                    <p><strong>Dimensões(mm):</strong> 1200x800x900</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 350</p>
+                    <p><strong>{t('tabela.pressao2')}:</strong> 5076</p>
+                    <p><strong>{t('tabela.vazao')}:</strong> 17 </p>
+                    <p><strong>{t('tabela.vazao2')}</strong> 1020 </p>
+                    <p><strong>{t('tabela.potencia')}:</strong> 15</p>
+                    <p><strong>{t('tabela.peso1')}:</strong> 280 kg</p>
+                    <p><strong>{t('tabela.tensao')}:</strong> {t('tabela.trifasico')}</p>
+                    <p><strong>{t('tabela.dimensoes')}:</strong> 1200x800x900</p>
                   </div>
                 </div>
               </div>
@@ -226,7 +226,7 @@ const Typhoon350trifasico = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={iconCombustao} alt="Combustão" className="w-10 h-10" />
-              <h2 className="text-xl font-bold text-[#0E0E68]">Combustão</h2>
+              <h2 className="text-xl font-bold text-[#0E0E68]">{t('tabela.combustao')}</h2>
             </div>
   
             <div className="space-y-4">
@@ -244,14 +244,14 @@ const Typhoon350trifasico = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't2' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Pressão(bar):</strong> 350</p>
-                    <p><strong>Pressão(PSI):</strong> 5076 </p>
-                    <p><strong>Vazão(L/min):</strong> 17</p>
-                    <p><strong>Vazão(L/h)</strong> 1020 </p>
-                    <p><strong>Potência(cv):</strong> 15</p>
-                    <p><strong>Peso:</strong> 280 kg</p>
-                    <p><strong>Tipo de Tensão</strong> Gasolina</p>
-                    <p><strong>Dimensões(mm):</strong>1200x800x900</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 350</p>
+                    <p><strong>{t('tabela.pressao2')}:</strong> 5076 </p>
+                    <p><strong>{t('tabela.vazao')}:</strong> 17</p>
+                    <p><strong>{t('tabela.vazao2')}</strong> 1020 </p>
+                    <p><strong>{t('tabela.potencia')}:</strong> 15</p>
+                    <p><strong>{t('tabela.peso1')}:</strong> 280 kg</p>
+                    <p><strong>{t('tabela.tensao')}:</strong> {t('tabela.gasolina')}</p>
+                    <p><strong>{t('tabela.dimensoes')}:</strong>1200x800x900</p>
                   </div>
                 </div>
               </div>

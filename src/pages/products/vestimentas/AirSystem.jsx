@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -19,14 +19,15 @@ import Air7 from '@/assets/images/airsystem-7.png';
 const AirSystem = () => {
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
+  const { t } = useTranslation();
   const slides = [
-    { id: 2, title: 'Air System', cover: Air2, color: '#FF5101' },
-    { id: 3, title: 'Air System', cover: Air3, color: '#FF5101' },
-    { id: 4, title: 'Air System', cover: Air4, color: '#FF5101' },
-    { id: 1, title: 'Air System', cover: Air1, color: '#FF5101' },
-    { id: 5, title: 'Air System', cover: Air5, color: '#FF5101' },
-    { id: 6, title: 'Air System', cover: Air6, color: '#FF5101' },
-    { id: 7, title: 'Air System', cover: Air7, color: '#FF5101' }
+    { id: 2, title: t('vestimentas.air.title'), cover: Air2, color: '#FF5101' },
+    { id: 3, title: t('vestimentas.air.title'), cover: Air3, color: '#FF5101' },
+    { id: 4, title: t('vestimentas.air.title'), cover: Air4, color: '#FF5101' },
+    { id: 1, title: t('vestimentas.air.title'), cover: Air1, color: '#FF5101' },
+    { id: 5, title: t('vestimentas.air.title'), cover: Air5, color: '#FF5101' },
+    { id: 6, title: t('vestimentas.air.title'), cover: Air6, color: '#FF5101' },
+    { id: 7, title: t('vestimentas.air.title'), cover: Air7, color: '#FF5101' }
 ];
 
   // Garante que a página inicie no topo
@@ -37,7 +38,7 @@ const AirSystem = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Air System 200 - Mamuth</title>
+        <title>{t('vestimentas.air.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -51,43 +52,42 @@ const AirSystem = () => {
                   className="text-5xl md:text-6xl font-bold mb-10 text-left "
                   style={{ color: 'var(--color-dark-blue)' }}
                 >
-                  Air System 200
+                  {t('vestimentas.air.title')}
                 </h2>   
                 <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-                    Sistema de Refrigeração de Ar para Operadores de Hidrojato
+                    {t('vestimentas.air.texto1')}
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-                  O Air System 200 Mamuth foi desenvolvido para proporcionar maior conforto térmico e segurança aos trabalhadores que atuam em operações de limpeza industrial e hidrojato, especialmente em ambientes de alta temperatura ou espaços confinados.
+                  {t('vestimentas.air.texto2')}
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-                  O equipamento fornece ar refrigerado e purificado ao interior do traje de proteção, contribuindo para a redução da fadiga térmica, melhora do desempenho operacional e aumento da produtividade durante atividades prolongadas.
+                  {t('vestimentas.air.texto3')}
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-                  Com controle de temperatura regulável, o sistema permite reduzir a temperatura interna do traje para até 18°C, oferecendo uma condição de trabalho mais confortável e eficiente. O ajuste de temperatura pode variar de -5°C a +20°C, permitindo adaptação conforme a necessidade da operação e as condições do ambiente.
-      
+                  {t('vestimentas.air.texto4')}
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-                  Principais características:
+                  {t('vestimentas.air.texto5')}
                 </p>
                 <ul className="list-disc text-left mb-10 ml-5">
                   <li className="marker:text-[#FF5101] text-gray-700">
-                    Capacidade para atender até 03 operadores simultaneamente em operações de hidrojato;
+                    {t('vestimentas.air.texto6')}
                   </li>
                   <li className="marker:text-[#FF5101] text-gray-700">
-                    Sistema integrado de purificação de ar, proporcionando maior qualidade no fornecimento ao operador;
+                    {t('vestimentas.air.texto7')}
                   </li>
                   <li className="marker:text-[#FF5101] text-gray-700">
-                    03 mangueiras em PU de 10 mm, com 12 metros de comprimento, cobertura protetiva e isolamento térmico;
+                    {t('vestimentas.air.texto8')}
                   </li>
                   <li className="marker:text-[#FF5101] text-gray-700">
-                    Chassi sobre rodas, facilitando o transporte e a movimentação do equipamento em campo;
+                    {t('vestimentas.air.texto9')}
                   </li>
                   <li className="marker:text-[#FF5101] text-gray-700">
-                    Solução ideal para operações industriais que exigem segurança, conforto térmico e alta performance operacional.
+                    {t('vestimentas.air.texto10')}
                   </li>
                 </ul>
                 <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-                  <strong>Air System 200 Mamuth</strong>: mais conforto, segurança e produtividade para operações de hidrojato em ambientes severos.
+                  <strong>{t('vestimentas.air.texto11')}</strong>
                 </p>
               </div>
             </section>
@@ -103,7 +103,7 @@ const AirSystem = () => {
                     > i
                   </div>
                 <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-                  Veja mais informações técnicas sobre este produto:
+                  {t('vestimentas.air.textoCard')}
                 </h2>
                 </div>
 

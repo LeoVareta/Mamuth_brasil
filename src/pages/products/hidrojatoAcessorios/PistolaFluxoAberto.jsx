@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import pistolaFluxoAbertoMTFA from '@/assets/images/pistola-fluxo-aberto-mtfa.png';
 
 const PistolaFluxoAberto = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-      { id: 1, title: 'Pistola Fluxo Aberto MTFA',  cover: pistolaFluxoAbertoMTFA, color: '#FF5101' }
+      { id: 1, title: t('acessorioshidro.fluxoaberto.title'),  cover: pistolaFluxoAbertoMTFA, color: '#FF5101' }
     ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const PistolaFluxoAberto = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Pistola Fluxo Aberto MTFA 1.400 Bar - Mamuth</title>
+        <title>{t('acessorioshidro.fluxoaberto.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,28 +41,23 @@ const PistolaFluxoAberto = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Pistola Fluxo Aberto MTFA
+            {t('acessorioshidro.fluxoaberto.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Sistema de fluxo aberto:
-            Permite o funcionamento contínuo e eficiente, adequado para diversas aplicações industriais.
+            {t('acessorioshidro.fluxoaberto.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Acionamento por válvula ON/OFF:
-            Facilita o controle preciso do sistema, oferecendo praticidade no uso e segurança nas operações.
+            {t('acessorioshidro.fluxoaberto.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Fácil manutenção:
-            Projetado para simplificar processos de manutenção, garantindo menos tempo de inatividade e maior durabilidade do equipamento.
+            {t('acessorioshidro.fluxoaberto.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Pressão máxima de trabalho: 1.400 bar:
-            Alta capacidade de pressão, ideal para trabalhos que exigem desempenho elevado e confiabilidade.
+            {t('acessorioshidro.fluxoaberto.texto4')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Pressão máxima de trabalho até 1.200 bar:
-            Ideal para aplicações que exigem alta pressão, garantindo eficiência e eficácia em operações exigentes.
+            {t('acessorioshidro.fluxoaberto.texto5')}
           </p>
         </div>
       </section>
@@ -78,7 +74,7 @@ const PistolaFluxoAberto = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioshidro.fluxoaberto.textoCard')}
             </h2>
           </div>
 

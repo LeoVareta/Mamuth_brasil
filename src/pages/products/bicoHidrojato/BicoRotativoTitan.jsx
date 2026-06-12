@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ProductSection from '@/components/ProductSection';
 import CTASection from "@/components/CTASection";
 import bgImg from '@/assets/images/bg-carrousel.png';
@@ -9,9 +10,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import bicoRotativoTitan from '@/assets/images/bico-rotativo-titan.jpg';
 
 const BicoRotativoTitan = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
-const slides = [
-          { id: 1, title: 'Bico Rotativo Titan',  cover: bicoRotativoTitan, color: '#FF5101' }
+  const slides = [
+          { id: 1, title: t('bicos.rotativotitan.title'),  cover: bicoRotativoTitan, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -22,7 +24,7 @@ const slides = [
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bico Turbo Rotativo 600 - Mamuth</title>
+        <title>{t('bicos.rotativotitan.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -38,16 +40,10 @@ const slides = [
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-               Bico Rotativo Titan
+               {t('bicos.rotativotitan.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           O Bico Titan é um bico rotativo auto-propulsor desenvolvido para limpeza e desobstrução de tubulações 
-           em geral com pressões entre 1.000 bar e 2.800 bar. As cabeças do bico rotativo são fabricadas em 
-           diferentes configurações de orifícios. A cabeça Polisher conta quatro orifícios radiais, a Unplugger 
-           conta com cinco orifícios já a Universal contam com sete orifícios para Corte, Limpeza e Polimento 
-           simultaneamente. O bico é fabricado em aço inoxidável de alta performance, isso proporciona uma longa 
-           vida útil e reduz o custo operacional. O Bico Titan está disponível em diversos tamanhos e 
-           configurações, os insertos ou cabeças estão disponíveis nos modelos Polisher, Unplugger e o modelo Universal.
+           {t('bicos.rotativotitan.texto1')}
           </p>
         </div>
       </section>
@@ -64,7 +60,7 @@ const slides = [
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bicos.rotativotitan.textoCard')}
             </h2>
           </div>
 

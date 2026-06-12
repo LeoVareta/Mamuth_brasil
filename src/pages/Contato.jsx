@@ -412,7 +412,6 @@ const Contato = () => {
         </div>
       </section>
       <CTASection />
-      <WhatsappButton />
     </>
   );
 };

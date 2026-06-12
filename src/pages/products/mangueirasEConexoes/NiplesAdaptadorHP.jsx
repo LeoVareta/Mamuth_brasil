@@ -71,12 +71,12 @@ const NiplesAdaptadorHP = () => {
             <thead>
               <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                 <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[5%] uppercase">#</th>
-                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[12%] uppercase">Modelo</th>
-                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[15%] uppercase">Código</th>
-                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">P. Max (bar)</th>
-                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[18%] uppercase">Rosca A (Tipo)</th>
-                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[18%] uppercase">Rosca B (Tipo)</th>
-                <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[22%] uppercase">Aplicação</th>
+                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[12%] uppercase">{t('tabela.modelo')}</th>
+                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[15%] uppercase">{t('tabela.codigo')}</th>
+                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">{t('tabela.pressao')}</th>
+                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[18%] uppercase">{t('tabela.roscaa')}</th>
+                <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[18%] uppercase">{t('tabela.roscab')}</th>
+                <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[22%] uppercase">{t('tabela.aplicacao')}</th>
               </tr>
             </thead>
             <tbody>
@@ -95,7 +95,7 @@ const NiplesAdaptadorHP = () => {
                   <td className="py-6 px-1 border-r border-gray-200 text-sm text-center">{item.p}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center">{item.ra}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center font-bold text-[#FF6B0A]">{item.rb}</td>
-                  <td className="py-6 px-1 text-xs md:text-sm text-center text-gray-500 italic">Mangueiras, acessórios...</td>
+                  <td className="py-6 px-1 text-xs md:text-sm text-center text-gray-500 italic">{t('tabela.mangueirasacessorios')}</td>
                 </tr>
               ))}
             </tbody>
@@ -104,7 +104,7 @@ const NiplesAdaptadorHP = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
             </div>
     {/* ===== GRUPO 1: Trifásico ===== */}
           <div>
@@ -124,72 +124,72 @@ const NiplesAdaptadorHP = () => {
                 {/* ITEM 1 */}
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0394</p>
-                    <p><strong>Modelo:</strong> Niple</p>
-                    <p><strong>Pressão:</strong> 2.800 bar</p>
-                    <p><strong>Rosca A:</strong> 3/8 UNF LH (M)</p>
-                    <p><strong>Rosca B:</strong> 9/16 UNF LH (M)</p>
-                    <p><strong>Aplicação:</strong> Mangueiras, acessórios...</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0394</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Niple</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 3/8 UNF LH (M)</p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 9/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasacessorios')}</p>
                   </div>
                 </div>
 
                 {/* ITEM 2 */}
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0588</p>
-                    <p><strong>Modelo:</strong> Niple</p>
-                    <p><strong>Pressão:</strong> 2.800 bar</p>
-                    <p><strong>Rosca A:</strong> 3/8 UNF LH (M)</p>
-                    <p><strong>Rosca B:</strong> 7/16 UNF LH (M)</p>
-                    <p><strong>Aplicação:</strong> Mangueiras, acessórios...</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0588</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Niple</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 3/8 UNF LH (M)</p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 7/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasacessorios')}</p>
                   </div>
                 </div>
 
                 {/* ITEM 3 */}
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0018</p>
-                    <p><strong>Modelo:</strong> Niple</p>
-                    <p><strong>Pressão:</strong> 2.800 bar</p>
-                    <p><strong>Rosca A:</strong> 9/16 UNF LH (M)</p>
-                    <p><strong>Rosca B:</strong> 9/16 UNF LH (M)</p>
-                    <p><strong>Aplicação:</strong> Mangueiras, acessórios...</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0018</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Niple</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 9/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 9/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasacessorios')}</p>
                   </div>
                 </div>
 
                 {/* ITEM 4 */}
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0299</p>
-                    <p><strong>Modelo:</strong> Niple</p>
-                    <p><strong>Pressão:</strong> 2.800 bar</p>
-                    <p><strong>Rosca A:</strong> 9/16 UNF LH (M)</p>
-                    <p><strong>Rosca B:</strong> 9/16 UNF LH (M)</p>
-                    <p><strong>Aplicação:</strong> Mangueiras, acessórios...</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0299</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Niple</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 9/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 9/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasacessorios')}</p>
                   </div>
                 </div>
 
                 {/* ITEM 5 */}
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0557</p>
-                    <p><strong>Modelo:</strong> Niple</p>
-                    <p><strong>Pressão:</strong> 2.800 bar</p>
-                    <p><strong>Rosca A:</strong> 9/16 UNF LH (M)</p>
-                    <p><strong>Rosca B:</strong> 7/16 UNF LH (M)</p>
-                    <p><strong>Aplicação:</strong> Mangueiras, acessórios...</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0557</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Niple</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 9/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 7/16 UNF LH (M)</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasacessorios')}</p>
                   </div>
                 </div>
 
                 {/* ITEM 6 */}
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0275</p>
-                    <p><strong>Modelo:</strong> Niple</p>
-                    <p><strong>Pressão:</strong> 2.800 bar</p>
-                    <p><strong>Rosca A:</strong> 7/8 UNF LH (M)</p>
-                    <p><strong>Rosca B:</strong> 7/8 UNF LH (M)</p>
-                    <p><strong>Aplicação:</strong> Mangueiras, acessórios...</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0275</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Niple</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800 bar</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 7/8 UNF LH (M)</p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 7/8 UNF LH (M)</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasacessorios')}</p>
                   </div>
                 </div>
 

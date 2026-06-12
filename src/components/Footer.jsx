@@ -87,7 +87,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">{t('footer.titleRedes')}</h3>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/mamuthmangueirasoficial/"
+                href="https://www.facebook.com/mamuthbrasil "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -96,7 +96,7 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/mamuthmangueirasoficial/"
+                href=" https://www.instagram.com/mamuthbrasil/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -114,7 +114,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://www.youtube.com/@Mamuth_HydroOficial"
+                href="https://www.youtube.com/@mamuthbrasil"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -123,7 +123,7 @@ const Footer = () => {
                 <Youtube className="w-5 h-5" />
               </a>
               <a
-                href="https://www.tiktok.com/@mamuth.hidrojato"
+                href="https://www.tiktok.com/@mamuthbrasil"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import bombaMTI50FF from '@/assets/images/bomba-mti-50ff.png';
 
 const BombaMTI50FF = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Bomba MTI 50 FF', cover: bombaMTI50FF, color: '#FF5101' }
+        { id: 1, title: t('bombas.50ff.title'), cover: bombaMTI50FF, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -23,7 +24,7 @@ const BombaMTI50FF = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bomba MTI-50FF - Mamuth</title>
+        <title>{t('bombas.50ff.title')} - Mamuth</title>
       </Helmet>
  
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -39,10 +40,10 @@ const BombaMTI50FF = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bomba MTI 50FF
+            {t('bombas.50ff.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Bomba Tríplex para hidrolavadoras ou testes hidrostaticos com pressão de 160 bar e vazão de até 150L/min.
+            {t('bombas.50ff.texto1')}
           </p>
 
         </div>
@@ -60,7 +61,7 @@ const BombaMTI50FF = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bombas.50ff.textoCard')}
             </h2>
           </div>
 

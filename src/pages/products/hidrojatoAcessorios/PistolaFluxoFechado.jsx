@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 
@@ -11,9 +11,10 @@ import pistolaFluxoFechadoMTFF from '@/assets/images/pistola-fluxo-fechado-15k.p
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
 const PistolaFluxoFechado = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-      { id: 1, title: 'Pistola Fluxo Fechado MTFF',  cover: pistolaFluxoFechadoMTFF, color: '#FF5101' }
+      { id: 1, title: t('acessorioshidro.fluxofechado.title'),  cover: pistolaFluxoFechadoMTFF, color: '#FF5101' }
     ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const PistolaFluxoFechado = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Pistola Fluxo Fechado MTFF 1.200 Bar - Mamuth</title>
+        <title>{t('acessorioshidro.fluxofechado.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,28 +41,23 @@ const PistolaFluxoFechado = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Pistola Fluxo Fechado MTFF
+            {t('acessorioshidro.fluxofechado.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Punho fabricado em plástico de alta resistência:
-            Desenvolvido para suportar condições extremas, proporcionando durabilidade e longa vida útil ao equipamento.
+            {t('acessorioshidro.fluxofechado.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10  text-left">
-            Sistema de fluxo fechado com acionamento por válvula mecânica:
-            Garante maior controle e precisão durante a operação, reduzindo o risco de vazamentos e aumentando a segurança.
+            {t('acessorioshidro.fluxofechado.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10  text-left">
-            Maior conforto na operação:
-            Ergonomicamente projetado para reduzir a fadiga do operador, permitindo uso prolongado sem comprometer o desempenho.
+            {t('acessorioshidro.fluxofechado.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10  text-left">
-            Cor verde padrão WJTA:
-            Identificação visual rápida e conforme os padrões internacionais de segurança da WJTA.
+            {t('acessorioshidro.fluxofechado.texto4')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Pressão máxima de trabalho até 1.200 bar:
-            Ideal para aplicações que exigem alta pressão, garantindo eficiência e eficácia em operações exigentes.
+            {t('acessorioshidro.fluxofechado.texto5')}
           </p>
         </div>
       </section>
@@ -78,7 +74,7 @@ const PistolaFluxoFechado = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioshidro.fluxofechado.textoCard')}
             </h2>
           </div>
 

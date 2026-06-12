@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -59,6 +60,7 @@ import BicoRetoLeque from '@/pages/products/bicoHidrojato/BicoRetoLeque';
 import BicoFixoFoguetinho from '@/pages/products/bicoHidrojato/BicoFixoFoguetinho';
 import BicoFerret22K from '@/pages/products/bicoHidrojato/BicoFerret22K';
 import BicoTorpedo from '@/pages/products/bicoHidrojato/BicoTorpedo';
+import BicoAttack from '@/pages/products/bicoHidrojato/BicoAttack1-4';
 {/* Bombas de alta pressão*/}
 import BombaMTI600 from '@/pages/products/bombasAltaPressao/BombaMti600';
 import BombaMTI50FF from '@/pages/products/bombasAltaPressao/BombaMTI50FF';
@@ -109,6 +111,18 @@ import FeiraNavalShore from '@/pages/noticias/feira-navalshore';
 import { Toaster } from '@/components/ui/toaster';
 
 function App() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://d335luupugsy2.cloudfront.net/js/loader-scripts/cb60296b-9ffe-485a-8749-51c5bd5b1041-loader.js';
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <BrowserRouter>
     <ScrollToTop/>
@@ -171,6 +185,7 @@ function App() {
             <Route path="/bicos-hidrojatos/bico-fixo-foguetinho" element={<BicoFixoFoguetinho/>}/>
             <Route path="/bicos-hidrojatos/bico-ferret-22k" element={<BicoFerret22K/>}/>
             <Route path="/bicos-hidrojatos/bico-torpedo" element={<BicoTorpedo/>}/>
+            <Route path="/bicos-hidrojatos/bico-attack-1-4" element={<BicoAttack/>}/>
             {/* Bombas de alta pressão*/}
             <Route path="/bombas-de-alta-pressao/bomba-mti-600" element={<BombaMTI600/>}/>
             <Route path="/bombas-de-alta-pressao/bomba-mti-50ff" element={<BombaMTI50FF/>}/>
@@ -218,7 +233,7 @@ function App() {
             <Route path="/noticias/feira-navalshore" element={<FeiraNavalShore />} />
           </Routes>
         </main>
-        <WhatsappButton /> 
+        {/* <WhatsappButton />  */}
         <Footer />
         <Toaster />
       </div>

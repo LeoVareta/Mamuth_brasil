@@ -92,12 +92,6 @@ const BicoRotativo500 = () => {
               </tbody>
             </table>
           </div>
-
-          <style dangerouslySetInnerHTML={{ __html: `
-            .custom-scrollbar::-webkit-scrollbar { height: 8px; }
-            .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-            .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF6B0A; border-radius: 10px; }
-          `}} />
         </div>
       </section>
 

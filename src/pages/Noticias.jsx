@@ -74,7 +74,6 @@ const Noticias = () => {
 
       <CTASection />
       <CertificacoesSection />
-      <WhatsappButton />
     </>
   );
 };

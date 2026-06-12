@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -13,6 +13,7 @@ import cabecote2 from '@/assets/images/cabecote-rotativo-3d-1.png'
 import cabecote3 from '@/assets/images/cabecote-rotativo-3d-2.png'
 
 const CabecoteRotativo3d = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
     { id: 2, cover: cabecote2, color: '#FF5101' },
@@ -28,7 +29,7 @@ const CabecoteRotativo3d = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Cabeçote Rotativo 3D Torrent NLB - Mamuth</title>
+        <title>{t('acessorioshidro.cabecote.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -44,19 +45,14 @@ const CabecoteRotativo3d = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Cabeçote Rotativo 3D Torrent NLB
+            {t('acessorioshidro.cabecote.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Cabeçote 3D Torrent NLB é uma ferramenta avançada projetada especificamente para a limpeza eficiente de tanques. 
-            Este dispositivo não apenas reduz drasticamente o tempo de limpeza, mas também proporciona total segurança na 
-            operação, eliminando a necessidade de um operador em espaços confinados, o que é essencial para minimizar riscos.
+            {t('acessorioshidro.cabecote.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Torrent opera com movimentos precisos nos eixos vertical e horizontal, além de um giro completo de 360°, 
-            garantindo uma limpeza abrangente em todas as direções, alcançando até as áreas mais difíceis. 
-            Com este acessório, é possível reduzir em até 80% o tempo de limpeza, aumentando a 
-            produtividade e eficiência no processo. Ideal para aplicações industriais que exigem alta performance e segurança.
+            {t('acessorioshidro.cabecote.texto2')}
           </p>
         </div>
       </section>
@@ -73,7 +69,7 @@ const CabecoteRotativo3d = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioshidro.cabecote.textoCard')}
             </h2>
           </div>
 

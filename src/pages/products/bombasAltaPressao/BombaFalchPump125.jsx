@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import VideoSection from "@/components/VideoSection";
-import CTASection from "@/components/CTASection";
-
+import CTASection from "@/components/CTASection"
 // Import da imagem
 import BombaFalch125K from '@/assets/images/falch-pump-150.png';
 import seloFalch from "@/assets/images/logo_falch_certificado.png";
@@ -14,9 +13,10 @@ import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
 const BombaFalch125 = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: 'Falch Pump 125 KW', cover: BombaFalch125K, color: '#FF5101' }
+        { id: 1, title: t('bombas.falch125.title'), cover: BombaFalch125K, color: '#FF5101' }
   ];
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -26,7 +26,7 @@ const BombaFalch125 = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Falch PUMP 125KW - Mamuth</title>
+        <title>{t('bombas.falch125.title')} - Mamuth</title>
       </Helmet>
  
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -42,7 +42,7 @@ const BombaFalch125 = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left flex items-center gap-4"
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Falch PUMP 125KW
+            {t('bombas.falch125.title')}
             <img 
               src={seloFalch}
               alt="Selo de Qualidade" 
@@ -50,58 +50,58 @@ const BombaFalch125 = () => {
             />
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            A Falch FA 125 é uma bomba de pistão de alta performance desenvolvida para aplicações industriais que exigem potência, confiabilidade e eficiência operacional. Com potência de até 125 kW e capacidade de operar em pressões de até 3.000 bar, o equipamento entrega alto desempenho mesmo nas condições mais exigentes.         
+            {t('bombas.falch125.texto1')}         
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Projetada com a engenharia alemã da Falch, a FA 125 é indicada para operações como limpeza industrial pesada, hidrodemolição, setor naval, óleo e gás, mineração e demais aplicações que demandam alta pressão com estabilidade e durabilidade.
+            {t('bombas.falch125.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Seu projeto combina robustez mecânica com tecnologias que reduzem o tempo de parada e aumentam a eficiência energética, proporcionando menor custo operacional ao longo do tempo.
+            {t('bombas.falch125.texto3')}
           </p>
           <h3 
             className="text-4xl md:text-4xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Diferenciais do Equipamento
+            {t('bombas.falch125.subtitle1')}
           </h3>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Manutenção Rápida (Quick Check Technology)
+            {t('bombas.falch125.texto4')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O sistema Quick Check foi desenvolvido para garantir intervenções rápidas e simples diretamente no local de operação, reduzindo significativamente o tempo de parada do equipamento.
+            {t('bombas.falch125.texto5')}
           </p>
           <ul className="list-disc text-left mb-10 ml-5">
             <li className="marker:text-[#FF5101] text-gray-700">
-              Troca de válvulas em aproximadamente 10 minutos
+              {t('bombas.falch125.texto6')}
             </li>
             <li className="marker:text-[#FF5101] text-gray-700">
-              Troca de pistão (plunger) e vedação em cerca de 30 minutos
+              {t('bombas.falch125.texto7')}
             </li>
             <li className="marker:text-[#FF5101] text-gray-700">
-              Não requer ferramentas especiais
+              {t('bombas.falch125.texto8')}
             </li>
           </ul>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Esse sistema permite maior disponibilidade da máquina e mais produtividade em campo.
+            {t('bombas.falch125.texto9')}
           </p>
           <h3 
             className="text-4xl md:text-4xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Eficiência Energética (Green Power Technology)
+            {t('bombas.falch125.subtitle2')}
           </h3>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            A tecnologia Green Power proporciona alto desempenho com menor consumo de energia, graças ao sistema de vedação otimizado e à eficiência mecânica do conjunto.
+            {t('bombas.falch125.texto10')}
           </p>
           <ul className="list-disc text-left mb-10 ml-5">
             <li className="marker:text-[#FF5101] text-gray-700">
-              Eficiência entre 91% e 94%
+              {t('bombas.falch125.texto11')}
             </li>
             <li className="marker:text-[#FF5101] text-gray-700">
-              Operação entre 1.000 e 3.000 bar
+              {t('bombas.falch125.texto12')}
             </li>
             <li className="marker:text-[#FF5101] text-gray-700">
-              Não requer ferramentas especiais
+              {t('bombas.falch125.texto13')}
             </li>
           </ul>
         </div>
@@ -117,7 +117,7 @@ const BombaFalch125 = () => {
               > i
             </div>
           <h2 className="text-gray-800 text-2xl md:text-3xl font-bold">
-            Veja mais informações técnicas sobre este produto:
+            {t('bombas.falch125.textoCard')}
           </h2>
           </div>
 
@@ -125,7 +125,7 @@ const BombaFalch125 = () => {
           {/* Primeira Div: Espaço grande no topo e menor embaixo */}
           <div className="w-full my-12">
             <h2 className="text-gray-800 mb-16 text-2xl md:text-3xl font-bold">
-              Eficiência por Pressão
+               {t('bombas.falch125.subtitleCard1')}
             </h2>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
@@ -156,10 +156,10 @@ const BombaFalch125 = () => {
           </div>
           <div className="w-full my-12">
             <h2 className="text-gray-800 mb-4 text-2xl md:text-3xl font-bold">
-              Configurações de operação
+              {t('bombas.falch125.subtitleCard2')}
             </h2>
             <h3 className="text-gray-800 mb-16 text-2xl md:text-2xl font-bold">
-              Velocidade e Desempenho (1800 rpm)
+              {t('bombas.falch125.subtitleCard3')}
             </h3>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
@@ -205,7 +205,7 @@ const BombaFalch125 = () => {
           </div>
           <div className="w-full my-12">´
             <h2 className="text-gray-800 mb-16 text-2xl md:text-3xl font-bold">
-              Dados Técnicos
+              {t('bombas.falch125.subtitleCard4')}
             </h2>
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>

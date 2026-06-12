@@ -29,7 +29,7 @@ const MangueiraWaterblast = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Mangueira Waterblast para Hidrojateamento - Mamuth</title>
+        <title>{t('mangueiras.waterblast.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -79,13 +79,13 @@ const MangueiraWaterblast = () => {
             <table className="w-full border-collapse table-fixed bg-white">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">Modelo</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">Ø Int. (mm)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">Ø Ext. (mm)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">P. Trab. (bar/psi)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">P. Rupt. (bar/psi)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[10%] uppercase">Raio Curv.</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[10%] uppercase">Peso (kg/m)</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">{t('tabela.int')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[9%] uppercase">{t('tabela.ext')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">{t('tabela.ptrabbarpsi')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[15%] uppercase">{t('tabela.pruptbarpsi')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[10%] uppercase">{t('tabela.raio')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[10%] uppercase">{t('tabela.pesokg')}</th>
                   <th className="py-4 px-1 font-bold text-[10px] md:text-xs text-center w-[10%] uppercase">Ø Term. (mm)</th>
                 </tr>
               </thead>
@@ -113,7 +113,7 @@ const MangueiraWaterblast = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+            <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
           </div>
           <div>
             <div className="space-y-4">
@@ -131,44 +131,44 @@ const MangueiraWaterblast = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 3/8 - 1250</p>
-                    <p><strong>Diâmetro Interno:</strong> 10,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 21,4 mm </p>
-                    <p><strong>Pressão de Trabalho:</strong> 1250 bar / 18000 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 3125 bar / 45000 psi </p>
-                    <p><strong>Raio de Curvatura:</strong> 150 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,850 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 25,0 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 3/8 - 1250</p>
+                    <p><strong>{t('tabela.di')}:</strong> 10,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 21,4 mm </p>
+                    <p><strong>{t('tabela.ptrabbarpsi')}:</strong> 1250 bar / 18000 psi </p>
+                    <p><strong>{t('tabela.pruptbarpsi')}:</strong> 3125 bar / 45000 psi </p>
+                    <p><strong>{t('tabela.raio')}:</strong> 150 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,850 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 25,0 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 1/2 - 1100</p>
-                    <p><strong>Diâmetro Interno:</strong> 13,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 25,4 mm </p>
-                    <p><strong>Pressão de Trabalho:</strong> 1100 bar/ 16000 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 2750 bar / 40000 psi </p>
-                    <p><strong>Raio de Curvatura:</strong> 200 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>1,260 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 28,5 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 1/2 - 1100</p>
+                    <p><strong>{t('tabela.di')}:</strong> 13,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 25,4 mm </p>
+                    <p><strong>{t('tabela.ptrabbarpsi')}:</strong> 1100 bar/ 16000 psi </p>
+                    <p><strong>{t('tabela.pruptbarpsi')}:</strong> 2750 bar / 40000 psi </p>
+                    <p><strong>{t('tabela.raio')}:</strong> 200 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>1,260 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 28,5 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 1/2 - 1450</p>
-                    <p><strong>Diâmetro Interno:</strong> 13,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 29,5 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1400 bar / 20300 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 3500 bar / 50000 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 200 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>1,750 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 32,5 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 1/2 - 1450</p>
+                    <p><strong>{t('tabela.di')}:</strong> 13,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 29,5 mm</p>
+                    <p><strong>{t('tabela.ptrabbarpsi')}:</strong> 1400 bar / 20300 psi </p>
+                    <p><strong>{t('tabela.pruptbarpsi')}:</strong> 3500 bar / 50000 bar </p>
+                    <p><strong>{t('tabela.raio')}:</strong> 200 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>1,750 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 32,5 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 3/4</p>
-                    <p><strong>Diâmetro Interno:</strong> 20,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 31,8 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1000 bar / 14500 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 2500 bar / 36250 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 280 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>1,780 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 33,5 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 3/4</p>
+                    <p><strong>{t('tabela.di')}:</strong> 20,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 31,8 mm</p>
+                    <p><strong>{t('tabela.ptrabbarpsi')}:</strong> 1000 bar / 14500 psi </p>
+                    <p><strong>{t('tabela.pruptbarpsi')}:</strong> 2500 bar / 36250 bar </p>
+                    <p><strong>{t('tabela.raio')}:</strong> 280 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>1,780 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 33,5 (kg/m)</p>
                   </div>
                 </div>
               </div>

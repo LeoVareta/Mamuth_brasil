@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import distorcedorMangueiraUap from '@/assets/images/distorcedor-mangueira-uap.jpeg';
 
 const DistorcedorMangueiraUAP = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-        { id: 1, title: 'Distorcedor de Mangueira UAP',  cover: distorcedorMangueiraUap, color: '#FF5101' }
+        { id: 1, title: t('acessorioshidro.distorcedor.title'),  cover: distorcedorMangueiraUap, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const DistorcedorMangueiraUAP = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Distorcedor de Mangueira UAP MT2800 - Mamuth</title>
+        <title>{t('acessorioshidro.distorcedor.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,11 +41,11 @@ const DistorcedorMangueiraUAP = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Distorcedor de Mangueira UAP MT2800
+            {t('acessorioshidro.distorcedor.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O Distorcedor é um item de segurança que quando utilizado junto a mangueira elimina o esforço por torção do terminal, evitando assim a quebra prematura e posteriores acidentes.
+            {t('acessorioshidro.distorcedor.texto1')}
           </p>
         </div>
       </section>
@@ -61,7 +62,7 @@ const DistorcedorMangueiraUAP = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioshidro.distorcedor.textoCard')}
             </h2>
           </div>
 

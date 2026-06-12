@@ -1,6 +1,7 @@
 {
   "home": {
-    "title": "Heavyweight Quality, Guaranteed Strength.",
+    "title1": "Heavyweight Quality, ",
+    "title2": "Guaranteed Strength.",
     "subtitle": "With years of experience, we specialize in providing robust high-pressure hoses, ideal for heavy industry applications. Our products guarantee safety and efficiency across various sectors, such as naval and steel industries.",
     "cta": "Talk to a Specialist",
     "titleMapa":"With a presence throughout Latin America, Mamuth combines experience, excellence, and technical expertise to deliver robust, safe, and high-performance solutions for highly complex industrial operations.",
@@ -542,7 +543,7 @@
       "title": "Typhoon-Jet 50 HP",
       "texto1": "Typhoon-Jet hydroblasting units are ideal for highly specific, fast-paced jobs. Equipped with a water-cooled Diesel engine, they deliver reliable power and efficiency in demanding environments. The integrated digital panel facilitates startup and allows monitoring of water and oil temperatures, battery charge, engine RPM, and other critical metrics, ensuring precise tracking during operation. Furthermore, its practical design allows for easy delivery and positioning across different locations.",
       "trifasico": "Three-Phase",
-      "combustao": "INTERNAL COMBUSTION",
+      "combustao": "Internal Combustion",
       "textoCard": "See more technical information about this product:" 
     },
     "500bar":{
@@ -599,6 +600,9 @@
       "texto8": "1 high-pressure fan nozzles Typhoon",
       "texto9": "1 pressure regulator",
       "texto10": "1 cart",
+      "trifasico": "Three-phase",
+      "monofasico": "Single-phase",
+      "monotri": "Single-phase / Three-phase",
       "textoCard": "See more technical information about this product:" 
     },
     "hot":{
@@ -607,5 +611,434 @@
       "texto2": "Its robust construction, paired with an industrial triplex pump, ensures greater durability, operational stability, and excellent performance in continuous use. Available in gasoline and electric versions, the Typhoon-Jet Hot offers operational versatility, maintaining pressures up to 280 bar (4,000 PSI) and a flow rate of 15 L/min, featuring an assembly designed to provide productivity, resistance, and daily convenience.",
       "textoCard": "See more technical information about this product:" 
     }
+  },
+  "vestimentas":{
+    "sap":{
+      "title": "Hydro-Shell HP Protective Suit",
+      "texto1": "Protective suit designed for workers in the sugar-alcohol sector and/or operations with HP (High Pressure) hydroblasting pumps. Manufactured with a double layer of high-tenacity woven synthetic fabric, externally waterproofed with PVC, it features waterproofed seams. The front closure is achieved through two zippers covered by a storm flap, and the fixed hood can be adjusted by a drawstring with a cord lock and aglet. Cuff and leg hems are adjustable via Velcro. It includes a protective neck flap with a rear Velcro closure. For enhanced comfort, it features internal support straps with quick-release height adjustments, helping to support the weight of the suit.",
+      "texto2": "Garment composed of:",
+      "texto3": "Hydro-Shell UHP Jacket",
+      "texto4": "Hydro-Shell UHP Trousers / Pants",
+      "texto5": "Protective Gloves",
+      "texto6": "UHP Protective Boots",
+      "texto7": "Safety Goggles + Face Shield",
+      "textoCard": "See more technical information about this product:"
+    },
+    "uap":{
+      "title": "Hydro-Shell UHP Protective Suit",
+      "texto1": "Protective suit designed for workers in the Marine, Oil & Gas, and Petrochemical sectors, and/or operations with UHP (Ultra-High Pressure) hydroblasting pumps. Manufactured with a triple layer of high-tenacity woven synthetic fabric, externally waterproofed with PVC, it features waterproofed seams. The front closure is achieved through quick-connect metallic rings covered by a storm flap, and the fixed hood can be adjusted by a drawstring with a cord lock and aglet. Cuff and leg hems are adjustable via Velcro. It includes a protective neck flap with a rear Velcro closure. For enhanced comfort, it features internal support straps with quick-release height adjustments, helping to support the weight of the suit.",
+      "texto2": "Garment composed of:",
+      "texto3": "Hydro-Shell UHP Jacket",
+      "texto4": "Hydro-Shell UHP Trousers / Pants",
+      "texto5": "Protective Gloves",
+      "texto6": "UHP Protective Boots",
+      "texto7": "Safety Goggles + Face Shield",
+      "textoCard": "See more technical information about this product:"
+    },
+    "capa":{
+      "title": "Hose Safety Sleeve",
+      "texto1": "Protective sleeve designed for hoses operating at pressures up to 2800 Bar. It provides protection in the event of an accidental rupture by forming a shield that prevents high-pressure water from striking the operator.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "air":{
+      "title": "Air System 200",
+      "texto1": "Air Cooling System for Hydroblasting Operators",
+      "texto2": "The Mamuth Air System 200 was developed to provide greater thermal comfort and safety for workers engaged in industrial cleaning and hydroblasting operations, especially in high-temperature environments or confined spaces.",
+      "texto3": "The equipment supplies cooled and purified air to the interior of the protective suit, contributing to the reduction of thermal fatigue, improvement of operational performance, and increased productivity during prolonged activities.",
+      "texto4": "With an adjustable temperature control, the system can reduce the suit's internal temperature down to 18 °C, offering a more comfortable and efficient working condition. The temperature adjustment can vary from -5 °C to +20 °C, allowing adaptation according to the specific operational needs and environmental conditions.",
+      "texto5": "Key Features:",
+      "texto6": "Capacity to supply up to 03 operators simultaneously in hydroblasting operations;",
+      "texto7": "Integrated air purification system, ensuring higher quality in the air supplied to the operator;",
+      "texto8": "03 PU hoses (10 mm) with a length of 12 meters, featuring a protective jacket and thermal insulation;",
+      "texto9": "Wheeled chassis, facilitating equipment transport and maneuvering in the field;",
+      "texto10": "The ideal solution for industrial operations that require safety, thermal comfort, and high operational performance.",
+      "texto11": "Mamuth Air System 200: more comfort, safety, and productivity for hydroblasting operations in harsh environments.",
+      "textoCard": "See more technical information about this product:" 
+    }
+  },
+   "robo":{
+    "line":{
+      "title": "Robot Line Worker 250",
+      "texto1": "The Robo Line Worker 250, developed by the German company Falch, is a high-performance hydroblasting robot designed for floor and surface cleaning and preparation using ultra-high pressure. Engineered for demanding industrial operations, this equipment combines robustness, precision, and advanced technology to remove severe encrustations, industrial residues, coatings, mineral deposits, and other highly adherent contaminants.",
+      "texto2": "Capable of operating at pressures up to 3,000 bar (4,351 PSI), the Line Worker 250 delivers an extremely efficient level of cleaning, ensuring high performance even in the most challenging applications. Its operating system allows for greater process control, stability during work, and reduced operator exposure, making operations safer and more productive.",
+      "texto3": "Featuring a robust structure, IP65/IP55 protection, and a build tailored for industrial environments, the equipment is designed for continuous operation, offering high reliability and durability. Its compact and functional design facilitates mobility and application across different types of surfaces and work environments.",
+      "texto4": "Equipped with a 400 V / 50 Hz electrical system and developed for intensive use, the Robo Line Worker 250 maintains high operational efficiency while ensuring precision and consistency in technical cleaning results.",
+      "texto5": "This robot represents an advanced solution for automated hydroblasting operations, providing significant gains in safety, productivity, and quality within the industrial cleaning process.",
+      "texto6": "Operating pressure up to 3,000 bar (4,351 PSI)",
+      "texto7": "German Falch technology, a global benchmark in hydroblasting",
+      "texto8": "High efficiency in removing severe encrustations and contaminants",
+      "texto9": "Robust structure with IP65 / IP55 protection",
+      "texto10": "Stable operation with enhanced safety for the operator",
+      "texto11": "Equipment designed for demanding industrial applications",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "lift":{
+      "title": "Lift Worker 250 Beam",
+      "texto1": "The Lift Worker 250 Beam is an equipment developed for professional high and ultra-high pressure hydroblasting operations, offering high productivity, operational safety, and precise control during coating removal, encrustation removal, and surface preparation.",
+      "texto2": "Engineered for industrial applications, the system allows for greater blasting efficiency, noise reduction via a spray protection cover, better control of the distance between the nozzle and the surface, and efficient wastewater extraction, contributing to faster drying and reduced surface oxidation (flash rust) formation.",
+      "texto3": "Featuring a robust structure, IP65/IP55 protection, and a build tailored for industrial environments, the equipment is designed for continuous operation, offering high reliability and durability. Its compact and functional design facilitates mobility and application across different types of surfaces and work environments.",
+      "texto4": "Equipped with a 400 V / 50 Hz electrical system and developed for intensive use, the Robo Line Worker 250 maintains high operational efficiency while ensuring precision and consistency in technical cleaning results.",
+      "texto5": "This robot represents an advanced solution for automated hydroblasting operations, providing significant gains in safety, productivity, and quality within the industrial cleaning process.",
+      "texto6": "Operating pressure up to 3,000 bar (4,351 PSI",
+      "texto7": "German Falch technology, a global benchmark in hydroblasting",
+      "texto8": "High efficiency in removing severe encrustations and contaminants",
+      "texto9": "Robust structure with IP65 / IP55 protection",
+      "texto10": "Stable operation with enhanced safety for the operator",
+      "texto11": "Equipment designed for demanding industrial applications",
+      "textoCard": "See more technical information about this product:" 
+    },
+    "magnetico":{
+      "title": "Magnetic Robot Climb Rob",
+      "texto1": "The Climb Rob 250 is a magnetic robot developed for high and ultra-high pressure hydroblasting on vertical, horizontal, and inclined metallic surfaces. Its magnetic attachment ensures stability during operation, allowing for greater safety, productivity, and precision in cleaning, coating removal, and surface preparation.",
+      "texto2": "Engineered for demanding industrial applications, the equipment reduces the need for manual work at heights, improves operational ergonomics, and enables remote control of the process, providing enhanced safety for the operator and superior performance compared to manual spray guns.",
+      "textoCard": "See more technical information about this product:" 
+    }
+  },
+  "bombas":{
+    "falch125":{
+      "title": "Falch PUMP 125KW",
+      "texto1": "The Falch FA 125 is a high-performance piston pump engineered for industrial applications that require power, reliability, and operational efficiency. Delivering up to 125 kW of power and capable of operating at pressures up to 3,000 bar, this equipment provides top-tier performance even under the most demanding conditions.",
+      "texto2": "Designed with German Falch engineering, the FA 125 is recommended for operations such as heavy-duty industrial cleaning, hydrodemolition, the marine sector, oil and gas, mining, and other applications that demand high pressure combined with stability and durability.",
+      "texto3": "Its design blends mechanical robustness with technologies that reduce downtime and increase energy efficiency, providing lower operating costs over time.",
+      "subtitle1": "Key Advantages",
+      "texto4": "Fast Maintenance (Quick Check Technology)",
+      "texto5": "The Quick Check system was developed to ensure fast and simple interventions directly at the job site, significantly reducing equipment downtime.",
+      "texto6": "Valve replacement in approximately 10 minutes.",
+      "texto7": "Plunger and seal replacement in about 30 minutes.",
+      "texto8": "Requires no special tools.",
+      "texto9": "This system allows for greater machine availability and higher productivity in the field.",
+      "subtitle2": "Energy Efficiency (Green Power Technology)",
+      "texto10": "Green Power technology delivers high performance with lower energy consumption, thanks to an optimized sealing system and the mechanical efficiency of the assembly.",
+      "texto11": "Efficiency between 91% and 94%.",
+      "texto12": "Operation between 1,000 and 3,000 bar.",
+      "texto13": "Requires no special tools.",
+      "textoCard": "See more technical information about this product:",
+      "subtitleCard1": "Efficiency by Pressure",
+      "subtitleCard2": "Operating Configurations",
+      "subtitleCard3": "Speed and Performance: 1,800 rpm",
+      "subtitleCard4": "Technical Data"
+    },
+    "falch250":{
+      "title": "Falch PUMP 250KW",
+      "texto1": "The Falch FA 250 is a high-performance piston pump engineered for industrial applications that require power, reliability, and operational efficiency. Delivering up to 250 kW of power and capable of operating at pressures up to 3,000 bar, this equipment provides top-tier performance even under the most demanding conditions.",
+      "texto2": "Designed with German Falch engineering, the FA 250 is recommended for operations such as heavy-duty industrial cleaning, hydrodemolition, the marine sector, oil and gas, mining, and other applications that demand high pressure combined with stability and durability.",
+      "texto3": "Its design blends mechanical robustness with technologies that reduce downtime and increase energy efficiency, providing lower operating costs over time.",
+      "subtitle1": "Key Advantages",
+      "texto4": "Fast Maintenance (Quick Check Technology)",
+      "texto5": "The Quick Check system was developed to ensure fast and simple interventions directly at the job site, significantly reducing equipment downtime.",
+      "texto6": "Valve replacement in approximately 10 minutes.",
+      "texto7": "Plunger and seal replacement in about 30 minutes.",
+      "texto8": "Requires no special tools.",
+      "texto9": "This system allows for greater machine availability and higher productivity in the field.",
+      "subtitle2": "Energy Efficiency (Green Power Technology)",
+      "texto10": "Green Power technology delivers high performance with lower energy consumption, thanks to an optimized sealing system and the mechanical efficiency of the assembly.",
+      "texto11": "Efficiency between 91% and 94%.",
+      "texto12": "Operation between 1,000 and 3,000 bar.",
+      "texto13": "Requires no special tools.",
+      "textoCard": "See more technical information about this product:",
+      "subtitleCard1": "Efficiency by Pressure",
+      "subtitleCard2": "Operating Configurations",
+      "subtitleCard3": "Speed and Performance: 1,800 rpm",
+      "subtitleCard4": "Technical Data"
+    },
+    "falch500":{
+      "title": "Falch PUMP 500KW",
+      "texto1": "The Falch FA 500 is a high-performance piston pump engineered for industrial applications that require power, reliability, and operational efficiency. Delivering up to 500 kW of power and capable of operating at pressures up to 3,000 bar, this equipment provides top-tier performance even under the most demanding conditions.",
+      "texto2": "Designed with German Falch engineering, the FA 500 is recommended for operations such as heavy-duty industrial cleaning, hydrodemolition, the marine sector, oil and gas, mining, and other applications that demand high pressure combined with stability and durability.",
+      "texto3": "Its design blends mechanical robustness with technologies that reduce downtime and increase energy efficiency, providing lower operating costs over time.",
+      "subtitle1": "Key Advantages",
+      "texto4": "Fast Maintenance (Quick Check Technology)",
+      "texto5": "The Quick Check system was developed to ensure fast and simple interventions directly at the job site, significantly reducing equipment downtime.",
+      "texto6": "Valve replacement in approximately 10 minutes.",
+      "texto7": "Plunger and seal replacement in about 30 minutes.",
+      "texto8": "Requires no special tools.",
+      "texto9": "This system allows for greater machine availability and higher productivity in the field.",
+      "subtitle2": "Energy Efficiency (Green Power Technology)",
+      "texto10": "Green Power technology delivers high performance with lower energy consumption, thanks to an optimized sealing system and the mechanical efficiency of the assembly.",
+      "texto11": "Efficiency between 91% and 94%.",
+      "texto12": "Operation between 1,000 and 3,000 bar.",
+      "texto13": "Requires no special tools.",
+      "textoCard": "See more technical information about this product:",
+      "subtitleCard1": "Efficiency by Pressure",
+      "subtitleCard2": "Operating Configurations",
+      "subtitleCard3": "Speed and Performance: 1,500 rpm",
+      "subtitleCard4": "Technical Data"
+    },
+    "600":{
+      "title": "MTI-600 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 600 bar and a flow rate of up to 35 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "500":{
+      "title": "MTI-500 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 500 bar and a flow rate of up to 20 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "350":{
+      "title": "MTI-350 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 350 bar and a flow rate of up to 19 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "250":{
+      "title": "MTI-250 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 250 bar and a flow rate of up to 17 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "200":{
+      "title": "MTI-200 Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 200 bar and a flow rate of up to 40 L/min.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "50ff":{
+      "title": "MTI-50FF Pump",
+      "texto1": "Triplex pump for high-pressure washers or hydrostatic testing, with a pressure of 160 bar and a flow rate of up to 150 L/min.",
+      "textoCard": "See more technical information about this product:"
+    }
+  },
+   "bicos":{
+    "rotativoR":{
+      "title": "Rotary Nozzle R",
+      "texto1": "The R model rotary nozzle was specifically developed for cleaning and removing encrustations from the internal walls of heat exchanger tubes, evaporators, and pipe lines in general. These nozzles are available in several diameters and with inserts of varied orifices, sized according to the flow rate.",
+      "texto2": "Maximum Working Pressure: 1,000 bar / 14,500 psi",
+      "texto3": "F/B: Bushing Orifice",
+      "texto4": "All nozzles (with the exception of the R10 model) have the option of NPT standard thread.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "safiram10":{
+      "title": "Rotating Nozzle 600 Bar",
+      "texto1": "Rotating nozzles are designed to provide a powerful and efficient",
+      "textoCard": "See more technical information about this product:"
+    },
+    "portasafira":{
+      "title": "Sapphire Nozzle Holder",
+      "texto1": "The 3/8” Sapphire Nozzle Holder is an essential component in cleaning, blasting, or cutting operations using Ultra-High Pressure (UHP) spray guns. This holder is designed to ensure a secure and stable attachment of the nozzle, providing precision and efficiency during use.",
+      "texto2": "Recommended for applications involving pressures up to 2,800 bar (40,600 psi), the holder is ideal for jobs that require high performance and reliability, ensuring equipment durability and integrity even under extreme conditions.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "portareto":{
+      "title": "Straight and Fan Nozzle Holder",
+      "texto1":"The holder for the Form 4 Straight Nozzle and Form 19 Fan Nozzle is primarily used in cleaning, blasting, or cutting operations with high-pressure spray guns. They are recommended for applications up to 1,500 bar / 21,750 psi.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "rotativo600":{
+      "title": "Rotating Nozzle 600 Bar",
+      "texto1": "Rotating nozzles are designed to provide a powerful and efficient",
+      "textoCard": "See more technical information about this product:"
+    },
+    "bicotorpedo":{
+
+    },
+    "shrakjet":{
+      "title":"Shark-Jet 22K and 40K Nozzle",
+      "title22":"Shark-Jet 22K Nozzle",
+      "title40":"Shark-Jet 40K Nozzle",
+      "texto1":"The Shark-Jet 22K and 40K is a self-propelled rotary tool designed for blasting, cleaning, and surface preparation of flat or irregular surfaces. Available in two configurations: the first option operates at pressures up to 1,500 bar (22,000 psi) with a flow rate up to 40 L/min; the second option is configured to operate at pressures up to 2,800 bar (40,000 psi) with a flow rate up to 30 L/min. This tool is used in conjunction with a hydroblasting spray gun. Its internal components feature an oil lubrication and cooling system, as well as a hydraulic brake to limit rotation speed. This tool utilizes 4 Sapphire Nozzles (7/16-20 UNF) in the 2,800 bar configuration, and 2 Attack Nozzles (1/4 NPT) in the 1,500 bar configuration, all with offset angles, which provides a controlled rotation and a higher cleaning performance over a larger surface attack area.",
+      "textoCard":"See more technical information about this product:"
+    },
+    "rotativotitan":{
+      "title":"Titan Rotary Nozzle",
+      "texto1":"The Titan Nozzle is a self-propelled rotary nozzle developed for general pipe cleaning and unblocking, operating at pressures between 1,000 bar and 2,800 bar. The rotary nozzle heads are manufactured in different orifice configurations. The Polisher head features four radial orifices, the Unplugger features five orifices, while the Universal features seven orifices for simultaneous cutting, cleaning, and polishing. The nozzle is manufactured from high-performance stainless steel, which provides a long service life and reduces operating costs. The Titan Nozzle is available in various sizes and configurations, with inserts or heads available in the Polisher, Unplugger, and Universal models.",
+      "textoCard":"See more technical information about this product:"
+    },
+    "bicoreto":{
+      "title":"Straight and Fan Nozzles",
+      "texto1":"Nozzles or inserts are used in accessories applied within the hydroblasting process, such as: Spray Guns, Rotary Tools, Spray Bars, Rotary Nozzles, among others. The configurations must be reviewed for each application, taking into account the specifications and limitations of pressure and flow rate for each piece of equipment or process. They can be applied to cutting, cleaning, stripping, unblocking, and surface preparation processes.",
+      "textoCard": "See more technical information about this product:"
+    },
+    "foguetinho":{
+      "title": "Fixed Rocket Nozzle",
+      "texto1": "The fixed Rocket type nozzle is designed for cleaning and unblocking the internal walls of heat exchanger tubes, evaporators, and pipe lines in general. These nozzles are available in several different diameters and with orifices sized according to the flow rate. This model features 8 orifices, with 2 forward-facing attack jets and 6 rear-facing cleaning and propulsion jets.",
+      "texto2": "Maximum Working Pressure: 1,000 bar / 14,500 psi",
+      "textoCard": "See more technical information about this product:"
+    },
+    "ferret22":{
+      "title": "Ferret 22K Nozzle",
+      "texto1": "The Ferret 22K self-propelled nozzle is designed for operations with pressures up to 1,600 bar and a flow rate of 80 L/min. This tool enables the unblocking and cleaning of 2” to 6” pipes, performing exceptionally well in pipelines that feature 90° bends.",
+      "texto2": "Maximum Working Pressure: 1,600 bar / 23,206 psi",
+      "textoCard": "See more technical information about this product:"
+    }
+  },
+  "acessorioshidro":{
+      "viper40k":{
+        "title": "Viper 40k Rotary Spray Gun",
+        "texto1": "Pneumatic Circuit Isolation Actuation System: The system is designed to isolate the pneumatic circuit, ensuring that water pressure and lance rotation are only activated when both triggers are pressed simultaneously, providing precise and secure control.",
+        "texto2": "Enhanced Operator Safety: Water flow and lance rotation are only activated when both triggers are pressed at the same time, minimizing the risk of accidental activation and significantly increasing safety during operation.",
+        "texto3": "Easy Maintenance: The system is engineered to allow fast and efficient maintenance, reducing downtime and ensuring the equipment remains operational with minimal interruption.",
+        "texto4": "Maximum Working Pressure (2,800 bar): Capable of withstanding and operating under ultra-high pressures, making it ideal for industrial applications that require exceptional force and performance.",
+        "texto5": "Compatible with the MAMUTH 40K Power Box: Must be used in conjunction with the MAMUTH 40K Power Box, ensuring perfect integration and optimized performance in high-pressure operations.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pneumatica2g":{
+        "title": "MTPT 2G Pneumatic Spray Gun",
+        "texto1": "Two Handles Manufactured from High-Resistance Plastic: Provide greater robustness and durability, ensuring the equipment withstands demanding working conditions without compromising its structural integrity.",
+        "texto2": "Two Pneumatic Valve Actuation System: Offers precise and reliable flow control, enabling safe and efficient operation in industrial environments.",
+        "texto3": "Enhanced Operator Safety: The operational flow is only activated when both triggers are pressed simultaneously, minimizing the risk of accidents and increasing operator safety.",
+        "texto4": "Easy Maintenance: Optimized design to simplify maintenance processes, reducing downtime and operational costs throughout the equipment's service life.",
+        "texto5": "WJTA Standard Orange Color: Facilitates visual identification of the equipment, meeting WJTA international safety standards and ensuring compliance in work environments.",
+        "texto6": "Maximum Working Pressure up to 2,800 bar: Suitable for operations requiring ultra-high pressure, delivering exceptional performance in critical tasks.",
+        "texto7": "Compatible with the MAMUTH 40K Power Box: Must be used in conjunction with the MAMUTH 40K Power Box to ensure maximum performance and safety in high-pressure applications.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "fluxofechado":{
+        "title": "MTFF Closed-Flow Spray Gun",
+        "texto1": "Handle Manufactured from High-Resistance Plastic: Developed to withstand extreme conditions, providing durability and a long service life for the equipment.",
+        "texto2": "Closed-Flow System Actuated by a Mechanical Valve: Ensures greater control and precision during operation, reducing the risk of leaks and increasing safety.",
+        "texto3": "Greater Operational Comfort: Ergonomically designed to reduce operator fatigue, allowing prolonged use without compromising performance.",
+        "texto4": "WJTA Standard Green Color: Quick visual identification in compliance with WJTA international safety standards.",
+        "texto5": "Maximum Working Pressure up to 1,200 bar: Ideal for applications requiring high pressure, ensuring efficiency and effectiveness in demanding operations.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "fluxoaberto":{
+        "title": "MTFA Dump Spray Gun",
+        "texto1": "Open-Flow System: Allows for continuous and efficient operation, suitable for various industrial applications.",
+        "texto2": "ON/OFF Valve Actuation: Facilitates precise control of the system, offering convenience in use and safety during operations.",
+        "texto3": "Easy Maintenance: Designed to simplify maintenance processes, ensuring less downtime and greater equipment durability.",
+        "texto4": "Maximum Working Pressure (1,400 bar): High pressure capacity, ideal for jobs that require high performance and reliability.",
+        "texto5": "Maximum Working Pressure up to 1,200 bar: Ideal for applications requiring high pressure, ensuring efficiency and effectiveness in demanding operations.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "tubeclean":{
+        "title": "Tubeclean Mamuth",
+        "texto1": "A tool engineered to assist operators in the efficient cleaning of evaporators and various pipelines, particularly in vertical positions. Ideal for removing residues and obstructions, ensuring proper maintenance and continuous system operation. It provides greater safety and precision during the cleaning process, reducing physical effort and the time required to complete the task.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "powerbox":{
+        "title": "Power Box MAMUTH 2,800",
+        "texto1": "The Power Box MAMUTH 2,800 Bar is an accessory that must be used in conjunction with the MTP 2,800 Bar Dual Trigger Spray Gun or the Viper 40K Rotary Spray Gun. Actuation occurs when both gun triggers are pressed simultaneously, releasing the water flow through redirection by the dump valve. When the triggers are released, the valve closes and the flow is directed to the surge suppressor, draining the water at low pressure.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pedalaberto":{
+        "title": "MTPA 1,400 Bar Open-Flow Foot Pedal",
+        "texto1": "The MTPA 1,400 Bar Open-Flow Foot Pedal is designed for tasks where the hydroblasting operator needs to use both hands, making it ideal for cleaning heat exchangers or pipelines in general. This accessory provides greater safety and comfort, as the operator has total control over releasing the water flow with their foot. The open-flow system simplifies its utilization and brings enhanced safety to both the high-pressure system and the operator.",
+        "texto2": "Internal Surge Suppressor: An internal damper reduces the flow activation impact.",
+        "texto3": "Cartridge-Type Valve: Can be easily replaced in the field.",
+        "texto4": "Maximum Operational Safety: Maximizes safety in hydroblasting operations since the operator has complete control over activating the high-pressure water flow.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "malhaseguranca":{
+        "title": "Hose Safety Whipcheck",
+        "texto1": "A safety device used at hose and pipe connections designed to prevent sudden movement or whipping in the event of a connection failure.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "lancatubo":{
+        "title": "Stainless Steel Lance and Tube",
+        "texto1": "Known as rods or lances, these are used as flow conductors or as extensions for nozzles and hoses. They can be manufactured in any custom length.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "lacoseguranca":{
+        "title": "Hose Safety Cable Loop",
+        "texto1": "A safety device used at hose and pipe connections designed to prevent sudden movement or whipping in the event of a connection failure.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "distorcedor":{
+        "title": "MT2800 UHP Hose Swivel Joint",
+        "texto1": "The Swivel Joint is a safety component that, when used with the hose, eliminates torsional stress on the fitting, thereby preventing premature failure and subsequent accidents.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "cabecote":{
+        "title": "NLB Torrent 3D Rotary Tank Cleaning Head",
+        "texto1": "The NLB Torrent 3D Head is an advanced tool specifically designed for efficient tank cleaning. This device not only drastically reduces cleaning time but also provides total operational safety by eliminating the need for an operator inside confined spaces, which is essential to minimize risks.",
+        "texto2": "The Torrent operates with precise movements along the vertical and horizontal axes, featuring a full 360° rotation to ensure comprehensive cleaning in all directions, reaching even the most difficult areas. With this accessory, cleaning time can be reduced by up to 80%, increasing productivity and efficiency in the process. It is ideal for industrial applications that require high performance and safety.",
+        "textoCard": "See more technical information about this product:"
+      }
+  },
+  "acessorioslavadoras":{
+      "pistola660":{
+        "title": "660-Bar High-Pressure Spray Gun",
+        "texto1": "Triggers and lances suitable for high-pressure washers.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pistola350":{
+        "title": "350-Bar High-Pressure Spray Gun",
+        "texto1": "Triggers and lances suitable for high-pressure washers.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "pistola280":{
+        "title": "280-Bar High-Pressure Spray Gun",
+        "texto1": "Triggers and lances suitable for high-pressure washers.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "bicojato": {
+        "title": "500-Bar Abrasive Waterjet Nozzle",
+        "texto1": "High-performance abrasive blasting nozzle designed for water-sandblasting operations at pressures up to 500 bar. Ideal for heavy-duty surface preparation, paint stripping, rust removal, and concrete decontamination."
+      },
+      "valvulareguladora550":{
+        "title": "550-Bar Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 550 bar.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "valvulareguladora350":{
+        "title": "350-Bar Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 350 bar.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "valvulareguladora200":{
+        "title": "200-Bar High-Flow Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 200 bar.",
+        "textoCard": "See more technical information about this product:"
+      },
+      "valvulareguladora600":{
+        "title": "600-Bar High-Flow Pressure Regulating Valve",
+        "texto1": "High-precision pressure regulating and unloader valve designed to maintain stable system pressure and bypass excess flow in high-pressure waterjetting and washing systems operating up to 600 bar.",
+        "textoCard": "See more technical information about this product:"
+      }
+  },
+  "tabela":{
+      "modelo": "Model",
+      "di": "I.D. (mm)",
+      "de": "O.D. (mm)",
+      "trabalho": "W.P. (bar)",
+      "trabalho2": "W.P. (psi)",
+      "rupt": "B.P. (bar)",
+      "rupt2": "B.P. (psi)",
+      "raio": "Min. Bend Radius (mm)",
+      "peso": "kg/m",
+      "term": "Fitting Ø",
+      "int": "Ø I.D. (mm)",
+      "ext": "Ø O.D. (mm)",
+      "ptrab": "W.P. (bar)",
+      "ptrab2": "W.P. (psi)", 
+      "prupt": "B.P. (bar)",
+      "prupt2": "B.P. (psi)",
+      "raiocurv": "Min. Bend Radius (mm)", 
+      "pesokg" : "Weight (kg/m)",
+      "pruptbarpsi": "B.P. (bar/psi)",
+      "ptrabbarpsi": "W.P. (bar/psi)",
+      "roscaa":"Thread A",
+      "roscab":"Thread B",
+      "aplicacao":"Application",
+      "codigo":"Part Number",
+      "pressao": "Pressure (bar)",
+      "varetasbicos": "Lances, Nozzles, etc.",
+      "mangueirasacessorios": "Hoses, Accessories, etc.",
+      "luva": "Glove",
+      "ravazado": "Thread A (Bored)",
+      "raanilha": "Thread A (Ferrule)", 
+      "rbvazado": "Thread B (Bored)",
+      "rbanilha": "Thread B (Ferrule)",
+      "ladomacho": "Male side",
+      "ladofemea": "Female side",
+      "mangueira": "Hoses",
+      "roscaanilha": "Ferrule Thread",
+      "roscaparafuso": "Screw Thread",
+      "cotovelo": "90° Elbow",
+      "distribuidory": "Y-Distributor",
+      "distribuidort": "T-Distributor",
+      "entrada": "Inlet Thread",
+      "saida": "Outlet Thread",
+      "mangueiras": "Hoses",
+      "vazao": "Flow Rate (L/min)",
+      "vazao2": "Flow Rate (L/H)",
+      "potencia": "Power (hp)",
+      "peso1": "Weight (kg)",
+      "dimensoes": "Dimensions (mm)",
+      "tensao": "Voltage",
+      "trifasico": "Three-Phase",
+      "gasolina": "Gasoline",
+      "combustao": "Combustion",
+      "monofasico": "Single-Phase",
+      "potencia2": "Power",
+      "temperatura": "Temperature",
+      "rotacao": "RPM"
   }
 }

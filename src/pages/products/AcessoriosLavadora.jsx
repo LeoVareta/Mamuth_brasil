@@ -24,7 +24,7 @@ const PaginaCategoria = () => {
       category: 'Categoria Principal'
     },
     {
-      name: t('categorias.hidrolavadoras.title660bar'),
+      name: t('categorias.hidrolavadoras.title350bar'),
       path: '/acessorios-lavadoras-de-alta-pressao/pistola-350bar',
       description: t('categorias.hidrolavadoras.subtitlePistolas'),
       image: pistola350bar, 

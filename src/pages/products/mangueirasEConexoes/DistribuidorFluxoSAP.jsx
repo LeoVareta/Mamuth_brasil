@@ -71,18 +71,18 @@ const DistribuidoresFluxoSAP = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[5%] uppercase">#</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[15%] uppercase">Modelo</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[15%] uppercase">Código</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">P. Max</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">Entrada (Rosca)</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">Saída (Rosca)</th>
-                  <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[15%] uppercase">Aplicação</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[15%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[15%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">{t('tabela.pressao')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">{t('tabela.entrada')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">{t('tabela.saida')}</th>
+                  <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[15%] uppercase">{t('tabela.aplicacao')}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { id: 1, mod: "Tipo T", cod: "3006.0014", pres: "1.500", ent: "M30 PL (F)", sai: "M22 PL (2x) (F)", app: "Mangueiras" },
-                  { id: 2, mod: "Flauta", cod: "3006.0046", pres: "1.500", ent: "M30 PL (F)", sai: "M22 PL (3x) (F)", app: "Mangueiras" },
+                  { id: 1, mod: "Tipo T", cod: "3006.0014", pres: "1.500", ent: "M30 PL (F)", sai: "M22 PL (2x) (F)"},
+                  { id: 2, mod: "Flauta", cod: "3006.0046", pres: "1.500", ent: "M30 PL (F)", sai: "M22 PL (3x) (F)"},
                 ].map((item) => (
                   <tr key={item.id} className="text-gray-800 border-b border-gray-200">
                     <td className="py-8 px-1 border-r border-gray-200 text-sm md:text-lg text-center font-bold">{item.id}</td>
@@ -91,7 +91,7 @@ const DistribuidoresFluxoSAP = () => {
                     <td className="py-8 px-1 border-r border-gray-200 text-sm md:text-lg text-center">{item.pres}</td>
                     <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-base text-center">{item.ent}</td>
                     <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-base text-center font-bold text-[#FF6B0A]">{item.sai}</td>
-                    <td className="py-8 px-1 text-sm md:text-lg text-center">{item.app}</td>
+                    <td className="py-8 px-1 text-sm md:text-lg text-center">{t('tabela.mangueiras')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -100,7 +100,7 @@ const DistribuidoresFluxoSAP = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
             </div>
     {/* ===== GRUPO 1:===== */}
           <div>
@@ -119,11 +119,11 @@ const DistribuidoresFluxoSAP = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código</strong> 3006.0014</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Entrada (Rosca):</strong> M30 PL (F) </p>
-                    <p><strong>Saída(Rosca)</strong> M22 PL (2x) (F) </p>
-                    <p><strong>Aplicação:</strong>Mangueiras</p>
+                    <p><strong>{t('tabela.codigo')}</strong> 3006.0014</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.entrada')}:</strong> M30 PL (F) </p>
+                    <p><strong>{t('tabela.saida')}</strong> M22 PL (2x) (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.mangueiras')}</p>
                     
                   </div>
                 </div>
@@ -141,11 +141,11 @@ const DistribuidoresFluxoSAP = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código</strong> 3006.00463</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Entrada (Rosca):</strong> M30 PL (F) </p>
-                    <p><strong>Saída(Rosca)</strong> M22 PL (3x) (F) </p>
-                    <p><strong>Aplicação:</strong> Mangueiras</p>
+                    <p><strong>{t('tabela.codigo')}</strong> 3006.00463</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.entrada')}:</strong> M30 PL (F) </p>
+                    <p><strong>{t('tabela.saida')}</strong> M22 PL (3x) (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.mangueiras')}</p>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 {
   "home": {
-    "title": "Calidad de Peso, Fortaleza Garantizada.",
+    "title1": "Calidad de Peso, ",
+    "title2": "Fortaleza Garantizada.",
     "subtitle": "Con años de experiencia, somos especialistas en el suministro de mangueras robustas de alta presión, ideales para aplicaciones en la industria pesada. Nuestros productos garantizan seguridad y eficiencia en diversos sectores, como el naval y el siderúrgico.",
     "cta": "Hablar con un Especialista",
     "titleMapa": "Con presencia en toda América Latina, Mamuth combina experiencia, excelencia y conocimiento técnico para entregar soluciones robustas, seguras y de alto rendimiento para operaciones industriales de alta complejidad.",
@@ -535,7 +536,7 @@
     "DistribuidoresSAP":{
       "title": "Distribuidores de Flujo AP",
       "texto1": "Los distribuidores se utilizan para dividir el flujo de agua y multiplicar el número de mangueras a utilizar, permitiendo que múltiples operaciones ocurran simultáneamente. Con estos dispositivos, es posible optimizar el uso de los recursos hídricos, direccionando el agua hacia diferentes puntos de aplicación de forma eficiente y controlada. Además, los distribuidores garantizan una distribución uniforme del flujo, lo cual es esencial para mantener la presión adecuada en todas las salidas, resultando en una mayor productividad y precisión en las operaciones.",
-      "textoCard": ""
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
     }
   },
   "lavadoras":{
@@ -543,7 +544,7 @@
       "title": "Typhoon-Jet 50 cv",
       "texto1": "Las hidrojet (hidrolimpiadoras) Typhoon-Jet son ideales para trabajos específicos y rápidos. Equipadas con un motor diésel refrigerado por agua, ofrecen una potencia confiable y eficiencia en entornos exigentes. El panel digital integrado facilita el arranque y permite la lectura de los instrumentos de temperatura del agua, aceite, carga de la batería, revoluciones del motor (RPM), entre otros, garantizando un monitoreo preciso durante la operación. Además, su diseño práctico permite una fácil entrega y posicionamiento en diferentes lugares.",
       "trifasico": "Motor trifásico",
-      "combustao": "COMBUSTIÓN INTERNA",
+      "combustao": "Combustión Interna",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     },
     "500bar":{
@@ -600,6 +601,9 @@
       "texto8": "1 boquilla de ventilador de alta presión Typhoon",
       "texto9": "1 regulador de presión",
       "texto10": "1 carrito",
+      "trifasico": "Trifásico",
+      "monofasico": "Monofásico",
+      "monotri": "Monofásico/Trifásico",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     },
     "hot":{
@@ -608,5 +612,434 @@
       "texto2": "Su construcción robusta, aliada a la bomba tríplex industrial, garantiza una mayor durabilidad, estabilidad de operación y un excelente rendimiento en uso continuo. Disponible en versiones a gasolina y eléctrica, la Typhoon-Jet Hot ofrece versatilidad operacional, manteniendo una presión de hasta 280 bar (4.000 PSI) y un caudal de 15 L/min, con un conjunto diseñado para proporcionar productividad, resistencia y facilidad en el día a día.",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
     }
-  }
+  },
+  "vestimentas":{
+    "sap":{
+      "title": "Overol de Protección Hydro-Shell AP",
+      "texto1": "Overol de protección indicado para trabajadores del sector sucroalcoholero y/o operaciones con bombas de hidrojet modelo AP (Alta Presión). Confeccionado en doble capa de tejido trenzado sintético de alta tenacidad impermeabilizado externamente con PVC, cuenta con costuras impermeabilizadas. El cierre frontal se realiza a través de dos cremalleras cubiertas por una solapa protectora, y la capucha fija se puede ajustar mediante un cordón con regulador y puntera. Los puños y los bajos de las piernas se ajustan con velcro. Posee una solapa protectora para el cuello, con cierre posterior de velcro. Para mayor comodidad, incluye tirantes de sujeción interna con ajuste de altura mediante cierre rápido, lo que ayuda a soportar el peso del traje.",
+      "texto2": "Vestimenta compuesta por:",
+      "texto3": "Chaqueta Hydro-Shell UAP",
+      "texto4": "Pantalón Hydro-Shell UAP",
+      "texto5": "Guantes de Protección",
+      "texto6": "Botas de Protección UAP",
+      "texto7": "Gafas de Seguridad + Protector Facial",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "uap":{
+      "title": "Vestimenta de Protección Hydro-Shell UAP",
+      "texto1": "Vestimenta de protección indicada para trabajadores del sector Naval, Oil & Gas (Petróleo y Gas), Petroquímico y/o operaciones con bombas de hidrojet modelo UAP (Ultraalta Presión). Confeccionada en triple capa de tejido trenzado sintético de alta tenacidad impermeabilizado externamente con PVC, cuenta con costuras impermeabilizadas. El cierre frontal se realiza a través de argollas metálicas de encaje rápido cubiertas por una solapa protectora, y la capucha fija se puede ajustar mediante un cordón con regulador y puntera. Los puños y los bajos de las piernas se ajustan con velcro. Posee una solapa protectora para el cuello, con cierre posterior de velcro. Para mayor comodidad, incluye tirantes de sujeción interna con ajuste de altura mediante cierre rápido, lo que ayuda a soportar el peso del traje.",
+      "texto2": "Vestimenta compuesta por:",
+      "texto3": "Chaqueta Hydro-Shell UAP",
+      "texto4": "Pantalón Hydro-Shell UAP",
+      "texto5": "Guantes de Protección",
+      "texto6": "Botas de Protección UAP",
+      "texto7": "Gafas de Seguridad + Protector Facial",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "capa":{
+      "title": "Funda Protectora para Mangueras",
+      "texto1": "Funda protectora indicada para mangueras que trabajan con presiones de hasta 2800 Bar. Ofrece protección en caso de ruptura accidental, formando un escudo que impide que el agua a alta presión alcance al operador.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "air":{
+      "title": "Air System 200",
+      "texto1": "Sistema de Refrigeración de Aire para Operadores de Hidrojet",
+      "texto2": "El Air System 200 de Mamuth fue desarrollado para proporcionar un mayor confort térmico y seguridad a los trabajadores que actúan en operaciones de limpieza industrial e hidrojet, especialmente en entornos de alta temperatura o espacios confinados.",
+      "texto3": "El equipo suministra aire refrigerado y purificado al interior del traje de protección, contribuyendo a la reducción de la fatiga térmica, la mejora del rendimiento operativo y el aumento de la productividad durante actividades prolongadas.",
+      "texto4": "Con control de temperatura regulable, el sistema permite reducir la temperatura interna del traje hasta los 18 °C, ofreciendo una condición de trabajo más cómoda y eficiente. El ajuste de temperatura puede variar de -5 °C a +20 °C, permitiendo la adaptación según las necesidades de la operación y las condiciones del entorno.",
+      "texto5": "Características Principales:",
+      "texto6": "Capacidad para atender hasta 03 operadores simultaneamente en operaciones de hidrojet;",
+      "texto7": "Sistema integrado de purificación de aire, proporcionando una mayor calidad en el suministro al operador;",
+      "texto8": "03 mangueras de PU de 10 mm, con 12 metros de longitud, cobertura protectora y aislamiento térmico;",
+      "texto9": "Chasis sobre ruedas, facilitando el transporte y la movilidad del equipo en el campo;",
+      "texto10": "La solución ideal para operaciones industriales que exigen seguridad, confort térmico y alto rendimiento operativo.",
+      "texto11": "Mamuth Air System 200: más confort, seguridad y productividad para operaciones de hidrojet en entornos severos.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    }
+  },
+   "robo":{
+    "line":{
+      "title": "Robo Line Worker 250",
+      "texto1": "El Robo Line Worker 250, desarrollado por la empresa alemana Falch, es un robot de hidrojet de alto rendimiento diseñado para la limpieza y preparación de pisos y superficies con ultraalta presión. Desarrollado para operaciones industriales exigentes, el equipo combina robustez, precisión y tecnología avanzada para eliminar incrustaciones severas, residuos industriales, revestimientos, depósitos minerales y otros contaminantes de alta adherencia.",
+      "texto2": "Capaz de operar con presiones de hasta 3.000 bar (4.351 PSI), el Line Worker 250 proporciona un nivel de limpieza extremadamente eficiente, garantizando un alto rendimiento incluso en las aplicaciones más desafiantes. Su sistema de operación permite un mayor control del proceso, estabilidad durante el trabajo y una reducción de la exposición del operador, haciendo que las operaciones sean más seguras y productivas.",
+      "texto3": "Con una estructura robusta, protección IP65/IP55 y una construcción orientada a entornos industriales, el equipo fue diseñado para una operación continua, ofreciendo alta confiabilidad y durabilidad. Su diseño compacto y funcional facilita la movilidad y la aplicación en diferentes tipos de superficies y entornos de trabajo.",
+      "texto4": "Equipado con un sistema eléctrico de 400 V / 50 Hz y desarrollado para uso intensivo, el Robo Line Worker 250 mantiene una elevada eficiencia operativa, al mismo tiempo que garantiza precisión y consistencia en los resultados de limpieza técnica.",
+      "texto5": "Este robot representa una solución avanzada para operaciones de hidrojeteado automatizado, proporcionando mejoras significativas en seguridad, productividad y calidad del proceso de limpieza industrial.",
+      "texto6": "Presión de trabajo de hasta 3.000 bar (4.351 PSI)",
+      "texto7": "Tecnología alemana Falch, referencia mundial en hidrojet",
+      "texto8": "Alta eficiencia en la eliminación de incrustaciones y contaminantes severos",
+      "texto9": "Estructura robusta con protección IP65 / IP55",
+      "texto10": "Operación estable con mayor seguridad para el operador",
+      "texto11": "Equipo diseñado para aplicaciones industriales exigentes",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "lift":{
+      "title": "Lift Worker 250 Beam",
+      "texto1": "El Lift Worker 250 Beam es un equipo desarrollado para operaciones profesionales de hidrojet a alta y ultraalta presión, que ofrece una elevada productividad, seguridad operativa y un control preciso durante la eliminación de revestimientos, incrustaciones y preparación de superficies.",
+      "texto2": "Diseñado para aplicaciones industriales, el sistema permite una mayor eficiencia en el jeteado, reducción de ruido mediante una cubierta de protección del chorro, un mejor control de la distancia entre la boquilla y la superficie, y una extracción eficiente del agua residual, lo que contribuye a un secado más rápido y a una menor formación de oxidación superficial.",
+      "texto3": "Con una estructura robusta, protección IP65/IP55 y una construcción orientada a entornos industriales, el equipo fue diseñado para una operación continua, ofreciendo alta confiabilidad y durabilidad. Su diseño compacto y funcional facilita la movilidad y la aplicación en diferentes tipos de superficies y entornos de trabajo.",
+      "texto4": "Equipado con un sistema eléctrico de 400 V / 50 Hz y desarrollado para uso intensivo, el Robo Line Worker 250 mantiene una elevada eficiencia operativa, al mismo tiempo que garantiza precisión y consistencia en los resultados de limpieza técnica.",
+      "texto5": "Este robot representa una solución avanzada para operaciones de hidrojeteado automatizado, proporcionando mejoras significativas en seguridad, productividad y calidad del proceso de limpieza industrial.",
+      "texto6": "Presión de trabajo de hasta 3.000 bar (4.351 PSI)",
+      "texto7": "Tecnología alemana Falch, referencia mundial en hidrojet",
+      "texto8": "Alta eficiencia en la eliminación de incrustaciones y contaminantes severos",
+      "texto9": "Estructura robusta con protección IP65 / IP55",
+      "texto10": "Operación estable con mayor seguridad para el operador",
+      "texto11": "Equipo diseñado para aplicaciones industriales exigentes",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "magnetico":{
+      "title": "Robot Magnético Climb Rob",
+      "texto1": "El Climb Rob 250 es un robot magnético desarrollado para hidrojeteado de alta y ultraalta presión en superficies metálicas verticales, horizontales e inclinadas. Su fijación magnética garantiza estabilidad durante la operación, permitiendo una mayor seguridad, productividad y precisión en la limpieza, eliminación de revestimientos y preparación de superficies.",
+      "texto2": "Diseñado para aplicaciones industriales exigentes, el equipo reduce la necesidad de trabajo manual en altura, mejora la ergonomía de la operación y permite el control remoto del proceso, proporcionando una mayor seguridad al operador y un mejor rendimiento en comparación con la pistola manual.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    }
+  },
+  "bombas":{
+    "falch125":{
+      "title": "Falch PUMP 125KW",
+      "texto1": "La Falch FA 125 es una bomba de pistón de alto rendimiento desarrollada para aplicaciones industriales que exigen potencia, confiabilidad y eficiencia operativa. Con una potencia de hasta 125 kW y capacidad de operar a presiones de hasta 3.000 bar, el equipo entrega un alto desempeño incluso en las condiciones más exigentes.",
+      "texto2": "Diseñada con la ingeniería alemana de Falch, la FA 125 está indicada para operaciones como limpieza industrial pesada, hidrodemolición, sector naval, petróleo y gas, minería y demás aplicaciones que demandan alta presión com estabilidad y durabilidad.",
+      "texto3": "Su diseño combina robustez mecánica con tecnologías que reducen el tiempo de inactividad y aumentan la eficiencia energética, proporcionando un menor costo operativo a lo largo del tiempo.",
+      "subtitle1": "Diferenciales del Equipo",
+      "texto4": "Mantenimiento Rápido (Quick Check Technology)",
+      "texto5": "El sistema Quick Check fue desarrollado para garantizar intervenciones rápidas y sencillas directamente en el lugar de operación, reduciendo significativamente el tiempo de inactividad del equipo.",
+      "texto6": "Cambio de válvulas en aproximadamente 10 minutos.",
+      "texto7": "Cambio de pistón (plunger) y sello en cerca de 30 minutos.",
+      "texto8": "No requiere herramientas especiales.",
+      "texto9": "Este sistema permite una mayor disponibilidad de la máquina y más productividad en el campo.",
+      "subtitle2": "Eficiencia Energética (Green Power Technology)",
+      "texto10": "La tecnología Green Power proporciona un alto rendimiento con un menor consumo de energía, gracias al sistema de sellado optimizado y a la eficiencia mecánica del conjunto.",
+      "texto11": "Eficiencia entre el 91% y el 94%",
+      "texto12": "Operación entre 1.000 y 3.000 bar",
+      "texto13": "No requiere herramientas especiales",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:",
+      "subtitleCard1": "Eficiencia por Presión",
+      "subtitleCard2": "Configuraciones de Operación",
+      "subtitleCard3": "Velocidad y Rendimiento (1.800 rpm)",
+      "subtitleCard4": "Especificaciones Técnicas"
+    },
+    "falch250":{
+      "title": "Falch PUMP 250KW",
+      "texto1": "La Falch FA 250 es una bomba de pistón de alto rendimiento desarrollada para aplicaciones industriales que exigen potencia, confiabilidad y eficiencia operativa. Con una potencia de hasta 250 kW y capacidad de operar a presiones de hasta 3.000 bar, el equipo entrega un alto desempeño incluso en las condiciones más exigentes.",
+      "texto2": "Diseñada con la ingeniería alemana de Falch, la FA 250 está indicada para operaciones como limpieza industrial pesada, hidrodemolición, sector naval, petróleo y gas, minería y demás aplicaciones que demandan alta presión com estabilidad y durabilidad.",
+      "texto3": "Su diseño combina robustez mecánica con tecnologías que reducen el tiempo de inactividad y aumentan la eficiencia energética, proporcionando un menor costo operativo a lo largo del tiempo.",
+      "subtitle1": "Diferenciales del Equipo",
+      "texto4": "Mantenimiento Rápido (Quick Check Technology)",
+      "texto5": "El sistema Quick Check fue desarrollado para garantizar intervenciones rápidas y sencillas directamente en el lugar de operación, reduciendo significativamente el tiempo de inactividad del equipo.",
+      "texto6": "Cambio de válvulas en aproximadamente 10 minutos.",
+      "texto7": "Cambio de pistón (plunger) y sello en cerca de 30 minutos.",
+      "texto8": "No requiere herramientas especiales.",
+      "texto9": "Este sistema permite una mayor disponibilidad de la máquina y más productividad en el campo.",
+      "subtitle2": "Eficiencia Energética (Green Power Technology)",
+      "texto10": "La tecnología Green Power proporciona un alto rendimiento con un menor consumo de energía, gracias al sistema de sellado optimizado y a la eficiencia mecánica del conjunto.",
+      "texto11": "Eficiencia entre el 91% y el 94%",
+      "texto12": "Operación entre 1.000 y 3.000 bar",
+      "texto13": "No requiere herramientas especiales",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:",
+      "subtitleCard1": "Eficiencia por Presión",
+      "subtitleCard2": "Configuraciones de Operación",
+      "subtitleCard3": "Velocidad y Rendimiento (1.800 rpm)",
+      "subtitleCard4": "Especificaciones Técnicas"
+    },
+    "falch500":{
+      "title": "Falch PUMP 500KW",
+      "texto1": "La Falch FA 500 es una bomba de pistón de alto rendimiento desarrollada para aplicaciones industriales que exigen potencia, confiabilidad y eficiencia operativa. Con una potencia de hasta 500 kW y capacidad de operar a presiones de hasta 3.000 bar, el equipo entrega un alto desempeño incluso en las condiciones más exigentes.",
+      "texto2": "Diseñada con la ingeniería alemana de Falch, la FA 500 está indicada para operaciones como limpieza industrial pesada, hidrodemolición, sector naval, petróleo y gas, minería y demás aplicaciones que demandan alta presión com estabilidad y durabilidad.",
+      "texto3": "Su diseño combina robustez mecánica con tecnologías que reducen el tiempo de inactividad y aumentan la eficiencia energética, proporcionando un menor costo operativo a lo largo del tiempo.",
+      "subtitle1": "Diferenciales del Equipo",
+      "texto4": "Mantenimiento Rápido (Quick Check Technology)",
+      "texto5": "El sistema Quick Check fue desarrollado para garantizar intervenciones rápidas y sencillas directamente en el lugar de operación, reduciendo significativamente el tiempo de inactividad del equipo.",
+      "texto6": "Cambio de válvulas en aproximadamente 10 minutos.",
+      "texto7": "Cambio de pistón (plunger) y sello en cerca de 30 minutos.",
+      "texto8": "No requiere herramientas especiales.",
+      "texto9": "Este sistema permite una mayor disponibilidad de la máquina y más productividad en el campo.",
+      "subtitle2": "Eficiencia Energética (Green Power Technology)",
+      "texto10": "La tecnología Green Power proporciona un alto rendimiento con un menor consumo de energía, gracias al sistema de sellado optimizado y a la eficiencia mecánica del conjunto.",
+      "texto11": "Eficiencia entre el 91% y el 94%",
+      "texto12": "Operación entre 1.000 y 3.000 bar",
+      "texto13": "No requiere herramientas especiales",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:",
+      "subtitleCard1": "Eficiencia por Presión",
+      "subtitleCard2": "Configuraciones de Operación",
+      "subtitleCard3": "Velocidad y Rendimiento (1.500 rpm)",
+      "subtitleCard4": "Especificaciones Técnicas"
+    },
+     "600":{
+      "title": "Bomba MTI-600",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 600 bar y un caudal de hasta 35 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "500":{
+      "title": "Bomba MTI-500",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 500 bar y un caudal de hasta 20 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "350":{
+      "title": "Bomba MTI-350",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 350 bar y un caudal de hasta 19 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "250":{
+      "title": "Bomba MTI-250",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 250 bar y un caudal de hasta 17 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "200":{
+      "title": "Bomba MTI-200",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 200 bar y un caudal de hasta 40 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "50ff":{
+      "title": "Bomba MTI-50FF",
+      "texto1": "Bomba tríplex para hidrolimpiadoras o pruebas hidrostáticas, con una presión de 160 bar y un caudal de hasta 150 L/min.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    }
+  },
+   "bicos":{
+    "rotativoR":{
+      "title": "Boquilla Rotativa R",
+      "texto1": "La boquilla rotativa modelo “R” fue específicamente desarrollada para la limpieza y eliminación de incrustaciones en las paredes internas de tuberías de intercambiadores de calor, evaporadores y líneas de tubos en general. Estas boquillas están disponibles en diversos diámetros y con insertos de variados orificios dimensionados según el caudal.",
+      "texto2": "Presión Máxima de Trabajo: 1.000 bar / 14.500 psi",
+      "texto3": "F/B: Orificio en el Buje",
+      "texto4": "Todas las boquillas (con excepción del modelo R10) tienen la opción de rosca en el estándar NPT.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "safiram10":{
+      "title": "Boquilla Turbo Rotativa 600",
+      "texto1": "Boquillas indicadas para equipos de hidrojet de hasta 600 bar. Pueden ser utilizadas para el jeteado de superficies, limpieza de tuberías o jeteado con abrasivo.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "portasafira":{
+      "title": "Portaboquilla de Zafiro",
+      "texto1": "El soporte de fijación para Boquilla de Zafiro de 3/8” es un componente esencial en operaciones de limpieza, jeteado o corte utilizando pistolas de Ultraalta Presión. Este soporte fue diseñado para garantizar una fijación segura y estable de la boquilla, proporcionando precisión y eficiencia durante su uso.",
+      "texto2": "Recomendado para aplicaciones que involucran presiones de hasta 2.800 bar (40.600 psi), el soporte es ideal para trabajos que exigen un alto rendimiento y confiabilidad, asegurando la durabilidad y la integridad del equipo incluso bajo condiciones extremas.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "portareto":{
+      "title": "Portaboquilla Recta y de Abanico",
+      "texto1":"El soporte para Boquilla Recta Forma 4 y Boquilla de Abanico Forma 19 se utiliza principalmente en operaciones de limpieza, jeteado o corte con pistolas de alta presión. Son recomendados para aplicaciones de hasta 1.500 bar / 21.750 psi.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "bicotorpedo":{
+
+    },
+    "shrakjet":{
+      "title":"Boquilla Shark-Jet 22K y 40K",
+      "title22":"Boquilla Shark-Jet 22K",
+      "title40":"Boquilla Shark-Jet 40K",
+      "texto1":"La Shark-Jet 22K y 40K es una herramienta rotativa autopropulsada indicada para el jeteado, limpieza y preparación de superficies planas o irregulares. Disponible en dos configuraciones: la primera trabaja con presiones de hasta 1.500 bar (22.000 psi) y un caudal de hasta 40 L/min; la segunda opción está configurada para trabajar con presiones de hasta 2.800 bar (40.000 psi) y un caudal de hasta 30 L/min. Esta herramienta se utiliza junto con la pistola de hidrojet. Sus componentes internos cuentan con un sistema de lubricación y refrigeración por aceite, además de un freno hidráulico para limitar las revoluciones. Esta herramienta utiliza 4 Boquillas de Zafiro (7/16-20 UNF) en la configuración de 2.800 bar, y 2 Boquillas Attack (1/4 NPT) en la configuración de 1.500 bar, todas con ángulos desplazados, lo que proporciona un giro controlado y un mayor rendimiento de limpieza en una mayor área superficial de ataque.",
+      "textoCard":"Consulte más especificaciones técnicas de este producto:"
+    },
+    "rotativo600":{
+      "title": "Boquilla Turbo Rotativa 600",
+      "texto1": "Boquillas indicadas para equipos de hidrojet de hasta 600 bar. Pueden ser utilizadas para el jeteado de superficies, limpieza de tuberías o jeteado con abrasivo.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "rotativotitan":{
+      "title":"Boquilla Rotativa Titan",
+      "texto1":"La Boquilla Titan es una boquilla rotativa autopropulsada desarrollada para la limpieza y desobstrucción de tuberías en general, con presiones entre 1.000 bar y 2.800 bar. Las cabezas de la boquilla rotativa se fabrican en diferentes configuraciones de orificios. La cabeza Polisher cuenta con cuatro orificios radiales, la Unplugger cuenta con cinco orificios, mientras que la Universal cuenta con siete orificios para corte, limpieza y pulido de forma simultánea. La boquilla está fabricada en acero inoxidable de alto rendimiento, lo que proporciona una larga vida útil y reduce el costo operativo. La Boquilla Titan está disponible en diversos tamaños y configuraciones, y los insertos o cabezas están disponibles en los modelos Polisher, Unplugger y el modelo Universal.",
+      "textoCard":"Consulte más especificaciones técnicas de este producto:"
+    },
+    "bicoreto":{
+      "title":"Boquillas Rectas y de Abanico",
+      "texto1":"Las boquillas o insertos se utilizan en accesorios aplicados en el proceso de hidrojeteado, como por ejemplo: Pistolas, Herramientas Rotativas, Barras de Jeteado (Spray Bars), Boquillas Rotativas, entre otros. Las configuraciones deben ser observadas para cada aplicación, considerando las especificaciones y limitaciones de presión y caudal de cada equipo o proceso. Pueden aplicarse a procesos de corte, limpieza, decapado, desobstrucción y preparación de superficies.",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "foguetinho":{
+      "title": "Boquilla Fija Tipo Cohete",
+      "texto1": "La boquilla fija tipo “Cohete” está indicada para la limpieza y desobstrucción de las paredes internas de tuberías de intercambiadores de calor, evaporadores y líneas de tubos en general. Estas boquillas están disponibles en diversos diámetros variados y con orificios dimensionados según el caudal. Este modelo cuenta con 8 orificios, siendo 2 frontales de ataque y 6 traseros de limpieza y propulsión.",
+      "texto2": "Presión Máxima de Trabajo: 1.000 bar / 14.500 psi",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    },
+    "ferret22":{
+      "title": "Boquilla Ferret 22K",
+      "texto1": "La boquilla autopropulsada Ferret 22K está indicada para operaciones con presiones de hasta 1.600 bar y un caudal de 80 L/min. Con esta herramienta es posible trabajar en la desobstrucción y limpieza de tuberías de entre 2” y 6”, especialmente en tuberías que cuenten con codos de 90°.",
+      "texto2": "Presión Máxima de Trabajo: 1.600 bar / 23.206 psi",
+      "textoCard": "Consulte más especificaciones técnicas de este producto:"
+    }
+  }, 
+  "acessorioshidro":{
+      "viper40k":{
+        "title": "Pistola Rotativa Viper 40k",
+        "texto1": "Sistema de Accionamiento por Aislamiento del Circuito Neumático: El sistema está diseñado para aislar el circuito neumático, garantizando que la presión del agua y la rotación de la lanza se activen únicamente cuando ambos gatillos se presionan de forma simultánea, proporcionando un control preciso y seguro.",
+        "texto2": "Mayor Seguridad para el Operador: El flujo de agua y la rotación de la lanza solo se activan cuando los dos gatillos se presionan al mismo tiempo, minimizando el riesgo de accionamientos accidentales y aumentando significativamente la seguridad durante la operación.",
+        "texto3": "Fácil Mantenimiento: El sistema fue diseñado para permitir un mantenimiento rápido y eficiente, reduciendo el tiempo de inactividad y garantizando que el equipo permanezca en operación con la mínima interrupción.",
+        "texto4": "Presión Máxima de Trabajo (2.800 bar): Capaz de soportar y operar bajo altísimas presiones, ideal para aplicaciones industriales que requieren fuerza y rendimiento excepcionales.",
+        "texto5": "Compatible con el Power Box MAMUTH 40K: Debe ser utilizado en conjunto con el Power Box MAMUTH 40K, asegurando una integración perfecta y un rendimiento optimizado en las operaciones de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pneumatica2g":{
+        "title": "Pistola Neumática 2G MTPT",
+        "texto1": "Dos Empuñaduras Fabricadas en Plástico de Alta Resistencia: Proporcionan mayor robustez y durabilidad, garantizando que el equipo soporte condiciones de trabajo exigentes sin comprometer su integridad estructural.",
+        "texto2": "Sistema de Accionamiento por 2 Válvulas Neumáticas: Ofrece un control preciso y confiable del flujo, permitiendo una operación segura y eficiente en entornos industriales.",
+        "texto3": "Mayor Seguridad para el Operador: El flujo de operación se activa únicamente cuando ambos gatillos se presionan de forma simultánea, minimizando el riesgo de accidentes y aumentando la seguridad del operador.",
+        "texto4": "Fácil Mantenimiento: Diseño optimizado para simplificar los procesos de mantenimiento, reduciendo el tiempo de inactividad y los costos operativos a lo largo de la vida útil del equip",
+        "texto5": "Color Naranja Estándar WJTA: Facilita la identificación visual del equipo, cumpliendo con los estándares de seguridad internacionales de la WJTA y asegurando la conformidad en los entornos de trabajo.",
+        "texto6": "Presión Máxima de Trabajo de hasta 2.800 bar: Adecuado para operaciones que exigen altísima presión, ofreciendo un rendimiento excepcional en tareas críticas.",
+        "texto7": "Compatible con el Power Box MAMUTH 40K: Debe ser utilizado en conjunto con el Power Box MAMUTH 40K para garantizar el máximo rendimiento y seguridad en aplicaciones de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "fluxofechado":{
+        "title": "Pistola de Flujo Cerrado MTFF",
+        "texto1": "Empuñadura Fabricada en Plástico de Alta Resistencia: Desarrollada para soportar condiciones extremas, proporcionando durabilidad y una larga vida útil al equipo.",
+        "texto2": "Sistema de Flujo Cerrado con Accionamiento por Válvula Mecánica: Garantiza un mayor control y precisión durante la operación, reduciendo el riesgo de fugas y aumentando la seguridad.",
+        "texto3": "Mayor Confort en la Operación: Diseñada ergonómicamente para reducir la fatiga del operador, permitiendo un uso prolongado sin comprometer el rendimiento.",
+        "texto4": "Color Verde Estándar WJTA: Identificación visual rápida y conforme a los estándares de seguridad internacionales de la WJTA.",
+        "texto5": "Presión Máxima de Trabajo de hasta 1.200 bar: Ideal para aplicaciones que exigen alta presión, garantizando eficiencia y eficacia en operaciones exigentes.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "fluxoaberto":{
+        "title": "Pistola de Flujo Abierto MTFA",
+        "texto1": "Sistema de Flujo Abierto: Permite un funcionamiento continuo y eficiente, adecuado para diversas aplicaciones industriales.",
+        "texto2": "Accionamiento por Válvula ON/OFF: Facilita un control preciso del sistema, ofreciendo practicidad en el uso y seguridad en las operaciones.",
+        "texto3": "Fácil Mantenimiento: Diseñado para simplificar los procesos de mantenimiento, garantizando un menor tiempo de inactividad y una mayor durabilidad del equipo.",
+        "texto4": "Presión Máxima de Trabajo (1.400 bar): Alta capacidad de presión, ideal para trabajos que exigen un alto rendimiento y confiabilidad.",
+        "texto5": "Presión Máxima de Trabajo de hasta 1.200 bar: Ideal para aplicaciones que exigen alta presión, garantizando eficiencia y eficacia en operaciones exigentes.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "tubeclean":{
+        "title": "Tubeclean Mamuth",
+        "texto1": "Herramienta diseñada para asistir al operador en la limpieza eficiente de evaporadores y diversas tuberías, especialmente en posiciones verticales. Ideal para eliminar residuos y obstrucciones, garantizando el mantenimiento adecuado y el funcionamiento continuo de los sistemas. Proporciona mayor seguridad y precisión durante el proceso de limpieza, reduciendo el esfuerzo físico y el tiempo necesario para la ejecución de la tarea.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "powerbox":{
+        "title": "Power Box MAMUTH 2.800",
+        "texto1": "El Power Box MAMUTH 2.800 Bar es un accesorio que debe ser utilizado en conjunto con la pistola MTP 2.800 Bar de Doble Gatillo o con la Pistola Rotativa Viper 40K. El accionamiento ocurre cuando ambos gatillos de la pistola se presionan de forma simultánea, liberando el flujo de agua mediante el redireccionamiento realizado por la válvula de descarga. Cuando se sueltan los gatillos, la válvula se cierra y el flujo se dirige hacia el amortiguador de impacto, drenando el agua a baja presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pedalaberto":{
+        "title": "Pedal de Flujo Abierto MTPA 1.400 Bar",
+        "texto1": "El Pedal de Flujo Abierto MTPA 1.400 Bar está indicado para trabajos en los que el operador de hidrojet necesita utilizar ambas manos, siendo ideal para realizar la limpieza en intercambiadores de calor o tuberías en general. Este accesorio brinda mayor seguridad y confort, ya que el operador posee un control total en la liberación del flujo de agua con los pies. El sistema de flujo abierto simplifica su utilización y aporta mayor seguridad al sistema de alta presión y al operador.",
+        "texto2": "Amortiguador Interno: Un amortiguador interno reduce el impacto de activación del flujo.",
+        "texto3": "Válvula Tipo Cartucho: Puede ser reemplazada fácilmente en el campo.",
+        "texto4": "Máxima Seguridad en la Operación: Maximiza la seguridad en la operación de hidrojet, ya que el operador tiene el control total en el accionamiento del flujo de agua a alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },  
+      "malhaseguranca":{
+        "title": "Malla de Seguridad",
+        "texto1": "Dispositivo de seguridad utilizado en uniones de mangueras y tubos con el objetivo de evitar el movimiento brusco o latigazo (chicoteo) en caso de rotura de las conexiones.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "lancatubo":{
+        "title": "Lanza y Tubo de Acero Inoxidable",
+        "texto1": "Conocidas como varillas o lanzas, estas se utilizan como conductoras de flujo o como prolongadores para boquillas y mangueras. Pueden fabricarse en cualquier longitud.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "lacoseguranca":{
+        "title": "Lazo de Seguridad",
+        "texto1": "Dispositivo de seguridad utilizado en uniones de mangueras y tubos con el objetivo de evitar el movimiento brusco o latigazo (chicoteo) en caso de rotura de las conexiones.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "distorcedor":{
+        "title": "Junta Giratoria Destorcedora UAP MT2800",
+        "texto1": "La Junta Giratoria es un elemento de seguridad que, al utilizarse junto con la manguera, elimina el esfuerzo por torsión del terminal, evitando así la rotura prematura y posteriores accidentes.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "cabecote":{
+        "title": "Cabezal Rotativo 3D Torrent NLB",
+        "texto1": "El Cabezal 3D Torrent NLB es una herramienta avanzada diseñada específicamente para la limpieza eficiente de tanques. Este dispositivo no solo reduce drásticamente el tiempo de limpieza, sino que también brinda total seguridad en la operación, eliminando la necesidad de un operador en espacios confinados, lo cual es esencial para minimizar riesgos.",
+        "texto2": "El Torrent opera con movimientos precisos en los ejes vertical y horizontal, además de un giro completo de 360°, garantizando una limpieza integral en todas las direcciones y alcanzando incluso las áreas más difíciles. Con este accesorio, es posible reducir en hasta un 80% el tiempo de limpieza, aumentando la productividad y la eficiencia en el proceso. Ideal para aplicaciones industriales que exigen alto rendimiento y seguridad.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      }
+  },
+  "acessorioslavadoras":{
+      "pistola660":{
+        "title": "Pistola de Alta Presión de 660 Bares",
+        "texto1": "Gatillos y lanzas indicadas para hidrolavadoras de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pistola350":{
+        "title": "Pistola de Alta Presión de 350 Bares",
+        "texto1": "Gatillos y lanzas indicadas para hidrolavadoras de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "pistola280":{
+        "title": "Pistola de Alta Presión de 280 Bares",
+        "texto1": "Gatillos y lanzas indicadas para hidrolavadoras de alta presión.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "bicojato": {
+        "title": "Boquilla de Chorro Abrasivo de 500 Bares",
+        "texto1": "Boquilla de chorro abrasivo de alto rendimiento diseñada para operaciones de hidroarenado a presiones de hasta 500 bar. Ideal para la preparación de superficies pesadas, decapado de pintura, eliminación de óxido y descontaminación de hormigón."
+      },
+      "valvulareguladora550":{
+        "title": "Válvula Reguladora de Presión de 550 Bares",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 550 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "valvulareguladora350":{
+        "title": "Válvula Reguladora de Presión de 350 Bares",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 350 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "valvulareguladora200":{
+        "title": "Válvula Reguladora de Presión de 200 Bares de Alto Caudal",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 200 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      },
+      "valvulareguladora600":{
+        "title": "Válvula Reguladora de Presión de 600 Bares de Alto Caudal",
+        "texto1": "Válvula reguladora de presión y descarga de alta precisión, diseñada para mantener una presión de sistema estable y desviar el exceso de flujo en sistemas de hidrolavado e hidrojateado que operan hasta 600 bar.",
+        "textoCard": "Consulte más especificaciones técnicas de este producto:"
+      }
+  },
+  "tabela":{
+      "modelo": "Modelo",
+      "di": "D.I. (mm)",
+      "de": "D.E. (mm)",
+      "trabalho": "P. Trab. (bar)",
+      "trabalho2": "P. Trab. (psi)",
+      "rupt": "P. Rupt. (bar)",
+      "rupt2": "P. Rupt. (psi)",
+      "raio": "Radio(mm)",
+      "peso": "kg/m",
+      "term": "Ø Conector",
+      "int": "Ø D.I. (mm)",
+      "ext": "Ø D.E. (mm)",
+      "ptrab": "P. Trab (bar)",
+      "ptrab2": "P. Trab (psi)", 
+      "prupt": "P. Rupt (bar)",
+      "prupt2": "P. Rupt (psi)",
+      "raiocurv": "Raio Curv.", 
+      "pesokg" : "Peso (kg/m)",
+      "pruptbarpsi": "P. Rupt (bar/psi)",
+      "ptrabbarpsi": "P. Trab (bar/psi)",
+      "roscaa":"Rosca A",
+      "roscab":"Rosca B",
+      "aplicacao":"Aplicación",
+      "codigo":"Código",
+      "pressao": "Presión (bar)",
+      "varetasbicos": "Lanzas, Boquillas, etc.",
+      "mangueirasacessorios": "Mangueras, Accesorios, etc.",
+      "luva": "Guante",
+      "ravazado": "Rosca A (Pasante)",
+      "raanilha": "Rosca A (Casquillo)", 
+      "rbvazado": "Rosca B (Pasante)",
+      "rbanilha": "Rosca B (Casquillo)",
+      "ladomacho": "Lado macho",
+      "ladofemea": "Lado hembra",
+      "mangueira": "Mangueras",
+      "roscaanilha": "Rosca de Casquillo",
+      "roscaparafuso": "Rosca de Tornillo",
+      "cotovelo": "Codo de 90°",
+      "distribuidory": "Distribuidor en Y",
+      "distribuidort": "Distribuidor en T",
+      "entrada": "Rosca de Entrada",
+      "saida": "Rosca de Salida",
+      "mangueiras": "Mangueras",
+      "vazao": "Caudal (L/min)",
+      "vazao2": "Caudal (L/H)",
+      "potencia": "Potencia (CV)",
+      "peso1": "Peso (kg)",
+      "dimensoes": "Dimensiones (mm)",
+      "tensao": "Tensión",
+      "trifasico": "Trifásico",
+      "gasolina": "Gasolina",
+      "combustao": "Combustión",
+      "monofasico": "Monofásico",
+      "potencia2": "Potencia",
+      "temperatura": "Temperatura",
+      "rotacao": "Rotación"
+    }
 } 

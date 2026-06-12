@@ -88,16 +88,16 @@ const PoliamidaSAP1500 = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="text-white text-sm" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">Modelo</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">Ø Int. (mm)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">Ø Ext. (mm)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">P. Trab (bar)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">P. Trab (psi)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">P. Rupt (bar)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">P. Rupt (psi)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">Raio Curv.</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold">Peso (kg/m)</th>
-                  <th className="py-4 px-2 font-bold">Ø Term.</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.int')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.ext')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.ptrab')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.ptrab2')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.prupt')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.prupt2')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.raiocurv')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold">{t('tabela.pesokg')}</th>
+                  <th className="py-4 px-2 font-bold">{t('tabela.term')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -130,7 +130,7 @@ const PoliamidaSAP1500 = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+            <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
           </div>
           <div>
             <div className="space-y-4">
@@ -148,84 +148,84 @@ const PoliamidaSAP1500 = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 3/2</p>
-                    <p><strong>Diâmetro Interno:</strong> 3,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 7,0 mm </p>
-                    <p><strong>Pressão de Trabalho:</strong> 1100 bar / 15950 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 2750 bar / 39875 psi </p>
-                    <p><strong>Raio de Curvatura:</strong> 60 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,072 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 9,0 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 3/2</p>
+                    <p><strong>{t('tabela.di')}:</strong> 3,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 7,0 mm </p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1100 bar / 15950 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 2750 bar / 39875 psi </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 60 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,072 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 9,0 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 4/2</p>
-                    <p><strong>Diâmetro Interno:</strong> 4,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 7,7 mm </p>
-                    <p><strong>Pressão de Trabalho:</strong> 1200 bar/ 17400 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 3000 bar / 43511 psi </p>
-                    <p><strong>Raio de Curvatura:</strong> 75 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,100 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 9,5 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 4/2</p>
+                    <p><strong>{t('tabela.di')}:</strong> 4,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 7,7 mm </p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1200 bar/ 17400 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 3000 bar / 43511 psi </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 75 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,100 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 9,5 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 4/2W</p>
-                    <p><strong>Diâmetro Interno:</strong> 4,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 7,9 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1500 bar / 21750 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 3800 bar / 55114 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 75 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,110 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 10,0 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 4/2W</p>
+                    <p><strong>{t('tabela.di')}:</strong> 4,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 7,9 mm</p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1500 bar / 21750 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 3800 bar / 55114 bar </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 75 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,110 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 10,0 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 5/2</p>
-                    <p><strong>Diâmetro Interno:</strong> 5,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 9,5 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1000 bar / 14500 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 2500 bar / 36250 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 95 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,140 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 12,0 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 5/2</p>
+                    <p><strong>{t('tabela.di')}:</strong> 5,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 9,5 mm</p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1000 bar / 14500 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 2500 bar / 36250 bar </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 95 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,140 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 12,0 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 5/4</p>
-                    <p><strong>Diâmetro Interno:</strong> 5,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 11,5 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1800 bar / 26100 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 4500 bar / 65250 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 130 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,290 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 15,0(kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 5/4</p>
+                    <p><strong>{t('tabela.di')}:</strong> 5,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 11,5 mm</p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1800 bar / 26100 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 4500 bar / 65250 bar </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 130 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,290 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 15,0(kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 6/2</p>
-                    <p><strong>Diâmetro Interno:</strong> 6,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 11,5 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1100 bar / 15950 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 2750bar / 39875 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 110 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,200 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 15,0 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 6/2</p>
+                    <p><strong>{t('tabela.di')}:</strong> 6,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 11,5 mm</p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1100 bar / 15950 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 2750bar / 39875 bar </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 110 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,200 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 15,0 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 8/2</p>
-                    <p><strong>Diâmetro Interno:</strong> 8,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 15,8 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1000 bar / 14500 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 2500 bar / 36250 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 90 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,350 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 20,0 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 8/2</p>
+                    <p><strong>{t('tabela.di')}:</strong> 8,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 15,8 mm</p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1000 bar / 14500 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 2500 bar / 36250 bar </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 90 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,350 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 20,0 (kg/m)</p>
                   </div>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Modelo:</strong> 8/4</p>
-                    <p><strong>Diâmetro Interno:</strong> 8,0 mm</p>
-                    <p><strong>Diâmetro Externo:</strong> 15,2 mm</p>
-                    <p><strong>Pressão de Trabalho:</strong> 1500 bar / 21750 psi </p>
-                    <p><strong>Pressão de Ruptura:</strong> 3800 bar / 54375 bar </p>
-                    <p><strong>Raio de Curvatura:</strong> 175 (mm.r)</p>
-                    <p><strong>Peso por metro:</strong>0,440 (kg/m)</p>
-                    <p><strong>Diâmetro no terminal:</strong> 20,5 (kg/m)</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> 8/4</p>
+                    <p><strong>{t('tabela.di')}:</strong> 8,0 mm</p>
+                    <p><strong>{t('tabela.de')}:</strong> 15,2 mm</p>
+                    <p><strong>{t('tabela.trabalho')}:</strong> 1500 bar / 21750 psi </p>
+                    <p><strong>{t('tabela.rupt')}:</strong> 3800 bar / 54375 bar </p>
+                    <p><strong>{t('tabela.raiocurv')}:</strong> 175 (mm.r)</p>
+                    <p><strong>{t('tabela.pesokg')}:</strong>0,440 (kg/m)</p>
+                    <p><strong>{t('tabela.term')}:</strong> 20,5 (kg/m)</p>
                   </div>
                 </div>
               </div>

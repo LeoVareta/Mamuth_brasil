@@ -71,12 +71,12 @@ const LuvasDeUniao = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[4%] uppercase">#</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[12%] uppercase">Modelo</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[14%] uppercase">Código</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">P. Max</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">Rosca A (Tipo)</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">Rosca B (Tipo)</th>
-                  <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[20%] uppercase">Aplicação</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[12%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[14%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">{t('tabela.pressao')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">{t('tabela.roscaa')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[20%] uppercase">{t('tabela.roscab')}</th>
+                  <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[20%] uppercase">{t('tabela.aplicacao')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -93,7 +93,7 @@ const LuvasDeUniao = () => {
                 ].map((item) => (
                   <tr key={item.id} className="text-gray-800 border-b border-gray-200">
                     <td className="py-6 px-1 border-r border-gray-200 text-sm md:text-base text-center font-bold">{item.id}</td>
-                    <td className="py-6 px-1 border-r border-gray-200 text-sm md:text-base text-center">Luva</td>
+                    <td className="py-6 px-1 border-r border-gray-200 text-sm md:text-base text-center">{t('tabela.luva')}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-sm md:text-sm text-center font-semibold">{item.cod}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-sm md:text-base text-center">{item.p}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-xs md:text-sm text-center">{item.ra}</td>
@@ -107,7 +107,7 @@ const LuvasDeUniao = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
             </div>
     {/* ===== GRUPO 1:===== */}
           <div>
@@ -118,7 +118,7 @@ const LuvasDeUniao = () => {
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Luvas </h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('tabela.luva')}</h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>
@@ -126,91 +126,91 @@ const LuvasDeUniao = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0115</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> M7 (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> M7 (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas, Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0115</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M7 (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> M7 (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                   <p><strong>Código:</strong> 3006.0624</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> M7 (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> 1/8 BSP (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas, Mangueiras, Etc</p>
+                   <p><strong>{t('tabela.codigo')}:</strong> 3006.0624</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M7 (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 1/8 BSP (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0019</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> 1/8 BSP (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> 1/8 BSP (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0019</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/8 BSP (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 1/8 BSP (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0084</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong>1/8 BSP (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> 1/3 BSP (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0084</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong>1/8 BSP (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 1/3 BSP (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0080</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> 1/8 BSP (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> M18 PL (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0080</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/8 BSP (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> M18 PL (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0020</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> 7/8 UNF LH (M) </p>
-                    <p><strong>Rosca B (Tipo):</strong> 7/8 UNF LH (M) </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0020</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 7/8 UNF LH (M) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 7/8 UNF LH (M) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0079</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> 1/4 BSP (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> M18 PL (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0079</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> M18 PL (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0475</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> 1/4 BSP (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> 1/2 BSP (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0475</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> 1/4 BSP (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> 1/2 BSP (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0275</p>
-                    <p><strong>Pressão Máx:</strong> 1500</p>
-                    <p><strong>Rosca A (Tipo):</strong> M35 PL (F) </p>
-                    <p><strong>Rosca B (Tipo):</strong> M35 PL (F) </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0275</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 1500</p>
+                    <p><strong>{t('tabela.roscaa')}:</strong> M35 PL (F) </p>
+                    <p><strong>{t('tabela.roscab')}:</strong> M35 PL (F) </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.luva')}W</p>
                     
                   </div>
                 </div>

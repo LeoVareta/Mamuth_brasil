@@ -15,7 +15,7 @@ const LuvasDeEmendaUAP = () => {
   const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-        { id: 1, title: t('mangueiras.luvasEmenda.title'),  cover: luvasEmendaUap, color: '#FF5101' }
+        { id: 1, title: t('mangueiras.LuvasEmenda.title'),  cover: luvasEmendaUap, color: '#FF5101' }
   ];
 
   // Garante que a página inicie no topo
@@ -41,10 +41,10 @@ const LuvasDeEmendaUAP = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            {t('mangueiras.luvasEmenda.title')}
+            {t('mangueiras.LuvasEmenda.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            {t('mangueiras.luvasEmenda.texto1')}
+            {t('mangueiras.LuvasEmenda.texto1')}
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ const LuvasDeEmendaUAP = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              {t('mangueiras.luvasEmenda.textoCard')}
+              {t('mangueiras.LuvasEmenda.textoCard')}
             </h2>
           </div>
 
@@ -70,14 +70,14 @@ const LuvasDeEmendaUAP = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[4%] uppercase">#</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[10%] uppercase">Modelo</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">Código</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[8%] uppercase">P. Max</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">R.A (Vazado)</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">R.A (Anilha)</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">R.B (Vazado)</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">R.B (Anilha)</th>
-                  <th className="py-6 px-1 font-bold text-[10px] md:text-xs text-center w-[14%] uppercase">Aplicação</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[10%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[12%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[8%] uppercase">{t('tabela.pressao')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">{t('tabela.ravazado')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">{t('tabela.raanilha')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">{t('tabela.rbvazado')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-[10px] md:text-xs text-center w-[13%] uppercase">{t('tabela.rbanilha')}</th>
+                  <th className="py-6 px-1 font-bold text-[10px] md:text-xs text-center w-[14%] uppercase">{t('tabela.aplicacao')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -90,14 +90,14 @@ const LuvasDeEmendaUAP = () => {
                 ].map((item) => (
                   <tr key={item.id} className="text-gray-800 border-b border-gray-200">
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-sm text-center font-bold">{item.id}</td>
-                    <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-sm text-center">Luva</td>
+                    <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-sm text-center">{t('tabela.luva')}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-xs text-center font-semibold">{item.cod}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-sm text-center">{item.p}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-xs text-center">{item.ra_v}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-xs text-center">{item.ra_a}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-xs text-center">{item.rb_v}</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] md:text-xs text-center font-bold text-[#FF6B0A]">{item.rb_a}</td>
-                    <td className="py-6 px-1 text-[10px] md:text-xs text-center">Varetas, Mang...</td>
+                    <td className="py-6 px-1 text-[10px] md:text-xs text-center">{t('tabela.varetasbicos')}</td>
                   </tr>
                 ))}
               </tbody>
@@ -106,7 +106,7 @@ const LuvasDeEmendaUAP = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
             </div>
     {/* ===== GRUPO 1:===== */}
           <div>
@@ -117,7 +117,7 @@ const LuvasDeEmendaUAP = () => {
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Luvas </h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('tabela.luva')} </h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>
@@ -125,62 +125,62 @@ const LuvasDeEmendaUAP = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0213</p>
-                    <p><strong>Pressão Máx:</strong> 2800</p>
-                    <p><strong>Rosca A (Parafuso Vazado)</strong> 3/4 UNF </p>
-                    <p><strong>Rosca A (Anilha)</strong> 3/8 UNF Esq </p>
-                    <p><strong>Rosca B (Parafuso Vazado)</strong> 3/4 UNF </p>
-                    <p><strong>Rosca B (Anilha)</strong> 3/8 UNF Esq </p>
-                    <p><strong>Aplicação:</strong>Varetas, Mangueiras, Etc</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0213</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2800</p>
+                    <p><strong>{t('tabela.ravazado')}:</strong> 3/4 UNF </p>
+                    <p><strong>{t('tabela.raanilha')}:</strong> 3/8 UNF Esq </p>
+                    <p><strong>{t('tabela.rbvazado')}:</strong> 3/4 UNF </p>
+                    <p><strong>{t('tabela.rbanilha')}:</strong> 3/8 UNF Esq </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.varetasbicos')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                   <p><strong>Código:</strong> 3006.0053</p>
-                    <p><strong>Pressão Máx:</strong> 2800</p>
-                    <p><strong>Rosca A (Parafuso Vazado)</strong> M26 </p>
-                    <p><strong>Rosca A (Anilha)</strong> 3/8 UNF Esq </p>
-                    <p><strong>Rosca B (Parafuso Vazado)</strong> M26 </p>
-                    <p><strong>Rosca B (Anilha)</strong> 3/8 UNF Esq </p>
-                    <p><strong>Aplicação:</strong>Varetas, Mangueiras, Etc</p>
+                   <p><strong>{t('tabela.codigo')}:</strong> 3006.0053</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2800</p>
+                    <p><strong>{t('tabela.ravazado')}:</strong> M26 </p>
+                    <p><strong>{t('tabela.raanilha')}:</strong> 3/8 UNF Esq </p>
+                    <p><strong>{t('tabela.rbvazado')}:</strong> M26 </p>
+                    <p><strong>{t('tabela.rbanilha')}:</strong> 3/8 UNF Esq </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.varetasbicos')}</p>
                     
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0224</p>
-                    <p><strong>Pressão Máx:</strong> 2800</p>
-                    <p><strong>Rosca A (Parafuso Vazado)</strong> M26 </p>
-                    <p><strong>Rosca A (Anilha)</strong> 3/8 UNF Esq </p>
-                    <p><strong>Rosca B (Parafuso Vazado)</strong> M26 </p>
-                    <p><strong>Rosca B (Anilha)</strong> 9/16 UNF Esq </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
-                    
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0224</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2800</p>
+                    <p><strong>{t('tabela.ravazado')}:</strong> M26 </p>
+                    <p><strong>{t('tabela.raanilha')}:</strong> 3/8 UNF Esq </p>
+                    <p><strong>{t('tabela.rbvazado')}:</strong> M26 </p>
+                    <p><strong>{t('tabela.rbanilha')}:</strong> 9/16 UNF Esq </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.varetasbicos')}</p>
+
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0022</p>
-                    <p><strong>Pressão Máx:</strong> 2800</p>
-                    <p><strong>Rosca A (Parafuso Vazado)</strong> 9/16 UNF Esq </p>
-                    <p><strong>Rosca A (Anilha)</strong> M26 </p>
-                    <p><strong>Rosca B (Parafuso Vazado)</strong> 9/16 UNF Esq </p>
-                    <p><strong>Rosca B (Anilha)</strong> M26 </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
-                    
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0022</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2800</p>
+                    <p><strong>{t('tabela.ravazado')}:</strong> 9/16 UNF Esq </p>
+                    <p><strong>{t('tabela.raanilha')}:</strong> M26 </p>
+                    <p><strong>{t('tabela.rbvazado')}:</strong> 9/16 UNF Esq </p>
+                    <p><strong>{t('tabela.rbanilha')}:</strong> M26 </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.varetasbicos')}</p>
+
                   </div>
                 </div>
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                    <p><strong>Código:</strong> 3006.0040</p>
-                    <p><strong>Pressão Máx:</strong> 2800</p>
-                    <p><strong>Rosca A (Parafuso Vazado)</strong> 1.1/8 UNF </p>
-                    <p><strong>Rosca A (Anilha)</strong> 9/16 UNF Esq </p>
-                    <p><strong>Rosca B (Parafuso Vazado)</strong> 1.1/8 UNF </p>
-                    <p><strong>Rosca B (Anilha)</strong> 9/16 UNF Esq </p>
-                    <p><strong>Aplicação:</strong>Varetas,Mangueiras, Etc</p>
-                    
+                    <p><strong>{t('tabela.codigo')}:</strong> 3006.0040</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2800</p>
+                    <p><strong>{t('tabela.ravazado')}:</strong> 1.1/8 UNF </p>
+                    <p><strong>{t('tabela.raanilha')}:</strong> 9/16 UNF Esq </p>
+                    <p><strong>{t('tabela.rbvazado')}:</strong> 1.1/8 UNF </p>
+                    <p><strong>{t('tabela.rbanilha')}:</strong> 9/16 UNF Esq </p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong>{t('tabela.varetasbicos')}</p>
+
                   </div>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -11,9 +11,10 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import malhaSeguranca from '@/assets/images/malha-de-seguranca.png';
 
 const MalhaDeSeguranca = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const slides = [
-      { id: 1, title: 'Malha de Segurança',  cover: malhaSeguranca, color: '#FF5101' }
+      { id: 1, title: t('acessorioshidro.malhaseguranca.title'),  cover: malhaSeguranca, color: '#FF5101' }
     ];
 
   // Garante que a página inicie no topo
@@ -24,7 +25,7 @@ const MalhaDeSeguranca = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Malha de Segurança - Mamuth</title>
+        <title>{t('acessorioshidro.malhaseguranca.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -40,11 +41,11 @@ const MalhaDeSeguranca = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Malha de Segurança
+            {t('acessorioshidro.malhaseguranca.title')}
           </h2>
 
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Dispositivo de segurança utilizado em uniões de mangueiras e tubos com o objetivo de evitar o movimento brusco ou chicoteamento em caso de rompimento das conexões.
+            {t('acessorioshidro.malhaseguranca.texto1')}
           </p>
         </div>
       </section>
@@ -61,7 +62,7 @@ const MalhaDeSeguranca = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('acessorioshidro.malhaseguranca.textoCard')}
             </h2>
           </div>
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
-
+import { useTranslation } from 'react-i18next';
 import AppleCoverFlow from "@/components/AppleCoverFlow";
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -14,13 +14,14 @@ import typhoonJet170Monofasico3 from '@/assets/images/Typhoon-Jet-170cv-eletrica
 import iconTrifasico from "@/assets/images/icon-trifasico.svg"
 
 const Typhoon170Monofasico = () => {
+  const { t } = useTranslation(); 
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
 
   const slides = [
-    { id: 2, title: 'Typhoon Jet 170', artist: 'Monofásico/Trifásico', cover: typhoonJet170Monofasico2, color: '#FF5101' },
-    { id: 2, title: 'Typhoon Jet 170', artist: 'Monofásico/Trifásico', cover: typhoonJet170Monofasico, color: '#FF5101' },
-    { id: 2, title: 'Typhoon Jet 170', artist: 'Monofásico/Trifásico', cover: typhoonJet170Monofasico3, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 170', artist: t('lavadoras.170bar.monotri'), cover: typhoonJet170Monofasico2, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 170', artist: t('lavadoras.170bar.monotri'), cover: typhoonJet170Monofasico, color: '#FF5101' },
+    { id: 2, title: 'Typhoon Jet 170', artist: t('lavadoras.170bar.monotri'), cover: typhoonJet170Monofasico3, color: '#FF5101' },
   ];
 
   // Garante que a página inicie no topo
@@ -47,44 +48,44 @@ const Typhoon170Monofasico = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Typhoon-Jet 170: A Solução Completa para Limpeza Moderada
+            {t('lavadoras.170bar.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-          O Typhoon-Jet 170 é um equipamento de alta pressão projetado para oferecer desempenho excepcional em limpezas moderadas em ambientes industriais, agrícolas e comerciais. Este equipamento garante resultados eficazes em desafios de limpeza de intensidade moderada.
+            {t('lavadoras.170bar.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-          Ideal para fácil transporte e uso em diferentes ambientes. o Typhoon-Jet 170 oferece praticidade e eficiência durante o uso, tornando-o ideal para uma variedade de aplicações.
+            {t('lavadoras.170bar.texto2')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Além disso, o Typhoon-Jet 170 é fácil de operar e manter, proporcionando uma experiência de limpeza eficiente e sem complicações. Com ele, você pode remover sujeira leve a moderada de forma rápida e eficaz, economizando tempo e esforço.
+           {t('lavadoras.170bar.texto3')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Ideal para pequenos estabelecimentos comerciais, oficinas, condomínios, e outras áreas que necessitem de limpezas moderadas.
+            {t('lavadoras.170bar.texto4')}
 
 
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Itens Inclusos: <br/><br/>
+            {t('lavadoras.170bar.texto5')} <br/><br/>
 
 
 
-            1 mangueira 3/8 de 20 metros de alta pressão <br/><br/>
+            {t('lavadoras.170bar.texto6')} <br/><br/>
 
 
 
-            1 pistola de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.170bar.texto7')} <br/><br/>
 
 
 
-            1 bico leque de alta pressão Typhoon <br/><br/>
+            {t('lavadoras.170bar.texto8')} <br/><br/>
 
 
 
-            1 regulador de pressão <br/><br/>
+            {t('lavadoras.170bar.texto9')} <br/><br/>
 
 
 
-            1 carrinho 
+            {t('lavadoras.170bar.texto10')} 
           </p>
         </div>
       </section>
@@ -101,7 +102,7 @@ const Typhoon170Monofasico = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('lavadoras.170bar.textoCard')}
             </h2>
           </div>
 
@@ -112,7 +113,7 @@ const Typhoon170Monofasico = () => {
                     alt="Ícone Técnico" 
                     className="w-12 h-12 object-contain" 
                   />
-                  <span className="text-gray-700 text-lg">Trifásico</span>
+                  <span className="text-gray-700 text-lg">{t('lavadoras.50cv.trifasico')}</span>
                 </div>
               <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
                 <thead>
@@ -152,20 +153,20 @@ const Typhoon170Monofasico = () => {
                     alt="Ícone Técnico" 
                     className="w-12 h-12 object-contain" 
                   />
-                  <span className="text-gray-700 text-lg">Monofásico</span>
+                  <span className="text-gray-700 text-lg">{t('lavadoras.50cv.monofasico')}</span>
                 </div>
               <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
                 <thead>
                   <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Modelo</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão (bar)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão (PSI)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Vazão (L/min)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Vazão (L/h)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Potência (cv)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Peso (kg)</th>
-                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Tensão</th>
-                    <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Dimensões</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.modelo')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao2')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.vazao')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.vazao2')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.potencia')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.peso1')}</th>
+                    <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.tensao')}</th>
+                    <th className="py-4 px-1 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.dimensoes')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -177,7 +178,7 @@ const Typhoon170Monofasico = () => {
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">720</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">5</td>
                     <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">40</td>
-                    <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">Monofásico</td>
+                    <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base font-semibold text-center">{t('tabela.monofasico')}</td>
                     <td className="py-6 px-1 text-[10px] sm:text-xs md:text-base font-semibold text-center">950x640x540</td>
                   </tr>
                 </tbody>
@@ -186,13 +187,13 @@ const Typhoon170Monofasico = () => {
             </div>
             <div className="block md:hidden space-y-10">
               <div className="flex items-center gap-3 mb-4">
-                  <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+                  <h2 className="text-2xl text-center font-bold text-[#000]">{t('lavadoras.50cv.textoCard')}</h2>
                 </div>
         {/* ===== GRUPO 1: Trifásico ===== */}
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <img src={iconTrifasico} alt="Trifásico" className="w-10 h-10" />
-                  <h2 className="text-xl font-bold text-[#0E0E68]">Trifásico</h2>
+                  <h2 className="text-xl font-bold text-[#0E0E68]">{t('tabela.trifasico')}</h2>
                 </div>
       
                 <div className="space-y-4">
@@ -210,14 +211,14 @@ const Typhoon170Monofasico = () => {
                     
                     <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                       <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                          <p><strong>Pressão(bar):</strong> 170 </p>
-                          <p><strong>Pressão(PSI):</strong> 2465 </p>
-                          <p><strong>Vazão(L/min):</strong> 12 </p>
-                          <p><strong>Vazão(L/h)</strong> 720 </p>
-                          <p><strong>Potência(cv):</strong> 5 </p>
-                          <p><strong>Peso:</strong> 40 kg </p>
-                          <p><strong>Tipo de Tensão</strong> Trifásico</p>
-                          <p><strong>Dimensões(mm):</strong>950x640x540</p>
+                          <p><strong>{t('tabela.pressao')}:</strong> 170 </p>
+                          <p><strong>{t('tabela.pressao')} (PSI):</strong> 2465 </p>
+                          <p><strong>{t('tabela.vazao')}:</strong> 12 </p>
+                          <p><strong>{t('tabela.vazao2')}:</strong> 720 </p>
+                          <p><strong>{t('tabela.potencia')}:</strong> 5 </p>
+                          <p><strong>{t('tabela.peso1')}:</strong> 40 kg </p>
+                          <p><strong>{t('tabela.tensao')}:</strong> {t('tabela.trifasico')}</p>
+                          <p><strong>{t('tabela.dimensoes')}:</strong>950x640x540</p>
                       </div>
                     </div>
                   </div>
@@ -226,7 +227,7 @@ const Typhoon170Monofasico = () => {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <img src={iconTrifasico} alt="Trifásico" className="w-10 h-10" />
-                  <h2 className="text-xl font-bold text-[#0E0E68]">Monofásico</h2>
+                  <h2 className="text-xl font-bold text-[#0E0E68]">{t('tabela.monofasico')}</h2>
                 </div>
       
                 <div className="space-y-4">
@@ -244,14 +245,14 @@ const Typhoon170Monofasico = () => {
                     
                     <div className={`transition-all duration-300 ease-in-out ${aberto === 't2' ? 'max-h-60 opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                       <div className="grid grid-cols-2 gap-2 text-sm border-t pt-4">
-                          <p><strong>Pressão(bar):</strong> 170</p>
-                          <p><strong>Pressão(PSI):</strong> 2465 </p>
-                          <p><strong>Vazão(L/min):</strong> 12</p>
-                          <p><strong>Vazão(L/h)</strong> 720 </p>
-                          <p><strong>Potência(cv):</strong> 5 </p>
-                          <p><strong>Peso:</strong> 40 kg</p>
-                          <p><strong>Tipo de Tensão</strong> Monofásico</p>
-                          <p><strong>Dimensões(mm):</strong>950x640x540</p>
+                          <p><strong>{t('tabela.pressao')}:</strong> 170</p>
+                          <p><strong>{t('tabela.pressao')} (PSI):</strong> 2465 </p>
+                          <p><strong>{t('tabela.vazao')}:</strong> 12</p>
+                          <p><strong>{t('tabela.vazao2')}:</strong> 720 </p>
+                          <p><strong>{t('tabela.potencia')}:</strong> 5 </p>
+                          <p><strong>{t('tabela.peso1')}:</strong> 40 kg</p>
+                          <p><strong>{t('tabela.tensao')}:</strong> {t('tabela.monofasico')}</p>
+                          <p><strong>{t('tabela.dimensoes')}:</strong>950x640x540</p>
                       </div>
                     </div>
                   </div>
