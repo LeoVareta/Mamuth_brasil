@@ -130,8 +130,8 @@ const BombaFalch125 = () => {
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Pressão</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Eficiência</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao3')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.eficiencia')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -164,11 +164,11 @@ const BombaFalch125 = () => {
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Potência (kW)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Rotação Motor</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Rotação Virabrequim</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Potência (kw)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Vazão (L/min)</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.pressao3')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.rotacaomotor')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.rotacaovirabrequim')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.potencia2')} (kW)</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.vazao')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -210,57 +210,57 @@ const BombaFalch125 = () => {
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Especificação</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">Detalhe</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.especificacao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase">{t('tabela.detalhes')}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Posição de instalação</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.posicaoinstalacao')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Horizontal</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Sistema de vedação</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.sistemavedacao')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">PFS</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Quantidade de óleo</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.quantidadeoleo')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">10,0 L</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Tipo de óleo</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.tipooleo')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">SAE 75W-90, GL4+, sintético</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Pressão de entrada de água</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.pressaoentradaagua')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">1,8 – 8 bar</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Temperatura da água</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.temperaturaagua')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">0 a 40°C</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Filtragem</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.filtragem')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">1000 bar: padrão Falch / 1000 bar: Falch Nano</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Peso (sem fluidos)</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.pesosemfluidos')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">300 kg</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Temperatura de operação</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.temperaturaoperacao')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">0 a 40°C</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Sistema de lubrificação</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.sistemalubrificacao')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Centrífugo</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Filtro de óleo</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.filtrooleo')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Não possui</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">Material da carcaça</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.materialcarcaca')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Alumínio</td>
                 </tr>
               </tbody>
@@ -269,7 +269,7 @@ const BombaFalch125 = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('bombas.falch125.textoCard')}</h2>
             </div>
               {/* ===== GRUPO 1: Trifásico ===== */}
           <div>

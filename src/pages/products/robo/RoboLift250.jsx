@@ -151,8 +151,8 @@ const RoboLift250 = () => {
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">3000 bar/ 43500 psi</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">60 kg</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">230 V/ 50 Hz/ 16 A/ 5 m</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">24 horas por dia</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">24 meses</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">24 {t('tabela.horas')}</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">24 {t('tabela.meses')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">155kg</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">4178 x 1168 x 1758 mm</td>
                 </tr>
@@ -162,7 +162,7 @@ const RoboLift250 = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+            <h2 className="text-2xl text-center font-bold text-[#000]">{t('robo.lift.textoCard')}</h2>
           </div>
           <div>
             <div className="space-y-4">
@@ -180,13 +180,13 @@ const RoboLift250 = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Pressão Máxima:</strong> 3000 bar/ 43500 psi</p>
-                    <p><strong>Vazão Máxima:</strong> 60 N / 60 kg</p>
-                    <p><strong>Alimentação Elétrica:</strong> 230 V/ 50 Hz/ 16 A / 5m</p>
-                    <p><strong>Operação:</strong> 24 horas por dia</p>
-                    <p><strong>Intervalo de Manutenção:</strong> 24 meses</p>
-                    <p><strong>Peso:</strong> 155 kg</p>
-                    <p><strong>Dimensões:</strong> 4178 x 1168 x 1758 mm </p>
+                    <p><strong>{t('tabela.pressaomaxima')}:</strong> 3000 bar/ 43500 psi</p>
+                    <p><strong>{t('tabela.vazaomaxima')}:</strong> 60 N / 60 kg</p>
+                    <p><strong>{t('tabela.alimentacaoeletrica')}:</strong> 230 V/ 50 Hz/ 16 A / 5m</p>
+                    <p><strong>{t('tabela.operacao')}:</strong> 24 {t('tabela.horas')}</p>
+                    <p><strong>{t('tabela.intervalomanutencao')}:</strong> 24 {t('tabela.meses')}</p>
+                    <p><strong>{t('tabela.peso1')}:</strong> 155 kg</p>
+                    <p><strong>{t('tabela.dimensoes')}:</strong> 4178 x 1168 x 1758 mm </p>
                   </div>
                 </div>
               </div>
