@@ -108,16 +108,16 @@ const RoboMagnetico = () => {
             <table className="w-full table-fixed border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Pressão de trabalho</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Força de fixação</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Alimentação elétrica</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Jet cap</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Braço articulado</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Grau de proteção</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Manutenção/ vida útil</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Peso do transportador</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Peso com jet cap</th>
-                  <th className="py-4 px-2 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Peso com braço articulado</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.pressaotrabalho')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.forcafixacao')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.alimentacaoeletrica')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">Jet Cap</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.bracoarticulado')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.grauprotecao')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.manutencaovidautil')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.pesotransportadora')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.pesojetcap')}</th>
+                  <th className="py-4 px-2 font-bold text-[10px] sm:text-xs md:text-sm uppercase break-words">{t('tabela.pesobracoarticulado')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -128,7 +128,7 @@ const RoboMagnetico = () => {
                   <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">360 mm</td>
                   <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">260 a 1200 mm</td>
                   <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">IP 65 / 55</td>
-                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">24 meses /25 anos</td>
+                  <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">24 {t('tabela.meses')} /25 anos</td>
                   <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">70 kg</td>
                   <td className="py-6 px-2 border-r border-gray-200 text-[10px] sm:text-xs md:text-sm text-center break-words">106 kg</td>
                   <td className="py-6 px-2 text-[10px] sm:text-xs md:text-sm text-center break-words">94 kg</td>
@@ -139,7 +139,7 @@ const RoboMagnetico = () => {
         </div>
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-2xl text-center font-bold text-[#000]">Veja mais informações técnicas sobre este produto:</h2>
+            <h2 className="text-2xl text-center font-bold text-[#000]">{t('robo.magnetico.textoCard')}</h2>
           </div>
           <div>
             <div className="space-y-4">
@@ -157,15 +157,15 @@ const RoboMagnetico = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>Pressão Máxima:</strong> 500 a 3000 bar </p>
-                    <p><strong>Força de Fixação:</strong>600 kg</p>
-                    <p><strong>Alimentação Elétrica:</strong> 400 V/ 50/60 Hz/ 16 A</p>
-                    <p><strong>jet Cap:</strong> 360 mm</p>
-                    <p><strong>Braço articulado:</strong> 260 a 1200 mm</p>
-                    <p><strong>Grau de Proteção:</strong> IP 65 / 55</p>
-                    <p><strong>Manutenção / Vida útil:</strong> 24 meses /25 anos</p>
-                    <p><strong>Peso com Transportador:</strong> 70 kg </p>
-                    <p><strong>Peso com Braço Articulado:</strong> 94 kg </p>
+                    <p><strong>{t('tabela.pressaomaxima')}:</strong> 500 a 3000 bar </p>
+                    <p><strong>{t('tabela.forcafixacao')}:</strong>600 kg</p>
+                    <p><strong>{t('tabela.alimentacaoeletrica')}:</strong> 400 V/ 50/60 Hz/ 16 A</p>
+                    <p><strong>Jet Cap:</strong> 360 mm</p>
+                    <p><strong>{t('tabela.braçoarticulado')}:</strong> 260 a 1200 mm</p>
+                    <p><strong>{t('tabela.grauprotecao')}:</strong> IP 65 / 55</p>
+                    <p><strong>{t('tabela.manutencaovidautil')}:</strong> 24 {t('tabela.meses')} /25 anos</p>
+                    <p><strong>{t('tabela.pesotransportadora')}:</strong> 70 kg </p>
+                    <p><strong>{t('tabela.pesobracoarticulado')}:</strong> 94 kg </p>
                   </div>
                 </div>
               </div>

@@ -1062,6 +1062,41 @@
       "intervalomanutencao": "Intervalo de Manutenção",
       "meses": "Meses",
       "vazaomaxima": "Vazão Máxima",
-      "operacao": "Operação"
+      "operacao": "Operação",
+      "horas": "Horas por dia",
+      "pressaotrabalho": "Pressão de Trabalho",
+      "forcafixacao": "Força de Fixação",
+      "bracoarticulado": "Braço Articulado",
+      "manutencaovidautil": "Manutenção/Vida Útil",
+      "pesotransportadora": "Peso do Transportador",
+      "pesojetcap": "Peso com Jet Cap",
+      "pesobracoarticulado": "Peso com Braço Articulado",
+      "pressao3": "Pressão",
+      "eficiencia": "Eficiência",
+      "rotacaomotor": "Rotação Motor",
+      "rotacaovirabrequim": "Rotação Virabrequim",
+      "especificacao": "Especificação",
+      "detalhes": "Detalhe",
+      "posicaoinstalacao": "Posição de Instalação",
+      "sistemavedacao": "Sistema de Vedação",
+      "quantidadeoleo": "Quantidade de Óleo",
+      "tipooleo": "Tipo de Óleo",
+      "pressaoentradaagua": "Pressão de Entrada da Água",
+      "temperaturaagua": "Temperatura da Água",
+      "filtragem": "Filtragem",
+      "pesosemfluidos": "Peso (sem Fluidos)",
+      "temperaturaoperacao": "Temperatura de Operação",
+      "sistemalubrificacao": "Sistema de Lubrificação",
+      "filtrooleo": "Filtro de Óleo",
+      "materialcarcaca": "Material da Carcaça",
+      "horizontal": "Horizontal",
+      "sintetico": "Sintético",
+      "padrão": "Padrão",
+      "centrifugo": "Centrífugo",
+      "naopossui": "Não possui",
+      "aluminio": "Alumínio"
+
+
+      
     }
 }
