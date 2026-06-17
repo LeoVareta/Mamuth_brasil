@@ -1091,12 +1091,14 @@
       "materialcarcaca": "Material da Carcaça",
       "horizontal": "Horizontal",
       "sintetico": "Sintético",
-      "padrão": "Padrão",
-      "centrifugo": "Centrífugo",
+      "padrao": "Padrão",
+      "centrifugo": "Centrífugo", 
       "naopossui": "Não possui",
-      "aluminio": "Alumínio"
-
-
-      
-    }
+      "aluminio": "Alumínio",
+      "horizontalvertical": "Horizontal ou Vertical",
+      "lubrificacaopressao": "Lubrificação por circulação de Pressão",
+      "possui": "Possui",
+      "aproximadamente": "Aproximadamente",
+      "eixo": "Eixo"
+      }
 }

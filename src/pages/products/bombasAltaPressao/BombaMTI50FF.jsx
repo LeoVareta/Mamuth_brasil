@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,7 @@ import bombaMTI50FF from '@/assets/images/bomba-mti-50ff.png';
 const BombaMTI50FF = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [aberto, setAberto] = useState(null);
   const slides = [
         { id: 1, title: t('bombas.50ff.title'), cover: bombaMTI50FF, color: '#FF5101' }
   ];
@@ -51,7 +52,7 @@ const BombaMTI50FF = () => {
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-1 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
+        <div className="max-w-4xl mx-auto hidden md:block text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
           
           <div className="flex flex-col items-center mb-10">
             <div 
@@ -66,35 +67,61 @@ const BombaMTI50FF = () => {
           </div>
 
           <div className="w-full overflow-hidden rounded-xl shadow-md">
-  <table className="w-full border-collapse table-fixed bg-white">
-    <thead>
-      <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-        <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">Modelo</th>
-        <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">Pressão (bar)</th>
-        <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">Vazão (L/min)</th>
-        <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">Potência (cv)</th>
-        <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">Rotação (cv)</th>
-        <th className="py-6 px-1 font-bold text-sm md:text-base whitespace-nowrap text-center">Eixo (mm)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr className="text-gray-800 border-b border-gray-200">
-        <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">MTS-50FF</td>
-        <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">130 - 160</td>
-        <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">120 - 150</td>
-        <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">50</td>
-        <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">900 - 1000</td>
-        <td className="py-8 px-1 text-xs md:text-lg text-center whitespace-nowrap">40</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-          <style dangerouslySetInnerHTML={{ __html: `
-            .custom-scrollbar::-webkit-scrollbar { height: 8px; }
-            .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-            .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF6B0A; border-radius: 10px; }
-          `}} />
+            <table className="w-full border-collapse table-fixed bg-white">
+              <thead>
+                <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">{t('tabela.modelo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">{t('tabela.pressao')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">{t('tabela.vazao')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">{t('tabela.potencia')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-sm md:text-base whitespace-nowrap text-center">{t('tabela.rotacao')}</th>
+                  <th className="py-6 px-1 font-bold text-sm md:text-base whitespace-nowrap text-center">{t('tabela.eixo')}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="text-gray-800 border-b border-gray-200">
+                  <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">MTS-50FF</td>
+                  <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">130 - 160</td>
+                  <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">120 - 150</td>
+                  <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">50</td>
+                  <td className="py-8 px-1 border-r border-gray-200 text-xs md:text-lg text-center whitespace-nowrap">900 - 1000</td>
+                  <td className="py-8 px-1 text-xs md:text-lg text-center whitespace-nowrap">40</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+         <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-2xl text-center font-bold text-[#000]">{t('bombas.50ff.textoCard')}</h2>
+          </div>
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('bombas.50ff.title')} </h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> MTI-50FF</p>
+                    <p><strong>{t('tabela.pressao')} (bar):</strong> 130 - 160</p>
+                    <p><strong>{t('tabela.vazao')}:</strong> 120 - 150 </p>
+                    <p><strong>{t('tabela.potencia')}:</strong> 50 </p>
+                    <p><strong>{t('tabela.rotacao')}:</strong> 900 - 1000 </p>
+                    <p><strong>{t('tabela.eixo')} (mm):</strong> 40 </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

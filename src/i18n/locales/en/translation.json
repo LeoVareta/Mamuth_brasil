@@ -1089,10 +1089,15 @@
       "materialcarcaca": "Housing Material",
       "horizontal": "Horizontal",
       "sintetico": "Synthetic",
-      "padrão": "Standard",
+      "padrao": "Standard",
       "centrifugo": "Centrifugal",
       "naopossui": "None",
-      "aluminio": "Aluminum"
+      "aluminio": "Aluminum",
+      "horizontalvertical": "Horizontal or vertical",
+      "lubrificacaopressao": "Pressure circulation lubrication",
+      "possui": "Included",
+      "aproximadamente": "Approximately",
+      "eixo": "Shaft"
 
   }
 }

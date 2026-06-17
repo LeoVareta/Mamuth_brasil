@@ -217,7 +217,7 @@ const BombaFalch125 = () => {
               <tbody>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.posicaoinstalacao')}</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Horizontal</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">{t('tabela.horizontal')}</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.sistemavedacao')}</td>
@@ -229,7 +229,7 @@ const BombaFalch125 = () => {
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.tipooleo')}</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">SAE 75W-90, GL4+, sintético</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">SAE 75W-90, GL4+, {t('tabela.sintetico')}</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.pressaoentradaagua')}</td>
@@ -241,7 +241,7 @@ const BombaFalch125 = () => {
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.filtragem')}</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">1000 bar: padrão Falch / 1000 bar: Falch Nano</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">1000 bar: {t('tabela.padrao')} Falch / 1000 bar: {t('tabela.padrao')} Falch Nano</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.pesosemfluidos')}</td>
@@ -253,15 +253,15 @@ const BombaFalch125 = () => {
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.sistemalubrificacao')}</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Centrífugo</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">{t('tabela.centrifugo')}</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.filtrooleo')}</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Não possui</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">{t('tabela.naopossui')}</td>
                 </tr>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
                   <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center italic">{t('tabela.materialcarcaca')}</td>
-                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">Alumínio</td>
+                  <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">{t('tabela.aluminio')}</td>
                 </tr>
               </tbody>
             </table>
@@ -280,7 +280,7 @@ const BombaFalch125 = () => {
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Eficiência por Pressão</h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('bombas.falch250.subtitleCard1')}</h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>
@@ -292,8 +292,8 @@ const BombaFalch125 = () => {
                     
                     {/* Cabeçalho da Tabela */}
                     <div className="flex justify-between pb-2 border-b border-gray-100 mb-3">
-                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>Pressão</strong></span>
-                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>Eficiência</strong></span>
+                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>{t('tabela.pressao')}</strong></span>
+                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>{t('tabela.eficiencia')}</strong></span>
                     </div>
 
                     {/* Lista de Itens */}
@@ -327,7 +327,7 @@ const BombaFalch125 = () => {
                   onClick={() => setAberto(aberto === 't2' ? null : 't2')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-left text-[#0E0E68]">Configurações de operação <br/> Velocidade e Desempenho (1800 rpm)</h3>
+                  <h3 className="font-bold text-lg text-left text-[#0E0E68]">{t('bombas.falch250.subtitleCard2')}<br/> {t('bombas.falch250.subtitleCard3')}</h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't2' ? '−' : '+'}
                   </span>
@@ -337,32 +337,32 @@ const BombaFalch125 = () => {
                 {/* Container com Margem Lateral (p-5) */}
                   <div className="p-5 px-12 pt-2"> 
                     <div className="grid grid-cols-2 gap-2 text-sm border-t pb-4 pt-4">
-                      <p><strong>Rotação motor:</strong> 1800 rpm</p>
-                      <p><strong>Rotação virabrequim:</strong> 610 rpm</p>
-                      <p><strong>Pressão:</strong> 1000 bar </p>
-                      <p><strong>Potência(KW):</strong>122</p>
-                      <p><strong>Vazão (L/min):</strong> 67 </p>
+                      <p><strong>{t('tabela.rotacaomotor')}:</strong> 1800 rpm</p>
+                      <p><strong>{t('tabela.rotacaovirabrequim')}:</strong> 610 rpm</p>
+                      <p><strong>{t('tabela.pressao3')}:</strong> 1000 bar </p>
+                      <p><strong>{t('tabela.potencia2')}:</strong>122</p>
+                      <p><strong>{t('tabela.vazao')}:</strong> 67 </p>
                     </div>
                     <div className="grid grid-cols-2 gap-2 text-sm border-t pb-4 pt-4">
-                      <p><strong>Rotação motor:</strong> 1800 rpm</p>
-                      <p><strong>Rotação virabrequim:</strong> 610 rpm</p>
-                      <p><strong>Pressão:</strong> 1500 bar </p>
-                      <p><strong>Potência(KW):</strong>117</p>
-                      <p><strong>Vazão (L/min):</strong> 43 </p>
+                      <p><strong>{t('tabela.rotacaomotor')}:</strong> 1800 rpm</p>
+                      <p><strong>{t('tabela.rotacaovirabrequim')}:</strong> 610 rpm</p>
+                      <p><strong>{t('tabela.pressao3')}:</strong> 1500 bar </p>
+                      <p><strong>{t('tabela.potencia2')}:</strong>117</p>
+                      <p><strong>{t('tabela.vazao')}:</strong> 43 </p>
                     </div>
                     <div className="grid grid-cols-2 gap-2 text-sm border-t pb-4 pt-4">
-                      <p><strong>Rotação motor:</strong> 1800 rpm</p>
-                      <p><strong>Rotação virabrequim:</strong> 610 rpm</p>
-                      <p><strong>Pressão:</strong>2500 bar </p>
-                      <p><strong>Potência(KW):</strong>124</p>
-                      <p><strong>Vazão (L/min):</strong> 26 </p>
+                      <p><strong>{t('tabela.rotacaomotor')}:</strong> 1800 rpm</p>
+                      <p><strong>{t('tabela.rotacaovirabrequim')}:</strong> 610 rpm</p>
+                      <p><strong>{t('tabela.pressao3')}:</strong>2500 bar </p>
+                      <p><strong>{t('tabela.potencia2')}:</strong>124</p>
+                      <p><strong>{t('tabela.vazao')}:</strong> 26 </p>
                     </div>
                     <div className="grid grid-cols-2 gap-2 text-sm border-t pb-4 pt-4">
-                      <p><strong>Rotação motor:</strong> 1800 rpm</p>
-                      <p><strong>Rotação virabrequim:</strong> 610 rpm</p>
-                      <p><strong>Pressão:</strong> 3000 bar </p>
-                      <p><strong>Potência(KW):</strong>124</p>
-                      <p><strong>Vazão (L/min):</strong> 22 </p>
+                      <p><strong>{t('tabela.rotacaomotor')}:</strong> 1800 rpm</p>
+                      <p><strong>{t('tabela.rotacaovirabrequim')}:</strong> 610 rpm</p>
+                      <p><strong>{t('tabela.pressao3')}:</strong> 3000 bar </p>
+                      <p><strong>{t('tabela.potencia2')}:</strong>124</p>
+                      <p><strong>{t('tabela.vazao')}:</strong> 22 </p>
                     </div>
                   </div>
                 </div>
@@ -372,7 +372,7 @@ const BombaFalch125 = () => {
                   onClick={() => setAberto(aberto === 't3' ? null : 't3')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Dados Técnicos</h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('bombas.falch250.subtitleCard4')}</h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't3' ? '−' : '+'}
                   </span>
@@ -384,65 +384,65 @@ const BombaFalch125 = () => {
                     
                     {/* Cabeçalho da Tabela */}
                     <div className="flex justify-between pb-2 border-b border-gray-100 mb-3">
-                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>Especificação</strong></span>
-                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>Detalhe</strong></span>
+                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>{t('tabela.especificacao')}</strong></span>
+                      <span className="text-[12px] uppercase tracking-wider font-bold"><strong>{t('tabela.detalhe')}</strong></span>
                     </div>
 
                     {/* Lista de Itens */}
                     <div className="space-y-3">
                       
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Posição de instalação</span>
-                        <span className="text-gray-800 w-2/3 text-right">Horizontal </span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.posicaoinstalacao')}</span>
+                        <span className="text-gray-800 w-2/3 text-right">{t('tabela.horizontal')} </span>
                       </div>
 
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Sistema de vedação</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.sistemavedacao')}</span>
                         <span className="text-gray-800 w-2/3 text-right">PFS</span>
                       </div>
 
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Quantidade de óleo</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.quantidadeoleo')}</span>
                         <span className="text-gray-800 w-2/3 text-right font-semibold text-blue-600">10,0 L</span>
                       </div>
 
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Tipo de óleo</span>
-                        <span className="text-gray-800 w-2/3 text-right">SAE 75W-90, GL4+, sintético</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.tipooleo')}</span>
+                        <span className="text-gray-800 w-2/3 text-right">SAE 75W-90, GL4+, {t('tabela.sintetico')}</span>
                       </div>
 
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Pressão de entrada de água</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.pressaoentradaagua')}</span>
                         <span className="text-gray-800 w-2/3 text-right">1,8 – 8 bar</span>
                       </div>
 
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Temperatura da água</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.temperaturaagua')}</span>
                         <span className="text-gray-800 w-2/3 text-right leading-tight">0 a 40°C</span>
                       </div>
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Filtragem</span>
-                        <span className="text-gray-800 w-2/3 text-right leading-tight">1000 bar: padrão Falch / 1000 bar: Falch Nano</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.filtragem')}</span>
+                        <span className="text-gray-800 w-2/3 text-right leading-tight">1000 bar: {t('tabela.padrao')} Falch / 1000 bar: Falch Nano</span>
                       </div>
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Peso (sem fluidos)</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.pesosemfluidos')}</span>
                         <span className="text-gray-800 w-2/3 text-right leading-tight">300 kg</span>
                       </div>
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Temperatura de operação</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.temperaturaoperacao')}</span>
                         <span className="text-gray-800 w-2/3 text-right leading-tight">0 a 40°C</span>
                       </div>
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Sistema de lubrificação</span>
-                        <span className="text-gray-800 w-2/3 text-right leading-tight">Centrífugo</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.sistemalubrificacao')}</span>
+                        <span className="text-gray-800 w-2/3 text-right leading-tight">{t('tabela.centrifugo')}</span>
                       </div>
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Filtro de óleo</span>
-                        <span className="text-gray-800 w-2/3 text-right leading-tight">Não possui</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.filtrooleo')}</span>
+                        <span className="text-gray-800 w-2/3 text-right leading-tight">{t('tabela.naopossui')}</span>
                       </div>
                       <div className="flex justify-between items-start text-sm">
-                        <span className="font-medium text-gray-500 w-1/3">Material da carcaça</span>
-                        <span className="text-gray-800 w-2/3 text-right leading-tight">Alumínio</span>
+                        <span className="font-medium text-gray-500 w-1/3">{t('tabela.materiaLCarcaça')}</span>
+                        <span className="text-gray-800 w-2/3 text-right leading-tight">{t('tabela.aluminio')}</span>
                       </div>
 
                     </div>

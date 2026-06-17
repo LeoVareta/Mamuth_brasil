@@ -1090,10 +1090,15 @@
       "materialcarcaca": "Material de la Carcasa",
       "horizontal": "Horizontal",
       "sintetico": "Sintético",
-      "padrão": "Estándar",
+      "padrao": "Estándar",
       "centrifugo": "Centrífugo",
       "naopossui": "No tiene",
-      "aluminio": "Aluminio"
+      "aluminio": "Aluminio",
+      "horizontalvertical": "Horizontal o vertical",
+      "lubrificacaopressao": "Lubricación por circulación a presión",
+      "possui": "Incluido",
+      "aproximadamente": "Aproximadamente",
+      "eixo": "Eje"
 
     }
 } 
