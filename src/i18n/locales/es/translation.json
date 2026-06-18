@@ -1006,10 +1006,12 @@
       "pruptbarpsi": "P. Rupt (bar/psi)",
       "ptrabbarpsi": "P. Trab (bar/psi)",
       "roscaa":"Rosca A",
+      "rosca":"Rosca",
       "roscab":"Rosca B",
       "aplicacao":"Aplicación",
       "codigo":"Código",
       "pressao": "Presión (bar)",
+      "pressao2": "Presión (psi)",
       "varetasbicos": "Lanzas, Boquillas, etc.",
       "mangueirasacessorios": "Mangueras, Accesorios, etc.",
       "luva": "Guante",
@@ -1098,7 +1100,15 @@
       "lubrificacaopressao": "Lubricación por circulación a presión",
       "possui": "Incluido",
       "aproximadamente": "Aproximadamente",
-      "eixo": "Eje"
+      "eixo": "Eje",
+      "pmaxbar": "Presión Máxima (bar)",
+      "conexaoentrada": "Conexión de Entrada",
+      "vazaomaxlmin": "Max. Working Temp.",
+      "conexaoencaixe": "Conexión de Enchufe",
+      "temperaturamaxima": "Temp. Máx. de Trabajo",
+      "diametro": "Diámetro",
+      "cabeca": "Cabeza",
+      "aplicacaotubo": "Aplicación en tubos"
 
     }
 } 

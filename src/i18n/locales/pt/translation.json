@@ -1006,6 +1006,7 @@
       "pruptbarpsi": "P. Rupt (bar/psi)",
       "ptrabbarpsi": "P. Trab (bar/psi)",
       "roscaa":"Rosca A",
+      "rosca":"Rosca",
       "roscab":"Rosca B",
       "aplicacao":"Aplicação",
       "codigo":"Código",
@@ -1099,6 +1100,14 @@
       "lubrificacaopressao": "Lubrificação por circulação de Pressão",
       "possui": "Possui",
       "aproximadamente": "Aproximadamente",
-      "eixo": "Eixo"
+      "eixo": "Eixo",
+      "pmaxbar": "Pressão Máxima (bar)",
+      "conexaoentrada": "Conexão de Entrada",
+      "vazaomaxlmin": "Vazão Máx. (L/min)",
+      "conexaoencaixe": "Conexão de Encaixe",
+      "temperaturamaxima": "Temp. Máx. Trabalho",
+      "diametro": "Diâmetro",
+      "cabeca": "Cabeça",
+      "aplicacaotubo": "Aplicação Tubo"
       }
 }

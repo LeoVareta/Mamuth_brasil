@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import bgImg from '@/assets/images/bg-carrousel.png';
 import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
@@ -9,9 +10,11 @@ import ProductSection from '@/components/ProductSection';
 import bicoFixoFoguetinho from '@/assets/images/bico-fixo-foguetinho.png';
 
 const BicoFixoFoguetinho = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
+  const [aberto, setAberto] = useState(null);
   const slides = [
-          { id: 1, title: 'Bico Fixo Foguetinho',  cover: bicoFixoFoguetinho, color: '#FF5101' },
+          { id: 1, title: t('bicos.foguetinho.title'),  cover: bicoFixoFoguetinho, color: '#FF5101' },
   ];
 
   // Garante que a página inicie no topo
@@ -22,7 +25,7 @@ const BicoFixoFoguetinho = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white w-full">
       <Helmet>
-        <title>Bico Fixo Foguetinho - Mamuth</title>
+        <title>{t('bicos.foguetinho.title')} - Mamuth</title>
       </Helmet>
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO - TUDO CENTRALIZADO */}
@@ -38,27 +41,20 @@ const BicoFixoFoguetinho = () => {
             className="text-5xl md:text-6xl font-bold mb-10 text-left "
             style={{ color: 'var(--color-dark-blue)' }}
           >
-            Bico Fixo Foguetinho
+            {t('bicos.foguetinho.title')}
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            O bico fixo tipo “ Foguetinho” é indicado para limpeza e desobstrução das paredes internas 
-            de tubulações de trocadores de calor, evaporadores e linhas de tubos em geral. 
-            Esses bicos estão disponíveis em diversos diâmetros variados e orifícios dimensionados 
-            de acordo com a vazão, este modelo conta com 8 furos, sendo 2 frontais de ataque e 6 traseiros furos de limpeza e propulsão.
+            {t('bicos.foguetinho.texto1')}
           </p>
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-           Pressão Máxima de Trabalho 1.000 bar
-
-          </p>
-          <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
-            Max. Working Pressure 14.500 psi
+           {t('bicos.foguetinho.texto2')}
           </p>
         </div>
       </section>
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-1 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
+        <div className="max-w-4xl md:block hidden mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
           
           <div className="flex flex-col items-center mb-10">
             <div 
@@ -68,7 +64,7 @@ const BicoFixoFoguetinho = () => {
               i
             </div>
             <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
-              Veja mais informações técnicas sobre este produto:
+              {t('bicos.foguetinho.textoCard')}
             </h2>
           </div>
 
@@ -110,12 +106,128 @@ const BicoFixoFoguetinho = () => {
             </tbody>
           </table>
           </div>
+        </div>
+        <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+            <h2 className="text-2xl text-center font-bold text-[#000]">{t('bicos.portasafira.textoCard')}</h2>
+          </div>
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('bicos.portasafira.title')} </h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  {/* D10 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D10</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0500</p>
+                    <p><strong>L:</strong> 31</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> M7</p>
+                    <p><strong>Ø A:</strong> XB</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
 
-          <style dangerouslySetInnerHTML={{ __html: `
-            .custom-scrollbar::-webkit-scrollbar { height: 8px; }
-            .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-            .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF6B0A; border-radius: 10px; }
-          `}} />
+                  {/* D12 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D12</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0501</p>
+                    <p><strong>L:</strong> 40</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> 1/8 BSP</p>
+                    <p><strong>Ø A:</strong> x</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> XC</p>
+                  </div>
+
+                  {/* D16 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D16</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0502</p>
+                    <p><strong>L:</strong> 47</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> 1/4 BSP</p>
+                    <p><strong>Ø A:</strong> X</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
+
+                  {/* D22 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D22</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0503</p>
+                    <p><strong>L:</strong> 55</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> 1/4 BSP</p>
+                    <p><strong>Ø A:</strong> XB</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
+
+                  {/* D28 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D28</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0554</p>
+                    <p><strong>L:</strong> 65</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> 1/2 BSP</p>
+                    <p><strong>Ø A:</strong> X</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
+
+                  {/* D30 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D30</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0530</p>
+                    <p><strong>L:</strong> 76</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> 1/2 BSP</p>
+                    <p><strong>Ø A:</strong> X</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
+
+                  {/* D40 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D40</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0513</p>
+                    <p><strong>L:</strong> 87</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> M22x1,5</p>
+                    <p><strong>Ø A:</strong> X</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
+
+                  {/* D50 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D50</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0514</p>
+                    <p><strong>L:</strong> 102</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> M30x1,5</p>
+                    <p><strong>Ø A:</strong> X</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
+
+                  {/* D70 */}
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> D70</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 2000.0507</p>
+                    <p><strong>L:</strong> 120</p>
+                    <p><strong>{t('tabela.rosca')}:</strong> M50x1,5</p>
+                    <p><strong>Ø A:</strong> X</p>
+                    <p><strong>Ø B:</strong> X</p>
+                    <p><strong>Ø C:</strong> X</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
