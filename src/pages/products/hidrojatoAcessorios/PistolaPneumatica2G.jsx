@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,7 @@ import pistolaPneumatica2G from '@/assets/images/pistola-pneumatica-2g.png';
 const PistolaPneumatica2G = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [aberto, setAberto] = useState(null);
   const slides = [
       { id: 1, title: t('acessorioshidro.pneumatica2g.title'),  cover: pistolaPneumatica2G, color: '#FF5101' }
     ];
@@ -91,17 +92,17 @@ const PistolaPneumatica2G = () => {
             <table className="w-full border-collapse table-fixed bg-white">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[25%] uppercase">Modelo</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[12%] uppercase">Código</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[13%] uppercase">P. MAX (bar)</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">Peso (kg)</th>
-                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[25%] uppercase">Entrada</th>
-                  <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[15%] uppercase">Comp. Total</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[25%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[12%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[13%] uppercase">{t('tabela.pressao')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[10%] uppercase">{t('tabela.peso1')}</th>
+                  <th className="py-6 px-1 border-r border-orange-400 font-bold text-xs md:text-sm text-center w-[25%] uppercase">{t('tabela.entrada')}</th>
+                  <th className="py-6 px-1 font-bold text-xs md:text-sm text-center w-[15%] uppercase">{t('tabela.comprimento')}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="text-gray-800 border-b border-gray-200">
-                  <td className="py-8 px-2 border-r border-gray-200 text-sm md:text-lg text-center font-bold">Pistola MTPT 2800BAR - 2G</td>
+                  <td className="py-8 px-2 border-r border-gray-200 text-sm md:text-lg text-center font-bold">{t('acessorioshidro.pneumatica2g.title')}</td>
                   <td className="py-8 px-1 border-r border-gray-200 text-sm md:text-lg text-center whitespace-nowrap">1001.4006</td>
                   <td className="py-8 px-1 border-r border-gray-200 text-sm md:text-lg text-center">2.800</td>
                   <td className="py-8 px-1 border-r border-gray-200 text-sm md:text-lg text-center">3,5</td>
@@ -111,12 +112,39 @@ const PistolaPneumatica2G = () => {
               </tbody>
             </table>
           </div>
-
-          <style dangerouslySetInnerHTML={{ __html: `
-            .custom-scrollbar::-webkit-scrollbar { height: 8px; }
-            .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-            .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF6B0A; border-radius: 10px; }
-          `}} />
+        </div>
+        <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('vestimentas.uap.textoCard')}</h2>
+            </div>
+    {/* ===== GRUPO 1: Trifásico ===== */}
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('acessorioshidro.pneumatica2g.title')}</h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-autoopacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> {t('acessorioshidro.pneumatica2g.title')}</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 1001.4006</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 2.800</p>
+                    <p><strong>{t('tabela.peso1')}:</strong> 3,5</p>
+                    <p><strong>{t('tabela.entrada')}:</strong> 3/4 UNF - 3/8-24 LH</p>
+                    <p><strong>{t('tabela.comprimento')}:</strong> 1200mm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

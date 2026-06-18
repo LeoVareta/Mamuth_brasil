@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,7 @@ import tubecleanMamuth from '@/assets/images/tubeclean-mamuth.jpeg';
 const TubeClean = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [aberto, setAberto] = useState(null);
   const slides = [
       { id: 1, title: t('acessorioshidro.tubeclean.title'),  cover: tubecleanMamuth, color: '#FF5101' }
     ];
@@ -72,9 +73,9 @@ const TubeClean = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[10%] uppercase">#</th>
-                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[40%] uppercase">Modelo</th>
-                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[30%] uppercase">Código</th>
-                  <th className="py-6 px-4 font-bold text-sm md:text-base text-center w-[20%] uppercase">Peso (kg)</th>
+                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[40%] uppercase">{t('tabela.modelo')}</th>
+                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[30%] uppercase">{t('tabela.codigo')}</th>
+                  <th className="py-6 px-4 font-bold text-sm md:text-base text-center w-[20%] uppercase">{t('tabela.peso1')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -87,12 +88,36 @@ const TubeClean = () => {
               </tbody>
             </table>
           </div>
-
-          <style dangerouslySetInnerHTML={{ __html: `
-            .custom-scrollbar::-webkit-scrollbar { height: 8px; }
-            .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-            .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF6B0A; border-radius: 10px; }
-          `}} />
+        </div>
+        <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('vestimentas.uap.textoCard')}</h2>
+            </div>
+    {/* ===== GRUPO 1: Trifásico ===== */}
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('acessorioshidro.viper40k.title')}</h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-autoopacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> Tubeclean</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 1001.4008</p>
+                    <p><strong>{t('tabela.peso1')}:</strong> 5,6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

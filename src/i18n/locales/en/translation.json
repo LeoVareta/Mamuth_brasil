@@ -1107,7 +1107,7 @@
       "temperaturamaxima": "Max. Working Temp.",
       "diametro": "Diameter",
       "cabeca": "Head",
-      "aplicacaotubo": "Tube Application"
-
+      "aplicacaotubo": "Tube Application",
+      "entradaar": "Air Inlet"
   }
 }
