@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -12,6 +12,7 @@ import valvulaSeguranca660bar from '@/assets/images/valvula-seguranca-660bar.png
 
 const ValvulaSeguranca660 = () => {
   const { t } = useTranslation();
+  const [aberto, setAberto] = useState(null);
   const navigate = useNavigate();
   const slides = [
         { id: 1, title: t('acessorioslavadoras.valvulareguladora600.title'), cover: valvulaSeguranca660bar, color: '#FF5101' }
@@ -70,34 +71,62 @@ const ValvulaSeguranca660 = () => {
             <table className="w-full border-collapse rounded-xl overflow-hidden shadow-md">
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">Modelo</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">Pressão MAX (bar)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">Pressão MAX (psi)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">Vazão (L/min)</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">Conexão Entrada</th>
-                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">Conexão Saída</th>
-                  <th className="py-4 px-1 font-bold text-[9px] sm:text-xs md:text-sm text-center">Função</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">{t('tabela.pressao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">{t('tabela.pressao2')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">{t('tabela.vazao')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">{t('tabela.conexaoentrada')}</th>
+                  <th className="py-4 px-1 border-r border-orange-400 font-bold text-[9px] sm:text-xs md:text-sm text-center">{t('tabela.conexaosaida')}</th>
+                  <th className="py-4 px-1 font-bold text-[9px] sm:text-xs md:text-sm text-center">{t('tabela.funcao')}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="bg-white text-gray-800 border-b border-gray-200">
-                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center">VS-660 Segurança</td>
+                  <td className="py-6 px-1 border-r border-gray-200 font-bold text-[10px] sm:text-xs md:text-base text-center">VS-660 {t('tabela.seguranca')}</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">660</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">9570</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center">60</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center whitespace-nowrap">3/8" BSP</td>
                   <td className="py-6 px-1 border-r border-gray-200 text-[10px] sm:text-xs md:text-base text-center whitespace-nowrap">3/8" BSP</td>
-                  <td className="py-6 px-1 text-[10px] sm:text-xs md:text-base text-center leading-tight">Segurança - Pressão Máxima</td>
+                  <td className="py-6 px-1 text-[10px] sm:text-xs md:text-base text-center leading-tight">{t('tabela.seguranca')} - {t('tabela.pressaomaxima')}</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          <style dangerouslySetInnerHTML={{ __html: `
-            .custom-scrollbar::-webkit-scrollbar { height: 8px; }
-            .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-            .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF6B0A; border-radius: 10px; }
-          `}} />
+        </div>
+        <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('vestimentas.uap.textoCard')}</h2>
+            </div>
+    {/* ===== GRUPO 1: Trifásico ===== */}
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('acessorioslavadoras.valvulareguladora600.title')}</h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-autoopacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> VS-660 {t('tabela.seguranca')}</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 660	</p>
+                    <p><strong>{t('tabela.pressao2')}:</strong>9570</p>
+                    <p><strong>{t('tabela.vazao')}:</strong> 60</p>
+                    <p><strong>{t('tabela.conexaoentrada')}:</strong> 3/8" BSP</p>
+                    <p><strong>{t('tabela.conexaosaida')}:</strong> 3/8" BSP</p>
+                    <p><strong>{t('tabela.funcao')}:</strong>{t('tabela.seguranca')} {t('tabela.pressaomaxima')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

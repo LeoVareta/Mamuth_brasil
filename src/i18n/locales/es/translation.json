@@ -1109,7 +1109,21 @@
       "diametro": "Diámetro",
       "cabeca": "Cabeza",
       "aplicacaotubo": "Aplicación en tubos",
-      "entradaar": "Entrada de Aire"
-
+      "entradaar": "Entrada de Aire",
+      "mangueirastermoplasticas": "Mangueras Termoplásticas",
+      "mangueirasborracha": "Mangueras de Goma",
+      "sobmedida": "A medida",
+      "mangueirasbicosetc": "Mangueras, Boquillas, etc.",
+      "opcaorosca1": "Opción de Rosca 1",
+      "opcaorosca2": "Opción de Rosca 2",
+      "roscaaparafuso": "Rosca A (tornillo)",
+      "roscaaanilha": "Rosca A (anillo)",
+      "roscabparafuso": "Rosca B (tornillo)",
+      "roscabanilha": "Rosca B (anillo)",
+      "funcao": "Función",
+      "reguladorpressao": "Regulador de Presión",
+      "conexaosaida": "Conexión de Salida",
+      "altavazao": "Alto Caudal",
+      "seguranca": "Seguridad"
     }
 } 

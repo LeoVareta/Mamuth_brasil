@@ -1108,6 +1108,21 @@
       "diametro": "Diameter",
       "cabeca": "Head",
       "aplicacaotubo": "Tube Application",
-      "entradaar": "Air Inlet"
+      "entradaar": "Air Inlet",
+      "mangueirastermoplasticas": "Thermoplastic Hoses",
+      "mangueirasborracha": "Rubber Hoses",
+      "sobmedida": "Custom-made",
+      "mangueirasbicosetc": "Hoses, Nozzles, etc.",
+      "opcaorosca1": "Thread Option 1",
+      "opcaorosca2": "Thread Option 2",
+      "roscaaparafuso": "Screw Thread A ",
+      "roscaaanilha": "Collar Thread A",
+      "roscabparafuso": "Screw Thread B ",
+      "roscabanilha": "Collar Thread B",
+      "funcao": "Function",
+      "reguladorpressao": "Pressure Regulator",
+      "conexaosaida": "Sail Connection",
+      "altavazao": "High Flow",
+      "seguranca": "Security"
   }
 }

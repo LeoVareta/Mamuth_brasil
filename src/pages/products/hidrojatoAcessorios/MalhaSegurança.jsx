@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,7 @@ import malhaSeguranca from '@/assets/images/malha-de-seguranca.png';
 const MalhaDeSeguranca = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [aberto, setAberto] = useState(null);
   const slides = [
       { id: 1, title: t('acessorioshidro.malhaseguranca.title'),  cover: malhaSeguranca, color: '#FF5101' }
     ];
@@ -52,7 +53,7 @@ const MalhaDeSeguranca = () => {
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-1 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
+        <div className="max-w-4xl md:block hidden mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
           
           <div className="flex flex-col items-center mb-10">
             <div 
@@ -71,18 +72,18 @@ const MalhaDeSeguranca = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[5%]">#</th>
-                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[15%]">Modelo</th>
-                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[20%]">Código</th>
-                  <th className="py-6 px-4 font-bold text-sm md:text-base text-center w-[60%]">Aplicação</th>
+                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[15%]">{t('tabela.modelo')}</th>
+                  <th className="py-6 px-2 border-r border-orange-400 font-bold text-sm md:text-base text-center w-[20%]">{t('tabela.codigo')}</th>
+                  <th className="py-6 px-4 font-bold text-sm md:text-base text-center w-[60%]">{t('tabela.aplicacao')}</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { id: 1, mod: "DN3 - DN4", cod: "3010.0098", app: "Mangueiras Termoplásticas DN3 e DN4" },
-                  { id: 2, mod: "DN5 - DN6", cod: "3010.0103", app: "Mangueiras Termoplásticas DN5 e DN6" },
-                  { id: 3, mod: "DN8", cod: "3010.0104", app: "Mangueiras Termoplásticas DN8" },
-                  { id: 4, mod: "3/8 - 1/2", cod: "3010.0100", app: "Mangueiras de Borracha 3/8 e 1/2" },
-                  { id: 5, mod: "3/4", cod: "3010.0101", app: "Mangueiras de Borracha 3/4" },
+                  { id: 1, mod: "DN3 - DN4", cod: "3010.0098", app: t('tabela.mangueirastermoplasticas') + " DN3 e DN4" },
+                  { id: 2, mod: "DN5 - DN6", cod: "3010.0103", app: t('tabela.mangueirastermoplasticas') + " DN5 e DN6" },
+                  { id: 3, mod: "DN8", cod: "3010.0104", app: t('tabela.mangueirastermoplasticas') + " DN8" },
+                  { id: 4, mod: "3/8 - 1/2", cod: "3010.0100", app: t('tabela.mangueirasborracha') +" 3/8 e 1/2" },
+                  { id: 5, mod: "3/4", cod: "3010.0101", app: t('tabela.mangueirasborracha') +" 3/4" },
                 ].map((item) => (
                   <tr key={item.id} className="text-gray-800 border-b border-gray-200">
                     <td className="py-8 px-2 border-r border-gray-200 text-sm md:text-lg text-center font-bold">{item.id}</td>
@@ -94,12 +95,56 @@ const MalhaDeSeguranca = () => {
               </tbody>
             </table>
           </div>
-
-          <style dangerouslySetInnerHTML={{ __html: `
-            .custom-scrollbar::-webkit-scrollbar { height: 8px; }
-            .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-            .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF6B0A; border-radius: 10px; }
-          `}} />
+        </div>
+        <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('vestimentas.uap.textoCard')}</h2>
+            </div>
+    {/* ===== GRUPO 1: Trifásico ===== */}
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('acessorioshidro.malhaseguranca.title')}</h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-autoopacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> DN3 - DN4</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3010.0098</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirastermoplasticas')} DN3 e DN4</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> DN5 - DN6</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3010.0103	</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirastermoplasticas')} DN5 e DN6</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> DN8</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3010.0104</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirastermoplasticas')} DN8</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> 3/8 - 1/2</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3010.0100</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasborracha')} 3/8 e 1/2</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> 3/4</p>
+                    <p><strong>{t('tabela.codigo')}:</strong> 3010.0101</p>
+                    <p><strong>{t('tabela.aplicacao')}:</strong> {t('tabela.mangueirasborracha')} 3/4</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

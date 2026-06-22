@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { color, motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,7 @@ import pistola280bar from '@/assets/images/pistola-280bar.png';
 
 const Pistola280bar = () => {
   const { t } = useTranslation();
+  const [aberto, setAberto] = useState(null);
   const navigate = useNavigate();
   const slides = [
         { id: 1, title: t('acessorioslavadoras.pistola280.title'), artist: 'Trifásico', cover: pistola280bar, color: '#FF5101' }
@@ -74,12 +75,12 @@ const Pistola280bar = () => {
               <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
                   {/* px-2 e text-sm/base para garantir que caiba em telas menores */}
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">Modelo</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">Pressão MAX (bar)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">Vazão (L/min)</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">Conexão Entrada</th>
-                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">Peso (kg)</th>
-                  <th className="py-4 px-2 font-bold text-xs md:text-lg">Comprimento</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">{t('tabela.modelo')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">{t('tabela.pressao')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">{t('tabela.vazao')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">{t('tabela.conexaoentrada')}</th>
+                  <th className="py-4 px-2 border-r border-orange-400 font-bold text-xs md:text-lg">{t('tabela.peso1')}</th>  
+                  <th className="py-4 px-2 font-bold text-xs md:text-lg">{t('tabela.comprimento')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -93,6 +94,39 @@ const Pistola280bar = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+        <div className="md:hidden space-y-10">
+          <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-2xl text-center font-bold text-[#000]">{t('vestimentas.uap.textoCard')}</h2>
+            </div>
+    {/* ===== GRUPO 1: Trifásico ===== */}
+          <div>
+            <div className="space-y-4">
+              {/* CARD 1 */}
+              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
+                <button 
+                  onClick={() => setAberto(aberto === 't1' ? null : 't1')}
+                  className="w-full flex justify-between items-center p-5 bg-white"
+                >
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('acessorioshidro.lacoseguranca.title')}</h3>
+                  <span className="text-2xl text-[#FF6B0A] font-light">
+                    {aberto === 't1' ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-autoopacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
+                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                    <p><strong>{t('tabela.modelo')}:</strong> {t('acessorioslavadoras.pistola280.title')}</p>
+                    <p><strong>{t('tabela.pressao')}:</strong> 280</p>
+                    <p><strong>{t('tabela.vazao')}:</strong> 42</p>
+                    <p><strong>{t('tabela.conexaoentrada')}:</strong> M22x1,5</p>
+                    <p><strong>{t('tabela.peso1')}:</strong> 0,9</p>
+                    <p><strong>{t('tabela.comprimento')}:</strong> 1200mm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
