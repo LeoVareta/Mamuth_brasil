@@ -53,7 +53,7 @@ const PowerBox2800 = () => {
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-1 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
+        <div className="max-w-4xl md:block hidden mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
           
           <div className="flex flex-col items-center mb-10">
             <div 
@@ -107,7 +107,7 @@ const PowerBox2800 = () => {
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('acessorioshidro.viper40k.title')}</h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('acessorioshidro.powerbox.title')}</h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>
@@ -115,7 +115,7 @@ const PowerBox2800 = () => {
                 
                 <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-autoopacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
                   <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>{t('tabela.modelo')}:</strong> {t('acessorioshidro.viper40k.title')}</p>
+                    <p><strong>{t('tabela.modelo')}:</strong> Power Box 2800BAR</p>
                     <p><strong>{t('tabela.codigo')}:</strong> 1001.4008</p>
                     <p><strong>{t('tabela.pressao')}:</strong> 2.800</p>
                     <p><strong>{t('tabela.vazao')}:</strong> 5,6</p>
