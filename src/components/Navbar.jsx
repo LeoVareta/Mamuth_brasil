@@ -8,6 +8,7 @@ import LogoH from '@/components/LogoH';
 import Br from '@/assets/icons/icone-brasil.png'
 import En from '@/assets/icons/icone-estados-unidos.png'
 import Es from '@/assets/icons/icone-espanha.png'
+import De from '@/assets/icons/icone-alemanha.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
     overflow: 'hidden',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
+    justify: 'center',
     transition: 'transform 0.2s ease-in-out',
     backgroundColor: '#1a1a1a', 
   };
@@ -62,16 +63,15 @@ const Navbar = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-lg text-sm transition-all ${
                   isActive(link.path) 
-                    ? 'bg-white text-[#FE5100] font-bold' // Fundo branco, texto laranja e negrito
+                    ? 'bg-white text-[#FE5100] font-bold'
                     : 'text-gray-700 hover:bg-gray-100 font-medium'
                 }`}
-                // Removido o style dinâmico de background
               >
                 {link.name}
               </Link>
             ))}
 
-            {/* Seletor de Idiomas */}
+            {/* Seletor de Idiomas Desktop */}
             <div className="flex items-center ml-4 pl-4 space-x-3">
               <button 
                 onClick={() => i18n.changeLanguage('pt')}
@@ -95,6 +95,15 @@ const Navbar = () => {
                 className="hover:scale-110"
               >
                 <img src={Es} alt="Español" className="w-full h-full object-cover" />
+              </button>
+
+              {/* Novo botão: Alemão Desktop */}
+              <button 
+                onClick={() => i18n.changeLanguage('de')}
+                style={{...flagButtonStyle, ...(i18n.language === 'de' ? activeStyle : {})}}
+                className="hover:scale-110"
+              >
+                <img src={De} alt="Deutsch" className="w-full h-full object-cover" />
               </button>
             </div>
           </div>
@@ -126,7 +135,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-4 py-3 rounded-lg text-sm transition-all ${
                     isActive(link.path) 
-                      ? 'bg-white text-[#FE5100] font-bold' // Fundo branco, texto laranja e negrito no mobile
+                      ? 'bg-white text-[#FE5100] font-bold'
                       : 'text-gray-700 hover:bg-gray-100 font-medium'
                   }`}
                 >
@@ -135,7 +144,7 @@ const Navbar = () => {
               ))}
 
               {/* Seletor Mobile */}
-              <div className="flex items-center justify-center py-6 mt-2 border-t border-gray-100 space-x-8">
+              <div className="flex items-center justify-center py-6 mt-2 border-t border-gray-100 space-x-6">
                 <button onClick={() => { i18n.changeLanguage('pt'); setIsOpen(false); }} className="flex flex-col items-center gap-1">
                   <div style={{...flagButtonStyle, ...(i18n.language === 'pt' ? activeStyle : {})}}>
                     <img src={Br} className="w-full h-full object-cover" alt="PT" />
@@ -155,6 +164,14 @@ const Navbar = () => {
                     <img src={Es} className="w-full h-full object-cover" alt="ES" />
                   </div>
                   <span className="text-xs font-bold text-gray-500">ES</span>
+                </button>
+
+                {/* Novo botão: Alemão Mobile */}
+                <button onClick={() => { i18n.changeLanguage('de'); setIsOpen(false); }} className="flex flex-col items-center gap-1">
+                  <div style={{...flagButtonStyle, ...(i18n.language === 'de' ? activeStyle : {})}}>
+                    <img src={De} className="w-full h-full object-cover" alt="DE" />
+                  </div>
+                  <span className="text-xs font-bold text-gray-500">DE</span>
                 </button>
               </div>
             </div>

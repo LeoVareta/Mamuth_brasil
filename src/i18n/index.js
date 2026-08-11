@@ -6,6 +6,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import pt from './locales/pt/translation.json';
 import en from './locales/en/translation.json';
 import es from './locales/es/translation.json';
+import de from './locales/de/translation.json'; // <-- 1. Importou o arquivo alemão
+
 
 i18n
   .use(LanguageDetector)
@@ -15,6 +17,7 @@ i18n
       pt: { translation: pt },
       en: { translation: en },
       es: { translation: es },
+      de: { translation: de }, // <-- 2. Adicionou o alemão nos recursos
     },
     fallbackLng: 'pt',
     interpolation: {
