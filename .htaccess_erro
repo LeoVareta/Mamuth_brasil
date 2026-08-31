@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1. Redirecionamento 301 Global: Captura com ou sem WWW e joga para o NOVO
+# O uso de [NC] ignora maiúsculas/minúsculas e o (www\.)? trata o prefixo.
+RewriteCond %{HTTP_HOST} ^(www\.)?mamuthmangueiras\.com\.br$ [NC]
+RewriteRule ^(.*)$ https://mamuthbrasil.com.br/$1 [R=301,L]
+
+# 2. Backup de Segurança: Caso o servidor receba algo que não casou acima
+# mas ainda é do domínio antigo, ele força a ida para a Home do novo.
+ErrorDocument 404 https://mamuthbrasil.com.br/

@@ -40,10 +40,18 @@ import equador from "@/assets/images/bandeira-do-equador.svg";
 import mexico from "@/assets/images/bandeira-do-mexico.png";
 import paraguai from "@/assets/images/bandeira-do-paraguai.png";
 import peru from "@/assets/images/bandeira-do-peru.png";
-import americaDoSul from "@/assets/images/mapa_atuacao_mamuth_sem_fundo.png";
+import americaDoSul from "@/assets/images/mapa-mamuth-latam.png";
 import bgMapa from "@/assets/images/bg-mapa.png";
 import videobg from "@/assets/images/video-bghome.mp4";
-import path from 'node:path';
+import belize from "@/assets/images/bandeira-belize.jpeg";
+import chile from "@/assets/images/bandeira-chile.png";
+import costaRica from "@/assets/images/bandeira-costarica.webp";
+import elsalvador from "@/assets/images/bandeira-elsalvador.webp";
+import uruguai from "@/assets/images/bandeira-uruguai.png";
+import nicaragua from "@/assets/images/bandeira-nicaragua.jpeg";
+import panama from "@/assets/images/bandeira-panama.png";
+import honduras from "@/assets/images/bandeira-honduras.jpeg";
+
 
 const Home = () => {
   const { toast } = useToast();
@@ -289,17 +297,18 @@ const Home = () => {
       {/* Latin America Presence Section */}
 
       {/* 1. Adicionamos 'relative' obrigatoriamente aqui */}
+    {/* Latin America Presence Section */}
     <section 
-      className="relative bg-white bg-no-repeat bg-center" 
+      className="relative bg-white bg-no-repeat bg-center overflow-hidden" 
       style={{ 
         backgroundImage: `url(${bgMapa})`, 
         backgroundSize: 'contain'
       }}
     >
-      {/* CAMADA DE OPACIDADE: Ela fica por cima do fundo, mas atrás de tudo */}
-      <div className="absolute inset-0 bg-white/30 z-0" />
+      {/* CAMADA DE OPACIDADE */}
+      <div className="absolute inset-0 bg-white/45 z-0" />
 
-      {/* CONTEÚDO: O 'relative z-10' garante que nada aqui ganhe opacidade */}
+      {/* CONTEÚDO */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
 
         {/* TÍTULO CENTRALIZADO NO TOPO */}
@@ -316,7 +325,7 @@ const Home = () => {
         </motion.div>
 
         {/* GRID CONTEÚDO */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
           {/* COLUNA ESQUERDA - FLAGS + SETORES */}
           <motion.div
@@ -342,6 +351,20 @@ const Home = () => {
               <img src={paraguai} alt="Paraguai" className="h-10 object-contain" />
             </div>
 
+            <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
+              <img src={chile} alt="El Salvador" className="h-10 object-contain" />
+              <img src={uruguai} alt="Uruguai" className="h-10 object-contain" />
+              <img src={nicaragua} alt="Nicarágua" className="h-10 object-contain" />
+              <img src={panama} alt="Panamá" className="h-10 object-contain" />
+              <img src={belize} alt="Belize" className="h-10 object-contain" />
+            </div>
+
+            <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
+              <img src={honduras} alt="Honduras" className="h-10 object-contain" />
+              <img src={elsalvador} alt="El Salvador" className="h-10 object-contain" />
+              <img src={costaRica} alt="Costa Rica" className="h-10 object-contain" />
+            </div>
+
             <h3 className="text-3xl font-bold mb-6 text-[var(--color-dark-blue)]">
               {t('home.subtitleMapa')}
             </h3>
@@ -349,7 +372,7 @@ const Home = () => {
               {t('home.descriptionMapa')}
             </h4>
 
-            {/* Início da UL com Efeito Sanfona (RESTAURADA) */}
+            {/* Efeito Sanfona */}
             <ul className="space-y-4 text-gray-800">
               {[
                 { title: t('home.sucroEnergetica'), text: t('home.textoSucro') },
@@ -402,11 +425,11 @@ const Home = () => {
           </motion.div>
 
           {/* COLUNA DIREITA - MAPA AMÉRICA DO SUL */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex ml-8 justify-center items-center lg:justify-end overflow-visible">
             <img
               src={americaDoSul}
               alt="Presença da Mamuth na América Latina"
-              className="w-[400px] md:w-[800px] lg:w-[1000px] object-contain"
+              className="w-full max-w-none lg:w-[130%] xl:w-[150%] object-contain"
             />
           </div>
 

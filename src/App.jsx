@@ -108,6 +108,7 @@ import BicoJatoAbrasivo from '@/pages/products/acessoriosLavadoras/BicoJatoAbras
 import FeiraFenasucro from '@/pages/noticias/feira-fenasucro';
 import FeiraNavalShore from '@/pages/noticias/feira-navalshore';
 
+import Pagina404 from '@/pages/404';
 import { Toaster } from '@/components/ui/toaster';
 
 function App() {
@@ -231,6 +232,7 @@ function App() {
             <Route path="/acessorios-lavadoras-de-alta-pressao/bico-jato-abrasivo-500bar" element={<BicoJatoAbrasivo/>}/>
             <Route path="/noticias/feira-fenasucro" element={<FeiraFenasucro />} />
             <Route path="/noticias/feira-navalshore" element={<FeiraNavalShore />} />
+            <Route path="/404" element={<Pagina404 />} />
           </Routes>
         </main>
         {/* <WhatsappButton />  */}

@@ -1,0 +1,50 @@
+# ========================================================================#
+# HTACCESS DE SEGURANÇA E PERFORMANCE PARA APLICAÇÕES WEB KADINA SOLUÇÕES #
+# ========================================================================#
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^categorias/?$ https://mamuthbrasil.com.br/produtos [R=301,L]
+  RewriteRule ^produto/(.*)$ https://mamuthbrasil.com.br/produtos [R=301,L]
+  RewriteCond %{HTTP_HOST} ^(?:www\.)?mamuthmangueiras\.com\.br$ [NC]
+  RewriteRule ^(.*)$ https://mamuthbrasil.com.br/ [R=301,L]
+  RewriteCond %{HTTP_HOST} ^hml\.mamuthbrasil\.com\.br$ [NC]
+  RewriteCond %{REQUEST_URI} !^/hml/
+  RewriteRule ^(.*)$ /hml/$1 [L]
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteCond %{HTTP_HOST} ^(www\.)?mamuthbrasil\.com\.br$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ /index.html [QSA,L]
+</IfModule>
+<IfModule mod_headers.c>
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+  Header unset X-Powered-By
+  Header unset Server
+</IfModule>
+<FilesMatch "^\.|\.(json|config|env|log|bak|sql|git|sh)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+  </IfModule>
+</FilesMatch>
+Options -Indexes -MultiViews
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
