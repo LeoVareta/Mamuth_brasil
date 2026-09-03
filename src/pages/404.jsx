@@ -44,21 +44,12 @@ export default function Pagina404() {
             
             {/* Bloco do Erro / Código */}
             <div className="flex flex-col items-center">
-              <span className="text-7xl md:text-8xl font-black text-gray-200 select-none tracking-widest">
+              <span className="text-7xl md:text-9xl font-black  text-[#1E2249] select-none tracking-widest">
                 404
               </span>
               <div className="h-1 w-20 bg-[#FF6600] rounded mt-2"></div>
             </div>
 
-            {/* Imagem Real da Lavadora que você enviou */}
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6600] to-[#1E2249] rounded-xl blur opacity-20 animate-pulse"></div>
-              <img 
-                src={LavadoraTyphoon} 
-                alt="Lavadora de Alta Pressão Typhoon Jet Mamuth" 
-                className="relative max-h-56 md:max-h-64 w-auto object-contain drop-shadow-2xl rounded-lg"
-              />
-            </div>
 
           </div>
 

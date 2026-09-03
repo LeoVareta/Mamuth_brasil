@@ -306,7 +306,7 @@ const Home = () => {
       }}
     >
       {/* CAMADA DE OPACIDADE */}
-      <div className="absolute inset-0 bg-white/45 z-0" />
+      <div className="absolute inset-0 bg-white/50 z-0" />
 
       {/* CONTEÚDO */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -336,33 +336,33 @@ const Home = () => {
           >
             {/* Flags */}
             <div className="flex flex-wrap gap-3 mb-10 justify-center md:justify-start">
-              <img src={peru} alt="Peru" className="h-10 object-contain" />
-              <img src={brasil} alt="Brasil" className="h-10 object-contain" />
-              <img src={argentina} alt="Argentina" className="h-10 object-contain" />
-              <img src={mexico} alt="México" className="h-10 object-contain" />
-              <img src={colombia} alt="Colômbia" className="h-10 object-contain" />
+              <img src={peru} alt="Peru" className="h-10 w-14 object-contain" />
+              <img src={brasil} alt="Brasil" className="h-10 w-14 object-contain" />
+              <img src={argentina} alt="Argentina" className="h-10 w-14 object-contain" />
+              <img src={mexico} alt="México" className="h-10 w-14 object-contain" />
+              <img src={colombia} alt="Colômbia" className="h-10 w-14 object-contain" />
             </div>
 
             <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
-              <img src={guatemala} alt="Guatemala" className="h-10 object-contain" />
-              <img src={venezuela} alt="Venezuela" className="h-10 object-contain" />
-              <img src={bolivia} alt="Bolívia" className="h-10 object-contain" />
-              <img src={equador} alt="Equador" className="h-10 object-contain" />
-              <img src={paraguai} alt="Paraguai" className="h-10 object-contain" />
+              <img src={guatemala} alt="Guatemala" className="h-10 w-14 object-contain" />
+              <img src={venezuela} alt="Venezuela" className="h-10 w-14 object-contain" />
+              <img src={bolivia} alt="Bolívia" className="h-10 w-14 object-contain" />
+              <img src={equador} alt="Equador" className="h-10 w-14 object-contain" />
+              <img src={paraguai} alt="Paraguai" className="h-10 w-14 object-contain" />
             </div>
 
             <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
-              <img src={chile} alt="El Salvador" className="h-10 object-contain" />
-              <img src={uruguai} alt="Uruguai" className="h-10 object-contain" />
-              <img src={nicaragua} alt="Nicarágua" className="h-10 object-contain" />
-              <img src={panama} alt="Panamá" className="h-10 object-contain" />
-              <img src={belize} alt="Belize" className="h-10 object-contain" />
+              <img src={chile} alt="Chile" className="h-10 w-14 object-contain" />
+              <img src={uruguai} alt="Uruguai" className="h-10 w-14 object-contain" />
+              <img src={nicaragua} alt="Nicarágua" className="h-10 w-14 object-contain" />
+              <img src={panama} alt="Panamá" className="h-10 w-14 object-contain" />
+              <img src={belize} alt="Belize" className="h-10 w-14 object-contain" />
             </div>
 
             <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
-              <img src={honduras} alt="Honduras" className="h-10 object-contain" />
-              <img src={elsalvador} alt="El Salvador" className="h-10 object-contain" />
-              <img src={costaRica} alt="Costa Rica" className="h-10 object-contain" />
+              <img src={costaRica} alt="Costa Rica" className="h-10 w-14 object-contain" />
+              <img src={honduras} alt="Honduras" className="h-10 w-14 object-contain" />
+              <img src={elsalvador} alt="El Salvador" className="h-10 w-14 object-contain" />
             </div>
 
             <h3 className="text-3xl font-bold mb-6 text-[var(--color-dark-blue)]">
