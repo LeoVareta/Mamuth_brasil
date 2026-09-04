@@ -341,6 +341,7 @@ const Home = () => {
               <img src={argentina} alt="Argentina" className="h-10 w-14 object-contain" />
               <img src={mexico} alt="México" className="h-10 w-14 object-contain" />
               <img src={colombia} alt="Colômbia" className="h-10 w-14 object-contain" />
+              <img src={elsalvador} alt="El Salvador" className="h-10 w-14 object-contain" />
             </div>
 
             <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
@@ -349,6 +350,7 @@ const Home = () => {
               <img src={bolivia} alt="Bolívia" className="h-10 w-14 object-contain" />
               <img src={equador} alt="Equador" className="h-10 w-14 object-contain" />
               <img src={paraguai} alt="Paraguai" className="h-10 w-14 object-contain" />
+              <img src={honduras} alt="Honduras" className="h-10 w-14 object-contain" />
             </div>
 
             <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
@@ -357,12 +359,7 @@ const Home = () => {
               <img src={nicaragua} alt="Nicarágua" className="h-10 w-14 object-contain" />
               <img src={panama} alt="Panamá" className="h-10 w-14 object-contain" />
               <img src={belize} alt="Belize" className="h-10 w-14 object-contain" />
-            </div>
-
-            <div className="flex flex-wrap gap-3 mb-12 justify-center md:justify-start">
               <img src={costaRica} alt="Costa Rica" className="h-10 w-14 object-contain" />
-              <img src={honduras} alt="Honduras" className="h-10 w-14 object-contain" />
-              <img src={elsalvador} alt="El Salvador" className="h-10 w-14 object-contain" />
             </div>
 
             <h3 className="text-3xl font-bold mb-6 text-[var(--color-dark-blue)]">
