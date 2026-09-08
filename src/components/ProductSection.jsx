@@ -1,19 +1,22 @@
 import React from 'react';
 import AppleCoverFlow from '@/components/AppleCoverFlow';
 
-const ProductSection = ({ slides, bgImg }) => { 
+const ProductSection = ({ slides, bgImg, stretched = false }) => { 
   return (
     <section 
-      className="relative pt-10 pb-20 px-4 w-full" 
+      /* Adicionamos min-h-[500px] e flex para alinhar o conteúdo */
+      className={`relative pt-10 pb-20 px-4 w-full flex items-center ${
+        stretched ? 'min-h-[500px]' : ''
+      }`} 
       style={{ 
         backgroundImage: `url(${bgImg})`, 
         zIndex: 1,
-        backgroundPosition: 'center', // Centraliza horizontal e verticalmente
-        backgroundSize: 'cover',      // Faz a imagem cobrir todo o espaço
-        backgroundRepeat: 'no-repeat' // Impede que a imagem se repita
+        backgroundPosition: 'center',
+        backgroundSize: stretched ? '100% 100%' : 'cover', 
+        backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1400px] mx-auto w-full">
         {slides && <AppleCoverFlow slides={slides} />}
       </div>
     </section>
