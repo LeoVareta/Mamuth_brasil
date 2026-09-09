@@ -1,10 +1,9 @@
 import React from 'react';
 import AppleCoverFlow from '@/components/AppleCoverFlow';
 
-const ProductSection = ({ slides, bgImg, stretched = false }) => { 
+const ProductSection = ({ slides, bgImg, contentImg, stretched = false }) => { 
   return (
     <section 
-      /* Adicionamos min-h-[500px] e flex para alinhar o conteúdo */
       className={`relative pt-10 pb-20 px-4 w-full flex items-center ${
         stretched ? 'min-h-[500px]' : ''
       }`} 
@@ -16,8 +15,17 @@ const ProductSection = ({ slides, bgImg, stretched = false }) => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="max-w-[1400px] mx-auto w-full">
-        {slides && <AppleCoverFlow slides={slides} />}
+      <div className="max-w-[1400px] mx-auto w-full flex justify-center items-center">
+        {/* Prioriza o AppleCoverFlow se houver slides; caso contrário, exibe a imagem */}
+        {slides && slides.length > 0 ? (
+          <AppleCoverFlow slides={slides} />
+        ) : contentImg ? (
+          <img 
+            src={contentImg} 
+            alt="Product content" 
+            className="w-[45%] h-auto object-contain rounded-[25px] mx-auto"
+          />
+        ) : null}
       </div>
     </section>
   );

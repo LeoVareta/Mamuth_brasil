@@ -31,7 +31,7 @@ const BicoRotativoR = () => {
 
       {/* SEÇÃO SUPERIOR: AZUL ESCURO */}
       <ProductSection 
-        slides={slides} 
+        contentImg={bicoRotativoR}
         bgImg={bgImg} 
         stretched 
       />
