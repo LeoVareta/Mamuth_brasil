@@ -1,7 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AppleCoverFlow from '@/components/AppleCoverFlow';
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { Fancybox } from "@fancyapps/ui";
 
-const ProductSection = ({ slides, bgImg, contentImg, stretched = false }) => { 
+const ProductSection = ({ 
+  slides, 
+  bgImg, 
+  contentImg, 
+  caption = "Product content", // Prop nova para o nome/legenda (com valor padrão)
+  altText = "Product content",  // Prop opcional para o atributo alt da tag img
+  stretched = false 
+}) => { 
+  // Limpa instâncias do Fancybox ao desmontar o componente
+  useEffect(() => {
+    return () => {
+      Fancybox.destroy();
+    };
+  }, []);
+
+  // Função para abrir a imagem individual no Fancybox
+  const handleImageClick = () => {
+    if (!contentImg) return;
+
+    Fancybox.show([
+      {
+        src: contentImg,
+        type: "image",
+        caption: caption, // Usa a legenda personalizada aqui
+      },
+    ]);
+  };
+
   return (
     <section 
       className={`relative pt-10 pb-20 px-4 w-full flex items-center ${
@@ -22,8 +51,10 @@ const ProductSection = ({ slides, bgImg, contentImg, stretched = false }) => {
         ) : contentImg ? (
           <img 
             src={contentImg} 
-            alt="Product content" 
-            className="md:w-[45%] sm:w-[85%] h-auto object-contain rounded-[25px] mx-auto"
+            alt={altText} 
+            onClick={handleImageClick}
+            style={{ cursor: 'pointer' }}
+            className="md:w-[45%] sm:w-[85%] h-auto object-contain rounded-[25px] mx-auto transition-transform hover:scale-[1.02]"
           />
         ) : null}
       </div>

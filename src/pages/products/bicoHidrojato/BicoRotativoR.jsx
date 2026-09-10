@@ -34,6 +34,7 @@ const BicoRotativoR = () => {
         contentImg={bicoRotativoR}
         bgImg={bgImg} 
         stretched 
+        caption={t('bicos.rotativoR.title')} // 2. PASSANDO A LEGENDA PERSONALIZADA
       />
 
       {/* SEÇÃO DE TEXTOS: BRANCA */}
