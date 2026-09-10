@@ -23,7 +23,7 @@ const ProductSection = ({ slides, bgImg, contentImg, stretched = false }) => {
           <img 
             src={contentImg} 
             alt="Product content" 
-            className="w-[45%] h-auto object-contain rounded-[25px] mx-auto"
+            className="md:w-[45%] sm:w-[85%] h-auto object-contain rounded-[25px] mx-auto"
           />
         ) : null}
       </div>
