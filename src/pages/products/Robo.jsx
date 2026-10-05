@@ -33,6 +33,13 @@ const PaginaRobo = () => {
       description: t('categorias.Robo.subtitleMagnetico'),
       image: robocp2, 
       category: 'Categoria Principal'
+    },
+    {
+      name: t('categorias.Robo.titleMagnetico'),
+      path: '/robo/robo-surface-rob-250',
+      description: t('categorias.Robo.subtitleMagnetico'),
+      image: robocp2, 
+      category: 'Categoria Principal'
     }
    
   ];

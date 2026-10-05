@@ -313,7 +313,7 @@
   "categorias": {
     "mangueiras":{
       "subtitle": "Soluções robustas e tecnologia de ponta para sua operação industrial.",
-      "titlePoliamida2800": "Poliamida UAP até 2.800 bar",
+      "titlePoliamida2800": "Poliamida UAP até 3.010 bar",
       "subtitlePoliamida2800": "APLICAÇÃO Utilizadas em sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento. São também conhecidas popularmente como “rabichos” ou “lanças flexíveis”",
       "titlePoliamida1500": "Poliamida SAP até 1.500 bar",
       "subtitlePoliamida1500": "APLICAÇÃO Utilizadas em sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento. São também conhecidas popularmente como “rabichos” ou “lanças flexíveis”",
@@ -474,7 +474,7 @@
   },
   "mangueiras":{
     "poliamida2800":{
-      "title": "Poliamida UAP 2800",
+      "title": "Poliamida UAP 3010",
       "texto1": "Todas as mangueiras Mamuth são testadas em bancada de teste hidrostático de 6.900 bar (100.050 psi) e emitido Certificado de Teste Hidrostático.",
       "texto2": "APLICAÇÃO Utilizadas em sistemas de limpeza, desobstrução, remoção de resíduos e preparação de superfícies com o uso de Hidrojateamento. São também conhecidas popularmente como “rabichos” ou “lanças flexíveis”;",
       "texto3": "CONSTRUÇÃO Tubo interno fabricado em Poliamida rígido envolto por camadas de espirais trançadas de fios de aço e cobertura de Poliamida;",
@@ -693,6 +693,28 @@
       "texto1": "O Climb Rob 250 é um robô magnético desenvolvido para hidrojateamento de alta e ultra-alta pressão em superfícies metálicas verticais, horizontais e inclinadas. Sua fixação magnética garante estabilidade durante a operação, permitindo maior segurança, produtividade e precisão na limpeza, remoção de revestimentos e preparação de superfícies.",
       "texto2": "Projetado para aplicações industriais exigentes, o equipamento reduz a necessidade de trabalho manual em altura, melhora a ergonomia da operação e permite controle remoto do processo, proporcionando maior segurança ao operador e melhor desempenho em comparação à pistola manual.",
       "textoCard": "Veja mais informações técnicas sobre este produto:" 
+    },
+    "surface":{
+      "title": "Robô Surface Rob 250",
+      "texto1": "O Robô Surface Rob 250, desenvolvido pela alemã Falch, é um robô de hidrojato leve e versátil, projetado para tratamento de superfícies, hidrodemolição e limpeza industrial com ultra alta pressão. Ele foi pensado para trabalhar com rapidez, flexibilidade, conforto e segurança. É indicado para operações em que a lança manual se torna lenta, cansativa e arriscada para o operador.",
+      "texto2": "Trabalhando com pressões de até 3.000 bar (43.500 psi) e força de até 600 N, o Surface Rob 250 chega a ser de 4 a 10 vezes mais rápido que o trabalho com lança manual. Ele também entrega uma qualidade de superfície até 200% superior. O robô se movimenta nos eixos X, Y e Z e conta com rodas motorizadas, o que permite deslocar e posicionar o equipamento na área de trabalho com facilidade e precisão.",
+      "texto3": "Com o uso da capa de jato (jet cap), o robô reduz em até 90% o ruído e o vapor gerados durante a operação. O ambiente de trabalho fica mais limpo, e o operador acompanha o processo à distância, longe do jato. O resultado é um ganho de segurança de até 100% e uma redução de cerca de 80% nos custos com bomba e mão de obra.",
+      "texto4": "Por ser modular, o Surface Rob 250 se adapta a diferentes aplicações com o sistema Multi Kit 100. Esse sistema inclui kits de rotação e de oscilação, controle de distância, proteção a vácuo, vigas de extensão, conectores de canto, sapatas deslizantes e rodas de transporte. Assim, um único equipamento atende desde a limpeza de pisos até o trabalho em paredes e tetos.",
+      "texto5": "Equipado com sistema elétrico 400 V / 60 Hz e preparado para operar 24 horas por dia, o Surface Rob 250 une a confiabilidade da engenharia alemã à produtividade que a indústria exige. É uma solução completa para quem busca automatizar o hidrojateamento com mais eficiência, segurança e qualidade.",
+      "destaque": "Destaques",
+      "destaque1": "Pressão de trabalho de até 3.000 bar (43.500 psi)",
+      "destaque2": "Tecnologia alemã Falch, referência mundial em hidrojato",
+      "destaque3": "Até 10 vezes mais rápido que a lança manual",
+      "destaque4": "Movimentação nos eixos X, Y e Z com rodas motorizadas",
+      "destaque5": "Redução de até 90% de ruído e vapor com a capa de jato",
+      "destaque6": "Sistema modular Multi Kit 100, adaptável a diversas aplicações",
+      "destaque7": "Operação contínua 24 horas por dia",
+      "aplicacoes": "Aplicações",
+      "aplicacoes1": "Hidrodemolição e recuperação de concreto",
+      "aplicacoes2": "Obras e manutenção de pontes e viadutos",
+      "aplicacoes3": "Tratamento e preparação de superfícies",
+      "aplicacoes4": "Remoção de revestimentos, tintas e incrustações",
+      "aplicacoes5": "Limpeza de pisos, paredes e tetos"
     }
   },
   "bombas":{

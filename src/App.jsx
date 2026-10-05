@@ -82,6 +82,7 @@ import BombasWoma from '@/pages/products/pecasBombasHidrojato/BombasWoma';
 import RoboWorker250 from '@/pages/products/robo/RoboLineWorker250';
 import RoboMagnetico from '@/pages/products/robo/RoboMagneticoClimb';
 import RoboLift250 from '@/pages/products/robo/RoboLift250';
+import RoboSurface from '@/pages/products/robo/RoboSurface';
 {/*Hidrojatos e Acessórios   */}
 import TubeClean from '@/pages/products/hidrojatoAcessorios/TubecleanMamuth';
 import PowerBox2800 from '@/pages/products/hidrojatoAcessorios/PowerBoxMamuth2800';
@@ -208,6 +209,7 @@ function App() {
             <Route path="/robo/robo-line-worker-250" element={<RoboWorker250/>}/>
             <Route path="/robo/robo-magnetico-climb-rob" element={<RoboMagnetico/>}/>
             <Route path="/robo/robo-lift-worker-250-beam" element={<RoboLift250/>}/>
+            <Route path="/robo/robo-surface-rob-250" element={<RoboSurface/>}/>
             {/*Hidrojatos e Acessórios   */}
             <Route path="/hidrojatos-e-acessorios/tubeclean-mamuth" element={<TubeClean/>}/>
             <Route path="/hidrojatos-e-acessorios/powerbox-mamuth-2800" element={<PowerBox2800/>}/>

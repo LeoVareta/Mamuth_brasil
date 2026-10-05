@@ -313,7 +313,7 @@
   "categorias": {
     "mangueiras":{
       "subtitle": "Soluciones robustas y tecnología de punta para su operación industrial.",
-      "titlePoliamida2800": "Poliamida UAP hasta 2.800 bar",
+      "titlePoliamida2800": "Poliamida UAP hasta 3.010 bar",
       "subtitlePoliamida2800": "APLICACIÓN: Utilizadas en sistemas de limpieza, desobstrucción, remoción de residuos y preparación de superficies mediante el uso de hidrolavado de alta presión. Son también conocidas popularmente como rabichos o lanzas flexibles.",
       "titlePoliamida1500": "Poliamida SAP hasta 1.500 bar",
       "subtitlePoliamida1500": "APLICACIÓN: Utilizadas en sistemas de limpieza, desobstrucción, remoción de residuos y preparación de superficies mediante el uso de Hidrojet. Son también conocidas popularmente como rabichos o lanzas flexibles.",
@@ -474,7 +474,7 @@
   },
   "mangueiras":{
     "poliamida2800":{
-      "title": "Poliamida UAP 2800",
+      "title": "Poliamida UAP 3010",
       "texto1": "Todas las mangueras Mamuth se prueban en un banco de ensayos hidrostáticos de 6.900 bar (100.050 psi) y se emite el Certificado de Ensayo Hidrostático.",
       "texto2": "APLICACIÓN: Utilizadas en sistemas de limpieza, desobstrucción, eliminación de residuos y preparación de superficies mediante el uso de Hidrojet (Hidrolavado de alta presión). Son también conocidas popularmente como latiguillos o lanzas flexibles;",
       "texto3": "CONSTRUCCIÓN: Tubo interno fabricado en Poliamida rígida, envuelto por capas de espirales de alambre de acero y cubierta exterior de Poliamida;",
@@ -693,6 +693,28 @@
       "texto1": "El Climb Rob 250 es un robot magnético desarrollado para hidrojeteado de alta y ultraalta presión en superficies metálicas verticales, horizontales e inclinadas. Su fijación magnética garantiza estabilidad durante la operación, permitiendo una mayor seguridad, productividad y precisión en la limpieza, eliminación de revestimientos y preparación de superficies.",
       "texto2": "Diseñado para aplicaciones industriales exigentes, el equipo reduce la necesidad de trabajo manual en altura, mejora la ergonomía de la operación y permite el control remoto del proceso, proporcionando una mayor seguridad al operador y un mejor rendimiento en comparación con la pistola manual.",
       "textoCard": "Consulte más especificaciones técnicas de este producto:" 
+    },
+    "surface":{
+      "title": "Robot Surface Rob 250",
+      "texto1": "El robot Surface Rob 250, desarrollado por la empresa alemana Falch, es un equipo de hidrojorro ligero y versátil, diseñado para el tratamiento de superficies, hidrodemolición y limpieza industrial con ultra alta presión. Ha sido concebido para operar con rapidez, flexibilidad, confort y seguridad, siendo indicado para operaciones donde la lanza manual resulta lenta, agotadora y arriesgada para el operador.",
+      "texto2": "Operando con presiones de hasta 3.000 bar (43.500 psi) y una fuerza de hasta 600 N, el Surface Rob 250 es de 4 a 10 veces más rápido que el trabajo con lanza manual. Asimismo, ofrece una calidad de superficie hasta un 200% superior. El robot se desplaza en los ejes X, Y y Z y cuenta con ruedas motorizadas, lo que permite posicionar y desplazar el equipo en el área de trabajo con facilidad y precisión.",
+      "texto3": "Mediante el uso de la cubierta de chorro (jet cap), el robot reduce hasta en un 90% el ruido y el vapor generados durante la operación. El entorno de trabajo se mantiene más limpio, mientras que el operador supervisa el proceso a distancia, lejos del chorro de agua. El resultado es un incremento de la seguridad de hasta el 100% y una reducción aproximada del 80% en los costos de bomba y mano de obra.",
+      "texto4": "Gracias a su diseño modular, el Surface Rob 250 se adapta a diferentes aplicaciones con el sistema Multi Kit 100. Este sistema incluye kits de rotación y oscilación, control de distancia, protección al vacío, vigas de extensión, conectores de esquina, zapatas deslizantes y ruedas de transporte. De este modo, un único equipo cubre desde la limpieza de pavimentos hasta trabajos en paredes y techos.",
+      "texto5": "Equipado con un sistema eléctrico de 400 V / 60 Hz y preparado para operar las 24 horas del día, el Surface Rob 250 une la confiabilidad de la ingeniería alemana con la productividad que la industria exige. Es una solución integral para automatizar el hidrojorreado con mayor eficiencia, seguridad y calidad.",
+      "destaque": "Destacados",
+      "destaque1": "Presión de trabajo de hasta 3.000 bar (43.500 psi)",
+      "destaque2": "Tecnología alemana Falch, referente mundial en hidrojorros",
+      "destaque3": "Hasta 10 veces más rápido que la lanza manual",
+      "destaque4": "Movimiento en los ejes X, Y y Z con ruedas motorizadas",
+      "destaque5": "Reducción de hasta un 90% de ruido y vapor con la cubierta de chorro",
+      "destaque6": "Sistema modular Multi Kit 100, adaptable a diversas aplicaciones",
+      "destaque7": "Operación continua las 24 horas del día",
+      "aplicacoes": "Aplicaciones",
+      "aplicacoes1": "Hidrodemolición y recuperación de hormigón",
+      "aplicacoes2": "Obras y mantenimiento de puentes y viaductos",
+      "aplicacoes3": "Tratamiento y preparación de superficies",
+      "aplicacoes4": "Eliminación de revestimientos, pinturas e incrustaciones",
+      "aplicacoes5": "Limpieza de suelos, paredes y techos"
     }
   },
   "bombas":{

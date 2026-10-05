@@ -313,7 +313,7 @@
   "categorias": {
     "mangueiras":{
       "subtitle": "Robust solutions and cutting-edge technology for your industrial operation.",
-      "titlePoliamida2800":"UAP Polyamide up to 2,800 bar",
+      "titlePoliamida2800":"UAP Polyamide up to 3,010 bar",
       "subtitlePoliamida2800": "APPLICATION: Used in systems for cleaning, unclogging, waste removal, and surface preparation using high-pressure water jetting. They are also popularly known as pigtails or flexible lances.",
       "titlePoliamida1500": "SAP Polyamide up to 1,500 bar",
       "subtitlePoliamida1500": "APPLICATION: Used in systems for cleaning, unclogging, debris removal, and surface preparation through High-Pressure Water Jetting. They are also popularly known as pigtails or flexible lances.",
@@ -473,7 +473,7 @@
   },
   "mangueiras":{
     "poliamida2800":{
-      "title": "Polyamide UAP 2800",
+      "title": "Polyamide UAP 3010",
       "texto1": "All Mamuth hoses are tested in a hydrostatic test bench at 6.900 bar (100.050 psi) and a Hydrostatic Test Certificate is issued.",
       "texto2": "APPLICATION Used in cleaning, unblocking, residue removal and surface preparation systems with the use of Hydrojetting. They are also commonly known as “rabichos” or “flexible lances”;",
       "texto3": "CONSTRUCTION Internally made of rigid polyamide, wrapped by layers of braided steel wires and covered with polyamide;",
@@ -692,6 +692,28 @@
       "texto1": "The Climb Rob 250 is a magnetic robot developed for high and ultra-high pressure hydroblasting on vertical, horizontal, and inclined metallic surfaces. Its magnetic attachment ensures stability during operation, allowing for greater safety, productivity, and precision in cleaning, coating removal, and surface preparation.",
       "texto2": "Engineered for demanding industrial applications, the equipment reduces the need for manual work at heights, improves operational ergonomics, and enables remote control of the process, providing enhanced safety for the operator and superior performance compared to manual spray guns.",
       "textoCard": "See more technical information about this product:" 
+    },
+    "surface":{
+      "title": "Surface Rob 250 Robot",
+      "texto1": "The Surface Rob 250 robot, developed by the German company Falch, is a lightweight and versatile waterblasting robot designed for surface preparation, hydrodemolition, and ultra-high-pressure industrial cleaning. It is engineered to deliver speed, flexibility, comfort, and safety, making it ideal for operations where manual lancing becomes slow, fatiguing, and hazardous for the operator.",
+      "texto2": "Operating at pressures of up to 3,000 bar (43,500 psi) and a reaction force of up to 600 N, the Surface Rob 250 is up to 4 to 10 times faster than manual lancing. It also delivers up to 200% higher surface finish quality. Featuring movement across the X, Y, and Z axes and motorized wheels, the equipment can be easily and precisely positioned within the workspace.",
+      "texto3": "By utilizing the jet cap, the robot reduces noise and mist generation by up to 90% during operation. The working environment remains cleaner, while the operator monitors the process remotely, safely away from the water jet. The result is up to a 100% increase in safety and an approximate 80% reduction in pump and labor costs.",
+      "texto4": "Thanks to its modular design, the Surface Rob 250 adapts to various applications via the Multi Kit 100 system. This system includes rotation and oscillation kits, distance control, vacuum protection, extension beams, corner connectors, sliding shoes, and transport wheels. Consequently, a single unit handles everything from floor cleaning to wall and ceiling operations.",
+      "texto5": "Equipped with a 400 V / 60 Hz electrical system and engineered for 24/7 continuous operation, the Surface Rob 250 combines German engineering reliability with the productivity demanded by industry. It is a comprehensive solution for automating waterblasting with enhanced efficiency, safety, and quality.",
+      "destaque": "Highlights",
+      "destaque1": "Working pressure up to 3,000 bar (43,500 psi)",
+      "destaque2": "Falch German technology, a global benchmark in waterblasting",
+      "destaque3": "Up to 10 times faster than manual lancing",
+      "destaque4": "Movement across X, Y, and Z axes with motorized wheels",
+      "destaque5": "Up to 90% reduction in noise and mist using the jet cap",
+      "destaque6": "Multi Kit 100 modular system, adaptable to diverse applications",
+      "destaque7": "24/7 continuous operation",
+      "aplicacoes": "Applications",
+      "aplicacoes1": "Hydrodemolition and concrete rehabilitation",
+      "aplicacoes2": "Construction and maintenance of bridges and overpasses",
+      "aplicacoes3": "Surface treatment and preparation",
+      "aplicacoes4": "Removal of coatings, paints, and scale",
+      "aplicacoes5": "Cleaning of floors, walls, and ceilings"
     }
   },
   "bombas":{

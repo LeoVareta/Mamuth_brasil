@@ -312,7 +312,7 @@
 "categorias": {
     "mangueiras": {
         "subtitle": "Robuste Lösungen und modernste Technologie für Ihren Industriebetrieb.",
-        "titlePoliamida2800": "Polyamid UHP bis zu 2.800 bar",
+        "titlePoliamida2800": "Polyamid UHP bis zu 3.010 bar",
         "subtitlePoliamida2800": "ANWENDUNG Eingesetzt in Systemen zur Reinigung, Beseitigung von Blockaden, Rückstandsentsorgung und Oberflächenvorbereitung mittels Wasserstrahlen (Hydrojetting). Sie sind im Volksmund auch als „Peitschen“ oder „flexible Lanzen“ bekannt.",
         "titlePoliamida1500": "Polyamid HD bis zu 1.500 bar",
         "subtitlePoliamida1500": "ANWENDUNG Eingesetzt in Systemen zur Reinigung, Beseitigung von Blockaden, Rückstandsentsorgung und Oberflächenvorbereitung mittels Wasserstrahlen (Hydrojetting). Sie sind im Volksmund auch als „Peitschen“ oder „flexible Lanzen“ bekannt.",
@@ -472,7 +472,7 @@
 },
 "mangueiras": {
   "poliamida2800": {
-    "title": "Polyamid UHP 2,800",
+    "title": "Polyamid UHP 3010",
     "texto1": "Alle Mamuth-Schläuche werden auf einem hydrostatischen Prüfstand bei 6.900 bar (100.050 psi) getestet, und es wird ein hydrostatisches Prüfzertifikat ausgestellt.",
     "texto2": "ANWENDUNG Eingesetzt in Systemen zur Reinigung, Beseitigung von Blockaden, Rückstandsentsorgung und Oberflächenvorbereitung mittels Wasserstrahlen (Hydrojetting). Sie sind im Volksmund auch as „Peitschen“ oder „flexible Lanzen“ bekannt;",
     "texto3": "AUFBAU Innenseele aus starrem Polyamid, umgeben von Schichten aus geflochtenen Stahldrahtspiralen und einer Polyamid-Decke;",
@@ -691,6 +691,28 @@
       "texto1": "Der Climb Rob 250 ist ein Magnetroboter, der für das Wasserstrahlen mit Hoch- und Höchstdruck auf vertikalen, horizontalen und geneigten Metalloberflächen entwickelt wurde. Seine magnetische Haftung garantiert Stabilität während des Betriebs und ermöglicht mehr Sicherheit, Produktivität und Präzision bei der Reinigung, Beschichtungsentfernung und Oberflächenvorbereitung.",
       "texto2": "Das für anspruchsvolle industrielle Anwendungen konzipierte Gerät reduziert die Notwendigkeit von manuellen Arbeiten in der Höhe, verbessert die Ergonomie des Einsatzes und ermöglicht eine Fernsteuerung des Prozesses, was dem Bediener mehr Sicherheit und eine bessere Leistung im Vergleich zur manuellen Pistole bietet.",
       "textoCard": "Weitere technische Informationen zu diesem Produkt finden Sie hier:" 
+    },
+    "surface":{
+      "title": "Roboter Surface Rob 250",
+      "texto1": "Der von dem deutschen Unternehmen Falch entwickelte Roboter Surface Rob 250 ist ein leichter und vielseitiger Höchstdruck-Wasserstrahlroboter, der für die Oberflächenbearbeitung, das Wasserhöchstdruckabtragen (Hydrodemolition) und die industrielle Hochdruckreinigung konzipiert wurde. Er wurde für schnelles, flexibles, komfortables und sicheres Arbeiten entwickelt und eignet sich besonders für Einsätze, bei denen die manuelle Lanzenführung für den Bediener langsam, ermüdend und risikoreich ist.",
+      "texto2": "Mit Arbeitsdrücken von bis zu 3.000 bar (43.500 psi) und einer Rückstoßkraft von bis zu 600 N arbeitet der Surface Rob 250 4- bis 10-mal schneller als die manuelle Handlanzenbearbeitung. Zudem liefert er eine um bis zu 200 % höhere Oberflächengüte. Der Roboter bewegt sich auf den X-, Y- und Z-Achsen und verfügt über angetriebene Räder, was ein einfaches und präzises Positionieren der Ausrüstung im Arbeitsbereich ermöglicht.",
+      "texto3": "Durch den Einsatz der Strahlschutzkappe (jet cap) reduziert der Roboter den Lärm und den Sprühnebel während des Betriebs um bis zu 90 %. Das Arbeitsumfeld bleibt sauberer, während der Bediener den Prozess aus sicherer Entfernung außerhalb des Gefahrenbereichs des Wasserstrahls überwacht. Das Resultat ist ein Sicherheitsgewinn von bis zu 100 % sowie eine Senkung der Pumpen- und Personalkosten um ca. 80 %.",
+      "texto4": "Dank seiner modularen Bauweise passt sich der Surface Rob 250 über das System Multi Kit 100 flexibel an unterschiedliche Anwendungen an. Dieses System umfasst Rotations- und Oszillationskits, Abstandsregelung, Absaugschutz, Verlängerungsträger, Eckverbinder, Gleitschuhe und Transportrollen. Somit deckt ein einziges Gerät sämtliche Aufgaben von der Bodenreinigung bis hin zu Arbeiten an Wänden und Decken ab.",
+      "texto5": "Ausgestattet mit einem 400 V / 60 Hz Elektrosystem und für den 24-Stunden-Dauerbetrieb ausgelegt, vereint der Surface Rob 250 die Zuverlässigkeit deutscher Ingenieurskunst mit der industriellen Produktivität. Er stellt eine Komplettlösung für die Automatisierung der Höchstdruckwasserstrahltechnik dar, die maximale Effizienz, Arbeitssicherheit und Qualität bietet.",
+      "destaque": "Highlights",
+      "destaque1": "Arbeitsdruck von bis zu 3.000 bar (43.500 psi)",
+      "destaque2": "Deutsche Falch-Technologie – weltweiter Maßstab in der Wasserstrahltechnik",
+      "destaque3": "Bis zu 10-mal schneller als die manuelle Handlanze",
+      "destaque4": "Bewegung auf den X-, Y- und Z-Achsen mit motorisierten Rädern",
+      "destaque5": "Bis zu 90 % Lärm- und Sprühnebelreduzierung durch die Strahlschutzkappe",
+      "destaque6": "Modulares System Multi Kit 100, anpassbar an verschiedenste Anwendungen",
+      "destaque7": "Kontinuierlicher 24-Stunden-Dauerbetrieb",
+      "aplicacoes": "Anwendungen",
+      "aplicacoes1": "Hydrodemolition und Betonsanierung",
+      "aplicacoes2": "Bau und Instandhaltung von Brücken und Viadukten",
+      "aplicacoes3": "Oberflächenbehandlung und -vorbereitung",
+      "aplicacoes4": "Entfernung von Beschichtungen, Farben und Krusten",
+      "aplicacoes5": "Reinigung von Böden, Wänden und Decken"
     }
   },
   "bombas": {
