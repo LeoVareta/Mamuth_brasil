@@ -1144,6 +1144,8 @@
       "reguladorpressao": "Druckregler",
       "conexaosaida": "Auslassanschluss",
       "altavazao": "Hoher Durchfluss",
-      "seguranca": "Sicherheit"
+      "seguranca": "Sicherheit",
+      "garantia": "Garantie",
+      "imagem": "Bild"
     }
   }

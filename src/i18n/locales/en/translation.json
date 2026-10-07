@@ -1145,6 +1145,8 @@
       "reguladorpressao": "Pressure Regulator",
       "conexaosaida": "Sail Connection",
       "altavazao": "High Flow",
-      "seguranca": "Security"
+      "seguranca": "Security",
+      "garantia": "Guarantee",
+      "imagem": "Image"
   }
 }
