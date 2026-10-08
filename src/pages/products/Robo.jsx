@@ -6,6 +6,7 @@ import ProductCard from '@/components/ProductCard'; // Certifique-se de que o ca
 import robocp from "@/assets/images/robo-line-worker-250-cp-produto.png";
 import robocp2 from "@/assets/images/robo-magnetico-climb-cp-produtos.png";
 import robocp3 from "@/assets/images/robo-falch-lift-worker-250-beam-cp.png";
+import robocp4 from "@/assets/images/robo-surface-rob-250-4.jpeg";
 import path from 'node:path';
 
 const PaginaRobo = () => {
@@ -35,10 +36,10 @@ const PaginaRobo = () => {
       category: 'Categoria Principal'
     },
     {
-      name: t('categorias.Robo.titleMagnetico'),
+      name: t('robo.surface.title'),
       path: '/robo/robo-surface-rob-250',
-      description: t('categorias.Robo.subtitleMagnetico'),
-      image: robocp2, 
+      description: t('robo.surface.texto1'),
+      image: robocp4, 
       category: 'Categoria Principal'
     }
    

@@ -21,6 +21,15 @@ const PoliamidaSAP1500 = () => {
   const slides = [
         { id: 1, title: t('mangueiras.poliamida1500.title'), cover: poliamidaSap1500, color: '#FF5101' }
   ];
+const mangueirasPoliamida1500 = [
+  { mod: "3/2",  img: mangueiraazul,  di: "3,0", de: "7,0",  ptb: "1.100", ptp: "15.950", prb: "2.750", prp: "39.875", rc: "60",  p: "0,070",  },
+  { mod: "4/2",  img: mangueiraazul,  di: "4,0", de: "7,7",  ptb: "1.200", ptp: "17.400", prb: "3.000", prp: "43.500", rc: "75",  p: "0,100",  },
+  { mod: "4/2-W", img: mangueiraazul,  di: "4,0", de: "7,9",  ptb: "1.500", ptp: "21.750", prb: "3.750", prp: "54.375", rc: "75",  p: "0,110",  },
+  { mod: "5/2",  img: mangueiraazul,  di: "4,8", de: "9,5",  ptb: "1.100", ptp: "15.950", prb: "2.750", prp: "39.875", rc: "95",  p: "0,130",  },
+  { mod: "6/2",  img: mangueiraazul,  di: "6,4", de: "11,6", ptb: "1.100", ptp: "15.950", prb: "2.750", prp: "39.875", rc: "110", p: "0,200",  },
+  { mod: "8/2",  img: mangueirapreta, di: "7,9", de: "15,8", ptb: "1.000", ptp: "14.500", prb: "2.500", prp: "36.250", rc: "90",  p: "0,350",  },
+  { mod: "8/4",  img: mangueiraazul2, di: "7,9", de: "15,1", ptb: "1.500", ptp: "21.750", prb: "3.750", prp: "54.375", rc: "175", p: "0,440",  },
+];
 
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -73,10 +82,13 @@ const PoliamidaSAP1500 = () => {
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-1 px-4 bg-white">
-        <div className="max-w-7xl hidden md:block mx-auto text-center p-10 md:p-12 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
-          
+        {/* ---------- Versão Desktop ---------- */}
+        <div
+          className="max-w-7xl hidden md:block mx-auto text-center p-10 md:p-12 rounded-[30px] shadow-sm"
+          style={{ backgroundColor: '#d3d3d3' }}
+        >
           <div className="flex flex-col items-center mb-10">
-            <div 
+            <div
               className="w-10 h-10 rounded-full flex items-center justify-center rounded-[30px] mb-4 font-bold text-white shadow-lg"
               style={{ backgroundColor: '#FF6B0A' }}
             >
@@ -101,27 +113,19 @@ const PoliamidaSAP1500 = () => {
                   <th className="py-5 px-2 border-r border-orange-400 font-bold" style={{ width: '8%' }}>{t('tabela.prupt2')}</th>
                   <th className="py-5 px-2 border-r border-orange-400 font-bold" style={{ width: '8%' }}>{t('tabela.raiocurv')}</th>
                   <th className="py-5 px-2 border-r border-orange-400 font-bold" style={{ width: '9%' }}>{t('tabela.pesokg')}</th>
-                  <th className="py-5 px-2 font-bold" style={{ width: '7%' }}>{t('tabela.term')}</th>
                 </tr>
               </thead>
               <tbody>
-                {[
-                  { mod: "3/2", img: mangueiraazul, di: "3,0", de: "7,0", ptb: "1.100", ptp: "15.950", prb: "2.750", prp: "39.875", rc: "60", p: "0,072", dt: "9,0" },
-                  { mod: "4/2", img: mangueiraazul, di: "4,0", de: "7,7", ptb: "1.200", ptp: "17.400", prb: "3.000", prp: "43.511", rc: "75", p: "0,100", dt: "9,5" },
-                  { mod: "4/2W", img: mangueiraazul, di: "4,0", de: "7,9", ptb: "1.500", ptp: "21.750", prb: "3.800", prp: "55.114", rc: "75", p: "0,110", dt: "10,0" },
-                  { mod: "5/2", img: mangueiraazul, di: "5,0", de: "9,5", ptb: "1.000", ptp: "14.500", prb: "2.500", prp: "36.250", rc: "95", p: "0,140", dt: "12,0" },
-                  { mod: "5/4", img: mangueiraazul, di: "5,0", de: "11,5", ptb: "1.800", ptp: "26.100", prb: "4.500", prp: "65.250", rc: "130", p: "0,290", dt: "15,0" },
-                  { mod: "6/2", img: mangueiraazul, di: "6,0", de: "11,5", ptb: "1.100", ptp: "15.950", prb: "2.750", prp: "39.875", rc: "110", p: "0,200", dt: "15,0" },
-                  { mod: "8/2", img: mangueirapreta, di: "8,0", de: "15,8", ptb: "1.000", ptp: "14.500", prb: "2.500", prp: "36.250", rc: "90", p: "0,350", dt: "20,0" },
-                  { mod: "8/4", img: mangueiraazul2, di: "8,0", de: "15,2", ptb: "1.500", ptp: "21.750", prb: "3.800", prp: "54.375", rc: "175", p: "0,440", dt: "20,5" },
-                ].map((item, index) => (
-                  <tr key={index} className="bg-white text-gray-800 border-b border-gray-200 hover:bg-orange-50 transition-colors text-sm md:text-base">
-                    {/* Imagem individual da linha */}
+                {mangueirasPoliamida1500.map((item, index) => (
+                  <tr
+                    key={index}
+                    className="bg-white text-gray-800 border-b border-gray-200 hover:bg-orange-50 transition-colors text-sm md:text-base"
+                  >
                     <td className="py-4 px-3 border-r border-gray-200 text-center align-middle">
-                      <img 
-                        src={item.img} 
-                        alt={`Mangueira ${item.mod}`} 
-                        className="max-h-32 w-full object-contain mx-auto scale-125" 
+                      <img
+                        src={item.img}
+                        alt={`Mangueira ${item.mod}`}
+                        className="max-h-32 w-full object-contain mx-auto scale-125"
                         style={{ mixBlendMode: 'multiply' }}
                       />
                     </td>
@@ -134,52 +138,64 @@ const PoliamidaSAP1500 = () => {
                     <td className="py-4 px-2 border-r border-gray-200 text-center">{item.prp}</td>
                     <td className="py-4 px-2 border-r border-gray-200 text-center">{item.rc}</td>
                     <td className="py-4 px-2 border-r border-gray-200 text-center">{item.p}</td>
-                    <td className="py-4 px-2 text-center font-semibold">{item.dt}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </div>
-        
-        {/* Versão Mobile */}
+
+        {/* ---------- Versão Mobile ---------- */}
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
+            <h2 className="text-2xl text-center font-bold text-[#000]">
+              {t('mangueiras.DistribuidoresUAP.textoCard')}
+            </h2>
           </div>
+
           <div>
             <div className="space-y-4">
-              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
-                <button 
+              <div
+                className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300"
+                style={{ borderColor: '#FF6B0A' }}
+              >
+                <button
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Poliamida SAP 1500 </h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">Poliamida SAP 1500</h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>
                 </button>
-                
-                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
-                  {/* Se quiser exibir as imagens separadas ou uma principal no mobile também, pode iterar ou ajustar aqui */}
-                  <div className="border-b pb-4 mb-4 flex justify-center">
-                    <img 
-                      src={mangueiraazul}
-                      alt="Poliamida SAP 1500" 
-                      className="max-h-36 w-auto object-contain rounded-lg shadow-sm"
-                    />
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>{t('tabela.modelo')}:</strong> 3/2</p>
-                    <p><strong>{t('tabela.di')}:</strong> 3,0 mm</p>
-                    <p><strong>{t('tabela.de')}:</strong> 7,0 mm </p>
-                    <p><strong>{t('tabela.trabalho')}:</strong> 1100 bar / 15950 psi </p>
-                    <p><strong>{t('tabela.rupt')}:</strong> 2750 bar / 39875 psi </p>
-                    <p><strong>{t('tabela.raiocurv')}:</strong> 60 (mm.r)</p>
-                    <p><strong>{t('tabela.pesokg')}:</strong>0,072 (kg/m)</p>
-                    <p><strong>{t('tabela.term')}:</strong> 9,0 (kg/m)</p>
-                  </div>
-                  {/* Demais blocos mobile... */}
+
+                <div
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                    aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  {mangueirasPoliamida1500.map((item, idx) => (
+                    <div key={idx}>
+                      <div className={`${idx === 0 ? '' : 'border-t'} pb-4 mb-4 pt-4 flex justify-center`}>
+                        <img
+                          src={item.img}
+                          alt={`Poliamida SAP 1500 ${item.mod}`}
+                          className="h-56 w-56 object-contain mx-auto"
+                          style={{ mixBlendMode: 'multiply' }}
+                        />
+                      </div>
+                      <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                        <p><strong>{t('tabela.modelo')}:</strong> {item.mod}</p>
+                        <p><strong>{t('tabela.di')}:</strong> {item.di} mm</p>
+                        <p><strong>{t('tabela.de')}:</strong> {item.de} mm</p>
+                        <p><strong>{t('tabela.trabalho')}:</strong> {item.ptb} bar / {item.ptp} psi</p>
+                        <p><strong>{t('tabela.rupt')}:</strong> {item.prb} bar / {item.prp} psi</p>
+                        <p><strong>{t('tabela.raiocurv')}:</strong> {item.rc} (mm.r)</p>
+                        <p><strong>{t('tabela.pesokg')}:</strong> {item.p} (kg/m)</p>
+                        <p><strong>{t('tabela.term')}:</strong> {item.dt} mm</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

@@ -24,14 +24,14 @@ export default function CertificacoesSection() {
             {t('certificado.badge', 'Reconhecimento & Conformidade')}
           </span>
           
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white font-extrabold ">
             {t('certificado.titulo', 'Nossas Certificações')}
           </h2>
           
           <div className="w-16 h-1 bg-[#FF5101] mx-auto my-4 rounded-full" />
           
           {/* SEU TEXTO INSERIDO AQUI */}
-          <p className="text-gray-300 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl max-w-2xl mx-auto text-white">
             {t(
               'certificado.subtitulo',
               'A Mamuth Brasil é distribuidora oficial Parker Polyflex e Falch em todo o território nacional, assegurando qualidade e procedência em cada solução. Confira nossas certificações.'

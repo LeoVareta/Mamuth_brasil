@@ -26,6 +26,18 @@ const PoliamidaSAP1500 = () => {
         { id: 1, title: t('mangueiras.poliamida2800.title'), cover: poliamidaUap28002, color: '#FF5101' },
         { id: 2, title: t('mangueiras.poliamida2800.title'), cover: poliamidaUap2800, color: '#FF5101' }
   ];
+  const mangueirasPoliamida2800 = [
+  { mod: "4/4",   img: mangueira1, di: "4,0", de: "10,4", pb: "2.200", pp: "31.900", rb: "5.500", rp: "79.750",  r: "100", w: "0,210" },
+  { mod: "4/6",   img: mangueira2, di: "4,0", de: "9,9",  pb: "2.500", pp: "36.250", rb: "6.250", rp: "90.625",  r: "100", w: "0,220" },
+  { mod: "4/8",   img: mangueira3, di: "3,9", de: "12,0", pb: "2.800", pp: "40.600", rb: "7.000", rp: "101.500", r: "140", w: "0,290" },
+  { mod: "5/4",   img: mangueira1, di: "4,8", de: "11,5", pb: "1.800", pp: "26.100", rb: "4.500", rp: "65.250",  r: "130", w: "0,280" },
+  { mod: "5/4-W", img: mangueira4, di: "4,9", de: "11,6", pb: "2.100", pp: "30.450", rb: "5.250", rp: "76.125",  r: "130", w: "0,280" },
+  { mod: "5/6",   img: mangueira2, di: "4,8", de: "12,9", pb: "2.500", pp: "36.250", rb: "6.250", rp: "90.625",  r: "175", w: "0,410" },
+  { mod: "5/8",   img: mangueira5, di: "4,8", de: "13,3", pb: "3.010", pp: "43.645", rb: "7.525", rp: "109.110", r: "200", w: "0,470" },
+  { mod: "8/6",   img: mangueira2, di: "7,8", de: "18,0", pb: "2.500", pp: "36.250", rb: "6.250", rp: "90.625",  r: "200", w: "0,850" },
+  { mod: "8/8",   img: mangueira5, di: "7,9", de: "18,7", pb: "3.010", pp: "43.645", rb: "7.000", rp: "101.500", r: "230", w: "0,960" },
+  { mod: "10/6",  img: mangueira6, di: "9,9", de: "22,7", pb: "3.010", pp: "43.645", rb: "6.250", rp: "90.625",  r: "250", w: "1,350" },
+];
 
   // Garante que a página inicie no topo
   useEffect(() => {
@@ -78,10 +90,13 @@ const PoliamidaSAP1500 = () => {
 
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-4 px-4 bg-white">
-        <div className="max-w-7xl hidden md:block mx-auto text-center p-12 md:p-16 rounded-[40px] shadow-lg" style={{backgroundColor:'#d3d3d3'}}>
-          
+        {/* ---------- Versão Desktop ---------- */}
+        <div
+          className="max-w-7xl hidden md:block mx-auto text-center p-12 md:p-16 rounded-[40px] shadow-lg"
+          style={{ backgroundColor: '#d3d3d3' }}
+        >
           <div className="flex flex-col items-center mb-10">
-            <div 
+            <div
               className="w-12 h-12 rounded-full flex items-center justify-center rounded-[30px] mb-4 font-bold text-white shadow-lg text-lg"
               style={{ backgroundColor: '#FF6B0A' }}
             >
@@ -109,28 +124,17 @@ const PoliamidaSAP1500 = () => {
                 </tr>
               </thead>
               <tbody>
-                {[
-                  { mod: "4/4", img: mangueira1, di: "4,0", de: "10,4", pb: "2.200", pp: "31.900", rb: "5.500", rp: "79.750", r: "100", w: "0,210",},
-                  { mod: "4/6", img: mangueira2, di: "4,0", de: "9,9", pb: "2.500", pp: "36.250", rb: "6.250", rp: "90.625", r: "100", w: "0,220",},
-                  { mod: "4/8", img: mangueira3, di: "3,9", de: "12,0", pb: "2.800", pp: "40.600", rb: "7.000", rp: "101.500", r: "140", w: "0,290",},
-                  { mod: "5/4", img: mangueira1, di: "4,8", de: "11,5", pb: "1.800", pp: "26.100", rb: "4.500", rp: "65.250", r: "130", w: "0,280",},
-                  { mod: "5/4-W", img: mangueira4, di: "4,9", de: "11,6", pb: "2.100", pp: "30.450", rb: "5.250", rp: "76.125", r: "130", w: "0,280",},
-                  { mod: "5/6", img: mangueira2, di: "4.8", de: "12,9", pb: "2.500", pp: "36.250", rb: "6.250", rp: "90.625", r: "175", w: "0,410",},
-                  { mod: "5/8", img: mangueira5, di: "4,8", de: "13,3", pb: "3.010", pp: "43.645", rb: "7.525", rp: "109.110", r: "200", w: "0,470",},
-                  { mod: "8/6", img: mangueira2, di: "7,8", de: "18,0", pb: "2.500", pp: "36.250", rb: "6.250", rp: "90.625", r: "200", w: "0,850",},
-                  { mod: "8/8", img: mangueira5, di: "7,9", de: "18,7", pb: "3.010", pp: "43.645", rb: "7.000", rp: "101.500", r: "230", w: "0,960",},
-                  { mod: "10/6", img: mangueira6, di: "9,9", de: "22,7", pb: "3.010", pp: "43.645", rb: "6.250", rp: "90.625", r: "250 ", w: "1,350",},
-                ].map((item, idx) => (
-                  <tr key={idx} className="bg-white text-gray-800 border-b border-gray-200 hover:bg-orange-50 transition-colors text-[10px] sm:text-xs md:text-sm">
-                    {/* Coluna da Imagem Aumentada */}
-                    {/* Coluna da Imagem Padronizada */}
-                    {/* Coluna da Imagem com Tamanho Rígido Padronizado */}
+                {mangueirasPoliamida2800.map((item, idx) => (
+                  <tr
+                    key={idx}
+                    className="bg-white text-gray-800 border-b border-gray-200 hover:bg-orange-50 transition-colors text-[10px] sm:text-xs md:text-sm"
+                  >
                     <td className="py-5 px-3 border-r border-gray-200 text-center align-middle">
                       <div className="h-auto w-[100%] mx-auto flex items-center justify-center overflow-hidden">
                         <img
                           src={item.img}
                           alt={`Mangueira ${item.mod}`}
-                          className="w-64 h-auto object-cover"
+                          className="max-h-56 h-56 object-cover"
                           style={{ mixBlendMode: 'multiply' }}
                         />
                       </div>
@@ -151,81 +155,56 @@ const PoliamidaSAP1500 = () => {
           </div>
         </div>
 
-        {/* Versão Mobile */}
+        {/* ---------- Versão Mobile ---------- */}
         <div className="md:hidden space-y-10">
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-2xl text-center font-bold text-[#000]">{t('mangueiras.DistribuidoresUAP.textoCard')}</h2>
+            <h2 className="text-2xl text-center font-bold text-[#000]">
+              {t('mangueiras.DistribuidoresUAP.textoCard')}
+            </h2>
           </div>
+
           <div>
             <div className="space-y-4">
-              <div className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300" style={{ borderColor: '#FF6B0A' }}>
-                <button 
+              <div
+                className="rounded-xl shadow-lg border-2 overflow-hidden transition-all duration-300"
+                style={{ borderColor: '#FF6B0A' }}
+              >
+                <button
                   onClick={() => setAberto(aberto === 't1' ? null : 't1')}
                   className="w-full flex justify-between items-center p-5 bg-white"
                 >
-                  <h3 className="font-bold text-lg text-[#0E0E68]">Poliamida UAP 2800 </h3>
+                  <h3 className="font-bold text-lg text-[#0E0E68]">{t('mangueiras.poliamida2800.title')}</h3>
                   <span className="text-2xl text-[#FF6B0A] font-light">
                     {aberto === 't1' ? '−' : '+'}
                   </span>
                 </button>
-                
-                <div className={`transition-all duration-300 ease-in-out ${aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'}`}>
-                  {/* Bloco 4/6 */}
-                  <div className="border-b pb-4 mb-4 flex justify-center">
-                    <img src={mangueira1} alt="Poliamida 4/6" className="h-36 w-36 object-contain mx-auto" style={{ mixBlendMode: 'multiply' }} />
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>{t('tabela.modelo')}:</strong> 4/6</p>
-                    <p><strong>{t('tabela.di')}:</strong> 4,0 mm</p>
-                    <p><strong>{t('tabela.de')}:</strong> 12,0 mm </p>
-                    <p><strong>{t('tabela.trabalho')}:</strong> 2800 bar / 40600 psi </p>
-                    <p><strong>{t('tabela.rupt')}:</strong> 7000 bar / 101500 psi </p>
-                    <p><strong>{t('tabela.raio')}:</strong> 120 (mm.r)</p>
-                    <p><strong>{t('tabela.peso')}:</strong>0,400 (kg/m)</p>
-                    <p><strong>{t('tabela.term')}:</strong> 15,0 (kg/m)</p>
-                  </div>
-                  {/* Bloco 5/6 */}
-                  <div className="border-t border-b pb-4 mb-4 pt-4 flex justify-center">
-                    <img src={mangueira2} alt="Poliamida 5/6" className="h-36 w-36 object-contain mx-auto" style={{ mixBlendMode: 'multiply' }} />
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>{t('tabela.modelo')}:</strong> 5/6</p>
-                    <p><strong>{t('tabela.di')}:</strong> 5,0 mm</p>
-                    <p><strong>{t('tabela.de')}:</strong> 13,0 mm </p>
-                    <p><strong>{t('tabela.trabalho')}:</strong> 2500 bar/ 36230 psi </p>
-                    <p><strong>{t('tabela.rupt')}:</strong> 6240 bar / 90580 psi </p>
-                    <p><strong>{t('tabela.raio')}:</strong> 175 (mm.r)</p>
-                    <p><strong>{t('tabela.peso')}:</strong>0,400 (kg/m)</p>
-                    <p><strong>{t('tabela.term')}:</strong> 18,0 (kg/m)</p>
-                  </div>
-                  {/* Bloco 5/8 */}
-                  <div className="border-t border-b pb-4 mb-4 pt-4 flex justify-center">
-                    <img src={mangueira3} alt="Poliamida 5/8" className="h-36 w-36 object-contain mx-auto" style={{ mixBlendMode: 'multiply' }} />
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>{t('tabela.modelo')}:</strong> 5/8</p>
-                    <p><strong>{t('tabela.di')}:</strong> 5,0 mm</p>
-                    <p><strong>{t('tabela.de')}:</strong> 15,0 mm</p>
-                    <p><strong>{t('tabela.trabalho')}:</strong> 2800 bar / 40600 psi </p>
-                    <p><strong>{t('tabela.rupt')}:</strong> 7000 bar / 101500 bar </p>
-                    <p><strong>{t('tabela.raio')}:</strong> 200 (mm.r)</p>
-                    <p><strong>{t('tabela.peso')}:</strong>0,630 (kg/m)</p>
-                    <p><strong>{t('tabela.term')}:</strong> 19,0 (kg/m)</p>
-                  </div>
-                  {/* Bloco 8/8 */}
-                  <div className="border-t border-b pb-4 mb-4 pt-4 flex justify-center">
-                    <img src={mangueira4} alt="Poliamida 8/8" className="h-36 w-36 object-contain mx-auto" style={{ mixBlendMode: 'multiply' }} />
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
-                    <p><strong>{t('tabela.modelo')}:</strong> 8/8</p>
-                    <p><strong>{t('tabela.di')}:</strong> 8,0 mm</p>
-                    <p><strong>{t('tabela.de')}:</strong> 17,3 mm</p>
-                    <p><strong>{t('tabela.trabalho')}:</strong> 2800 bar / 40600 psi </p>
-                    <p><strong>{t('tabela.rupt')}:</strong> 7000 bar / 101500 psi </p>
-                    <p><strong>{t('tabela.raio')}:</strong> 200 (mm.r)</p>
-                    <p><strong>{t('tabela.peso')}:</strong>0,830 (kg/m)</p>
-                    <p><strong>{t('tabela.term')}:</strong> 24,0 (kg/m)</p>
-                  </div>
+
+                <div
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                    aberto === 't1' ? 'h-auto opacity-100 p-5 pt-0' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  {mangueirasPoliamida2800.map((item, idx) => (
+                    <div key={idx}>
+                      <div className={`${idx === 0 ? '' : 'border-t'} pb-4 mb-4 pt-4 flex justify-center`}>
+                        <img
+                          src={item.img}
+                          alt={`Poliamida ${item.mod}`}
+                          className="h-56 w-56 object-contain mx-auto"
+                          style={{ mixBlendMode: 'multiply' }}
+                        />
+                      </div>
+                      <div className="grid grid-cols-2 gap-2 text-sm border-t py-4">
+                        <p><strong>{t('tabela.modelo')}:</strong> {item.mod}</p>
+                        <p><strong>{t('tabela.di')}:</strong> {item.di} mm</p>
+                        <p><strong>{t('tabela.de')}:</strong> {item.de} mm</p>
+                        <p><strong>{t('tabela.trabalho')}:</strong> {item.pb} bar / {item.pp} psi</p>
+                        <p><strong>{t('tabela.rupt')}:</strong> {item.rb} bar / {item.rp} psi</p>
+                        <p><strong>{t('tabela.raio')}:</strong> {item.r} (mm.r)</p>
+                        <p><strong>{t('tabela.peso')}:</strong> {item.w} (kg/m)</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

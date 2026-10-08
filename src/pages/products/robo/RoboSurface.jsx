@@ -10,10 +10,12 @@ import ProductGallery from "@/components/ProductGallery";
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
-import robo1 from "@/assets/images/robo-line-worker-250-2.png";
-import robo2 from "@/assets/images/robo-line-worker-250-3.png";
-import robo3 from "@/assets/images/robo-line-worker-250-4.png";
-import robo4 from "@/assets/images/robo-line-worker-250-cp.png";
+import robo1 from "@/assets/images/robo-surface-rob-250-1.jpeg";
+import robo2 from "@/assets/images/robo-surface-rob-250-2.jpeg";
+import robo3 from "@/assets/images/robo-surface-rob-250-3.jpeg";
+import robo4 from "@/assets/images/robo-surface-rob-250-4.jpeg";
+import robo5 from "@/assets/images/robo-surface-rob-250-5.jpeg";
+import robo6 from "@/assets/images/robo-surface-rob-250-6.jpeg";
 import aplicacao1 from "@/assets/images/aplicacao-surface1.jpeg";
 import aplicacao2 from "@/assets/images/aplicacao-surface2.jpeg";
 import aplicacao3 from "@/assets/images/aplicacao-surface3.jpeg";
@@ -29,10 +31,12 @@ const RoboSurface = () => {
   const { t } = useTranslation();
   const [aberto, setAberto] = useState(null);
   const slides = [
-      { id: 1, title: t('robo.line.title'), cover: robo1, color: '#FF5101' },
-      { id: 2, title: t('robo.line.title'), cover: robo2, color: '#FF5101' },
-      { id: 3, title: t('robo.line.title'), cover: robo3, color: '#FF5101' },
-      { id: 4, title: t('robo.line.title'), cover: robo4, color: '#FF5101' },
+      { id: 1, title: t('robo.surface.title'), cover: robo1, color: '#FF5101' },
+      { id: 2, title: t('robo.surface.title'), cover: robo2, color: '#FF5101' },
+      { id: 3, title: t('robo.surface.title'), cover: robo3, color: '#FF5101' },
+      { id: 4, title: t('robo.surface.title'), cover: robo4, color: '#FF5101' },
+      { id: 4, title: t('robo.surface.title'), cover: robo5, color: '#FF5101' },
+      { id: 4, title: t('robo.surface.title'), cover: robo6, color: '#FF5101' },
     ];
   const listaDeImagens = [
     aplicacao1,
@@ -189,8 +193,8 @@ const RoboSurface = () => {
             <table className="w-full table-fixed border-collapse rounded-xl overflow-hidden shadow-md">
                 <thead>
                 <tr className="text-white" style={{ backgroundColor: '#FF6B0A' }}>
-                    <th className="py-5 px-3 border-r border-orange-400 font-bold text-xs sm:text-sm md:text-base uppercase break-words">{t('tabela.forcamaxima')}</th>
                     <th className="py-5 px-3 border-r border-orange-400 font-bold text-xs sm:text-sm md:text-base uppercase break-words">{t('tabela.pressaomaxima')}</th>
+                    <th className="py-5 px-3 border-r border-orange-400 font-bold text-xs sm:text-sm md:text-base uppercase break-words">{t('tabela.forcamaxima')}</th>
                     <th className="py-5 px-3 border-r border-orange-400 font-bold text-xs sm:text-sm md:text-base uppercase break-words">{t('tabela.alimentacaoeletrica')}</th>
                     <th className="py-5 px-3 border-r border-orange-400 font-bold text-xs sm:text-sm md:text-base uppercase break-words">{t('tabela.grauprotecao')}</th>
                     <th className="py-5 px-3 border-r border-orange-400 font-bold text-xs sm:text-sm md:text-base uppercase break-words">{t('tabela.garantia')}</th>
@@ -206,8 +210,7 @@ const RoboSurface = () => {
                     <td className="py-8 px-3 border-r border-gray-200 text-xs sm:text-sm md:text-base text-center break-words">IP 54 (comando: IP 64)</td>
                     <td className="py-8 px-3 border-r border-gray-200 text-xs sm:text-sm md:text-base text-center break-words">24 {t('tabela.meses')}</td>
                     <td className="py-8 px-3 border-r border-gray-200 text-xs sm:text-sm md:text-base text-center break-words">240(robo) + 92(comando)</td>
-                    <td className="py-8 px-3 border-r border-gray-200 text-xs sm:text-sm md:text-base text-center break-words">IP 65 / 55</td>
-                    <td className="py-8 px-3 border-r border-gray-200 text-xs sm:text-sm md:text-base text-center break-words">70 kg</td>
+                    <td className="py-8 px-3 border-r border-gray-200 text-xs sm:text-sm md:text-base text-center break-words">2200 x 2100 x 1200</td>
                 </tr>
                 </tbody>
             </table>
