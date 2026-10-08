@@ -129,13 +129,22 @@ const PoliamidaSAP1500 = () => {
                     key={idx}
                     className="bg-white text-gray-800 border-b border-gray-200 hover:bg-orange-50 transition-colors text-[10px] sm:text-xs md:text-sm"
                   >
-                    <td className="py-5 px-3 border-r border-gray-200 text-center align-middle">
+                    {/* <td  className="py-5 px-3 border-r border-gray-200 text-center align-middle">
                       <div className="h-auto w-[100%] mx-auto flex items-center justify-center overflow-hidden">
                         <img
                           src={item.img}
                           alt={`Mangueira ${item.mod}`}
                           className="max-h-56 h-56 object-cover"
                           style={{ mixBlendMode: 'multiply' }}
+                        />
+                      </div>
+                    </td> */}
+                    <td className="py-5 px-3 border-r border-gray-200 text-center align-middle">
+                      <div className="w-[230px] h-[120px] mx-auto flex items-center justify-center overflow-hidden">
+                        <img 
+                          src={item.img}
+                          alt={`Mangueira ${item.mod}`}
+                          className="w-[230px] h-auto max-w-none object-contain flex-none block mix-blend-multiply" 
                         />
                       </div>
                     </td>
