@@ -53,7 +53,7 @@ export default function CertificacoesSection() {
             
             <button
               onClick={() => setSelectedImg(certificadoParker)}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 md:py-2.5 rounded-xl bg-[#FF5101] hover:bg-[#e54800] active:scale-[0.98] transition-all duration-200 text-white text-sm uppercase font-bold tracking-wider shadow-lg shadow-[#FF5101]/20"
+              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-[#FF5101] hover:bg-[#e54800] active:scale-[0.98] transition-all duration-200 text-white text-xs md:text-sm uppercase font-bold tracking-wider shadow-lg shadow-[#FF5101]/20"
             >
               <span>{t('certificado.btnCertificado', 'Visualizar Certificado')}</span>
               <ExternalLink size={16} />
@@ -72,7 +72,7 @@ export default function CertificacoesSection() {
             
             <button
               onClick={() => setSelectedImg(certificadoFalch)}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 md:py-2.5 rounded-xl bg-[#FF5101] hover:bg-[#e54800] active:scale-[0.98] transition-all duration-200 text-white text-sm uppercase font-bold tracking-wider shadow-lg shadow-[#FF5101]/20"
+              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-[#FF5101] hover:bg-[#e54800] active:scale-[0.98] transition-all duration-200 text-white text-xs md:text-sm uppercase font-bold tracking-wider shadow-lg shadow-[#FF5101]/20"
             >
               <span>{t('certificado.btnCertificado', 'Visualizar Certificado')}</span>
               <ExternalLink size={16} />

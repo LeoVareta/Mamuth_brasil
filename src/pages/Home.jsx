@@ -294,7 +294,7 @@ const Home = () => {
     </div>
         </div>
       </section>
-      <CertificacoesSection />
+      
       {/* Latin America Presence Section */}
 
       {/* 1. Adicionamos 'relative' obrigatoriamente aqui */}
@@ -519,6 +519,7 @@ const Home = () => {
         </div>
       </section>
        <CTASection />
+       <CertificacoesSection />
       
     <>
 
