@@ -162,7 +162,7 @@ function App() {
             <Route path="/vestimentas/air-system" element={<AirSystem/>}/>
             {/* Mangueiras e conexões */}
             <Route path="/mangueiras-conexoes/poliamida-sap-1500bar" element={<PoliamidaSAP1500/>}/>
-            <Route path="/mangueiras-conexoes/poliamida-uap-2800bar" element={<PoliamidaUAP2800/>}/>
+            <Route path="/mangueiras-conexoes/poliamida-uap-3010bar" element={<PoliamidaUAP2800/>}/>
             <Route path="/mangueiras-conexoes/niples-m24dko1" element={<NiplesM24DKO1/>}/>
             <Route path="/mangueiras-conexoes/niples-adaptador-hp-9-16" element={<NiplesAdaptadorHP/>}/>
             <Route path="/mangueiras-conexoes/mangueira-waterblast" element={<MangueiraWaterblast/>}/>

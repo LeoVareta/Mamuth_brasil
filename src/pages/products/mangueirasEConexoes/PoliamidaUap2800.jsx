@@ -11,6 +11,8 @@ import bgImg from '@/assets/images/bg-carrousel.png';
 import poliamidaUap2800 from '@/assets/images/mangueiras-conexoes.jpg';
 import poliamidaUap28002 from '@/assets/images/mangueira-8x8-uap-1.png';
 import seloParker from "@/assets/images/selo-certificado-parker.png";
+import seloParkerTabela from "@/assets/images/logo-parker-tabelas.png";
+import logoMamuth from "@/assets/icons/logo-mamuth-h.svg";
 import mangueira1 from "@/assets/images/mangueira1.png";
 import mangueira2 from "@/assets/images/mangueira2.png";
 import mangueira3 from "@/assets/images/mangueira3.png";
@@ -92,18 +94,47 @@ const PoliamidaSAP1500 = () => {
       <section className="py-4 px-4 bg-white">
         {/* ---------- Versão Desktop ---------- */}
         <div
-          className="max-w-7xl hidden md:block mx-auto text-center p-12 md:p-16 rounded-[40px] shadow-lg"
+          className="max-w-7xl hidden md:block mx-auto text-center p-10 md:p-12 rounded-[30px] shadow-sm"
           style={{ backgroundColor: '#d3d3d3' }}
         >
+          {/* Seção das Logos (Aumentada) */}
+          <div className="flex items-center justify-center gap-10 mb-10">
+            {/* Logo Mamuth - Aumentada com h-16 ou md:h-20 */}
+            <img 
+              src={logoMamuth} 
+              alt="Mamuth Brasil" 
+              className="h-16 md:h-20 object-contain [filter:brightness(0)_saturate(100%)_invert(41%)_sepia(88%)_saturate(3082%)_hue-rotate(1deg)_brightness(102%)_contrast(106%)]" 
+            />
+
+            {/* Barra diagonal separadora - Aumentada */}
+            <span className="text-gray-400 text-4xl md:text-5xl font-light">/</span>
+
+            {/* Bloco do Distribuidor Autorizado + Logo Parker */}
+            <div className="flex items-center gap-4">
+              <div className="text-right text-sm md:text-base font-bold text-gray-800 leading-tight">
+                <span>DISTRIBUIDOR</span>
+                <br />
+                <span>AUTORIZADO</span>
+              </div>
+              {/* Logo Parker - Aumentada com h-14 ou md:h-16 */}
+              <img 
+                src={seloParkerTabela} 
+                alt="Parker Distributor" 
+                className="h-14 md:h-16 object-contain" 
+              />
+            </div>
+          </div>
+
+          {/* Restante do conteúdo (Ícone e Título) */}
           <div className="flex flex-col items-center mb-10">
             <div
-              className="w-12 h-12 rounded-full flex items-center justify-center rounded-[30px] mb-4 font-bold text-white shadow-lg text-lg"
+              className="w-10 h-10 rounded-full flex items-center justify-center mb-4 font-bold text-white shadow-lg"
               style={{ backgroundColor: '#FF6B0A' }}
             >
               i
             </div>
-            <h2 className="text-gray-800 text-3xl md:text-5xl font-bold">
-              {t('mangueiras.poliamida2800.textoCard')}
+            <h2 className="text-gray-800 text-2xl md:text-4xl font-bold">
+              {t('mangueiras.poliamida1500.textoCard')}
             </h2>
           </div>
 

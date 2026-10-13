@@ -23,7 +23,7 @@ const PaginaCategoria = () => {
   const produtosDaCategoria = [
     {
       name: t('categorias.mangueiras.titlePoliamida2800'),
-      path: '/mangueiras-conexoes/poliamida-uap-2800bar',
+      path: '/mangueiras-conexoes/poliamida-uap-3010bar',
       description: t('categorias.mangueiras.subtitlePoliamida2800'),
       image: poliamidaUap2800, 
       category: 'Categoria Principal'
