@@ -6,7 +6,7 @@ import ProductCard from '@/components/ProductCard'; // Certifique-se de que o ca
 import robocp from "@/assets/images/robo-line-worker-250-cp-produto.png";
 import robocp2 from "@/assets/images/robo-magnetico-climb-cp-produtos.png";
 import robocp3 from "@/assets/images/robo-falch-lift-worker-250-beam-cp.png";
-import robocp4 from "@/assets/images/robo-surface-rob-250-4.jpeg";
+import robocp4 from "@/assets/images/robo-surface-rob-250-4.png";
 import path from 'node:path';
 
 const PaginaRobo = () => {

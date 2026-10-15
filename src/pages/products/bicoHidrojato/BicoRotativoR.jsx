@@ -57,17 +57,6 @@ const BicoRotativoR = () => {
         </div>
       </section>
 
-      {/* 2. NOVA SEÇÃO DE IMAGEM ENTRE DESCRIÇÃO E TABELA */}
-      <section className="py-6 mb-10 px-4 bg-white">
-        <div className="max-w-4xl mx-auto flex justify-center">
-          <img 
-            src={minhaNovaImagem} 
-            alt={t('bicos.rotativotitan.title')} 
-            className="w-full max-w-2xl h-auto rounded-2xl shadow-md object-contain"
-          />
-        </div>
-      </section>
-
       {/* SEÇÃO DE TABELA: CINZA CLARO COM CARD ARREDONDADO */}
       <section className="py-1 px-4 bg-white">
         <div className="max-w-4xl md:block hidden mx-auto text-center p-8 rounded-[30px] shadow-sm" style={{backgroundColor:'#d3d3d3'}}>
