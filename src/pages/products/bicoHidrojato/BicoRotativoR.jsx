@@ -62,7 +62,7 @@ const BicoRotativoR = () => {
         <div className="max-w-4xl mx-auto flex justify-center">
           <img 
             src={minhaNovaImagem} 
-            alt={t('bicos.rotativoR.title')} 
+            alt={t('bicos.rotativotitan.title')} 
             className="w-full max-w-2xl h-auto rounded-2xl shadow-md object-contain"
           />
         </div>

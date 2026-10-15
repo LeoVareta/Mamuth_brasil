@@ -8,6 +8,8 @@ import CTASection from "@/components/CTASection";
 import bgImg from '@/assets/images/bg-carrousel.png';
 // Import da imagem
 import bicoRotativoTitan from '@/assets/images/bico-rotativo-titan.jpg';
+import minhaNovaImagem from '@/assets/images/bico-rotativo-r-descricao.jpeg'; // 1. IMPORT DA NOVA IMAGEM
+
 
 const BicoRotativoTitan = () => {
   const { t } = useTranslation();
@@ -46,6 +48,16 @@ const BicoRotativoTitan = () => {
           <p className="text-lg text-gray-600 leading-relaxed mb-10 text-left">
            {t('bicos.rotativotitan.texto1')}
           </p>
+        </div>
+      </section>
+      {/* NOVA SEÇÃO DE IMAGEM ENTRE DESCRIÇÃO E TABELA */}
+      <section className="py-6 mb-10 px-4 bg-white">
+        <div className="max-w-4xl mx-auto flex justify-center">
+          <img 
+            src={minhaNovaImagem} 
+            alt={t('bicos.rotativotitan.title')} 
+            className="w-full max-w-2xl h-auto rounded-2xl shadow-md object-contain"
+          />
         </div>
       </section>
 
