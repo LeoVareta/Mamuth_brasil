@@ -234,7 +234,7 @@ function App() {
             <Route path="/acessorios-lavadoras-de-alta-pressao/bico-jato-abrasivo-500bar" element={<BicoJatoAbrasivo/>}/>
             <Route path="/noticias/feira-fenasucro" element={<FeiraFenasucro />} />
             <Route path="/noticias/feira-navalshore" element={<FeiraNavalShore />} />
-            <Route path="/404" element={<Pagina404 />} />
+            <Route path="/*" element={<Pagina404 />} />
           </Routes>
         </main>
         {/* <WhatsappButton />  */}
