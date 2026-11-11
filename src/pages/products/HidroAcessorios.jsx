@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import ProductCard from '@/components/ProductCard'; // Certifique-se de que o caminho está correto
-import tubeclean1 from '@/assets/images/tubeclean01.jpeg';
+import tubeclean1 from '@/assets/images/tubeclean-cp.png';
 import powerBoxMamuth from '@/assets/images/powerbox-mamuth-2800.jpeg';
 import pistolaRotativaViper40k from '@/assets/images/pistola-rotativa-viper-40k-cp.png';
 import pistolaPneumatica2G from '@/assets/images/pistola-pneumatica-2g.png';
