@@ -8,14 +8,18 @@ import CTASection from "@/components/CTASection";
 import ProductSection from '@/components/ProductSection';
 import bgImg from '@/assets/images/bg-carrousel.png'; 
 // Import da imagem
-import tubecleanMamuth from '@/assets/images/tubeclean-mamuth.jpeg';
+import tubeclean1 from '@/assets/images/tubeclean01.jpeg';
+import tubeclean2 from '@/assets/images/tubeclean02.jpeg';
+import tubeclean3 from '@/assets/images/tubeclean03.jpeg';
 
 const TubeClean = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [aberto, setAberto] = useState(null);
   const slides = [
-      { id: 1, title: t('acessorioshidro.tubeclean.title'),  cover: tubecleanMamuth, color: '#FF5101' }
+      { id: 1, title: t('acessorioshidro.tubeclean.title'),  cover: tubeclean1, color: '#FF5101' },
+      { id: 2, title: t('acessorioshidro.tubeclean.title'),  cover: tubeclean2, color: '#FF5101' },
+      { id: 3, title: t('acessorioshidro.tubeclean.title'),  cover: tubeclean3, color: '#FF5101' }
     ];
 
   // Garante que a página inicie no topo
